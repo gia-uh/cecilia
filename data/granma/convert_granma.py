@@ -1,14 +1,19 @@
 import markitdown
 import pathlib
+import tqdm
 
-pdfs = sorted(pathlib.Path(__file__).parent.rglob("*.pdf"))
+pdfs = list(sorted(pathlib.Path(__file__).parent.rglob("*.pdf")))
 
 for pdf in pdfs:
-    print(pdf)
     md_path = pdf.with_suffix(".md")
 
     if md_path.exists():
         continue
 
-    md = markitdown.MarkItDown().convert_local(pdf).text_content
-    md_path.write_text(md)
+    print(pdf)
+
+    try:
+        md = markitdown.MarkItDown().convert_local(pdf).text_content
+        md_path.write_text(md)
+    except markitdown._exceptions.MarkItDownException:
+        print("Error converting", pdf)
