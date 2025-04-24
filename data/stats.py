@@ -15,9 +15,9 @@ encoding = tiktoken.get_encoding("o200k_base")
 
 for md_file in tqdm.tqdm(md_files):
     text = md_file.read_text().lower()
-    words = encoding.decode_tokens_bytes(encoding.encode(text))
+    # words = encoding.decode_tokens_bytes(encoding.encode(text))
+    words = text.split()
     counter.update(words)
-
 
 # print the total number of different words
 print("Different words =", len(counter))
