@@ -10,7 +10,7 @@ for pdf in tqdm.tqdm(pdfs):
     if md_path.exists():
         continue
 
-    print(pdf)
+    # print(pdf)
 
     try:
         md = markitdown.MarkItDown().convert_local(pdf).text_content
