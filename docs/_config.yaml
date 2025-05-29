@@ -1,4 +1,4 @@
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman
 title: Cecilia
 description: The Cuban Language Model
-logo: CecilIA-V2.png
+logo: ./CecilIA-V2.png
