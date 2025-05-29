@@ -183,41 +183,41 @@ Training Hyperparameters.
 ## Evaluation and Benchmarking
 
 :::{#tbl-eval-results}
-| Task                     | Metric      | Salamandra | Cecila | Rel Err |
-|--------------------------|-------------|---------------|-----------|---------------|
-| `arc_challenge`            | acc         | 0.37031       | 0.38225   | 3.13%         |
-| `arc_easy`                 | acc         | 0.72264       | 0.73401   | 1.55%         |
-| `belebele_en`        | acc         | 0.21556       | 0.24778   | 13.00%        |
-| `belebele_es`        | acc         | 0.22778       | 0.24444   | 6.82%         |
-| `escola`                   | acc         | 0.59259       | 0.55461   | -6.41%        |
-| `openbookqa`               | acc         | 0.30000       | 0.28200   | -6.00%        |
-| `openbookqa_es`            | acc         | 0.30800       | 0.29400   | -4.55%        |
-| `paws_en`                  | acc         | 0.56100       | 0.57350   | 2.18%         |
-| `paws_es`    | acc         | 0.56050       | 0.55550   | -0.89%        |
-| `piqa`                     | acc         | 0.73721       | 0.73667   | -0.07%        |
-| `social_iqa`               | acc         | 0.45394       | 0.44626   | -1.69%        |
-| `teca`                     | acc         | 0.46481       | 0.43174   | -7.11%        |
-| `wnli`                     | acc         | 0.46479       | 0.42254   | -9.09%        |
-| `wnli_es`                  | acc         | 0.56338       | 0.59155   | 4.76%         |
-| `xnli_en`                  | acc         | 0.46225       | 0.47671   | 3.03%         |
-| `xnli_va`                  | acc         | 0.47505       | 0.48523   | 2.10%         |
-| `xstorycloze_en`           | acc         | 0.71145       | 0.70483   | -0.93%        |
-| `xstorycloze_es`           | acc         | 0.65255       | 0.65189   | -0.10%        |
-| `arc_challenge`            | acc_norm    | 0.40700       | 0.41809   | 2.65%         |
-| `arc_easy`                 | acc_norm    | 0.72559       | 0.73990   | 1.93%         |
-| `belebele_en`        | acc_norm    | 0.21556       | 0.24778   | 13.00%        |
-| `belebele_es`        | acc_norm    | 0.22778       | 0.24444   | 6.82%         |
-| `openbookqa`               | acc_norm    | 0.39600       | 0.40000   | 1.00%         |
-| `openbookqa_es`            | acc_norm    | 0.40800       | 0.40400   | -0.98%        |
-| `piqa`                     | acc_norm    | 0.74701       | 0.74701   | 0.00%         |
-| `cocoteros_es`             | bleu        | 8.46507       | 6.72269   | -20.58%       |
-| `xlsum_es`                 | bleu        | 0.80082       | 0.59723   | -25.42%       |
-| `triviaqa`                 | exact_match | 0.37595       | 0.35432   | -5.75%        |
-| `xquad_es`                 | exact_match | 0.37731       | 0.36050   | -4.45%        |
-| `xquad_es`                 | f1          | 0.58413       | 0.56911   | -2.57%        |
-| `cocoteros_es`             | rouge1      | 0.33887       | 0.31209   | -7.90%        |
-| `xlsum_es`                 | rouge1      | 0.13464       | 0.08705   | -35.35%       |
-| | | | | |
+| Task                     | Metric      | Salamandra    | Cecila    | Rel Err       |
+|--------------------------|-------------|--------------:|----------:|--------------:|
+| `arc_challenge`          | acc         | 0.37031       | 0.38225   | 3.13%         |
+| `arc_easy`               | acc         | 0.72264       | 0.73401   | 1.55%         |
+| `belebele_en`            | acc         | 0.21556       | 0.24778   | 13.00%        |
+| `belebele_es`            | acc         | 0.22778       | 0.24444   | 6.82%         |
+| `escola`                 | acc         | 0.59259       | 0.55461   | -6.41%        |
+| `openbookqa`             | acc         | 0.30000       | 0.28200   | -6.00%        |
+| `openbookqa_es`          | acc         | 0.30800       | 0.29400   | -4.55%        |
+| `paws_en`                | acc         | 0.56100       | 0.57350   | 2.18%         |
+| `paws_es`                | acc         | 0.56050       | 0.55550   | -0.89%        |
+| `piqa`                   | acc         | 0.73721       | 0.73667   | -0.07%        |
+| `social_iqa`             | acc         | 0.45394       | 0.44626   | -1.69%        |
+| `teca`                   | acc         | 0.46481       | 0.43174   | -7.11%        |
+| `wnli`                   | acc         | 0.46479       | 0.42254   | -9.09%        |
+| `wnli_es`                | acc         | 0.56338       | 0.59155   | 4.76%         |
+| `xnli_en`                | acc         | 0.46225       | 0.47671   | 3.03%         |
+| `xnli_va`                | acc         | 0.47505       | 0.48523   | 2.10%         |
+| `xstorycloze_en`         | acc         | 0.71145       | 0.70483   | -0.93%        |
+| `xstorycloze_es`         | acc         | 0.65255       | 0.65189   | -0.10%        |
+| `arc_challenge`          | acc_norm    | 0.40700       | 0.41809   | 2.65%         |
+| `arc_easy`               | acc_norm    | 0.72559       | 0.73990   | 1.93%         |
+| `belebele_en`            | acc_norm    | 0.21556       | 0.24778   | 13.00%        |
+| `belebele_es`            | acc_norm    | 0.22778       | 0.24444   | 6.82%         |
+| `openbookqa`             | acc_norm    | 0.39600       | 0.40000   | 1.00%         |
+| `openbookqa_es`          | acc_norm    | 0.40800       | 0.40400   | -0.98%        |
+| `piqa`                   | acc_norm    | 0.74701       | 0.74701   | 0.00%         |
+| `cocoteros_es`           | bleu        | 8.46507       | 6.72269   | -20.58%       |
+| `xlsum_es`               | bleu        | 0.80082       | 0.59723   | -25.42%       |
+| `triviaqa`               | exact_match | 0.37595       | 0.35432   | -5.75%        |
+| `xquad_es`               | exact_match | 0.37731       | 0.36050   | -4.45%        |
+| `xquad_es`               | f1          | 0.58413       | 0.56911   | -2.57%        |
+| `cocoteros_es`           | rouge1      | 0.33887       | 0.31209   | -7.90%        |
+| `xlsum_es`               | rouge1      | 0.13464       | 0.08705   | -35.35%       |
+|                          |             |               |           |               |
 | **Mean Diff**            |             |               |           | **-2.43%**    |
 :
 Evaluation results in selected NLP tasks in English and Spanish, in comparison with Salamandra 2B.
