@@ -1,8 +1,16 @@
 ---
 title: "Cecilia: The Cuban Language Model"
 subtitle: Technical Report
+affiliations:
+  - id: uh
+    name: University of Havana
+  - id: ua
+    name: University of Alicante
 author:
   - Ernesto L. Estevanell
+  - Suilan Estévez
+  - Alejandro Piad
+  - Yudivián Almeida
   - Daniel A. Valdés
   - Roberto Marti
   - Deborah Famadas
@@ -13,9 +21,6 @@ author:
   - Carla Pérez
   - Alejandro Beltrán
   - Juan Pablo Consuegra
-  - Suilan Estévez
-  - Alejandro Piad
-  - Yudivián Almeida
   - Robiert Sepúlveda
   - Yoan Gutiérrez
   - Rafael Muñoz

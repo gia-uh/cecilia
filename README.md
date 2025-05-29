@@ -1,18 +1,18 @@
 # Cecilia: The Cuban Language Model
 
-Cecilia is a family of language models continual pretrained specifically on Cuban written text, capturing the linguistic, cultural, and social nuances of Cuban Spanish. 
+Cecilia is a family of language models continual pretrained specifically on Cuban written text, capturing the linguistic, cultural, and social nuances of Cuban Spanish.
 These models are designed to support natural language processing tasks with a focus on Cuban language varieties and cultural context.
 
 ## About Cecilia 2B v0.1
 
 This repository contains **Cecilia 2B v0.1**, a 2 billion parameter model continual pretrained on Cuban written text from [Salamandra 2B](BSC-LT/salamandra-2b).
 
-The model is developed by the [Artificial Intelligence Research Group (GIA-UH)](https://gia-uh.github.io/) at the [University of Havana](https://www.uh.cu/) with the collaboration 
-of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dlsi.ua.es/) at the [University of Alicante](https://www.ua.es/) and the support 
+The model is developed by the [Artificial Intelligence Research Group (GIA-UH)](https://gia-uh.github.io/) at the [University of Havana](https://www.uh.cu/) with the collaboration
+of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dlsi.ua.es/) at the [University of Alicante](https://www.ua.es/) and the support
 of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 
 - [Download to model weights from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
-- [Read the Technical Report](report/Cecilia-Tech-Report.pdf). 
+- [Read the Technical Report](https://cecilia.uhgia.org/report.pdf).
 
 ## Training Data
 
@@ -68,7 +68,7 @@ print(tokenizer.decode(outputs[0], skip_special_tokens=True))
 - **vLLM:** Cecilia Tiny can be used with [vLLM](https://vllm.ai/) for efficient inference and serving.
 - **LM Studio:** The model is compatible with [LM Studio](https://lmstudio.ai/), enabling easy local deployment and experimentation.
 
-### Model Details 
+### Model Details
 
 - The model is currently **not quantized**. Quantized versions will be released shortly to improve efficiency and reduce resource requirements.
 - Cecilia Tiny is fine-tuned via **continual pretraining** on Cuban text but yet **is not instruction-tuned**. It is optimized for language modeling rather
@@ -95,14 +95,28 @@ By using Cecilia, you agree to apply it ethically and responsibly, understanding
 
 ## Citation
 
-If you use Cecilia in your research or projects, please cite:
+If you use **Cecilia 2B v0.1 - The Cuban Language Model** in your research, please cite it as:
 
-> Cecilia Language Model, developed by the Artificial Intelligence Research Group (GIA-UH) at the University of Havana and the Group of Language Processing and Information Systems (GPLIS) at the University of Alicante.
+Ernesto L. Estevanell-Valladares, Suilan Estevez-Velarde, Alejandro Piad-Morffis, and Yudivian Almeida-Cruz. (2025). *cecilia-2b-v0.1 (Revision 1921f36)*. Hugging Face. https://huggingface.co/gia-uh/cecilia-2b-v0.1. DOI: 10.57967/hf/5667
+
+```bibtex
+@misc{ernesto_l._estevanell-valladares_2025,
+  author       = { Ernesto L. Estevanell-Valladares and Suilan Estevez-Velarde and Alejandro Piad-Morffis and Yudivian Almeida-Cruz },
+  title        = { Cecilia 2B v0.1 - The Cuban Language Model },
+  year         = 2025,
+  url          = { https://huggingface.co/gia-uh/cecilia-2b-v0.1 },
+  doi          = { 10.57967/hf/5667 },
+  publisher    = { Hugging Face }
+}
+```
+
+For more citation options, see the [CITATION.cff](./CITATION.cff) file.
 
 ## Team
+
 The model could not have been created without the commitment and work of members of **GIA-UH** and **GPLSI** groups.
 
-*GIA-UH* - Ernesto L. Estevanell, Daniel A. Valdés, Roberto Marti, Deborah Famadas, Roberto García, Gabriel Hernández, 
+*GIA-UH* - Ernesto L. Estevanell, Daniel A. Valdés, Roberto Marti, Deborah Famadas, Roberto García, Gabriel Hernández,
 Elena Rodríguez, Niley González, Alejandro Beltrán, Juan Pablo Consuegra, Suilan Estévez, Alejandro Piad, Yudivián Almeida.
 
 *GPLSI* -  Robiert Sepúlveda, Yoan Gutiérrez, Rafael Muñoz, Andrés Montoyo, Manuel Palomar.
