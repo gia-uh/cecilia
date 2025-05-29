@@ -1,5 +1,7 @@
 # Cecilia: The Cuban Language Model
 
+![](logo.png)
+
 Cecilia is a family of language models continual pretrained specifically on Cuban written text, capturing the linguistic, cultural, and social nuances of Cuban Spanish.
 These models are designed to support natural language processing tasks with a focus on Cuban language varieties and cultural context.
 
@@ -12,7 +14,7 @@ of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dls
 of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 
 - [Download to model weights from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
-- [Read the Technical Report](https://github.com/syalia-srl/cecilia/blob/main/report/Cecilia-Tech-Report.pdf).
+- [Read the Technical Report](report.pdf).
 
 ## Training Data
 
