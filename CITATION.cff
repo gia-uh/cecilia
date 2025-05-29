@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Cecilia 2B v0.1 - The Cuban Language Model"
+version: "0.1"
+message: "If you use Cecilia 2B v0.1 in your research, please cite this work as below."
+authors:
+  - family-names: Estevanell-Valladares
+    given-names: Ernesto L.
+  - family-names: Estevez-Velarde
+    given-names: Suilan
+  - family-names: Piad-Morffis
+    given-names: Alejandro
+  - family-names: Almeida-Cruz
+    given-names: Yudivian
+date-released: 2025-05-29
+doi: 10.57967/hf/5667
+url: https://huggingface.co/gia-uh/cecilia-2b-v0.1
+repository-code: https://huggingface.co/gia-uh/cecilia-2b-v0.1
+license: CC-BY-SA-4.0
+type: software
+keywords:
+  - language model
+  - Cuban Spanish
+  - NLP
+  - deep learning
+  - transformers
