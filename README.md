@@ -11,6 +11,10 @@ The model is developed by the [Artificial Intelligence Research Group (GIA-UH)](
 of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dlsi.ua.es/) at the [University of Alicante](https://www.ua.es/) and the support 
 of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 
+> [### Download to model weights from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
+
+> [### Read the Technical Report](report/Cecilia-Tech-Report.pdf). 
+
 ## Training Data
 
 Cecilia Tiny was continual pretrained for 2 full epochs on a private corpus of approximately 600 million tokens of Cuban written text, including:
