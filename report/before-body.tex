@@ -1,0 +1,19 @@
+% Render the title
+$if(title)$
+  \maketitle
+$endif$
+
+% Insert your custom text here
+\begin{center}
+\textsuperscript{1}University of Havana, Cuba\\
+\textsuperscript{2}University of Alicante, Spain\\
+\end{center}
+
+% Render the abstract if present
+$if(abstract)$
+\begin{abstract}
+$abstract$
+\end{abstract}
+$endif$
+
+\newpage

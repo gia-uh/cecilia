@@ -1,45 +1,94 @@
 ---
 title: "Cecilia: The Cuban Language Model"
 subtitle: Technical Report
+format:
+  pdf:
+    template-partials:
+      - before-body.tex
+    number-sections: true
+    citation-style: ieee
 affiliations:
   - id: uh
     name: University of Havana
   - id: ua
     name: University of Alicante
 author:
-  - Ernesto L. Estevanell
-  - Suilan Estévez
-  - Alejandro Piad
-  - Yudivián Almeida
-  - Daniel A. Valdés
-  - Roberto Marti
-  - Deborah Famadas
-  - Roberto García
-  - Gabriel Hernández
-  - Elena Rodríguez
-  - Niley González
-  - Carla Pérez
-  - Alejandro Beltrán
-  - Juan Pablo Consuegra
-  - Robiert Sepúlveda
-  - Yoan Gutiérrez
-  - Rafael Muñoz
-  - Andrés Montoyo
-  - Manuel Palomar
-date: 2025-05-28
+  - name: Ernesto L. Estevanell¹²
+    affiliation:
+      - ref: uh
+      - ref: ua
+  - name: Suilan Estévez¹
+    affiliation:
+      - ref: uh
+  - name: Alejandro Piad¹
+    affiliation:
+      - ref: uh
+  - name: Yudivián Almeida¹
+    affiliation:
+      - ref: uh
+  - name: Daniel A. Valdés¹
+    affiliation:
+      - ref: uh
+  - name: Roberto Marti¹
+    affiliation:
+      - ref: uh
+  - name: Deborah Famadas¹
+    affiliation:
+      - ref: uh
+  - name: Roberto García¹
+    affiliation:
+      - ref: uh
+  - name: Gabriel Hernández¹
+    affiliation:
+      - ref: uh
+  - name: Elena Rodríguez¹
+    affiliation:
+      - ref: uh
+  - name: Niley González¹
+    affiliation:
+      - ref: uh
+  - name: Carla Pérez¹
+    affiliation:
+      - ref: uh
+  - name: Alejandro Beltrán¹
+    affiliation:
+      - ref: uh
+  - name: Juan Pablo Consuegra¹²
+    affiliation:
+      - ref: uh
+      - ref: ua
+  - name: Robiert Sepúlveda²
+    affiliation:
+      - ref: ua
+  - name: Yoan Gutiérrez²
+    affiliation:
+      - ref: ua
+  - name: Rafael Muñoz²
+    affiliation:
+      - ref: ua
+  - name: Andrés Montoyo²
+    affiliation:
+      - ref: ua
+  - name: Manuel Palomar²
+    affiliation:
+      - ref: ua
+bibliography: references.bib
 abstract: Cecilia 2B is a 2-billion-parameter language model continually pretrained on a large, diverse corpus of Cuban Spanish text to capture the unique linguistic and cultural features of Cuban Spanish. Built on the Salamandra 2B architecture, Cecilia 2B adapts a robust multilingual base model through continual pretraining on approximately 1 billion tokens from Cuban newspapers, encyclopedias, legal documents, literature, and song lyrics. This approach enables efficient deployment in resource-constrained environments and provides a foundational resource for Cuban Spanish NLP tasks such as text generation, sentiment analysis, and named entity recognition. This report details the model’s design, training methodology, dataset, and potential applications, highlighting its significance for Cuban Spanish language technology and future research directions.
 ---
-Cecilia-2B-v0.1 (hereafter Cecilia 2B) is a compact language model continual pretrained on a diverse and extensive corpus of Cuban written text, designed to capture the unique linguistic, cultural, and social nuances of Cuban Spanish.
 
-The motivation behind Cecilia stems from the need to develop language technologies that accurately reflect regional language variations and cultural contexts, which are often underrepresented or inadequately modeled by large, generic language models. Cuban Spanish exhibits distinct lexical, syntactic, and pragmatic features, as well as culturally specific references, that necessitate specialized modeling to improve natural language processing (NLP) performance on Cuban-specific tasks.
+## Introduction
+
+Cecilia-2B-v0.1 (hereafter Cecilia 2B) is a compact language model continual pretrained [@ke2023continual] on a diverse and extensive corpus of Cuban written text, designed to capture the unique linguistic, cultural, and social nuances of Cuban Spanish.
+
+The motivation behind Cecilia stems from the need to develop language technologies that accurately reflect regional language variations and cultural contexts, which are often underrepresented or inadequately modeled by large, generic language models. Cuban Spanish exhibits distinct lexical, syntactic, and pragmatic features, as well as culturally specific references, that necessitate specialized modeling to improve natural language processing (NLP) performance on Cuban-specific tasks [@blodgett2020language].
 
 Cecilia 2B is the first iteration of what the authors expect to be a comprehensive project aimed at creating pretrained and fine-tunes language models in the Cuban Spanish variant for several model sizes, architectures, and domains.
 
 By focusing first on a relatively small model size of 2 billion parameters, Cecilia 2B balances computational efficiency with linguistic specialization, enabling deployment in resource-constrained environments common in Cuba and similar settings. This approach allows us to explore the optimal strategies for creating this type of resources, as well as facilitating broader accessibility and practical usage from the beginning of the project. The experienced obtained in this iteration of Cecilia will directly inform the development of future, larger models.
 
-The Cecilia 2B model is based on the Salamandra 2B architecture and was continual pretrained for two full epochs on a private corpus comprising approximately 1 billion tokens, including Cuban newspapers spanning a decade, the Cuban Online Encyclopedia, a comprehensive collection of Cuban laws, hundreds of Cuban literary works, local encyclopedias documenting Cubanisms, and song lyrics from prominent Cuban artists. This varied and culturally grounded dataset aims to guarantee Cecilia 2B internalizes both language patterns and cultural knowledge essential for Cuban Spanish NLP applications.
+The Cecilia 2B model is based on the Salamandra 2B [@gonzalez2025salamandra] architecture and was continual pretrained for two full epochs on a private corpus comprising approximately 1 billion tokens, including Cuban newspapers spanning a decade, the Cuban Online Encyclopedia, a comprehensive collection of Cuban laws, hundreds of Cuban literary works, local encyclopedias documenting Cubanisms, and song lyrics from prominent Cuban artists. This varied and culturally grounded dataset aims to guarantee Cecilia 2B internalizes both language patterns and cultural knowledge essential for Cuban Spanish NLP applications.
 
-Cecilia 2B is aimed at a range of NLP tasks such as text generation, sentiment analysis, named entity recognition, and machine translation, all tailored to Cuban Spanish. The model’s development reflects a growing trend in NLP research emphasizing the creation of smaller, domain- and dialect-specific models to democratize access to language technologies, preserve linguistic diversity, and provide more accurate and contextually relevant tools for speakers of underrepresented language varieties.
+Cecilia 2B is aimed at a range of NLP tasks such as text generation, sentiment analysis, named entity recognition, and machine translation, all tailored to Cuban Spanish. The model’s development reflects a growing trend in NLP research emphasizing the creation of smaller, domain- and dialect-specific models to democratize access to language technologies, preserve linguistic diversity, and provide more accurate and contextually relevant tools for speakers of underrepresented language varieties [@bommasani2021opportunities; @bender2021dangers].
 
 This technical report presents the design, training methodology, dataset composition, and potential applications of Cecilia 2B, highlighting its role as a foundational resource for Cuban Spanish NLP research and applications.
 
@@ -47,11 +96,11 @@ The remainder of this report is organized as follows: Section 2 describes the mo
 
 ## Model Architecture and Design
 
-Cecilia 2B is built upon the Salamandra 2B model, a transformer-based decoder-only language model developed by the Barcelona Supercomputing Center’s Language Technologies Unit. Salamandra 2B comprises approximately 2.25 billion parameters and employs a standard Transformer architecture with 24 layers, a hidden size of 2048, and 16 attention heads. It uses rotary positional embeddings (RoPE), SwiGLU activation functions, RMS normalization, and flash attention to optimize training stability and computational efficiency. The model supports a large context window of 8,192 tokens and a vocabulary size of 256K tokens, enabling it to handle diverse multilingual inputs effectively.
+Cecilia 2B is built upon the Salamandra 2B model [@gonzalez2025salamandra], a transformer-based decoder-only language model developed by the Barcelona Supercomputing Center’s Language Technologies Unit. Salamandra 2B comprises approximately 2.25 billion parameters and employs a standard Transformer architecture with 24 layers, a hidden size of 2048, and 16 attention heads. It uses rotary positional embeddings (RoPE), SwiGLU activation functions, RMS normalization, and flash attention to optimize training stability and computational efficiency. The model supports a large context window of 8,192 tokens and a vocabulary size of 256K tokens, enabling it to handle diverse multilingual inputs effectively.
 
 Salamandra 2B was chosen as the base model for Cecilia 2B due to its strong multilingual capabilities, efficient architecture, and open-source availability under an Apache 2.0 license, which facilitates fine-tuning and adaptation for specific language varieties. Its design balances model capacity and computational resource requirements, making it suitable for deployment in resource-constrained environments typical of Cuban NLP applications.
 
-Importantly, the architecture of Salamandra 2B was left unmodified in the development of Cecilia 2B, including the tokenizer and vocabulary. The adaptation to Cuban Spanish was applied exclusively through continual pretraining on a curated Cuban text corpus, ensuring that the model’s original structural and hyperparameter configurations remain intact. This approach aims to preserve the robustness and generalization properties of the base Salamandra 2B model while specializing its linguistic knowledge to the Cuban Spanish variant. However, it must be considered that words outside the original vocabulary (cubanisms and transliterated words, for example) will be harder to learn due to the nature of tokenization.
+Importantly, the architecture of Salamandra 2B was left unmodified in the development of Cecilia 2B, including the tokenizer and vocabulary. The adaptation to Cuban Spanish was applied exclusively through continual pretraining on a curated Cuban text corpus, ensuring that the model’s original structural and hyperparameter configurations remain intact. This approach aims to preserve the robustness and generalization properties of the base Salamandra 2B model while specializing its linguistic knowledge to the Cuban Spanish variant. However, it must be considered that words outside the original vocabulary (cubanisms and transliterated words, for example) will be harder to learn due to the nature of tokenization [@gururangan2020dont].
 
 ## Training Data and Procedure
 
@@ -59,12 +108,16 @@ The training corpus for Cecilia 2B comprises approximately 1 billion tokens of C
 
 All data was collected via web scraping under a fair use assumption and is intended solely for academic and research purposes. To respect copyright and intellectual property rights, the raw training data is not publicly available at the moment.
 
-A full report of the dataset composition is available [here](https://github.com/syalia-srl/cecilia/blob/main/report/data_report.md).
+A full report of the dataset composition is available [here](https://github.com/syalia-srl/cecilia/blob/main/report/data.md).
 
 ### Dataset Composition
 
+The Cecilia 2B training corpus is extensive, as shown in [@tbl-corpus-stats], comprising nearly 300,000 text files with a total of approximately 2.6 billion characters and an estimated 385 million words. This large volume of data ensures comprehensive linguistic coverage, enabling the model to learn a wide range of lexical and syntactic patterns specific to Cuban Spanish.
+
+::: {#tbl-corpus-stats}
+
 | Metric                  | Value               |
-| ----------------------- | ------------------- |
+|-------------------------|---------------------|
 | Total Files             | 296,311             |
 | Total Characters        | 2,631,691,355       |
 | Total Words             | 384,963,687         |
@@ -72,13 +125,15 @@ A full report of the dataset composition is available [here](https://github.com/
 | Average Document Length | 8,881 characters    |
 | Average Sentence Length | 17.0 words          |
 | Lexical Density         | 6.8 characters/word |
-
-The Cecilia 2B training corpus is extensive, comprising nearly 300,000 text files with a total of approximately 2.6 billion characters and an estimated 385 million words. This large volume of data ensures comprehensive linguistic coverage, enabling the model to learn a wide range of lexical and syntactic patterns specific to Cuban Spanish.
+:
+Basic corpus statistics.
+:::
 
 The average document length of 8,881 characters indicates the dataset includes a balanced mix of short and long texts, which is beneficial for training a model capable of understanding various discourse structures, from brief statements to extended narratives. An average sentence length of 17 words reflects moderately complex sentence constructions typical of formal written language, supporting the model’s ability to handle nuanced linguistic phenomena.
 
 The lexical density of 6.8 characters per word suggests a rich vocabulary with a diversity of word lengths, which contributes to the model’s capacity to represent the Cuban Spanish lexicon effectively. Overall, these statistics demonstrate that the dataset provides a robust foundation for continual pretraining, enabling Cecilia 2B to internalize the distinctive linguistic and cultural characteristics of Cuban Spanish.
 
+::: {#tbl-corpus-metrics}
 | Metric                               | Value         |
 | ------------------------------------ | ------------- |
 | Total Samples                        | 1,104,532     |
@@ -86,8 +141,11 @@ The lexical density of 6.8 characters per word suggests a rich vocabulary with a
 | Total Tokens (with padding)          | 1,131,040,768 |
 | Average Sequence Length (no padding) | 889.3 tokens  |
 | Padding Ratio                        | 13.2%         |
+:
+Tokenized corpus metrics.
+:::
 
-After tokenization, the dataset consists of over 1.1 million samples, with nearly one billion tokens excluding padding. The average sequence length is approximately 889 tokens, with sequences ranging from a single token up to the maximum context window size of 1024 tokens. The padding ratio of 13.2% indicates that a moderate portion of sequences required padding to reach the fixed length, which is typical for datasets with variable-length texts. The data was segmented into 959,008 context windows, each containing 1024 tokens, enabling the model to process long-range dependencies effectively during training.
+After tokenization, as shown in [@tbl-corpus-metrics], the dataset consists of over 1.1 million samples, with nearly one billion tokens excluding padding. The average sequence length is approximately 889 tokens, with sequences ranging from a single token up to the maximum context window size of 1024 tokens. The padding ratio of 13.2% indicates that a moderate portion of sequences required padding to reach the fixed length, which is typical for datasets with variable-length texts. The data was segmented into 959,008 context windows, each containing 1024 tokens, enabling the model to process long-range dependencies effectively during training.
 
 ### Training Procedure
 
@@ -101,6 +159,9 @@ Validation was performed both after each epoch and periodically every 640 traini
 
 Training was conducted over approximately 48 hours on a high-performance compute setup consisting of 2 NVIDIA A100 GPUs (40 GB each), an AMD EPYC CPU with 128 cores and 256 threads, and 1 TB of RAM.
 
+@tbl-training-params summarizes the training hyperparameters used for Cecilia 2B.
+
+::: {#tbl-training-params}
 | Parameter                   | Value         |
 | --------------------------- | ------------- |
 | Number of epochs            | 2             |
@@ -115,51 +176,58 @@ Training was conducted over approximately 48 hours on a high-performance compute
 | Beta1, Beta2                | 0.9, 0.999    |
 | Gradient clipping norm      | 1.0           |
 | Precision                   | bfloat16      |
+:
+Training Hyperparameters.
+:::
 
 ## Evaluation and Benchmarking
 
-| Task                     | Metric      | Salamandra 2B | Cecila 2B | Relative Error |
+:::{#tbl-eval-results}
+| Task                     | Metric      | Salamandra | Cecila | Rel Err |
 |--------------------------|-------------|---------------|-----------|---------------|
-| arc_challenge            | acc         | 0.37031       | 0.38225   | 3.13%         |
-| arc_easy                 | acc         | 0.72264       | 0.73401   | 1.55%         |
-| belebele_eng_Latn        | acc         | 0.21556       | 0.24778   | 13.00%        |
-| belebele_spa_Latn        | acc         | 0.22778       | 0.24444   | 6.82%         |
-| escola                   | acc         | 0.59259       | 0.55461   | -6.41%        |
-| openbookqa               | acc         | 0.30000       | 0.28200   | -6.00%        |
-| openbookqa_es            | acc         | 0.30800       | 0.29400   | -4.55%        |
-| paws_en                  | acc         | 0.56100       | 0.57350   | 2.18%         |
-| paws_es_spanish_bench    | acc         | 0.56050       | 0.55550   | -0.89%        |
-| piqa                     | acc         | 0.73721       | 0.73667   | -0.07%        |
-| social_iqa               | acc         | 0.45394       | 0.44626   | -1.69%        |
-| teca                     | acc         | 0.46481       | 0.43174   | -7.11%        |
-| wnli                     | acc         | 0.46479       | 0.42254   | -9.09%        |
-| wnli_es                  | acc         | 0.56338       | 0.59155   | 4.76%         |
-| xnli_en                  | acc         | 0.46225       | 0.47671   | 3.03%         |
-| xnli_va                  | acc         | 0.47505       | 0.48523   | 2.10%         |
-| xstorycloze_en           | acc         | 0.71145       | 0.70483   | -0.93%        |
-| xstorycloze_es           | acc         | 0.65255       | 0.65189   | -0.10%        |
-| arc_challenge            | acc_norm    | 0.40700       | 0.41809   | 2.65%         |
-| arc_easy                 | acc_norm    | 0.72559       | 0.73990   | 1.93%         |
-| belebele_eng_Latn        | acc_norm    | 0.21556       | 0.24778   | 13.00%        |
-| belebele_spa_Latn        | acc_norm    | 0.22778       | 0.24444   | 6.82%         |
-| openbookqa               | acc_norm    | 0.39600       | 0.40000   | 1.00%         |
-| openbookqa_es            | acc_norm    | 0.40800       | 0.40400   | -0.98%        |
-| piqa                     | acc_norm    | 0.74701       | 0.74701   | 0.00%         |
-| cocoteros_es             | bleu        | 8.46507       | 6.72269   | -20.58%       |
-| xlsum_es                 | bleu        | 0.80082       | 0.59723   | -25.42%       |
-| triviaqa                 | exact_match | 0.37595       | 0.35432   | -5.75%        |
-| xquad_es                 | exact_match | 0.37731       | 0.36050   | -4.45%        |
-| xquad_es                 | f1          | 0.58413       | 0.56911   | -2.57%        |
-| cocoteros_es             | rouge1      | 0.33887       | 0.31209   | -7.90%        |
-| xlsum_es                 | rouge1      | 0.13464       | 0.08705   | -35.35%       |
+| `arc_challenge`            | acc         | 0.37031       | 0.38225   | 3.13%         |
+| `arc_easy`                 | acc         | 0.72264       | 0.73401   | 1.55%         |
+| `belebele_en`        | acc         | 0.21556       | 0.24778   | 13.00%        |
+| `belebele_es`        | acc         | 0.22778       | 0.24444   | 6.82%         |
+| `escola`                   | acc         | 0.59259       | 0.55461   | -6.41%        |
+| `openbookqa`               | acc         | 0.30000       | 0.28200   | -6.00%        |
+| `openbookqa_es`            | acc         | 0.30800       | 0.29400   | -4.55%        |
+| `paws_en`                  | acc         | 0.56100       | 0.57350   | 2.18%         |
+| `paws_es`    | acc         | 0.56050       | 0.55550   | -0.89%        |
+| `piqa`                     | acc         | 0.73721       | 0.73667   | -0.07%        |
+| `social_iqa`               | acc         | 0.45394       | 0.44626   | -1.69%        |
+| `teca`                     | acc         | 0.46481       | 0.43174   | -7.11%        |
+| `wnli`                     | acc         | 0.46479       | 0.42254   | -9.09%        |
+| `wnli_es`                  | acc         | 0.56338       | 0.59155   | 4.76%         |
+| `xnli_en`                  | acc         | 0.46225       | 0.47671   | 3.03%         |
+| `xnli_va`                  | acc         | 0.47505       | 0.48523   | 2.10%         |
+| `xstorycloze_en`           | acc         | 0.71145       | 0.70483   | -0.93%        |
+| `xstorycloze_es`           | acc         | 0.65255       | 0.65189   | -0.10%        |
+| `arc_challenge`            | acc_norm    | 0.40700       | 0.41809   | 2.65%         |
+| `arc_easy`                 | acc_norm    | 0.72559       | 0.73990   | 1.93%         |
+| `belebele_en`        | acc_norm    | 0.21556       | 0.24778   | 13.00%        |
+| `belebele_es`        | acc_norm    | 0.22778       | 0.24444   | 6.82%         |
+| `openbookqa`               | acc_norm    | 0.39600       | 0.40000   | 1.00%         |
+| `openbookqa_es`            | acc_norm    | 0.40800       | 0.40400   | -0.98%        |
+| `piqa`                     | acc_norm    | 0.74701       | 0.74701   | 0.00%         |
+| `cocoteros_es`             | bleu        | 8.46507       | 6.72269   | -20.58%       |
+| `xlsum_es`                 | bleu        | 0.80082       | 0.59723   | -25.42%       |
+| `triviaqa`                 | exact_match | 0.37595       | 0.35432   | -5.75%        |
+| `xquad_es`                 | exact_match | 0.37731       | 0.36050   | -4.45%        |
+| `xquad_es`                 | f1          | 0.58413       | 0.56911   | -2.57%        |
+| `cocoteros_es`             | rouge1      | 0.33887       | 0.31209   | -7.90%        |
+| `xlsum_es`                 | rouge1      | 0.13464       | 0.08705   | -35.35%       |
+| | | | | |
 | **Mean Diff**            |             |               |           | **-2.43%**    |
+:
+Evaluation results in selected NLP tasks in English and Spanish, in comparison with Salamandra 2B.
+:::
 
+Evaluation of Cecilia 2B is still ongoing. At this stage, we present partial results focused on comparing Cecilia 2B to its base model, Salamandra 2B, across a broad suite of standard NLP benchmarks. These tasks include multiple-choice question answering, reading comprehension, paraphrase identification, natural language inference, summarization, translation, and open-domain question answering, in both English and Spanish. @tbl-eval-results summarizes the results of this comparison.
 
-Evaluation of Cecilia 2B is still ongoing. At this stage, we present partial results focused on comparing Cecilia 2B to its base model, Salamandra 2B, across a broad suite of standard NLP benchmarks. These tasks include multiple-choice question answering, reading comprehension, paraphrase identification, natural language inference, summarization, translation, and open-domain question answering, in both English and Spanish.
+The results show a nuanced picture. Cecilia 2B demonstrates improvements mainly in Spanish and multilingual understanding tasks (e.g., BELEBELE [@belebele], XNLI [@xnli], PAWS [@paws], and some science QA benchmarks [@arc]), reflecting the benefits of continual pretraining on a Cuban Spanish corpus.
 
-The results show a nuanced picture. Cecilia 2B demonstrates improvements mainly in Spanish and multilingual understanding tasks (e.g., BELEBELE, XNLI, PAWS, and some science QA benchmarks), reflecting the benefits of continual pretraining on a Cuban Spanish corpus.
-
-However, there are notable decreases in performance on general-purpose and English-centric tasks, as well as summarization and translation benchmarks (e.g., XSUM, Cocoteros, XQuAD, and some QA tasks). This is an expected trade-off when adapting a model to a novel language variant using continual pretraining, as some general capabilities may be partially sacrificed for increased in-domain specialization.
+However, there are notable decreases in performance on general-purpose and English-centric tasks, as well as summarization and translation benchmarks (e.g., XSUM, Cocoteros, XQuAD [@xquad], and some QA tasks [@openbookqa; @triviaqa]). This is an expected trade-off when adapting a model to a novel language variant using continual pretraining, as some general capabilities may be partially sacrificed for increased in-domain specialization [@goodfellow2013empirical].
 
 It is important to emphasize that these benchmarks are largely general-purpose and not specifically tailored to the Cuban Spanish variant for which Cecilia is intended. The observed average difference is a modest decrease of about 2.4% relative to Salamandra 2B across all tasks, with the largest drops in summarization and translation. This is consistent with expectations, as the model has not yet been fine-tuned for instruction following or for downstream tasks.
 
@@ -191,10 +259,12 @@ For this particular model, the next key step is to fine-tune Cecilia 2B on gener
 
 In parallel, we plan to develop increasingly powerful models by leveraging larger versions of the Salamandra architecture or exploring alternative base models that demonstrate strong performance and suitability for Cuban Spanish. These efforts aim to balance model capacity, efficiency, and cultural specificity, ultimately providing the community with a range of high-quality language models tailored to Cuban Spanish and related linguistic variants.
 
-One specific task that remains challenging is to retrain the tokenizer to better capture cubanisms and other terms that are split into distinct tokens by the Salamandra 2B tokenizer. Additionally, quantized versions of all Cecilia models will be published to enable efficient inference in production environments.
+One specific task that remains challenging is to retrain the tokenizer to better capture cubanisms and other terms that are split into distinct tokens by the Salamandra 2B tokenizer [@rust2021good]. Additionally, quantized versions of all Cecilia models will be published to enable efficient inference in production environments.
 
 ## Conclusions
 
 The development of Cecilia 2B represents an initial but promising step toward creating high-quality language models tailored specifically for Cuban Spanish. This work aims not only to address the linguistic and cultural particularities of this variant but also to lay a foundation for future advancements in Cuban Spanish natural language processing.
 
 We hope that this effort will inspire other communities across Latin America and similarly underserved language variants to build upon our experience, fostering a broader movement toward inclusive and diverse language technology development. We warmly invite researchers and practitioners interested in Cuban Spanish language modeling to collaborate, share insights, and contribute to the ongoing evolution of these resources, ultimately advancing the state of NLP for regional and minority language varieties.
+
+## References{.unnumbered}
