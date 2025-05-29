@@ -10,6 +10,7 @@ author:
   - Gabriel Hernández
   - Elena Rodríguez
   - Niley González
+  - Carla Pérez
   - Alejandro Beltrán
   - Juan Pablo Consuegra
   - Suilan Estévez
@@ -112,9 +113,52 @@ Training was conducted over approximately 48 hours on a high-performance compute
 
 ## Evaluation and Benchmarking
 
-The evaluation of Cecilia 2B is currently ongoing. The primary focus of this assessment is to measure the model’s ability to capture the linguistic and cultural nuances specific to the Cuban Spanish variant, which is critical for its intended applications. In addition to these variant-specific tests, standard evaluations for biases, fairness, and general language modeling capabilities are being conducted to ensure the model’s robustness and ethical soundness.
+| Task                     | Metric      | Salamandra 2B | Cecila 2B | Relative Error |
+|--------------------------|-------------|---------------|-----------|---------------|
+| arc_challenge            | acc         | 0.37031       | 0.38225   | 3.13%         |
+| arc_easy                 | acc         | 0.72264       | 0.73401   | 1.55%         |
+| belebele_eng_Latn        | acc         | 0.21556       | 0.24778   | 13.00%        |
+| belebele_spa_Latn        | acc         | 0.22778       | 0.24444   | 6.82%         |
+| escola                   | acc         | 0.59259       | 0.55461   | -6.41%        |
+| openbookqa               | acc         | 0.30000       | 0.28200   | -6.00%        |
+| openbookqa_es            | acc         | 0.30800       | 0.29400   | -4.55%        |
+| paws_en                  | acc         | 0.56100       | 0.57350   | 2.18%         |
+| paws_es_spanish_bench    | acc         | 0.56050       | 0.55550   | -0.89%        |
+| piqa                     | acc         | 0.73721       | 0.73667   | -0.07%        |
+| social_iqa               | acc         | 0.45394       | 0.44626   | -1.69%        |
+| teca                     | acc         | 0.46481       | 0.43174   | -7.11%        |
+| wnli                     | acc         | 0.46479       | 0.42254   | -9.09%        |
+| wnli_es                  | acc         | 0.56338       | 0.59155   | 4.76%         |
+| xnli_en                  | acc         | 0.46225       | 0.47671   | 3.03%         |
+| xnli_va                  | acc         | 0.47505       | 0.48523   | 2.10%         |
+| xstorycloze_en           | acc         | 0.71145       | 0.70483   | -0.93%        |
+| xstorycloze_es           | acc         | 0.65255       | 0.65189   | -0.10%        |
+| arc_challenge            | acc_norm    | 0.40700       | 0.41809   | 2.65%         |
+| arc_easy                 | acc_norm    | 0.72559       | 0.73990   | 1.93%         |
+| belebele_eng_Latn        | acc_norm    | 0.21556       | 0.24778   | 13.00%        |
+| belebele_spa_Latn        | acc_norm    | 0.22778       | 0.24444   | 6.82%         |
+| openbookqa               | acc_norm    | 0.39600       | 0.40000   | 1.00%         |
+| openbookqa_es            | acc_norm    | 0.40800       | 0.40400   | -0.98%        |
+| piqa                     | acc_norm    | 0.74701       | 0.74701   | 0.00%         |
+| cocoteros_es             | bleu        | 8.46507       | 6.72269   | -20.58%       |
+| xlsum_es                 | bleu        | 0.80082       | 0.59723   | -25.42%       |
+| triviaqa                 | exact_match | 0.37595       | 0.35432   | -5.75%        |
+| xquad_es                 | exact_match | 0.37731       | 0.36050   | -4.45%        |
+| xquad_es                 | f1          | 0.58413       | 0.56911   | -2.57%        |
+| cocoteros_es             | rouge1      | 0.33887       | 0.31209   | -7.90%        |
+| xlsum_es                 | rouge1      | 0.13464       | 0.08705   | -35.35%       |
+| **Mean Diff**            |             |               |           | **-2.43%**    |
 
-As Cecilia 2B is presently only pretrained and has not undergone instruction tuning or task-specific fine-tuning, comprehensive evaluations on downstream tasks such as question answering, dialogue generation, or other domain-specific applications remain pending. These more specialized assessments will be addressed in future work, following the development of an instruction-tuned version of Cecilia that can better support interactive and task-oriented use cases.
+
+Evaluation of Cecilia 2B is still ongoing. At this stage, we present partial results focused on comparing Cecilia 2B to its base model, Salamandra 2B, across a broad suite of standard NLP benchmarks. These tasks include multiple-choice question answering, reading comprehension, paraphrase identification, natural language inference, summarization, translation, and open-domain question answering, in both English and Spanish.
+
+The results show a nuanced picture. Cecilia 2B demonstrates improvements mainly in Spanish and multilingual understanding tasks (e.g., BELEBELE, XNLI, PAWS, and some science QA benchmarks), reflecting the benefits of continual pretraining on a Cuban Spanish corpus.
+
+However, there are notable decreases in performance on general-purpose and English-centric tasks, as well as summarization and translation benchmarks (e.g., XSUM, Cocoteros, XQuAD, and some QA tasks). This is an expected trade-off when adapting a model to a novel language variant using continual pretraining, as some general capabilities may be partially sacrificed for increased in-domain specialization.
+
+It is important to emphasize that these benchmarks are largely general-purpose and not specifically tailored to the Cuban Spanish variant for which Cecilia is intended. The observed average difference is a modest decrease of about 2.4% relative to Salamandra 2B across all tasks, with the largest drops in summarization and translation. This is consistent with expectations, as the model has not yet been fine-tuned for instruction following or for downstream tasks.
+
+Crucially, we do not yet have results on new or custom tasks that target the unique linguistic and cultural phenomena of Cuban Spanish--the primary motivation for Cecilia’s development. As Cecilia 2B is presently only pretrained and has not undergone instruction tuning or task-specific fine-tuning, comprehensive evaluations on downstream tasks such as question answering, dialogue generation, or other domain-specific applications remain pending. These more specialized assessments will be addressed in future work, following the development of an instruction-tuned version of Cecilia that can better support interactive and task-oriented use cases.
 
 ## Applications and Use Cases
 
