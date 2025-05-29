@@ -12,7 +12,7 @@ of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dls
 of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 
 - [Download to model weights from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
-- [Read the Technical Report]([report/Cecilia-Tech-Report.pdf](https://github.com/syalia-srl/cecilia/blob/main/report/Cecilia-Tech-Report.pdf)).
+- [Read the Technical Report](https://github.com/syalia-srl/cecilia/blob/main/report/Cecilia-Tech-Report.pdf).
 
 ## Training Data
 
