@@ -5,6 +5,7 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "fireworks-ai>=0.17.16",
     "httpx>=0.28.1",
     "huggingface-hub[cli]>=0.32.3",
     "libzim>=3.7.0",
