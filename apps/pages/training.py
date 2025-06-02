@@ -7,7 +7,6 @@ import json
 st.set_page_config(
     page_title="Cecilia - The Cuban Language Model", page_icon="logo.png", layout="wide"
 )
-st.logo("logo.png", size="large")
 
 
 st.markdown("## Entrenamiento de Cecilia")
@@ -25,7 +24,7 @@ if not st.session_state.get("accepted_terms", False):
         "Entiendo que no debo proporcionar datos que puedan identificar a niguna persona."
     )
 
-    if t1 and t2 and t3 and st.button("Continuar"):
+    if t1 and t2 and t3 and st.button("Continuar", type="primary"):
         st.session_state.accepted_terms = True
         st.rerun()
 
@@ -40,7 +39,7 @@ st.info(
 if not "training_example" in st.session_state:
     st.session_state.training_example = []
 
-left, right = st.columns([3, 1])
+left, right = st.columns([2, 1])
 
 with left:
     for message in st.session_state.training_example:
@@ -71,6 +70,12 @@ with right:
         selection_mode="multi",
     )
 
+    context = st.text_area(
+        "Contexto adicional (opcional)",
+        placeholder="Información adicional para verificar la información factual del ejemplo.",
+        key="context",
+    )
+
     if st.session_state.training_example and st.button("Borrar último mensaje"):
         st.session_state.training_example.pop()
         st.rerun()
@@ -82,7 +87,7 @@ with right:
     if (
         len(st.session_state.training_example) >= 2
         and len(st.session_state.training_example) % 2 == 0
-        and st.button("Enviar ejemplo de entrenamiento")
+        and st.button("Enviar ejemplo", type="primary")
     ):
 
         message_id = str(uuid4())
@@ -90,6 +95,8 @@ with right:
             id=message_id,
             example_type=example_type,
             tags=tags,
+            context=context,
+            created_at=time.strftime("%Y-%m-%d %H:%M:%S"),
             messages=st.session_state.training_example,
         )
 

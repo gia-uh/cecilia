@@ -1,0 +1,8 @@
+[client]
+
+showErrorDetails = "none"
+toolbarMode = "minimal"
+showSidebarNavigation = false
+
+[theme]
+base = "light"
