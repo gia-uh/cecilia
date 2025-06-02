@@ -5,7 +5,7 @@ These models are designed to support natural language processing tasks with a fo
 
 ## About Cecilia 2B v0.1
 
-This repository contains **Cecilia 2B v0.1**, a 2 billion parameter model continual pretrained on Cuban written text from [Salamandra 2B](BSC-LT/salamandra-2b).
+This repository contains **Cecilia 2B v0.1**, a 2 billion parameter model continual pretrained on Cuban written text from [Salamandra 2B](https://huggingface.co/BSC-LT/salamandra-2b).
 
 The model is developed by the [Artificial Intelligence Research Group (GIA-UH)](https://gia-uh.github.io/) at the [University of Havana](https://www.uh.cu/) with the collaboration
 of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dlsi.ua.es/) at the [University of Alicante](https://www.ua.es/) and the support
@@ -100,7 +100,7 @@ If you use **Cecilia 2B v0.1 - The Cuban Language Model** in your research, plea
 Ernesto L. Estevanell-Valladares, Suilan Estevez-Velarde, Alejandro Piad-Morffis, and Yudivian Almeida-Cruz. (2025). *cecilia-2b-v0.1 (Revision 1921f36)*. Hugging Face. https://huggingface.co/gia-uh/cecilia-2b-v0.1. DOI: 10.57967/hf/5667
 
 ```bibtex
-@misc{ernesto_l._estevanell-valladares_2025,
+@misc{cecilia2b,
   author       = { Ernesto L. Estevanell-Valladares and Suilan Estevez-Velarde and Alejandro Piad-Morffis and Yudivian Almeida-Cruz },
   title        = { Cecilia 2B v0.1 - The Cuban Language Model },
   year         = 2025,
@@ -109,8 +109,6 @@ Ernesto L. Estevanell-Valladares, Suilan Estevez-Velarde, Alejandro Piad-Morffis
   publisher    = { Hugging Face }
 }
 ```
-
-For more citation options, see the [CITATION.cff](./CITATION.cff) file.
 
 ## Team
 
@@ -125,4 +123,4 @@ Elena Rodríguez, Niley González, Alejandro Beltrán, Juan Pablo Consuegra, Sui
 
 We thank all contributors and data providers who made this work possible.
 
-This work was partially funded by the [ILENIA](https://proyectoilenia.es/)-[VIVES](https://vives.gplsi.es/) project <<2022/TL22/00215334>>, and by private funding from [Syalia SRL](https://syalia.com) and [Epistemial](https://epistemial.com/).
+This work was partially funded by the [ILENIA](https://proyectoilenia.es/)-[VIVES](https://vives.gplsi.es/) project `2022/TL22/00215334`, and by private funding from [Syalia SRL](https://syalia.com) and [Epistemial](https://epistemial.com/).
