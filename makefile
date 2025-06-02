@@ -1,5 +1,5 @@
 # Makefile for managing the Cecilia 2B model
-.PHONY: help all download upload
+.PHONY: help all download upload apps
 
 help:
 	@echo "Usage:"
@@ -14,3 +14,6 @@ download:
 
 upload:
 	firectl upload model cecilia-2b-v0p1 models/2b
+
+apps:
+	streamlit run apps/app.py

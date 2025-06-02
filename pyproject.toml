@@ -20,3 +20,7 @@ dependencies = [
 dev = [
     "model-quantizer>=0.2.1",
 ]
+apps = [
+    "openai>=1.82.1",
+    "streamlit>=1.45.1",
+]
