@@ -22,7 +22,7 @@ if not st.session_state.get("accepted_terms", False):
         "Acepto que los datos proporcionados por mi serán utilizados para entrenar el modelo."
     )
     t3 = st.checkbox(
-        "Entiendo que no debo proporcionar datos falsos o que puedan identificar a niguna persona."
+        "Entiendo que no debo proporcionar datos que puedan identificar a niguna persona."
     )
 
     if t1 and t2 and t3 and st.button("Continuar"):
@@ -50,7 +50,7 @@ with left:
 with right:
     example_type = st.selectbox(
         "Tipo de ejemplo",
-        ["Conversación", "Pregunta y respuesta", "Instrucción"],
+        ["Pregunta", "Instrucción", "Conversación"],
         index=0,
         key="example_type",
     )
