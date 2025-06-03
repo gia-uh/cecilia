@@ -16,21 +16,40 @@ if not st.session_state.get("accepted_terms", False):
     with open("apps/training_instructions.md", "r") as f:
         st.markdown(f.read())
 
+    st.info(
+        """A continuación le solicitamos sus datos personales e información de contacto,
+            exclusivamente con el propósito de evaluar y validar la relevancia y correctitud
+            de los ejemplos de entrenamiento que usted proporcione. En ningún caso sus datos
+            personales serán usadon como parte del entrenamiento ni compartidos con terceros."""
+    )
+
+    cols = st.columns(3)
+
+    name = cols[0].text_input("Nombre y apellidos")
+    institution = cols[1].text_input("Institución")
+    email = cols[2].text_input("Correo electrónico")
+
     t1 = st.checkbox("He leído y entendido las instrucciones anteriores.")
     t2 = st.checkbox(
-        "Acepto que los datos proporcionados por mi serán utilizados para entrenar el modelo."
+        "Acepto que los ejemplos de entrenamiento proporcionados por mi serán utilizados para entrenar el modelo."
     )
     t3 = st.checkbox(
-        "Entiendo que no debo proporcionar datos que puedan identificar a niguna persona."
+        "Entiendo que no debo proporcionar datos en ningún ejemplo de entrenamiento que puedan identificar a niguna persona."
     )
+
+    if not name or not institution or not email:
+        st.stop()
 
     if t1 and t2 and t3 and st.button("Continuar", type="primary"):
         st.session_state.accepted_terms = True
+        st.session_state.contact_info = dict(
+            name=name,
+            institution=institution,
+            email=email,
+        )
         st.rerun()
 
     st.stop()
-
-
 
 
 if not "training_example" in st.session_state:
@@ -41,13 +60,12 @@ left, right = st.columns([2, 1])
 with left:
     if not st.session_state.training_example:
         st.info(
-            "Utilice la caja de texto para construir un ejemplo de entrenamiento para Cecilia. Comenzará con el rol de usuario, y luego podrá responder como asistente. Una vez que haya terminado, haga clic en el botón **Enviar** para enviar el ejemplo."
+            "Utilice la caja de texto para construir un ejemplo de entrenamiento para Cecilia. Comenzará con el rol de usuario, y luego podrá responder como asistente. Asegúrese de seleccionar las etiquetas relevantes. Una vez que haya terminado, haga clic en el botón **Enviar ejemplo actual** para enviar el ejemplo."
         )
 
     for message in st.session_state.training_example:
         with st.chat_message(message["role"]):
             st.write(message["content"])
-
 
     if st.session_state.training_example and st.button("Borrar último mensaje"):
         st.session_state.training_example.pop()
@@ -55,6 +73,22 @@ with left:
 
     if st.session_state.training_example and st.button("Borrar todo"):
         st.session_state.training_example.clear()
+        st.rerun()
+
+    current_role = (
+        "user" if len(st.session_state.training_example) % 2 == 0 else "assistant"
+    )
+
+    match current_role:
+        case "user":
+            placeholder = "Escriba el mensaje del usuario"
+        case "assistant":
+            placeholder = "Escriba la respuesta del asistente"
+
+    if prompt := st.chat_input(placeholder, key="training_input"):
+        st.session_state.training_example.append(
+            {"role": current_role, "content": prompt}
+        )
         st.rerun()
 
 
@@ -68,34 +102,45 @@ with right:
     tags = st.pills(
         "Etiquetas",
         [
-            "cultura",
-            "salud",
-            "ciencia",
             "arte",
+            "ciencia",
+            "cultura",
+            "deporte",
+            "economía",
             "historia",
             "política",
-            "economía",
-            "coloquial",
+            "salud",
+            "casual",
             "otros",
         ],
         key="tags",
         selection_mode="multi",
+        help="Seleccione una o más etiquetas según el contexto o dominio de la conversación.",
     )
 
     context = st.text_area(
         "Contexto adicional (opcional)",
         placeholder="Información adicional para verificar la información factual del ejemplo.",
         key="context",
+        help="Puede incluir texto libre, referencias bibliográficas, y/o links a recursos donde verificar la factualidad de la conversación, en caso de ser necesario.",
     )
 
-    if st.button("Enviar ejemplo", type="primary", disabled=(
-        len(st.session_state.training_example) < 2
-        or len(st.session_state.training_example) % 2 == 1
-    )):
+    if st.button(
+        "Enviar ejemplo actual",
+        type="primary",
+        use_container_width=True,
+        disabled=(
+            len(st.session_state.training_example) < 2
+            or len(st.session_state.training_example) % 2 == 1
+            or len(tags) == 0
+        ),
+        help="Aségurese de tener al menos un mensaje de cada rol (usuario y asistente), y haber seleccionado al menos un tag.",
+    ):
 
         message_id = str(uuid4())
         data = dict(
             id=message_id,
+            contact_info=st.session_state.contact_info,
             example_type=example_type,
             tags=tags,
             context=context,
@@ -110,14 +155,3 @@ with right:
         st.toast("Ejemplo de entrenamiento enviado correctamente.", icon="✅")
         time.sleep(2)
         st.rerun()
-
-
-current_role = (
-    "user" if len(st.session_state.training_example) % 2 == 0 else "assistant"
-)
-
-if prompt := st.chat_input(
-    current_role.capitalize() + " (escriba su mensaje aquí)", key="training_input"
-):
-    st.session_state.training_example.append({"role": current_role, "content": prompt})
-    st.rerun()
