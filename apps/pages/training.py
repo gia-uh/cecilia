@@ -9,9 +9,6 @@ st.set_page_config(
 )
 
 
-st.markdown("## Entrenamiento de Cecilia")
-
-
 if not st.session_state.get("accepted_terms", False):
     with open("apps/training_instructions.md", "r") as f:
         st.markdown(f.read())
@@ -58,22 +55,33 @@ if not "training_example" in st.session_state:
 left, right = st.columns([2, 1])
 
 with left:
-    if not st.session_state.training_example:
-        st.info(
-            "Utilice la caja de texto para construir un ejemplo de entrenamiento para Cecilia. Comenzará con el rol de usuario, y luego podrá responder como asistente. Asegúrese de seleccionar las etiquetas relevantes. Una vez que haya terminado, haga clic en el botón **Enviar ejemplo actual** para enviar el ejemplo."
-        )
+    st.info(
+        "Utilice la caja de texto para construir un ejemplo de entrenamiento para Cecilia. Comenzará con el rol de usuario, y luego podrá responder como asistente. Asegúrese de seleccionar las etiquetas relevantes. Una vez que haya terminado, haga clic en el botón **Enviar ejemplo actual** para enviar el ejemplo."
+    )
 
     for message in st.session_state.training_example:
         with st.chat_message(message["role"]):
             st.write(message["content"])
 
-    if st.session_state.training_example and st.button("Borrar último mensaje"):
-        st.session_state.training_example.pop()
-        st.rerun()
+    def on_conversation_control():
+        control = st.session_state.conversation_controls
 
-    if st.session_state.training_example and st.button("Borrar todo"):
-        st.session_state.training_example.clear()
-        st.rerun()
+        match control:
+            case "Borrar último":
+                st.session_state.training_example.pop()
+            case "Borrar todo":
+                st.session_state.training_example.clear()
+
+        st.session_state.conversation_controls = None
+
+    if st.session_state.training_example:
+        st.segmented_control(
+            "Controles de conversación",
+            ["Borrar último", "Borrar todo"],
+            label_visibility="collapsed",
+            key="conversation_controls",
+            on_change=on_conversation_control,
+        )
 
     current_role = (
         "user" if len(st.session_state.training_example) % 2 == 0 else "assistant"
@@ -152,6 +160,6 @@ with right:
             json.dump(data, f, ensure_ascii=False, indent=4)
 
         st.session_state.training_example.clear()
-        st.toast("Ejemplo de entrenamiento enviado correctamente.", icon="✅")
-        time.sleep(2)
+        st.toast("Ejemplo enviado correctamente.", icon="✅")
+        time.sleep(1)
         st.rerun()
