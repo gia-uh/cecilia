@@ -31,9 +31,6 @@ if not st.session_state.get("accepted_terms", False):
     st.stop()
 
 
-st.info(
-    "Utilice la caja de texto para construir un ejemplo de entrenamiento para Cecilia. Comenzará con el rol de usuario, y luego podrá responder como asistente. Una vez que haya terminado, haga clic en el botón **Enviar** para enviar el ejemplo."
-)
 
 
 if not "training_example" in st.session_state:
@@ -42,9 +39,24 @@ if not "training_example" in st.session_state:
 left, right = st.columns([2, 1])
 
 with left:
+    if not st.session_state.training_example:
+        st.info(
+            "Utilice la caja de texto para construir un ejemplo de entrenamiento para Cecilia. Comenzará con el rol de usuario, y luego podrá responder como asistente. Una vez que haya terminado, haga clic en el botón **Enviar** para enviar el ejemplo."
+        )
+
     for message in st.session_state.training_example:
         with st.chat_message(message["role"]):
             st.write(message["content"])
+
+
+    if st.session_state.training_example and st.button("Borrar último mensaje"):
+        st.session_state.training_example.pop()
+        st.rerun()
+
+    if st.session_state.training_example and st.button("Borrar todo"):
+        st.session_state.training_example.clear()
+        st.rerun()
+
 
 with right:
     example_type = st.selectbox(
@@ -76,19 +88,10 @@ with right:
         key="context",
     )
 
-    if st.session_state.training_example and st.button("Borrar último mensaje"):
-        st.session_state.training_example.pop()
-        st.rerun()
-
-    if st.session_state.training_example and st.button("Borrar todo"):
-        st.session_state.training_example.clear()
-        st.rerun()
-
-    if (
-        len(st.session_state.training_example) >= 2
-        and len(st.session_state.training_example) % 2 == 0
-        and st.button("Enviar ejemplo", type="primary")
-    ):
+    if st.button("Enviar ejemplo", type="primary", disabled=(
+        len(st.session_state.training_example) < 2
+        or len(st.session_state.training_example) % 2 == 1
+    )):
 
         message_id = str(uuid4())
         data = dict(
