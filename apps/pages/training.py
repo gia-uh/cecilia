@@ -14,10 +14,12 @@ if not st.session_state.get("accepted_terms", False):
         st.markdown(f.read())
 
     st.info(
-        """A continuación le solicitamos sus datos personales e información de contacto,
-            exclusivamente con el propósito de evaluar y validar la relevancia y correctitud
-            de los ejemplos de entrenamiento que usted proporcione. En ningún caso sus datos
-            personales serán usadon como parte del entrenamiento ni compartidos con terceros."""
+        """
+        A continuación le solicitamos sus datos personales e información de contacto,
+        exclusivamente con el propósito de evaluar y validar la relevancia y correctitud
+        de los ejemplos de entrenamiento que usted proporcione. En ningún caso sus datos
+        personales serán usadon como parte del entrenamiento ni compartidos con terceros.
+        """
     )
 
     cols = st.columns(3)

@@ -11,8 +11,8 @@ The model is developed by the [Artificial Intelligence Research Group (GIA-UH)](
 of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dlsi.ua.es/) at the [University of Alicante](https://www.ua.es/) and the support
 of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 
-- [Download to model weights from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
-- [Read the Technical Report](https://cecilia.uhgia.org/report.pdf).
+- [Download Model from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
+- [Read the Technical Report](https://cecilia.uhgia.org/report).
 
 ## Training Data
 
@@ -97,7 +97,9 @@ By using Cecilia, you agree to apply it ethically and responsibly, understanding
 
 If you use **Cecilia 2B v0.1 - The Cuban Language Model** in your research, please cite it as:
 
-Ernesto L. Estevanell-Valladares, Suilan Estevez-Velarde, Alejandro Piad-Morffis, and Yudivian Almeida-Cruz. (2025). *cecilia-2b-v0.1 (Revision 1921f36)*. Hugging Face. https://huggingface.co/gia-uh/cecilia-2b-v0.1. DOI: 10.57967/hf/5667
+> Ernesto L. Estevanell-Valladares, Suilan Estevez-Velarde, Alejandro Piad-Morffis, and Yudivian Almeida-Cruz. (2025). *cecilia-2b-v0.1 (Revision 1921f36)*. Hugging Face. https://huggingface.co/gia-uh/cecilia-2b-v0.1. DOI: [10.57967/hf/5667](https://doi.org/10.57967/hf/5667)
+
+If using LaTeX, please use the following bibTeX entry:
 
 ```bibtex
 @misc{cecilia2b,
@@ -117,7 +119,7 @@ The model could not have been created without the commitment and work of members
 *GIA-UH* - Ernesto L. Estevanell, Daniel A. Valdés, Roberto Marti, Deborah Famadas, Roberto García, Gabriel Hernández,
 Elena Rodríguez, Niley González, Alejandro Beltrán, Juan Pablo Consuegra, Suilan Estévez, Alejandro Piad, Yudivián Almeida.
 
-*GPLSI* -  Robiert Sepúlveda, Yoan Gutiérrez, Rafael Muñoz, Andrés Montoyo, Manuel Palomar.
+*GPLSI* - Robiert Sepúlveda, Yoan Gutiérrez, Rafael Muñoz, Andrés Montoyo, Manuel Palomar.
 
 ## Acknowledgments
 
