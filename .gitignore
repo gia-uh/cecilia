@@ -174,3 +174,9 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+ift_tool/data/*
+ift_tool/results/*
+
+!ift_tool/data/.gitkeep
+!ift_tool/results/.gitkeep
