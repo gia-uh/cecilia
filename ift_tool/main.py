@@ -1,11 +1,11 @@
 import json
 from extract_contexts import extract_contexts
+from json_formatter import transform_file
 from llm import OpenAIGenerator
 from prompts import INSTRUCTIONS_GENERATOR, CLASSIFICATION
 from pydantic import BaseModel, Field
 from typing import List
 from enum import Enum
-
 
 class YesNoEnum(str, Enum):
     YES = "Yes"
@@ -29,7 +29,7 @@ class Classifier(BaseModel):
 
 
 def main():
-    extract_contexts(data_folder="data/ecured/salud", num_contexts=1000, output_file="results/ecured_contexts.json", chunk_size=2000)
+    extract_contexts(data_folder="data/ecured/salud", num_contexts=50, output_file="results/ecured_contexts.json", chunk_size=2000)
     with open("results/ecured_contexts.json", "r", encoding="utf-8") as f:
         contexts = [json.loads(line)["context"] for line in f]
 
@@ -46,23 +46,20 @@ def main():
             print(f"Clasificación del contexto {i}: {classification}")
 
 
-            with open(log_path, "a", encoding="utf-8") as log_file:
-                info = {
-                    "id": i,
-                    "classification": classification,
-                    "context": ctx
-                }
-                log_file.write(json.dumps(info, ensure_ascii=False) + "\n")
-                log_file.flush()
-
             if classification == YesNoEnum.YES:
                 prompt = INSTRUCTIONS_GENERATOR.format(topic=topic, context=ctx)
                 response = generator.generate_json(prompt=prompt, json_model=Conversation)
                 result = response.choices[0].message.parsed.model_dump()
 
+                info ={
+                    "id": i,
+                    "classification": classification,
+                    "context": ctx,
+                    "questions": result
+                }
 
                 with open(output_path, "a", encoding="utf-8") as out_file:
-                    out_file.write(json.dumps(result, ensure_ascii=False) + "\n")
+                    out_file.write(json.dumps(info, ensure_ascii=False) + "\n")
                     out_file.flush()
 
                 print(f"✅ Ejemplo {i} guardado.")
@@ -71,6 +68,9 @@ def main():
 
         except Exception as e:
             print(f"❌ Error al procesar contexto {i}: {e}")
+
+    formatted_path = "results/formatted_conversations.json" 
+    transform_file(input_path=output_path, output_path=formatted_path)
 
 
 if __name__ == "__main__":
