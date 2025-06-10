@@ -7,6 +7,7 @@ st.image("logo.png", width=300)
 patterns = {
     "Download Model from HuggingFace": lambda l,u: st.link_button(label=l, url=u, type="primary", icon="🌟"),
     "Read the Technical Report": lambda l,u: st.link_button(label=l, url="./report", type="secondary", icon="📑"),
+    "Help us improve Cecilia": lambda l,u: st.link_button(label=l, url="./training", type="secondary", icon="💝"),
 }
 
 with open("README.md", "r") as f:

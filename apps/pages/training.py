@@ -18,7 +18,7 @@ if not st.session_state.get("accepted_terms", False):
         A continuación le solicitamos sus datos personales e información de contacto,
         exclusivamente con el propósito de evaluar y validar la relevancia y correctitud
         de los ejemplos de entrenamiento que usted proporcione. En ningún caso sus datos
-        personales serán usadon como parte del entrenamiento ni compartidos con terceros.
+        personales serán usados como parte del entrenamiento ni compartidos con terceros.
         """
     )
 
@@ -33,7 +33,7 @@ if not st.session_state.get("accepted_terms", False):
         "Acepto que los ejemplos de entrenamiento proporcionados por mi serán utilizados para entrenar el modelo."
     )
     t3 = st.checkbox(
-        "Entiendo que no debo proporcionar datos en ningún ejemplo de entrenamiento que puedan identificar a niguna persona."
+        "Entiendo que no debo proporcionar datos en ningún ejemplo de entrenamiento que puedan identificar a ninguna persona."
     )
 
     if not name or not institution or not email:
