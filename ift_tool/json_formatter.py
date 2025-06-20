@@ -11,14 +11,15 @@ AUTHOR_INSTITUTION = "Universidad de La Habana"
 def transform_entry(entry):
     messages = []
 
-    # Nombres explícitos en lugar de f-strings
     q_keys = ["question_one", "question_two", "question_three"]
     a_keys = ["answer_one", "answer_two", "answer_three"]
 
+    questions = entry.get("questions", {})
+
     for q_key, a_key in zip(q_keys, a_keys):
-        if q_key in entry and a_key in entry and entry[q_key] and entry[a_key]:
-            messages.append({"role": "user", "content": entry[q_key]})
-            messages.append({"role": "assistant", "content": entry[a_key]})
+        if questions.get(q_key) and questions.get(a_key):
+            messages.append({"role": "user", "content": questions[q_key]})
+            messages.append({"role": "assistant", "content": questions[a_key]})
 
     return {
         "id": str(uuid4()),
@@ -28,11 +29,12 @@ def transform_entry(entry):
             "email": AUTHOR_EMAIL
         },
         "example_type": "Pregunta",
-        "tags": entry.get("label", []),
+        "tags": questions.get("label", []),
         "context": entry.get("context", ""),
         "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "messages": messages
     }
+
 
 def transform_file(input_path: str, output_path: str):
     input_file = Path(input_path)

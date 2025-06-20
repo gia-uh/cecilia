@@ -29,7 +29,7 @@ class Classifier(BaseModel):
 
 
 def main():
-    extract_contexts(data_folder="data/ecured/salud", num_contexts=50, output_file="results/ecured_contexts.json", chunk_size=2000)
+    extract_contexts(data_folder="data/medicina", num_contexts=20, output_file="results/ecured_contexts.json", chunk_size=2000)
     with open("results/ecured_contexts.json", "r", encoding="utf-8") as f:
         contexts = [json.loads(line)["context"] for line in f]
 
