@@ -24,3 +24,9 @@ apps = [
     "openai>=1.82.1",
     "streamlit>=1.45.1",
 ]
+training = [
+    "model-quantizer[all]>=0.2.1",
+    "peft>=0.16.0",
+    "tensorflow[and-cuda]>=2.19.0",
+    "transformers>=4.52.4",
+]
