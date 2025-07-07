@@ -20,7 +20,7 @@ of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 
 ## Training Data
 
-Cecilia Tiny was continual pretrained for 2 full epochs on a private corpus of approximately 600 million tokens of Cuban written text, including:
+Cecilia Tiny was continual pretrained for 2 full epochs on a private corpus of approximately 1000 million tokens of Cuban written text, including:
 
 - 10 years of the most relevant Cuban newspapers.
 - The Cuban Encyclopedia (ecured.cu).
