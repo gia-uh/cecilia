@@ -1,14 +1,16 @@
 import streamlit as st
 
-st.set_page_config(page_title="Cecilia - The Cuban Language Model", page_icon="logo.png")
+st.set_page_config(page_title="Cecilia - The Cuban Language Model", page_icon="logo.png", layout="wide")
 
-st.image("logo.png", width=300)
 
 patterns = {
     "Download Model from HuggingFace": lambda l,u: st.link_button(label=l, url=u, type="primary", icon="🌟"),
     "Read the Technical Report": lambda l,u: st.link_button(label=l, url="./report", type="secondary", icon="📑"),
     "Help us improve Cecilia": lambda l,u: st.link_button(label=l, url="./training", type="secondary", icon="💝"),
 }
+
+left_col, right_col = st.columns([1,2], gap="large")
+left_col.image("logo.png", use_column_width=True)
 
 with open("README.md", "r") as f:
     readme_content = f.readlines()
@@ -18,7 +20,7 @@ fragment = []
 for line in readme_content:
     if line.startswith("- [") and "https" in line:
         if fragment:
-            st.markdown("".join(fragment))
+            right_col.markdown("".join(fragment))
             fragment.clear()
 
         left, right = line.split("](")
@@ -28,12 +30,12 @@ for line in readme_content:
         if left in patterns:
             patterns[left](left, right)
         else:
-            st.link_button(left, right)
+            right_col.link_button(left, right)
 
     else:
         fragment.append(line)
 
 
 if fragment:
-    st.markdown("".join(fragment))
+    right_col.markdown("".join(fragment))
     fragment.clear()

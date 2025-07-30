@@ -1,8 +1,18 @@
+## Bienvenido
+
+Esta página le permite puede colaborar con el proyecto [**Cecilia**](https://cecilia.uhgia.org) para mejorar la calidad de las respuestas del modelo.
+
+Cecilia es un proyecto para crear modelos de lenguaje especialmente diseñados para capturar las particularidades de la variante cubana del idioma español, así como aprender de nuestra cultura, raíces, idiosincracia, e historia.
+
+Actualmente, estamos entrenando la primera versión, **Cecilia 2B**, un modelo basado en Salamandra 2B, y entrenado en más de un billón de tokens de textos de literatura, historia, noticias, artículos científicos y enciclopédicos, letras de canciones, y más, todos de autores cubanos.
+
+En este momento **Cecilia 2B** ha terminado su fase de entrenamiento base, y se encuentra en fase de entrenamiento de instrucciones. Para esto necesitamos construir un corpus de instrucciones escritas por hablantes nativos, que permitan a Cecilia aprender a responder a preguntas, dar sugerencias, seguir instrucciones, o simplemente entablar conversaciones casuales en buen cubano.
+
+Su ayuda es crucial para este proyecto!
+
 ### Lea detenidamente antes de comenzar
 
-En esta sección usted puede colaborar con el proyecto Cecilia para mejorar la calidad de las respuestas del modelo.
-
-Cada ejemplo de instrucción consiste en una secuencia de uno o más intercambios entre un usuario y un asistente. El objetivo es proporcionar ejemplos que representen interacciones útiles y relevantes.
+Cada ejemplo de instrucción que usted proveerá consiste en una secuencia de uno o más intercambios entre un usuario y Cecilia. El objetivo es proporcionar ejemplos que representen interacciones útiles y relevantes.
 
 Los tipos de instrucciones pueden incluir:
 
