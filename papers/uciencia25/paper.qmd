@@ -20,7 +20,9 @@ Building on this foundation, the **CecilIA**[^1] project aims to address the lac
 
 [^1]: <https://cecilia.uhgia.org>
 
-This paper introduces Cecilia 2B, a 2-billion-parameter language model continually pretrained on a newly constructed corpus of approximately 1 billion tokens of Cuban written text, including newspapers, encyclopedias, legal documents, literature, and song lyrics. By leveraging the Salamandra 2B architecture and focusing on Cuban Spanish, Cecilia 2B offers a foundational resource for natural language processing tasks in this underrepresented variant and demonstrates the feasibility and value of regional language model adaptation.
+The Cuban Spanish variant is distinguished by unique lexical items, commonly known as _cubanismos_ (e.g., "asere", "guagua", "yuma") as well as distinct phonetic and morphological patterns that influence written expression. Furthermore, the variant is rich with culturally-specific idiomatic expressions and historical references that are essential for contextual understanding. While a language model cannot capture spoken phonetics, its performance is deeply tied to its ability to process these lexical and semantic nuances. By curating a corpus from sources like local encyclopedias of _cubanismos_, national literature, and song lyrics, we aim to expose the model to these features, thereby improving its ability to generate authentic and context-aware text for this specific linguistic community.
+
+This paper introduces _Cecilia 2B_, a 2-billion-parameter language model continually pretrained on a newly constructed corpus of approximately 1 billion tokens of Cuban written text, including newspapers, encyclopedias, legal documents, literature, and song lyrics. By adapting the powerful Salamandra 2B architecture, this work delivers the first large-scale, publicly-available foundational model specifically for Cuban Spanish. Cecilia 2B serves as a critical resource for natural language processing applications in this underrepresented variant and provides a detailed case study on the benefits and trade-offs inherent in regional language model adaptation.
 
 Cecilia 2B is the first iteration of a larger project aimed at creating pretrained and fine-tuned language models in the Cuban Spanish variant for several model sizes, architectures, and domains. By focusing first on a relatively small model size of 2 billion parameters, Cecilia 2B balances computational efficiency with linguistic specialization, enabling deployment in resource-constrained environments common in Cuba and similar settings. This approach allows us to explore the optimal strategies for creating this type of resources, as well as facilitating broader accessibility and practical usage from the beginning of the project. The experienced obtained in this iteration of Cecilia will directly inform the development of future, larger models.
 
@@ -38,9 +40,11 @@ Recent research has demonstrated the effectiveness of SLMs in processing regiona
 
 The development of regionalized Spanish language models has gained particular attention, with projects creating word embeddings and BERT-based models trained on Twitter data from 26 Spanish-speaking countries @tellez2023regionalized. These efforts have resulted in resources that capture lexical and semantic variations across different Spanish-speaking regions, demonstrating measurable improvements in regional task performance. Similarly, the DADA (Dialect Adaptation via Dynamic Aggregation) framework has shown promise for adapting models to various English dialects through compositional adapter architectures that handle specific linguistic features @liu2023dada.
 
+These efforts are part of a growing focus within NLP on computational sociolinguistics, which seeks to create models that are not only domain-specific but also dialect-aware and sensitive to social contexts [@hovy2018social]. Research in this area explores more advanced techniques, such as dialect-aware tokenization and methods for modeling code-switching, which will inform future iterations of the Cecilia project [@nguyen2021learning].
+
 ### Continual Pretraining and Domain Adaptation Techniques
 
-Continual pretraining has emerged as a fundamental technique for adapting existing language models to new domains and regional variants while preserving previously acquired knowledge @gururangan2020don. This approach not only overcomes catastrophic forgetting but also achieves knowledge transfer to improve end-task performance across different domains @goodfellow2013empirical. Research has shown that continual pretraining consistently improves models smaller than 1.5 billion parameters and demonstrates superior performance compared to traditional domain adaptation methods @gururangan2020don.
+Continual pretraining has emerged as a fundamental technique for adapting existing language models to new domains and regional variants while preserving previously acquired knowledge @gururangan2020don. This approach aims to mitigate catastrophic forgetting—the tendency of a model to lose previously learned knowledge when trained on a new task—while simultaneously achieving knowledge transfer to improve end-task performance @goodfellow2013empirical. Research has shown that continual pretraining consistently improves models smaller than 1.5 billion parameters and demonstrates superior performance compared to traditional domain adaptation methods @gururangan2020don.
 
 The efficacy of continual pretraining varies significantly based on model size and domain progression @yildiz2024investigating. Research indicates that smaller models are particularly sensitive to continual pretraining, showing the most significant rates of both learning and forgetting @lee2024impact. Domain similarity plays a crucial role in knowledge transfer effectiveness, with semantically similar domain sequences enabling better specialization, while randomized training domains lead to improved transfer and final performance. Cross-lingual and progressive transfer learning approaches have demonstrated the ability to save up to 80% of training costs compared to random initialization when transferring models between languages @vsliogeris2025full.
 
@@ -62,25 +66,29 @@ A clear indicator of the growing interest in language technologies for regional 
 
 Cecilia 2B, in its current iteration, is a 2-epoch continual pretraining checkpoint of Salamandra 2B. Salamandra 2B was chosen as the base model for Cecilia 2B due to its strong multilingual capabilities, efficient architecture, and open-source availability under an Apache 2.0 license, which facilitates fine-tuning and adaptation for specific language varieties. Its design balances model capacity and computational resource requirements, making it suitable for deployment in resource-constrained environments typical of Cuban NLP applications.
 
-Importantly, the architecture of Salamandra 2B was left unmodified in the development of Cecilia 2B, including the tokenizer and vocabulary. The adaptation to Cuban Spanish was applied exclusively through continual pretraining on a curated Cuban text corpus, ensuring that the model’s original structural and hyperparameter configurations remain intact. This approach aims to preserve the robustness and generalization properties of the base Salamandra 2B model while specializing its linguistic knowledge to the Cuban Spanish variant. However, it must be considered that words outside the original vocabulary (cubanisms and transliterated words, for example) will be harder to learn due to the nature of tokenization.
+For this initial iteration, we made the deliberate decision to leave the Salamandra 2B architecture, including its original tokenizer and vocabulary, unmodified. This choice was a key element of our research design, intended to isolate the effects of continual pretraining on the new corpus. By keeping the tokenizer constant, we can attribute observed changes in performance directly to the data rather than to a combination of data and vocabulary changes.
+
+We acknowledge this creates a known limitation: words specific to Cuban Spanish (cubanisms) that are out-of-vocabulary for the base model are tokenized into sub-optimal subword units, making them more difficult for the model to learn effectively. Consequently, developing a new tokenizer trained on our Cuban Spanish corpus and retraining the model with it remains a top priority for future work, as stated in @sec-future.
 
 ### Training Data
 
 The training corpus for Cecilia 2B comprises approximately 1 billion tokens of Cuban Spanish text, including digitized Cuban newspapers from the last decade, the Cuban Encyclopedia, a comprehensive collection of Cuban laws, hundreds of literary works by Cuban authors, local encyclopedias documenting Cubanisms, and song lyrics from prominent Cuban artists. This diverse dataset was curated to capture the linguistic and cultural richness of Cuban Spanish.
 
-All data was collected via web scraping under a fair use assumption and is intended solely for academic and research purposes. To respect copyright and intellectual property rights, the raw training data is not publicly available at the moment. @tbl-corpus-composition presents the composition of the full corpus, showing the main sources of texts and their relative percentage within the total dataset.
+All data was collected via web scraping under a fair use assumption and is intended solely
+for academic and research purposes. The web scraping process utilized custom scripts to systematically gather and parse text from targeted sources. Following collection, the raw text underwent a rigorous cleaning pipeline to ensure quality. This process included (1) removing HTML boilerplate, navigation menus, and advertisements; (2) deduplicating documents at the paragraph level to reduce redundancy; and (3) normalizing text by correcting common OCR errors and standardizing character encoding. This multi-step procedure was crucial for creating a clean, high-quality dataset suitable for language model pretraining.
+
+To respect copyright and intellectual property rights, the raw training data is not publicly available at the moment. @tbl-corpus-composition presents the composition of the full corpus, showing the main sources of texts and their relative percentage within the total dataset.
 
 ::: {#tbl-corpus-composition}
-| **Source**                                                         | **Percentage** (%) |
-|------------------------------------------------------------------------|:--------------:|
-| Ecured, the Cuban Encyclopedia                                         |     65.0       |
-| 10 years of Cuban newspapers                                           |     20.0       |
-| Over 400 significant works of Cuban literature                         |     9.5        |
-| Extensive collection of the Official Gazette                           |     1.5        |
-| Encyclopedias of Cubanisms and other cultural aspects                  |     0.6        |
-| Other Cuban texts                                                      |     3.4        |
-:
-Composition of the training corpus for Cecilia 2B.
+| **Source Content** | **Description** |                               **(%)** |
+|------------|-------------------------------------------------------|:--------------:|
+| **Cuban Encyclopedia (Ecured)** | Full snapshot of the online collaborative encyclopedia.	| 65.0 |
+| **Cuban Newspapers (2014-2024)** |Digital archives of national newspapers _Granma_ and _Juventud Rebelde_. |	20.0 |
+| **Cuban Literature** |Over 400 digitized works from key authors, e.g., _José Martí_, _Alejo Carpentier_, _José Lezama Lima_. | 9.5 |
+| **Official Gazette of Cuba** |	Comprehensive collection of laws and official government documents.	 | 1.5 |
+| **Cultural & Linguistic Dictionaries** |	E.g., _Diccionario de Cubanismos_, encyclopedias of Afro-Cuban culture.	| 0.6 |
+| **Miscellaneous Cuban Texts** |	Academic theses, historical documents, and other curated texts.	| 3.4 |
+: Composition of the training corpus for Cecilia 2B. {tbl-colwidths="[40,50,10]"}
 :::
 
 The Cecilia 2B training corpus is extensive, as shown in @tbl-corpus-stats, comprising nearly 300,000 text files with a total of approximately 2.6 billion characters and an estimated 385 million words. This large volume of data ensures comprehensive linguistic coverage, enabling the model to learn a wide range of lexical and syntactic patterns specific to Cuban Spanish.
@@ -151,7 +159,15 @@ Training was conducted over approximately 48 hours on a high-performance compute
 Training Hyperparameters.
 :::
 
-## Evaluation
+### Model and Data Availability {#sec-data}
+
+In line with ethical research practices and copyright law, the raw training corpus cannot be publicly released. The dataset was compiled from copyrighted sources under a fair use assumption for non-commercial academic research, and its redistribution is prohibited.
+
+To promote responsible open science, the Cecilia 2B model is made available to the research community through a gated access protocol on the Hugging Face platform[^3]. This staged-release approach allows for case-by-case evaluation of research requests, mitigating potential misuse while the model undergoes further safety and bias analysis. We are committed to a full public release under a permissive, commercially-viable license once these evaluations are complete. This strategy ensures that the research community can benefit from this work while upholding ethical standards.
+
+[^3]: <https://huggingface.co/gia-uh/cecilia-2b-v0.1>
+
+## Evaluation {#sec-eval}
 
 :::{#tbl-eval-results}
 | Task                     | Metric      | Salamandra    | Cecilia   | Rel. Err.     |
@@ -195,17 +211,24 @@ Evaluation results in selected NLP tasks in English and Spanish, in comparison w
 
 Evaluation of Cecilia 2B is still ongoing. At this stage, we present partial results focused on comparing Cecilia 2B to its base model, Salamandra 2B, across a broad suite of standard NLP benchmarks. These tasks include multiple-choice question answering, reading comprehension, paraphrase identification, natural language inference, summarization, translation, and open-domain question answering, in both English and Spanish. @tbl-eval-results summarizes the results of this comparison.
 
-The results show a nuanced picture. Cecilia 2B demonstrates improvements mainly in Spanish and multilingual understanding tasks (e.g., BELEBELE [@belebele], XNLI [@xnli], PAWS [@paws], and some science QA benchmarks [@arc]), reflecting the benefits of continual pretraining on a Cuban Spanish corpus.
+The results present a nuanced picture of the trade-offs involved in regional specialization. Cecilia 2B shows clear improvements in multilingual reading comprehension (BELEBELE [@belebele] $+6.82\%$) and natural language inference (WNLI [@wnli] $+4.73\%$), suggesting the continual pretraining successfully enhanced its understanding of Spanish-language nuances as intended.
 
-However, there are notable decreases in performance on general-purpose and English-centric tasks, as well as summarization and translation benchmarks (e.g., XSUM, Cocoteros, XQuAD [@xquad], and some QA tasks [@openbookqa; @triviaqa]). This is an expected trade-off when adapting a model to a novel language variant using continual pretraining, as some general capabilities may be partially sacrificed for increased in-domain specialization [@goodfellow2013empirical].
+Conversely, the most significant performance decreases occurred in generation-focused tasks, particularly summarization. For instance, the model’s ROUGE-L score dropped by $35.35\%$ on XLSUM-ES [@xlsum] and its BLEU score fell by $20.58\%$ on COCOTEROS.
+It also shows decreasing scores in instruction following tasks like question answering (XQuAD [@xquad], OpenBook [@openbookqa], and TriviaQA [@triviaqa]).
 
-It is important to emphasize that these benchmarks are general-purpose and not specifically tailored to the Cuban Spanish variant for which Cecilia is intended. The observed average difference is a modest decrease of about 2.4% relative to Salamandra 2B across all tasks, with the largest drops in summarization and translation. This is consistent with expectations, as the model has not yet been fine-tuned for instruction following or for downstream tasks.
+This outcome is a direct and anticipated consequence of our training strategy. The pretraining corpus, dominated by literary, legal, and encyclopedic texts, is stylistically divergent from the news articles that comprise benchmarks like XLSUM. Likewise, the instruction following tasks are not represented in the training data, since, as explained before, Cecilia 2B has not been fine-tuned for instruction following or for downstream tasks.
 
-At the time of writing, no results are available on downstream tasks that target the unique linguistic and cultural phenomena of Cuban Spanish, which is the primary motivation for Cecilia’s development. As Cecilia 2B is presently only pretrained and has not undergone instruction tuning or task-specific fine-tuning, comprehensive evaluations on downstream tasks such as question answering, dialogue generation, or other domain-specific applications remain pending. These more specialized assessments will be addressed in future work, following the development of an instruction-tuned version of Cecilia that can better support interactive and task-oriented use cases.
+By specializing on long-form, narrative text, the model's proficiency in the concise, extractive style required for summarization was diminished. This highlights a critical trade-off: gaining in-domain cultural and linguistic specialization came at the cost of performance on out-of-domain, general-purpose tasks for which the model has not been fine-tuned [@goodfellow2013empirical].
 
-## Discussion
+It is important to emphasize that these benchmarks are general-purpose and not specifically tailored to the Cuban Spanish variant for which Cecilia is intended. The observed average difference is a modest decrease of about $2.4\%$ relative to Salamandra 2B across all tasks, with the largest drops in summarization and translation. This is consistent with expectations, as the model has not yet been fine-tuned for instruction following or for downstream tasks.
 
-Cecilia 2B remains a work in progress and is currently most suitable for research purposes. As the model has not yet been fine-tuned for instruction following or specific downstream tasks, its direct applicability in production environments or interactive applications is limited at this stage. However, its foundational capabilities as a Cuban Spanish-pretrained language model open promising avenues for future development.
+Thus, at the time of writing no results are available on downstream tasks that target the unique linguistic and cultural phenomena of Cuban Spanish, which is the primary motivation for Cecilia’s development. As Cecilia 2B is presently only pretrained and has not undergone instruction tuning or task-specific fine-tuning, comprehensive evaluations on downstream tasks such as question answering, dialogue generation, or other domain-specific applications remain pending. These more specialized assessments will be addressed in future work, following the development of an instruction-tuned version of Cecilia that can better support interactive and task-oriented use cases.
+
+## Discussion {#sec-dicussion}
+
+The evaluation results presented in @sec-eval provide a practical illustration of the challenges associated with catastrophic forgetting in regional model adaptation. While Cecilia 2B demonstrated gains in Spanish-language understanding tasks, the corresponding drop in performance on out-of-domain tasks like summarization shows that specialization involves a tangible trade-off. As such, Cecilia 2B remains a work in progress and is currently most suitable for research purposes.
+
+As the model has not yet been fine-tuned for instruction following or specific downstream tasks, its direct applicability in production environments or interactive applications is limited at this stage. However, its foundational capabilities as a Cuban Spanish-pretrained language model open promising avenues for future development.
 
 Once fine-tuned, Cecilia’s relatively small size, combined with its specialized training on Cuban Spanish, positions it as a valuable resource for a range of natural language processing tasks tailored to this linguistic variant. Potential use cases include text generation that respects Cuban cultural and linguistic nuances, sentiment analysis for Cuban social media and news, named entity recognition in local contexts, machine translation with improved handling of Cubanisms, and domain-specific question answering.
 
@@ -215,15 +238,11 @@ Currently, the model is not quantized and requires approximately 4.5 GB of GPU m
 
 As with all large language models, Cecilia 2B is susceptible to issues such as biases and hallucinations. The model has not yet undergone comprehensive evaluation to determine the extent to which these problems persist or whether they are exacerbated relative to the original Salamandra 2B base model. Users should be aware that outputs may reflect unintended biases present in the training data or generate factually incorrect or misleading information.
 
-Furthermore, the training corpus includes copyrighted materials collected under fair use assumptions strictly for academic research. Any use of Cecilia 2B must respect the intellectual property rights of the original content creators and copyright holders. Redistribution or commercial exploitation of the raw training data is prohibited.
+As detailed in @sec-data, the training corpus contains copyrighted materials and the model is currently available under a gated access policy to ensure responsible use. In due course, Cecilia 2B will be publicly released under a permissive license that allows broad use, including commercial applications, once further evaluations and refinements have been completed to ensure safety and reliability.
 
-Given these considerations and the fact that Cecilia 2B is not yet production-ready, access to the model on the HuggingFace platform is currently gated. Researchers interested in using the model must submit a request[^3], which will be evaluated on a case-by-case basis. Approval is granted for use cases deemed ethical and aligned with responsible research practices. This controlled access aims to mitigate potential misuse and ensure that the model’s deployment aligns with community standards.
+One additional limitation is the lack of stakeholder feedback available for this first phase of the project. The contribution of the academic community beyond the computational sciences, including linguistics, history, sociology, cultural studies, etc., is a crucial next step to ensure that the model reflects the needs and expectations of the Cuban people.
 
-[^3]: <https://huggingface.co/gia-uh/cecilia-2b-v0.1>
-
-In due course, Cecilia 2B will be publicly released under a permissive license that allows broad use, including commercial applications, once further evaluations and refinements have been completed to ensure safety and reliability.
-
-### Future Work
+### Future Work {#sec-future}
 
 Future efforts will focus initially on further curating and expanding the Cuban Spanish corpus that underpins Cecilia 2B. Enhancing the dataset’s breadth and diversity will improve the model’s linguistic coverage and cultural representation, strengthening its foundation for downstream tasks.
 
@@ -233,8 +252,10 @@ In parallel, we plan to develop increasingly powerful models by leveraging large
 
 One specific task that remains challenging is to retrain the tokenizer to better capture cubanisms and other terms that are split into distinct tokens by the Salamandra 2B tokenizer [@rust2021good]. Additionally, quantized versions of all Cecilia models will be published to enable efficient inference in production environments.
 
+At the moment of writing an ongoing effort to create an instruction fine-tuning corpus is being conducted to enable more interactive and versatile applications. In this process, several collaborators from the larger academic community including linguists, sociologists, historians, artists, lawyers, etc., are providing active feedback to incorporate as much relevant data as possible whithin the design constraints of Cuban-only text. In any case, we acknowledge the necessity of incorporating more voices and perspectives to ensure the model's development aligns with the diverse needs and values. This is a major direction for future work.
+
 ## Conclusions
 
-This paper introduced Cecilia 2B, a 2-billion-parameter language model continually pretrained on a diverse Cuban Spanish corpus of nearly 1 billion tokens, addressing the lack of language technology for this underrepresented variant by leveraging the Salamandra 2B architecture and focusing on Cuban linguistic and cultural features. This work demonstrates the feasibility and value of regional model adaptation, balancing computational efficiency with linguistic specialization, and provides a foundational resource for natural language processing applications in Cuban Spanish, paving the way for future research in instruction tuning, corpus expansion, tokenizer retraining, and larger or more specialized models.
+This paper introduced Cecilia 2B, a 2-billion-parameter language model continually pretrained on a diverse Cuban Spanish corpus of nearly 1 billion tokens. By adapting the Salamandra 2B architecture to focus on Cuban linguistic and cultural features, this project delivers a vital, publicly-available foundational resource that addresses the critical gap in language technology for this underrepresented variant. The development of Cecilia 2B provides a robust case study on balancing computational efficiency with linguistic specialization and establishes a clear path for future work, including instruction tuning, corpus expansion, and the development of more advanced models tailored to Cuban Spanish.
 
 ## References {.unnumbered}
