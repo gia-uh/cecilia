@@ -3,10 +3,13 @@ title: Continual Pretraining of a Small Language Model on Cuban Spanish Corpora
 documentclass: llncs
 format:
   pdf:
+    include-in-header:
+      - text: \usepackage{xcolor}
     template-partials:
       - before-body.tex
     number-sections: true
     citation-style: ieee
+
 bibliography: references.bib
 ---
 
