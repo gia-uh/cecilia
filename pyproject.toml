@@ -25,6 +25,7 @@ apps = [
     "streamlit>=1.45.1",
 ]
 training = [
+    "deep-translator>=1.11.4",
     "model-quantizer[all]>=0.2.1",
     "peft>=0.16.0",
     "tensorflow[and-cuda]>=2.19.0",
