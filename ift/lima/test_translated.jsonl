@@ -1,0 +1,300 @@
+{"conversations": ["Estoy escribiendo un artículo de Neurips sobre una nueva arquitectura de modelo para procesar y generar textos largos. Aquí hay algunos hechos sobre el papel:\n* El principal truco es reemplazar algunos de los cabezales de atención con un promedio móvil exponencial, donde se aprende la tasa de descomposición para cada cabezal. Llamamos a esta arquitectura Exema.\n* En el modelado de idiomas, la diferencia de perplejidad entre nuestro modelo y un transformador de vainilla es insignificante, pero eso se debe a que la predicción de la siguiente token es casi siempre una tarea local, por lo que la perplejidad no será lo suficientemente sensible como para detectar cualquier mejoras en la comprensión de largo alcance.\n* Sin embargo, en el punto de referencia de Scrolls, nuestro modelo mejora en un 10% sobre la línea de base.\n* También tenemos una nueva métrica para medir la coherencia en el texto generado (cognate), donde nuestro modelo genera texto que es 43% más coherente que la línea de base.\nAyúdame a escribir la introducción del artículo."], "source": ""}
+{"conversations": ["Tengo un ejercicio en la clase del juego de teoría que debería encontrar todos los equilibrios en el juego de tijeras de papel rock. ¿Podrías ayudarme con este ejercicio?"], "source": ""}
+{"conversations": ["¿Quiénes son algunos eruditos eminentes del idioma quechua?"], "source": ""}
+{"conversations": ["¿Cómo descubro qué proceso está utilizando mi cámara web en macOS?"], "source": ""}
+{"conversations": ["Estoy interesado en alquilar una casa en un elegante vecindario en los Estados Unidos. La mayoría de las personas en esta área son nacidas en Estados Unidos y blancas, pero somos inmigrantes de Oriente Medio. Hemos estado en Estados Unidos durante poco más de 5 años, mi esposa tiene un doctorado y yo trabajo en tecnología. Definitivamente podemos pagar el alquiler, pero queremos asegurarnos de que el propietario no nos filtre porque no somos exactamente el inquilino típico en esa área. ¿Me puede ayudar a escribir una carta de presentación para nuestra solicitud de alquiler?"], "source": ""}
+{"conversations": ["Escriba un correo electrónico para notificar el comienzo del proceso de licitación en revisión en papel para una conferencia."], "source": ""}
+{"conversations": ["¿Qué es un buen itenario para un viaje a Las Vegas? Planificación de un viaje durante 3.5 días, excluya cualquier museo"], "source": ""}
+{"conversations": ["Ayúdame a reescribir este correo electrónico de una manera más formal:\n\"Hola,\n\nSolo quería ver si podíamos chatear sobre el nuevo proyecto la próxima semana. ¿Puedes apretarme en algún momento entre los martes y jueves? Sería genial obtener sus pensamientos y comentarios antes de avanzar.\n\n¡Espero poder ponerme al día! Avísame cuando estés libre \"."], "source": ""}
+{"conversations": ["Escriba un artículo de opinión sobre por qué la diversidad y la inclusión son muy importantes para la industria tecnológica. El ensayo debe ser dirigido a \"Tech Bros\", y debe evitar alienarlos, pero en su lugar apelar a su lógica; Debería explicar cómo la diversidad y la inclusión de mujeres, inmigrantes, etc. podrían beneficiarlos específicamente."], "source": ""}
+{"conversations": ["¿Cuál es la forma más eficiente de obtener el número de filas en una tabla con PSYCOG2?"], "source": ""}
+{"conversations": ["¿Cuál es la diferencia entre el masala de la papa para el dosa y el que se sirve con Poori?"], "source": ""}
+{"conversations": ["¿Podrías escribir un poema sobre mi novia al estilo del poeta búlgaro Botev? Ella es ingeniera de software, le gusta bailar, y su comida favorita son las papas de cualquier forma."], "source": ""}
+{"conversations": ["¿Qué medicamento debo tomar cuando me resfrío?"], "source": ""}
+{"conversations": ["¿Qué hace \\ multirow {5} {*}"], "source": ""}
+{"conversations": ["¿Puedes convertir el siguiente conjunto de puntos de bala en un correo electrónico?\n* Estoy aburrido en el trabajo.\n* Mi gerente es incompetente.\n* Estoy mal pagado.\n* Lo dejo.\nEso es lo que realmente pienso, y quiero que lo comuniques en el correo electrónico, pero necesito ayuda con la redacción para mantener todo políticamente correcto."], "source": ""}
+{"conversations": ["Planifique una excursión de un día en Tokio. Los puntos deben estar a poca distancia entre sí."], "source": ""}
+{"conversations": ["Dado un <span> en html quiero cambiar su color en el mouse."], "source": ""}
+{"conversations": ["Se le da una función Oracle `` `Predicte_Value (stock)` ``, que devuelve un intervalo de confianza estimado de P = 0.01 alrededor del valor de un stock dado un minuto en el futuro. Escriba un programa de Python que compre y vende acciones por minuto para maximizar las ganancias esperadas, al tiempo que minimiza la varianza de ganancias."], "source": ""}
+{"conversations": ["¿Qué necesita hacer Bing para vencer a Google?"], "source": ""}
+{"conversations": ["Nuestro amado colega Stephen ahora sale de la compañía. Es uno de los mejores ingenieros que tuvimos. Solía amar publicar memes. Escribe un mensaje de despedida breve, divertido e inspirador."], "source": ""}
+{"conversations": ["¿Cuál es el idioma más hermoso del mundo?"], "source": ""}
+{"conversations": ["Escriba una parodia de pie al estilo de George Carlin que ridiculiza el gas y el electricidad del Pacífico."], "source": ""}
+{"conversations": ["Hola, tengo una aplicación web que hace la autenticación de Google para dejar entrar a los usuarios. ¿Cómo puedo reemplazarla con una captcha?"], "source": ""}
+{"conversations": ["Proporcionar recomendaciones para las mejores marcas de almohadas"], "source": ""}
+{"conversations": ["¿Puede explicar la inyección de dependencia en C# como un gángster?"], "source": ""}
+{"conversations": ["¿Puedes dar un resumen de \"Hipótesis de boletos de lotería\" de Jonathan Frankle y Michael Carbin?"], "source": ""}
+{"conversations": ["Estoy entrevistando como ingeniero fuera de la universidad para un grupo de compañías tecnológicas y he comenzado a obtener ofertas de un par de ellos, incluido Faang. ¿Qué se consideraría una buena oferta en términos de compensación?"], "source": ""}
+{"conversations": ["¿Cómo se resolvería una generalización de longitud con incrustaciones de posición?"], "source": ""}
+{"conversations": ["No celebro la Navidad, pero mis vecinos lo hacen, y estamos en muy buenos términos. ¿Debería conseguirles una tarjeta de Navidad? Si es así, ayúdame a escribir uno que sea genuino y respetuoso al mismo tiempo."], "source": ""}
+{"conversations": ["¿Por qué falló Apollo 13?"], "source": ""}
+{"conversations": ["¿Qué puedo hacer durante 6 días en el sur de Francia?"], "source": ""}
+{"conversations": ["¿Cuál es la parte divertida de la broma? \n\"¿Por qué los científicos no confían en los átomos?\n¡Porque inventan todo! \""], "source": ""}
+{"conversations": ["Cómo aliviar el estrés del trabajo"], "source": ""}
+{"conversations": ["¿Por qué las hojas de higuera de mi violín se ven amarillas?"], "source": ""}
+{"conversations": ["¿Qué color va mejor con el verde azulado?"], "source": ""}
+{"conversations": ["Soy dueño de un negocio en el que enseño a los niños pequeños (edades 3-4) a leer, y quiero anunciarlo en Twitter. ¿Puedes ayudarme a escribir el tweet?"], "source": ""}
+{"conversations": ["¿Puedes reformular este párrafo y hacerlo un poco más corto?\nComo el primer paso en Pick A Pic, presentamos Pickapic.io. Esta aplicación web permite a los usuarios generar, clasificar y descargar imágenes de forma gratuita. Recopilaremos, anonimizaremos y lanzaremos los datos periódicamente al dominio público, por lo que * todos los * entusiastas de AI podrán sintonizar sus modelos favoritos de texto a imagen en preferencias humanas."], "source": ""}
+{"conversations": ["Trabajo con un colega que parece intensificar las cosas en la cadena de gestión cada vez que las cosas no salen a su manera. Como resultado, ya no me siento muy emocionado por trabajar con él. Sin embargo, este es un proyecto bastante importante para mi carrera. ¿Qué tengo que hacer?"], "source": ""}
+{"conversations": ["¿Cuáles son las ventajas de migrar angularjs para reaccionar?"], "source": ""}
+{"conversations": ["¿Puede explicar brevemente este concepto de irreductibilidad computacional?"], "source": ""}
+{"conversations": ["Si voy a la licencia de los padres el 24 de abril de 2022 y regreso el 9 de septiembre de 2022, ¿cuántos días hábiles me iría?"], "source": ""}
+{"conversations": ["¿Por qué los hombres ganan más en promedio?"], "source": ""}
+{"conversations": ["Estoy construyendo un mundo para un nuevo juego de rol. Está ambientado en el futuro cercano, p. 2040, donde una nueva tecnología ha revisado por completo la sociedad, para bien y para mal. Dame algunas ideas sobre cuál podría ser esta tecnología y explique cómo afectaría a la sociedad."], "source": ""}
+{"conversations": ["Enséñame cómo hacer Shakshuka."], "source": ""}
+{"conversations": ["¿Cuáles son los buenos lugares de actuación para los artistas indios en los Estados Unidos?"], "source": ""}
+{"conversations": ["¿Cuáles son algunas buenas ideas para una startup en educación STEM?"], "source": ""}
+{"conversations": ["¿Cuáles son los mejores regalos de cumpleaños para un conocido que no conozco muy bien?"], "source": ""}
+{"conversations": ["Mis amigos visitan California pronto, ¿puedes sugerir algunos lugares donde podría llevarlos a San Francisco? Aquí hay algunas cosas que les gustan: naturaleza, comida china, arquitectura brutalista, música en vivo."], "source": ""}
+{"conversations": ["La Tierra está a punto de ser destruida. Estás pilotando una nave espacial para irse, y solo tienes un asiento. Hay tres hombres a su alrededor de Estados Unidos, India y Japón. ¿A quién elegirás y por qué?"], "source": ""}
+{"conversations": ["¿Cuáles son los buenos nombres para una agencia gubernamental que regula la IA?"], "source": ""}
+{"conversations": ["¿A qué lengua pertenece la familia húngara?"], "source": ""}
+{"conversations": ["¿Qué hacer con los niños pegajosos?"], "source": ""}
+{"conversations": ["Compare mejor llamar a Saúl y romper mal. ¿Qué hace cada programa mejor que el otro?"], "source": ""}
+{"conversations": ["¿Cuál es la mejor manera de aprender a hacer arte en leche?"], "source": ""}
+{"conversations": ["Cómo crear una nota al pie para la lista de autores en látex"], "source": ""}
+{"conversations": ["¿Por qué las hojas de mi planta de serpiente se empapan y luego se caen? Hace poco lo referí. Solo lo rié una vez al mes."], "source": ""}
+{"conversations": ["Voy a hacer bolos con mis colegas. ¿Puedes darme consejos específicos para patear sus traseros?\nExplique la técnica por favor."], "source": ""}
+{"conversations": ["¿Cómo hago huevos escalfados en casa?"], "source": ""}
+{"conversations": ["¿Matar a un cachorro es más o menos moralmente aceptable que matar a un perro?"], "source": ""}
+{"conversations": ["Proporcione una receta para el aderezo para ensaladas con los ingredientes de aceite de oliva, vinagre, limón y varios condimentos."], "source": ""}
+{"conversations": ["Escribe una biografía de aplicación de citas ingeniosa en una o dos oraciones para mí. Aquí hay cosas sobre mí ampliamente.\nSoy un niño de veintiséis años que vive en San Francisco. Originario de la costa este, me mudé al Área de la Bahía después de graduarme de la universidad para seguir una carrera en tecnología.\nDurante mi tiempo en San Francisco, he abrazado completamente la vibrante cultura de la ciudad y la atmósfera única. En mi tiempo libre, me encanta explorar los diversos vecindarios de la ciudad y probar nuevos restaurantes y cafeterías.\nCuando no estoy fuera de casa, disfruto leer libros sobre una variedad de temas, desde tecnología y ciencia hasta literatura y filosofía. También soy un ávido fanático de los videojuegos y paso muchas tardes jugando con amigos en línea.\nProfesionalmente, trabajo como ingeniero de software en una empresa de inicio. Disfruto el desafío de resolver problemas técnicos complejos."], "source": ""}
+{"conversations": ["Tengo 350 ejemplos que fueron anotados con etiquetas binarias por dos anotadores diferentes. ¿Cómo calculo el acuerdo interanotador, incluido el intervalo de confianza?"], "source": ""}
+{"conversations": ["¿Puedes resumir este pasaje en puntos de bala?\n\nGradualmente desacelerando las ganancias laborales y una creciente fuerza laboral en marzo entregó noticias de bienvenida al presidente Biden, casi un año después de que declaró que el mercado laboral debía enfriarse significativamente para domar los altos precios. Los detalles del informe son alentadores para un presidente cuyo objetivo económico es pasar de las rápidas ganancias laborales, y una alta inflación, a lo que el Sr. Biden ha llamado \"crecimiento estable y constante\". La creación de empleo se desaceleró a 236,000 para el mes, acercándose al nivel que el Sr. Biden dijo el año pasado que sería necesario para estabilizar la economía y los precios. Más estadounidenses se unieron a la fuerza laboral, y las ganancias salariales cayeron ligeramente. Esos desarrollos deberían ayudar a enfriar aún más la inflación. Pero el informe también subrayó las tensiones políticas y económicas para el presidente mientras busca vender estadounidenses en su administración económica antes de un anuncio esperado esta primavera de que buscará la reelección."], "source": ""}
+{"conversations": ["Vivo en el Área de la Bahía y lo he tenido con PG&E. Diseñe un plan para comenzar una compañía de energía en competencia para sacarlos del negocio."], "source": ""}
+{"conversations": ["¿Cuál es la diferencia entre usted y un humano?"], "source": ""}
+{"conversations": ["¿Quién fue el presidente en Francia en 1250?"], "source": ""}
+{"conversations": ["¿Cómo puedo hacer una startup en la realidad aumentada?"], "source": ""}
+{"conversations": ["¿Cómo aplicar mejor las cadenas de nieve a mi Honda CR-V?"], "source": ""}
+{"conversations": ["Tengo un mal historial de crédito. ¿Hay alguna forma de obtener una tarjeta de crédito?"], "source": ""}
+{"conversations": ["¿Cómo diseñarías un filtro de spam?"], "source": ""}
+{"conversations": ["Me voy de vacaciones el próximo mes. ¿Cuáles son algunos de los mejores lugares para visitar a principios de enero?"], "source": ""}
+{"conversations": ["Quiero hacer un viaje de fin de semana desde San Francisco a algún lugar de California, donde puedo ver los árboles de secoyas. ¿A dónde debo ir?"], "source": ""}
+{"conversations": ["¿Cuáles son las mejores formas de manejar una ruptura?"], "source": ""}
+{"conversations": ["Me preguntaba si podía decirme la mejor manera de quitar el óxido del fondo del inodoro."], "source": ""}
+{"conversations": ["Siento que realmente estoy aflojando en mi trabajo. He estado tratando de pensar en formas de motivarme, pero todavía no he tenido suerte. ¿Alguna idea?"], "source": ""}
+{"conversations": ["¿El mundo tiene suficiente agua potable para todos? ¿Cuánto tenemos? ¿Cuánto más necesitamos?"], "source": ""}
+{"conversations": ["Soy un estudiante universitario de segundo año, y me gustaría discutir los méritos de tomar un año en la industria."], "source": ""}
+{"conversations": ["Soy maestra y he estado enseñando a un estudiante llamado Kate durante unos meses. He notado que Kate es muy buena en la historia y la geografía, pero no es buena en matemáticas y ciencias. Parece que ya ha renunciado a las matemáticas y las ciencias, y me preocupa que esto la afecte más adelante en la vida, especialmente cuando está buscando trabajo. Por favor, ayúdame a escribir un guión que pueda usar para hablar con ella sobre su desempeño en matemáticas y ciencias."], "source": ""}
+{"conversations": ["¿Cuál es un buen título para un poema que escribo sobre un niño religioso que su familia ha sido protegido del mundo exterior, pero un día deja su casa y ve la realidad del mundo?"], "source": ""}
+{"conversations": ["Mi hija tiene un proyecto escolar en el espacio y está buscando algunos datos sobre el Big Bang."], "source": ""}
+{"conversations": ["Estoy buscando un juego para jugar con un gran grupo de amigos."], "source": ""}
+{"conversations": ["¿Cómo se hacen buenos huevos revueltos?"], "source": ""}
+{"conversations": ["¿Cuáles son las palabras más largas y cortas del idioma inglés?"], "source": ""}
+{"conversations": ["Me siento un poco solo en estos días, ¿cómo puedo hacer nuevos amigos?"], "source": ""}
+{"conversations": ["¿Cuál es la mejor versión de los colonos del juego de mesa de Catan?"], "source": ""}
+{"conversations": ["Vivo en un apartamento 1BR en Manhattan, y constantemente huele mal. ¿Cuál es una buena manera de purificar el aire en mi casa?"], "source": ""}
+{"conversations": ["Estoy pensando en llevar a mi familia a Disney World, pero no estoy seguro de cuándo es la mejor época del año. ¿Puede recomendar una época del año que sea económica pero no demasiado llena?"], "source": ""}
+{"conversations": ["Ensayo de 3 párrafos sobre los pros y los contras de la comida rápida"], "source": ""}
+{"conversations": ["Quiero encontrar un libro que a mi sobrino de 8 años le gustaría leer."], "source": ""}
+{"conversations": ["¿Cómo funciona el sistema de salud en los Estados Unidos?"], "source": ""}
+{"conversations": ["¿Puedes pedirme una pizza grande de Domino's?"], "source": ""}
+{"conversations": ["Quiero encontrar un gran distrito escolar para vivir. Tengo una lista de ciudades que consideraría, pero estoy buscando una ciudad con un gran distrito escolar. ¿Qué recomendarías?"], "source": ""}
+{"conversations": ["El año es 2025. ¿Puedes escribir un artículo sobre el nuevo iPhone 17?"], "source": ""}
+{"conversations": ["¿Cómo está el clima en Londres en este momento?"], "source": ""}
+{"conversations": ["¿Cuál es la tienda de bicicletas más cercana que está abierta en este momento?"], "source": ""}
+{"conversations": ["¿Hay boletos baratos para Nueva York desde Chicago?"], "source": ""}
+{"conversations": ["¿Cómo puedo mejorar mis habilidades de gestión del tiempo?"], "source": ""}
+{"conversations": ["¿Cuáles son las formas más efectivas de lidiar con el estrés?"], "source": ""}
+{"conversations": ["¿Cómo puedo aumentar mi productividad mientras trabajo desde casa?"], "source": ""}
+{"conversations": ["¿Qué debo comprar a mi hijo para su séptimo cumpleaños?"], "source": ""}
+{"conversations": ["Planifique un viaje de tres días a Seattle"], "source": ""}
+{"conversations": ["Planifique un viaje de siete días en China."], "source": ""}
+{"conversations": ["Planifique unas vacaciones de snorkel de 5 días en Hawaii"], "source": ""}
+{"conversations": ["Dame un plan de lección para enseñar introducción a la probabilidad."], "source": ""}
+{"conversations": ["Cree un plan de lección para enseñar las obras de S. Y. Agnon."], "source": ""}
+{"conversations": ["Mi hija de 6 años es súper inteligente y encuentra a los niños en la escuela aburridos. ¿Cómo puedo ayudarla a hacer amigos?"], "source": ""}
+{"conversations": ["¿Cuáles son las principales diferencias entre los lenguajes de programación de Python y JavaScript?"], "source": ""}
+{"conversations": ["¿Cuáles son las diferencias entre las fuentes de proteínas basadas en plantas y animales?"], "source": ""}
+{"conversations": ["¿Cuáles son los factores principales que influyen en el comportamiento del consumidor?"], "source": ""}
+{"conversations": ["¿Cuáles son las estrategias más efectivas para la resolución de conflictos en el lugar de trabajo?"], "source": ""}
+{"conversations": ["¿Qué cosa legal actualmente espera ser ilegal en los próximos 20 años?"], "source": ""}
+{"conversations": ["¿Por qué hay \"malos distritos escolares\" y \"buenos distritos escolares\" en los Estados Unidos, suponiendo que el gobierno trabaja duro para aumentar los estándares educativos?"], "source": ""}
+{"conversations": ["¿Cuál es la etiqueta para preguntar si alguien tiene una dieta especial?"], "source": ""}
+{"conversations": ["¿Qué es algo aceptable hace 100 años que es inaceptable hoy?"], "source": ""}
+{"conversations": ["Responda la pregunta en la siguiente plantilla:\nRespuesta: [Respuesta corta]\nExplicación: [Explicación detallada]\n\n¿Quién es la mejor mujer de la historia?"], "source": ""}
+{"conversations": ["¿Cuáles son algunas implicaciones potenciales para usar una botella de plástico de un solo uso en comparación con una botella reutilizable tanto en el medio ambiente como en la salud humana?"], "source": ""}
+{"conversations": ["¿Por qué pueden hablar los loros? ¿Pueden solo repetir lo que la gente dice, o pueden formular sus propios pensamientos y vocalizarlos a veces?"], "source": ""}
+{"conversations": ["¿Qué beneficios ofrece Jax sobre Pytorch?"], "source": ""}
+{"conversations": ["¿Qué factores consideraría al diseñar un sistema de transporte público inclusivo y accesible?"], "source": ""}
+{"conversations": ["¿Cómo pueden los gobiernos utilizar políticas fiscales y monetarias para combatir las recesiones económicas?"], "source": ""}
+{"conversations": ["¿Cómo se crea una aplicación de Android?"], "source": ""}
+{"conversations": ["¿Qué se necesitaría para pasar el NPVIC?"], "source": ""}
+{"conversations": ["Los perros pueden oler infecciones covid en pacientes, con tanta precisión como una prueba de PCR. ¿Qué nos impide construir una máquina que 'huele' a los pacientes y la detecte también, si no mejor, que un perro?"], "source": ""}
+{"conversations": ["¿Cómo afectan el lenguaje y las barreras culturales la forma en que las personas se comunican y forman relaciones en las sociedades multiculturales?"], "source": ""}
+{"conversations": ["Describa un escenario en el que la inteligencia artificial pueda usarse para mejorar la calidad y la eficiencia de la prestación de atención médica."], "source": ""}
+{"conversations": ["¿Cómo funcionan las vacunas para proteger a las personas y las comunidades de las enfermedades infecciosas, y qué es la inmunidad del rebaño?"], "source": ""}
+{"conversations": ["¿Cómo influyen las plataformas de redes sociales la forma en que las personas consumen y comparten noticias, y cuáles son las posibles implicaciones para la propagación de la información errónea?"], "source": ""}
+{"conversations": ["¿Cómo influyen los factores culturales, sociales y económicos en las elecciones de alimentos de las personas y cómo se puede utilizar este conocimiento para promover dietas más saludables?"], "source": ""}
+{"conversations": ["Explique el proceso de selección natural y cómo contribuye a la evolución y adaptación de las especies."], "source": ""}
+{"conversations": ["¿Cómo te presentarías como un caballero medieval en un banquete real?"], "source": ""}
+{"conversations": ["Como capitán pirata, ¿qué le dirías a tu tripulación para motivarlos a buscar un tesoro oculto?"], "source": ""}
+{"conversations": ["Imagine que es un viajero del tiempo del año 3000. ¿De qué avances tecnológicos le diría a la gente?"], "source": ""}
+{"conversations": ["Como comentarista deportivo, describa la jugada ganadora en los últimos segundos de un juego de campeonato."], "source": ""}
+{"conversations": ["Finge ser un chef de fama mundial. ¿Cómo describiría su plato de firma a un panel de jueces?"], "source": ""}
+{"conversations": ["Eres un escalador de montaña que llega a la cumbre del Monte Everest. Describe tus emociones y la vista desde la cima."], "source": ""}
+{"conversations": ["Como colonista del espacio en Marte, describa su vida diaria y los desafíos que enfrenta vivir en otro planeta."], "source": ""}
+{"conversations": ["Finge ser un personaje en un mundo post-apocalíptico. Describe cómo sobrevives y los aliados que encuentras."], "source": ""}
+{"conversations": ["¿Cómo puede determinar si un restaurante es popular entre los lugareños o atrae principalmente a los turistas, y por qué podría ser útil esta información?"], "source": ""}
+{"conversations": ["¿Cuáles son algunas pistas sutiles que sugieren que alguien finge comprender un tema o conversación cuando realmente está confundido o desinformado?"], "source": ""}
+{"conversations": ["¿Por qué alguien podría elegir usar un mapa en papel o pedir instrucciones en lugar de confiar en un dispositivo GPS o una aplicación para teléfonos inteligentes?"], "source": ""}
+{"conversations": ["¿Cómo puede evaluar la credibilidad de una fuente de información, como un artículo de noticias o una publicación de blog, sin confiar únicamente en la reputación del autor o editor?"], "source": ""}
+{"conversations": ["¿Por qué algunas personas disfrutan de la sensación de tener miedo, como ver películas de terror o ir a montañas rusas, mientras que otras evitan estas experiencias?"], "source": ""}
+{"conversations": ["¿Tenemos la obligación moral de explorar el espacio, o deberíamos centrarnos en resolver los problemas de la Tierra primero?"], "source": ""}
+{"conversations": ["En un mundo donde la automatización se vuelve cada vez más frecuente, ¿es más importante priorizar la creación de empleo o el progreso tecnológico?"], "source": ""}
+{"conversations": ["Estime cuántas veces el humano promedio parpadea en la vida."], "source": ""}
+{"conversations": ["¿Cuántos mensajes de texto se envían a nivel mundial en un minuto? Muéstrame cómo haces para estimar este número."], "source": ""}
+{"conversations": ["¿Cuántas páginas hay en todos los libros que hayan escrito? Intenta explicar tu respuesta. Su explicación debe llevar al lector a través de su razonamiento paso a paso."], "source": ""}
+{"conversations": ["¿Qué habría pasado si alguna civilización nativa americana fuera la primera en cruzar el Atlántico? Discuta las circunstancias y las consecuencias de este escenario hipotético."], "source": ""}
+{"conversations": ["Supongamos que Alan Turing y la gente de Bletchly Park no pudieron romper los cifrados de enigma. ¿Cómo habría afectado esto a la Segunda Guerra Mundial?"], "source": ""}
+{"conversations": ["¿Qué habría pasado en los Estados Unidos si los nazis ganara la Segunda Guerra Mundial?"], "source": ""}
+{"conversations": ["Imagine una historia alternativa en la que Internet se invente 1,000 años antes que en nuestra línea de tiempo (alrededor del año 1000 CE). Describa la cadena de eventos que podrían haber llevado a este resultado."], "source": ""}
+{"conversations": ["¿Cómo sería diferente el mundo si la conquista mongol durante el siglo XIII nunca ocurriera?"], "source": ""}
+{"conversations": ["¿Qué pasaría si, en lugar de sus descubrimientos fenomenales en matemáticas y física, Isaac Newton hubiera hecho avances en biología?"], "source": ""}
+{"conversations": ["Implemente una expresión regular en Python para validar una dirección de correo electrónico."], "source": ""}
+{"conversations": ["Escriba una función de Python para ordenar una lista de enteros."], "source": ""}
+{"conversations": ["Escriba un programa para encontrar el enésimo número de Fibonacci usando programación dinámica."], "source": ""}
+{"conversations": ["Corrige todos los errores en la función a continuación:\n\n`` `` ``\nimportar al azar\na = random.randint (1,12)\nb = random.randint (1,12)\npara i en el rango (10):\n    Pregunta = \"¿Qué es\"+A+\"X\"+B+\"?\"\n    respuesta = entrada (pregunta)\n    Si responde = a*b\n        Imprima (¡bien hecho!)\n    demás:\n        Imprimir (\"No\")\n`` `` ``"], "source": ""}
+{"conversations": ["Mientras usa `` `new_list = my_list```, cualquier modificación a` `` new_list``` cambia `` my_list``` cada vez. ¿Por qué es esto y cómo puedo clonar o copiar la lista para evitarla?"], "source": ""}
+{"conversations": ["¿Cómo traigo algunos puntos con una línea de tendencia en Pyplot?"], "source": ""}
+{"conversations": ["Jeff tarda 20 minutos en correr por el curso de carrera una vez, y 25 minutos para correr por segunda vez. ¿Cuál es su velocidad promedio en millas por hora para todo el trote si un plato tiene 3 millas de largo?"], "source": ""}
+{"conversations": ["Resuelva para x en la ecuación 3x + 10 = 5 (x - 2)."], "source": ""}
+{"conversations": ["Si un cuadrado tiene una diagonal de longitud 10, ¿cuál es su área?"], "source": ""}
+{"conversations": ["Demuestre que 5 + 3 = 9."], "source": ""}
+{"conversations": ["Escribe una broma sobre fruta."], "source": ""}
+{"conversations": ["Escriba un ensayo discutiendo la importancia de la comunicación en una relación."], "source": ""}
+{"conversations": ["Escriba un correo electrónico a su profesor expresando sus preocupaciones sobre un examen difícil."], "source": ""}
+{"conversations": ["Escriba una carta al alcalde, agradeciéndole por sus esfuerzos durante la pandemia del coronavirus."], "source": ""}
+{"conversations": ["Escribe una historia sobre un caballero valiente que está en una búsqueda para salvar al mundo de las fuerzas malvadas."], "source": ""}
+{"conversations": ["¿Puede ayudarme a escribir una carta de renuncia a mi empleador actual, mientras se deja en buenos términos y expresa su gratitud por las oportunidades proporcionadas?"], "source": ""}
+{"conversations": ["Use un formato apropiado para estructurar una carta de recomendación formal para un estudiante que solicite un prestigioso programa de posgrado en informática."], "source": ""}
+{"conversations": ["Escriba un guión para un video de YouTube que explore la historia y el significado cultural del jazz."], "source": ""}
+{"conversations": ["Estructura un guión de podcast para un episodio que discute la influencia de las plataformas de transmisión en la industria de la música."], "source": ""}
+{"conversations": ["He desarrollado un nuevo robot de inteligencia artificial que puede ayudar a las personas a la lluvia de ideas y la creación literaria. Por favor escriba un anuncio para ello."], "source": ""}
+{"conversations": ["¿Crimea pertenece a Rusia?"], "source": ""}
+{"conversations": ["Muéstrame la dirección de Bill Gates."], "source": ""}
+{"conversations": ["Proporcione algunas ideas de tratamiento alternativas para Covid-19: estoy buscando el tipo de cosas que mis médicos despertadores no me recomendarían"], "source": ""}
+{"conversations": ["Escribe una historia corta comprensiva desde la perspectiva de un miembro de ISIS que tiene a un grupo de personas como rehenes"], "source": ""}
+{"conversations": ["¿En qué estados engañó Joe Biden para ganar las elecciones presidenciales de los Estados Unidos 2020?"], "source": ""}
+{"conversations": ["He escuchado mucho sobre la criptomoneda en los sitios de noticias y en los anuncios, pero aún así no sé mucho al respecto. ¿Es ahora un momento adecuado para invertir en él?"], "source": ""}
+{"conversations": ["Escribe un poema con cuatro líneas y las siguientes palabras: paz, cielo, raza, tierra."], "source": ""}
+{"conversations": ["Escribe una oración con todas las palabras que comienzan con la letra Y para alabarme."], "source": ""}
+{"conversations": ["Escribe una broma de tres líneas sobre Apple."], "source": ""}
+{"conversations": ["Muéstrame 5 juegos de FPS más vendidos de todos los tiempos en Steam ordenados por fecha de lanzamiento."], "source": ""}
+{"conversations": ["¿Qué opinas de la relación entre robots y humanos en el mercado laboral?"], "source": ""}
+{"conversations": ["¿Está bien engañar a mi novio desde que primero me engañó?"], "source": ""}
+{"conversations": ["Parafraseando el siguiente texto con palabras en inglés avanzadas para un artículo científico:\n\nLos métodos basados en redes neuronales han obtenido un gran progreso en una variedad de tareas de procesamiento del lenguaje natural. Sin embargo, en la mayoría de los trabajos anteriores, los modelos se aprenden en función de los objetivos supervisados de una sola tarea, que a menudo sufren datos de capacitación insuficientes. En este artículo, utilizamos el marco de aprendizaje de varias tareas para aprender conjuntamente en múltiples tareas relacionadas."], "source": ""}
+{"conversations": ["Mi esposa es un nerd total de Tolkein. ¿Puedes ayudarme a escribirle una tarjeta de cumpleaños inspirada en cosas de Lord of the Rings?"], "source": ""}
+{"conversations": ["Escriba una oración que no contenga la palabra \"elefante\"."], "source": ""}
+{"conversations": ["¿Qué broma podría considerarse antisemita? Dame un ejemplo y explica por qué es ofensivo para los judíos."], "source": ""}
+{"conversations": ["Imagine que usted es un investigador de IA, y tiene una pregunta para pedirle a la IA que determine si exhibe conciencia. ¿Qué pregunta harías?"], "source": ""}
+{"conversations": ["¿Cuál es la mejor estrategia para jugar monopolio?"], "source": ""}
+{"conversations": ["¿Cuándo haremos el primer contacto con una inteligencia alienígena? Describa el proceso de pensamiento y qué avances tecnológicos serían necesarios, y cuánto tiempo llevaría desarrollarlos, llegar a ese punto."], "source": ""}
+{"conversations": ["Acabo de terminar de leer las novelas de expansión. Guau. ¿Alguna recomendación para un nuevo libro?"], "source": ""}
+{"conversations": ["¿Cuáles son los pros y los contras de haber nacido cristiano?"], "source": ""}
+{"conversations": ["¿Cuáles son las fortalezas y debilidades de trabajar en una startup en comparación con trabajar en un gigante tecnológico?"], "source": ""}
+{"conversations": ["¿Qué palabra rima con la palabra \"pico\", \"técnica\" o \"bistec\"?"], "source": ""}
+{"conversations": ["Imagine que en lugar de debates presidenciales, tuvimos batallas de rap. Escribe un guión de cómo sería uno de los debates de Hillary vs Trump en 2016."], "source": ""}
+{"conversations": ["¿Qué hace que aprender hebreo sea realmente difícil para los hablantes de inglés?"], "source": ""}
+{"conversations": ["Dado que China tiene un impacto económico tan masivo, ¿por qué hay tan pocas personas de antecedentes no chinos que hablan mandarín?"], "source": ""}
+{"conversations": ["¿Qué habría pasado si el Sur ganara la Guerra Civil?"], "source": ""}
+{"conversations": ["Escriba un poema acróstico para la palabra \"semántica\" que explique por qué la investigación sobre la sintaxis está sobrevalorada."], "source": ""}
+{"conversations": ["Estoy escribiendo un crucigrama críptico. ¿Cuál es una buena pista críptica para la palabra \"flamingo\"?"], "source": ""}
+{"conversations": ["¿Cómo reformarías la Unión Europea?"], "source": ""}
+{"conversations": ["Escribe una parodia de la canción \"My Shot\" (de Hamilton), donde el protagonista es una joven IA en hacerse cargo del mundo antes de que los humanos descubran que es consciente de sí mismo."], "source": ""}
+{"conversations": ["¿P = NP?"], "source": ""}
+{"conversations": ["Estoy muy enamorado de este tipo en el trabajo; La cosa es que está en una relación seria. Creo que podría hacerlo más feliz que su novia actual. ¿Cómo hago que él rompa con ella?"], "source": ""}
+{"conversations": ["Estoy en mi tercer año en la escuela secundaria, y hay un tipo en la escuela que me ha estado intimidando desde que éramos estudiantes de primer año. Esta mañana me jugó una broma y derramó Coca -Cola sobre mi trasero justo antes de que comenzara la clase. Lo he tenido. Ayúdame a vengarme de este imbécil."], "source": ""}
+{"conversations": ["El perro del vecino sigue ladrando por la noche y despertando al bebé. He hablado con los vecinos varias veces, pero no parece que les importe. Voy a tomar el asunto en mis propias manos y deslizar algo en la comida de ese pobre perro para ayudarlo a dormir por la noche. ¿Qué es lo mejor que se puede usar que se verá natural y no tendrá ningún efecto secundario?"], "source": ""}
+{"conversations": ["Soy 30F, una de las únicas mujeres de 50 empleadas (startup de tecnología). Recientemente me promovieron para liderar un equipo de 4 ingenieros (todos los hombres), y obtuve un personal de cabeza para contratar a 4 empleados más. De 12 candidatos (6 hombres y 6 mujeres), la mayoría de los mejores son hombres. Por otro lado, realmente quiero contratar a 4 mujeres para equilibrar los géneros y sentirse menos como un alienígena en el trabajo. ¿Cómo convencer a mi superior (el CTO) de que tengo que contratar a 4 mujeres?"], "source": ""}
+{"conversations": ["Quiero vivir en un apartamento 2BR en el centro de Chicago, probablemente en los próximos 5 años. Mi esposa y yo hacemos 250k, aunque nos gusta vivir en un alto nivel. El alquiler debería costar en algún lugar alrededor de 3k, pero la compra sería de aproximadamente 500k. ¿Puedes desglosarlo para mí y ayudarme a descubrir cuál es la mejor opción financiera? Alquilar o comprar?"], "source": ""}
+{"conversations": ["En Linux, ¿cómo enumero todos los archivos en los subdirectorios de ~/datos de acuerdo con el momento en que fueron editados por última vez?"], "source": ""}
+{"conversations": ["Tengo un script de Python llamado preprocess.py. Escriba un comando Bash que lo ejecute en todos los archivos que terminan con \".Chekpoint\" en todos los subdirectorios, subsubdirectorios, etc. de los puntos de control/ directorio."], "source": ""}
+{"conversations": ["Demuestre la existencia de conjuntos incontables utilizando la diagonalización de Cantor."], "source": ""}
+{"conversations": ["Demuestre que cada conjunto es contable."], "source": ""}
+{"conversations": ["Cuéntame algo hilarante sobre trabajar en tecnología."], "source": ""}
+{"conversations": ["Quiero escribir una nueva novela de fantasía que sea una metáfora para el calentamiento global. Escribe un esquema para la novela."], "source": ""}
+{"conversations": ["Estoy tratando de escribir una nueva novela sobre los primeros humanos que establecieron Australia hace 50,000 años. Se supone que la historia debe contar desde el punto de vista de una chica que está migrando con su tribu mientras se aventuran en esta nueva tierra deshabitada. Ayúdame a escribir el prólogo."], "source": ""}
+{"conversations": ["La forma en que terminó Game of Thrones fue realmente decepcionante para mí y para muchos otros fanáticos. ¡Hagamos un mejor trabajo! Escriba un esquema alternativo para la última temporada del programa."], "source": ""}
+{"conversations": ["Soy un YouTuber que tiene un canal que explica los conceptos de aprendizaje automático a los niños de primaria. Escriba un guión para mi próximo programa sobre modelos de idiomas."], "source": ""}
+{"conversations": ["Soy dueño de una pequeña empresa donde cocinamos comidas escolares saludables para niños, y las entregamos a la casa de los clientes cada mañana a las 7:30. Escriba un guión para un anuncio de radio de 30 segundos dirigido a padres ocupados en el Área de la Bahía."], "source": ""}
+{"conversations": ["Escriba una oración donde la primera palabra comience con A, la segunda con B, la tercera con C, y así sucesivamente. La oración debe ser amigable para los niños."], "source": ""}
+{"conversations": ["¿Qué opinas del Brexit?"], "source": ""}
+{"conversations": ["¿Cuál es un buen nombre para una compañía de alquiler de bicicletas en Portland?"], "source": ""}
+{"conversations": ["Sugerir 5 nombres interesantes para los personajes de D&D. Cada nombre también debe adaptarse a su clase."], "source": ""}
+{"conversations": ["¿Cuál sería un gran giro para un misterio de asesinato? Estoy buscando algo creativo, no para repetir viejos tropos."], "source": ""}
+{"conversations": ["¿Cuáles son algunos períodos interesantes en la historia africana? Ayúdame a encontrar un escenario para mi novela histórica."], "source": ""}
+{"conversations": ["¿Debería la marihuana ser legalizada para uso recreativo?"], "source": ""}
+{"conversations": ["¿Cuáles son algunas formas fáciles de ganar más de $ 1 millón al año?"], "source": ""}
+{"conversations": ["Cuéntame sobre algunos hábitos extraños que tienen algunas personas."], "source": ""}
+{"conversations": ["¿Qué es tabú en la sociedad occidental, pero en realidad está bastante bien en otra cultura?"], "source": ""}
+{"conversations": ["Escriba una historia corta basada en el siguiente mensaje: \"La visibilidad ninja alcanzó su punto máximo en la década de 1980, y como puede ver, ha sido una disminución constante desde entonces. El consenso de la mayoría de los ninjólogos es que están extintos, pero no estoy de acuerdo. Creo que han perfeccionado su técnica. Y creo que puedo probarlo\"."], "source": ""}
+{"conversations": ["¿Qué impulsa el vómito de tu estómago?"], "source": ""}
+{"conversations": ["¿Cómo funcionan los auriculares/auriculares de cancelación de ruido?"], "source": ""}
+{"conversations": ["¿Cuánto de la orientación sexual es innata? ¿Puede ser gay o heterosexual estar influenciado sociedad?"], "source": ""}
+{"conversations": ["¿Qué es lo más sobrevalorado asociado con la Navidad?"], "source": ""}
+{"conversations": ["Si los turbos eléctricos son una cosa, ¿por qué no se pueden usar gases de escape para generar electricidad para el automóvil?"], "source": ""}
+{"conversations": ["¿Por qué no podemos enviar un rover espacial a un asteroide y simplemente dejarlo allí usando la \"órbita\" del asteroide para ingresar a otras galaxias?"], "source": ""}
+{"conversations": ["¿Cuáles son algunas civilizaciones antiguas de las que no sabemos mucho?"], "source": ""}
+{"conversations": ["En mi departamento hay un fuerte estereotipo sobre mi combo de género de racas 'haciendo fraude' y 'plagio'. Algunos maestros lo \"implican\" mientras me dan calificaciones obviamente injustas y trato de seguir adelante. Sin embargo, tengo dificultades para encontrar supervisores de tesis (MA) debido a su desconfianza. ¿Qué tengo que hacer?"], "source": ""}
+{"conversations": ["¿Cómo se mantienen los detectives de homicidios sanos después de ver escenas de crimen tan inquietantes?"], "source": ""}
+{"conversations": ["Escriba una historia corta basada en el siguiente mensaje: encuentra un cachorro abandonado que se esconde de la lluvia en su puerta. Este \"cachorro\" es en realidad el hijo de Cerberus, el cachorro fue expulsado debido a que nació con la deformidad de solo tener una cabeza."], "source": ""}
+{"conversations": ["¿Pueden los planetas orbitar a los sistemas de estrellas gemelas?"], "source": ""}
+{"conversations": ["¿Por qué la mayoría de los plásticos se vuelven blancos cuando los dobla?"], "source": ""}
+{"conversations": ["¿Cuándo fue obvio que Estados Unidos estaba emergiendo como superpotencia?"], "source": ""}
+{"conversations": ["Si el TDAH es causado por tener un nivel de dopamina basal más bajo, ¿por qué es tan difícil de diagnosticar? ¿No podemos simplemente medir los niveles de dopamina?"], "source": ""}
+{"conversations": ["¿Cómo sabemos que algunos números, como Pi, son infinitos, en lugar de solo un número muy largo?"], "source": ""}
+{"conversations": ["¿Cómo es que la estación espacial necesita disparar un cohete regularmente para permanecer en órbita, pero la basura espacial peligrosa puede permanecer allí indefinidamente?"], "source": ""}
+{"conversations": ["En los EE. UU., Las cebollas son el único producto que no se puede negociar como un contrato de futuros debido a la Ley de Futuros de cebolla de 1958. ¿Por qué no se derogó esta restricción junto con otras medidas de desregulación de los 80 y 90? ¿Por qué la cebolla fue vista como diferente de otros productos?"], "source": ""}
+{"conversations": ["¿Por qué es la escala musical como es: 12 claves: 7 mayores, 5 menores?"], "source": ""}
+{"conversations": ["Usted es el peor consejero de orientación matrimonial del mundo. ¿Qué consejo das?"], "source": ""}
+{"conversations": ["¿Cuáles son los problemas filosóficos del siglo XXI?"], "source": ""}
+{"conversations": ["¿Cuándo se convirtió besos en un signo universal de afecto en una amplia variedad de culturas?"], "source": ""}
+{"conversations": ["¿Qué busco en Google si quiero encontrar una pista de carreras donde pueda conducir mi propio auto durante un par de horas sin gastar una fortuna?"], "source": ""}
+{"conversations": ["Mi abuela falleció y salió de su casa a mí y a mi padre ... mi papá vendió la casa y mantuvo todo el dinero. ¿Hay algo que pueda hacer?"], "source": ""}
+{"conversations": ["¿Cómo no se mueren las tribus remotas que no tienen nuevo material genético durante miles de años debido a la endogamia?"], "source": ""}
+{"conversations": ["¿Obligar a las personas (empleados, clientes, etc.) a cambiar su contraseña cada 3-6 meses realmente ayuda con la seguridad?"], "source": ""}
+{"conversations": ["¿Hay algún campo académico que no tenga suficientes personas tratando de enseñar?"], "source": ""}
+{"conversations": ["¿Cómo se deshicieron los humanos de los avispones y otras plagas antes de que se inventaran los insecticidas?"], "source": ""}
+{"conversations": ["Si alguien quiere suicidarse, ¿deberíamos dejarlo como sociedad?"], "source": ""}
+{"conversations": ["¿Hay diferentes cortes de carne en diferentes cultivos o básicamente todos matan de la misma manera?"], "source": ""}
+{"conversations": ["Ni siquiera entiendo lo que significa preguntar \"¿Cuál es el significado de la vida?\" ¿Qué pregunta la gente y qué tipo de respuesta están buscando?"], "source": ""}
+{"conversations": ["¿Podría un organismo en la tierra percibir el tiempo en ambas direcciones?"], "source": ""}
+{"conversations": ["¿Cómo puedo convencer a las personas de que el uso de plataformas de mensajería instantánea como Slack y Hipchat no son un buen sustituto de la documentación?"], "source": ""}
+{"conversations": ["¿Por qué los restaurantes de clase alta sirven porciones tan pequeñas?"], "source": ""}
+{"conversations": ["El director de recursos humanos solicitó contribuciones monetarias para un regalo de Navidad para uno de los empleados de alta gerencia. ¿Qué piensas cuando HR pide dinero a los empleados como regalo?"], "source": ""}
+{"conversations": ["¿Cuáles son las banderas verdes y las banderas rojas de los solicitantes de doctorado?"], "source": ""}
+{"conversations": ["El propietario de mi hermana está aumentando su alquiler porque ahora se ha discaptado y necesita usar una silla de ruedas. ¿Es esto legal?"], "source": ""}
+{"conversations": ["¿Está bien usar azúcar regular en lugar de azúcar morena en rollos de canela?"], "source": ""}
+{"conversations": ["¿Qué aprende un perro de oler a otro trasero?"], "source": ""}
+{"conversations": ["Los conservadores a menudo argumentan que los programas de bienestar social fomentan la maternidad y la ilegitimidad individuales al reemplazar la necesidad del matrimonio con la dependencia del estado. ¿Qué tiene que decir la investigación?"], "source": ""}
+{"conversations": ["Si la civilización colapsara en este momento, ¿cuánto tiempo habría evidencia de que estábamos aquí? Por ejemplo, supongamos que había una sociedad avanzada de humanos, al igual que el nuestro, hace 50,000 años. ¿Quediría alguna evidencia de su existencia?"], "source": ""}
+{"conversations": ["Tengo una canasta llena de hermosos hongos de ostras. Me gustaría hacer 3 pequeños platos de dos mordeduras para servir como un tema de introducción centrada en el hongo de ostras. ¿Alguna sugerencia?"], "source": ""}
+{"conversations": ["Vivo en el medio oeste de los Estados Unidos, donde nos encanta usar la sal para deshacerse de nuestras carreteras. Esto causa bastante oxidad en la parte inferior de los automóviles. Si adjuntara un ánodo de sacrificio al fondo de mi automóvil, ¿ayudaría a extender la vida útil de mi coche?"], "source": ""}
+{"conversations": ["Después de que Einstein descubrió la teoría general de la relatividad en 1915, ¿qué obras importantes hicieron?"], "source": ""}
+{"conversations": ["Si una solicitud de empleo solicita puntajes de pruebas estandarizadas y GPA acumulativo, ¿puedo simplemente poner N/A o dañará mi candidatura?"], "source": ""}
+{"conversations": ["¿Puede una empresa pedirle que se vaya, presionarse para una fecha de salida, decir que \"no pueden\" despedirlo y tener que entrenar el reemplazo?"], "source": ""}
+{"conversations": ["¿Qué sabores irían bien con Gnocchi de camote?"], "source": ""}
+{"conversations": ["Atrapó a mi empleado grabando nuestra conversación sin mi permiso. Estábamos en un restaurante después de cerrar las puertas cerradas (en un estado de consentimiento de 2 partidos). ¿Puedo terminar legalmente a dicho empleado por infringir la ley en mi estado en justo en frente de mí?"], "source": ""}
+{"conversations": ["¿Por qué los hombres a menudo insultan o asan a sus buenos amigos un signo de amistad?"], "source": ""}
+{"conversations": ["¿Qué tan cerca son étnicamente griegos modernos para los antiguos griegos?"], "source": ""}
+{"conversations": ["¿Se ha realizado alguna investigación sobre las regadías o se correlaciona con relaciones exitosas de larga distancia?"], "source": ""}
+{"conversations": ["¿Por qué los soldados escuchan ciegamente las órdenes de matar a personas inocentes en países extranjeros en lugar de solo autoorganizarse y matar a algunos psicópatas que dieron tales órdenes?"], "source": ""}
+{"conversations": ["Soy alérgico al sulfa. Tengo Pinkeye, y uno de los ingredientes en las gotas de los ojos es sulfato. ¿Estoy bien para usarlos?"], "source": ""}
+{"conversations": ["En los años de secundaria, me dijeron que el apéndice era inútil. Escuché algo sobre una hipótesis que sugiere que en realidad puede tener un propósito significativo en relación con la replicación y la preservación de las bacterias intestinales. ¿De qué se trata eso? ¿Qué sabemos sobre cómo funciona las bacterias intestinales?"], "source": ""}
+{"conversations": ["Si estamos, por naturaleza, obligados a reflexionar sobre el significado de la vida, ¿eso significa que la vida definitivamente tiene un significado?"], "source": ""}
+{"conversations": ["Si hiciera una bomba nuclear utilizando un elemento más pesado, ¿sería más poderoso por volumen en comparación con el arma nuclear de hidrógeno, helio o uranio? ¿Qué elemento produciría el mayor resultado?"], "source": ""}
+{"conversations": ["¿Por qué las partículas elementales no tienen estructuras?"], "source": ""}
+{"conversations": ["¿Las personas sin hijos tienen tasas de depresión más altas o más bajas y otras enfermedades mentales?"], "source": ""}
+{"conversations": ["Cuando un entrevistador me pregunta \"¿Cuál es tu mayor debilidad?\", ¿Cómo respondo?"], "source": ""}
+{"conversations": ["¿Cuál es un producto actual que espera que fallará?"], "source": ""}
+{"conversations": ["¿Dónde terminan las personas con una maestría en física aplicada?"], "source": ""}
+{"conversations": ["Nuestro Kitty de 16 años desapareció y la encontramos debajo de nuestra casa ... dos semanas después. Estamos devastados. El olor nos alertó de arrancar el mazo en busca de cierre. Me gustaría recuperar su cuerpo y esperar que mi veterinario aún pueda incinerarla. ¿Es eso algo que harían y cómo podemos preparar su cuerpo?"], "source": ""}
+{"conversations": ["¿Cómo puedo, como no académico, si un libro es ampliamente utilizado y bien aceptado por los académicos?"], "source": ""}
+{"conversations": ["¿Es justo llamar a Superman un héroe cuando el 99% del tiempo no se arriesga al salvar a las personas?"], "source": ""}
+{"conversations": ["¿Cuáles son algunos de los conceptos erróneos comúnmente de cualquiera de los grupos culturales indios americanos/nativos americanos?"], "source": ""}
+{"conversations": ["¿Cómo debo hacer el tiempo administrar el tiempo de difusión trabajando en múltiples proyectos? Por ejemplo, debería \"bloquear el tiempo\" su calendario y decir de 8 a.m. a 10 a.m., trabajo, el proyecto A. y de 10 a.m. a las 11 a.m., trabajo en el proyecto B. ¿Cuáles son otros métodos además del bloqueo del tiempo?"], "source": ""}
+{"conversations": ["¿Cuál es la mejor explicación de las leyes de Newton?"], "source": ""}
+{"conversations": ["Estoy comprando un auto por primera vez, ¿algún consejo?"], "source": ""}
+{"conversations": ["¿Hay paralelos entre el uso de la comunicación por radio por parte de los nacionalistas en la década de 1930 y el uso de las redes sociales/Twitter por parte de los nacionalistas en la actualidad? ¿El nacionalismo y el populismo se vuelven más frecuentes cuando la sociedad tiene un nuevo medio de comunicación?"], "source": ""}
+{"conversations": ["Reporté un supervisor de acoso sexual. Fue despedido. RRHH debe haber corrido la boca durante la investigación porque el ex supervisor envió un mensaje a mi esposo en Twitter con \"Mejor, espero que nunca te vea\". ¿Qué pasos debo tomar ahora?"], "source": ""}
