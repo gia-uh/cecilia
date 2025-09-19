@@ -1,0 +1,542 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,twoside]{rcmart} % Document font size and equations flushed left
+% \usepackage{algorithm}
+% \usepackage{algorithmic}
+\usepackage{orcidlink}
+\usepackage{xurl}
+\usepackage[utf8]{inputenc}
+
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,0} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=blue,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}, pdfsubject={The Subject}, pdfkeywords={Some Keywords}, pdfproducer={Latex with hyperref}, pdfcreator={pdflatex}}
+
+%----------------------------------------------------------------------------------------
+%	Theorems (Uncomment for english theorems) (DON'T EDIT)
+%----------------------------------------------------------------------------------------
+
+%\newtheorem{theorem}{Theorem}
+%\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+%\newtheorem{axiom}[theorem]{Axiom}
+%\newtheorem{case}[theorem]{Case}
+%\newtheorem{claim}[theorem]{Claim}
+%\newtheorem{conclusion}[theorem]{Conclusion}
+%\newtheorem{condition}[theorem]{Condition}
+%\newtheorem{conjecture}[theorem]{Conjecture}
+%\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{criterion}[theorem]{Criterion}
+%\newtheorem{definition}[theorem]{Definition}
+%\newtheorem{example}[theorem]{Example}
+%\newtheorem{exercise}[theorem]{Exercise}
+%\newtheorem{lemma}[theorem]{Lemma}
+%\newtheorem{notation}[theorem]{Notation}
+%\newtheorem{problem}[theorem]{Problem}
+%\newtheorem{proposition}[theorem]{Proposition}
+%\newtheorem{remark}[theorem]{Remark}
+%\newtheorem{solution}[theorem]{Solution}
+%\newtheorem{summary}[theorem]{Summary}
+%\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+%----------------------------------------------------------------------------------------
+%	Teoremas (NO EDITAR)
+%----------------------------------------------------------------------------------------
+
+\newtheorem{theorem}{Teorema}
+\newtheorem{acknowledgement}[theorem]{Afirmación}
+\newtheorem{axiom}[theorem]{Axioma}
+\newtheorem{case}[theorem]{Caso}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusión}
+\newtheorem{condition}[theorem]{Condición}
+\newtheorem{conjecture}[theorem]{Conjetura}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{criterion}[theorem]{Criterio}
+\newtheorem{definition}[theorem]{Definición}
+\newtheorem{example}[theorem]{Ejemplo}
+\newtheorem{exercise}[theorem]{Ejercicio}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{notation}[theorem]{Notación}
+\newtheorem{problem}[theorem]{Problema}
+\newtheorem{proposition}[theorem]{Proposición}
+\newtheorem{remark}[theorem]{Observación}
+\newtheorem{solution}[theorem]{Solución}
+\newtheorem{summary}[theorem]{Sumario}
+\newenvironment{proof}[1][Demostración]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+%\newcommand{\dualcap}[2]{{\selectlanguage{spanish}\caption{#1}}\addtocounter{\@captype}{-1}\captionsetup{labelfont=it}\caption{#2}}
+%\NewDocumentCommand{\encaption}{ o  m }{{\selectlanguage{english}%
+%\IfNoValueTF{#1}{\caption[#2]{#2}}{\caption[#1]{#2}}
+%}\addtocounter{\@captype}{-1}}
+%\makeatother
+
+%----------------------------------------------------------------------------------------
+%	Información sobre la Revista (NO EDITAR)
+%----------------------------------------------------------------------------------------
+
+\setcounter{page}{1}
+\SectionInfo{Artículo Original / Original Research} % Elegir una de las secciones de la revista: Artículo Original / Original Research, Ense�anza / Teaching, Artículo de r�Revisión / Review Paper, Comunicaci�n Breve / Brief Communication, Presentaci�n de Tecnolog�a / Presentation of Technology, Artículo de Opini�n / Position Paper, Divulgaci�n Cient�fica / Scientific Spreading, Entrevista / Interview, Carta al Editor / Letter to the Editor, Nota Hist�rica / Historical Note, Rese�a de Libro / Book Review, Proyectos de Investigación / Research Projects, Resumen de Tesis, Actualidad / Recent Events, Anuncios / News, Obituario / Obituary
+\JournalInfo{Ciencias Matemáticas, Vol. XX, No. X, XXXX, Pag. 1-\pageref{LastPage}}
+\PaperUrl{\href{https://revistas.uh.cu/rcm/index}{https://revistas.uh.cu/rcm/index}}
+\Archive{Recibido (\textit{Received}): XX-XX-2024, Revisado (\textit{Revised}): XX-XX-2024 \\ Aceptado (\textit{Accepted}): XX-XX-2024, En línea (\textit{Online}): XX-XX-2024}
+
+%----------------------------------------------------------------------------------------
+% Título en Espa�ol e Inglés obligatorio
+%----------------------------------------------------------------------------------------
+
+\PaperTitle{Cecilia: El Modelo de Lenguaje Cubano}
+\PaperTitleEng{Cecilia: The Cuban Language Model}
+
+%----------------------------------------------------------------------------------------
+%	Autores y afiliaciones
+%----------------------------------------------------------------------------------------
+
+\Authors{Alejandro Piad-Morffis\textsuperscript{1}*\orcidlink{0000-0001-9522-3239},
+		Suilan Estevez-Velarde\textsuperscript{1}\orcidlink{0000-0001-6707-1442},
+		Yudivian Almeida-Cruz\textsuperscript{1}\orcidlink{0000-0002-2345-1387},
+		Ernesto Luis Estevanell-Valladares\textsuperscript{1}\textsuperscript{2}\orcidlink{0000-0002-1168-1767},
+		Roberto García Rodríguez\textsuperscript{1}\orcidlink{0009-0005-5269-8281},
+		Alejandro Beltrán Varela\textsuperscript{1}\orcidlink{0009-0009-8073-1033},
+		Carla Sunami Pérez Valera\textsuperscript{1}\orcidlink{0009-0007-9303-0055},
+		Daniel Alejandro Valdés Pérez\textsuperscript{1}\orcidlink{0000-0003-4472-3967},
+		Elena Rodríguez Horta\textsuperscript{1}\orcidlink{0009-0004-1515-3111},
+		Gabriel Hernández Rodríguez\textsuperscript{1}\orcidlink{0009-0004-8692-2133},
+		Deborah Famadas Rodríguez\textsuperscript{1}\orcidlink{0009-0002-0042-3516},
+		Niley González Ferrales\textsuperscript{1}\orcidlink{0009-0005-0088-607X},
+		Roberto Marti Cedeño\textsuperscript{1}\orcidlink{0000-0002-7671-4187},
+		Juan Pablo Consuegra Ayala\textsuperscript{1}\textsuperscript{2}\orcidlink{0000-0003-2009-393X},
+		Robiert Sepúlveda-Torres\textsuperscript{2}\orcidlink{0000-0002-2784-2748},
+		Yoan Gutiérrez Vazquez\textsuperscript{2}\orcidlink{0000-0002-4052-7427},
+		Andrés Montoyo\textsuperscript{2}\orcidlink{0000-0002-3076-0890}
+		Rafael Muñoz Guillena\textsuperscript{2}\orcidlink{0000-0001-8127-9012}
+		Manuel Javier Palomar Sanz\textsuperscript{2}\orcidlink{0000-0002-1441-7865}}
+\AuthorsAbbrev{Piad-Morffis, A.,
+			Estevez-Velarde, S.,
+			Almeida Cruz, Y.,
+			Estevanell-Valladares, E.L.,
+			García Rodríguez, R.,
+			Beltrán Varela, A.,
+			Pérez Valera, C.S.,
+			Valdés Pérez, D.A.,
+			Rodríguez Horta, E.,
+			Hernández Rodríguez, G.,
+			Famadas Rodríguez, D.,
+			González Ferrales, N.,
+			Marti Cedeño, R.,
+			Consuegra Ayala, J.P.,
+			Sepúlveda-Torres, R.,
+			Gutiérrez Vazquez, Y.,
+			Montoyo, A.,
+			Muñoz Guillena, R.,
+			\& Palomar Sanz, M.J.}
+\affiliation{\textsuperscript{1}Departamento de Inteligencia Artifiacial y Sistemas Computacionales, Facultad de Matemática y Computación, Universidad de la Habana, La Habana, Cuba. Email:
+\href{apiad@matcom.uh.cu}{apiad@matcom.uh.cu}
+\href{sestevez@matcom.uh.cu}{sestevez@matcom.uh.cu}
+\href{yudi@matcom.uh.cu}{yudi@matcom.uh.cu}
+\href{ernesto.estevanell@matcom.uh.cu}{ernesto.estevanell@matcom.uh.cu}
+\href{roberto.garcia@matcom.uh.cu}{roberto.garcia@matcom.uh.cu}
+\href{alejandro.beltran@matcom.uh.cu}{alejandro.beltra@matcom.uh.cu}
+\href{carla.sperez@matcom.uh.cu}{@matcom.uh.cu}
+\href{elena.rodriguez@matcom.uh.cu}{elena.rodriguez@matcom.uh.cu}
+\href{gabriel.hernandez@matcom.uh.cu}{gabriel.hernandez@matcom.uh.cu}
+\href{deborah.famadas@matcom.uh.cu}{deborah.famadas@matcom.uh.cu}
+\href{rmarticedeno@matcom.uh.cu}{rmarticedeno@matcom.uh.cu}
+} % Author affiliation
+\affiliation{\textsuperscript{2}GPLSI, Universidad de Alicante, Alicante, España. Email:
+\href{juan.consuegra@.ua.es}{juan.consuegra@.ua.es}
+\href{robiert.sepulveda@.ua.es}{robiert.sepulveda@.ua.es}
+\href{ygutierrez@.ua.es}{ygutierrez@.ua.es}
+\href{montoyo@.ua.es}{montoyo@.ua.es}
+\href{rafael.munoz@.ua.es}{rafael.munoz@.ua.es}
+\href{mpalomar@.ua.es}{mpalomar@.ua.es}
+} % Author affiliation
+\affiliation{*\textbf{Autor para Correspondencia (\textit{Corresponding Author})}} % Corresponding author
+\affiliation{\medskip \textbf{Editado por:} Nombre del Editor de la Sección, Institución, País. (\underline{este campo lo modifica el editor})}
+
+%----------------------------------------------------------------------------------------
+%	Palabras Clave en Espa�ol e Inglés obligatorias
+%----------------------------------------------------------------------------------------
+
+\Pclaves{corpus, modelado del lenguaje, procesamiento del lenguaje natural}
+\Keywords{corpora, language modeling, natural language processing}
+\MSC{68, 68T07, 68T50}
+
+%----------------------------------------------------------------------------------------
+%	Resumen en espa�ol
+%----------------------------------------------------------------------------------------
+
+\Resumen{El artículo presenta Cecilia 2B, el primer modelo de lenguaje entrenado específicamente para el español cubano. Cecilia 2B está basado en la arquitectura Salamandra 2B, un modelo multilingüe de 2 mil millones de parámetros, y adaptado mediante preentrenamiento continuo sobre un corpus cuidadosamente compilado con cerca de mil millones de tokens provenientes de fuentes diversas como prensa nacional, literatura, legislación y enciclopedias cubanas. Esta especialización permite a Cecilia 2B capturar matices lingüísticos y culturales propios del español cubano, superando las limitaciones de los modelos generalistas en la comprensión de variantes regionales. La evaluación en benchmarks multilingües estándar muestra solo una reducción promedio del $2.4$\% en el desempeño respecto al modelo base, manteniendo robustez general. No obstante, aún se requieren recursos específicos para evaluar el español cubano y medir completamente sus ventajas. Este trabajo impulsa el desarrollo de tecnologías lingüísticas regionales adaptadas a culturas locales y entornos con recursos limitados, resaltando la ética en el uso de datos y la participación comunitaria.}
+
+%----------------------------------------------------------------------------------------
+%	Abstract 
+%----------------------------------------------------------------------------------------
+
+\Abstract{The article presents Cecilia 2B, the first language model specifically trained for Cuban Spanish. Cecilia 2B is based on Salamandra 2B, a robust multilingual architecture with 2 billion parameters, and adapted through continual pretraining on a carefully curated corpus of nearly one billion tokens from diverse Cuban sources including national press, literature, legislation, and encyclopedias. This specialization allows Cecilia 2B to capture linguistic and cultural nuances unique to Cuban Spanish, addressing limitations of generalist large language models in regional variant understanding. The evaluation on standard multilingual benchmarks shows only a minor $2.4$\% average performance drop compared to the base model, indicating robust general language capabilities are maintained. However, dedicated Cuban Spanish evaluation resources are still needed to fully measure the model's domain-specific advantages. The work opens avenues for regional language AI technologies adapted to local cultures and resource-constrained environments, emphasizing the importance of ethical data use and community involvement.}
+
+%----------------------------------------------------------------------------------------
+
+\Autocita{Apeuno Apedos, J.J., Apetres Apecuatro, J.E., Apecinco Apesis, J.A.,\& Apesite Apeocho, J.R. (202X). Plantilla Para Un Trabajo a Publicarse en La Revista Ciencias Matemáticas. \textit{Ciencias Matemáticas}, X(X), X--XX. Recuperado a partir de \url{https://revistas.uh.cu/rcm/} (\underline{este campo lo modifica el editor})}
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+
+\maketitle % Print the title and abstract box
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\selectlanguage{spanish}
+\section*{Introducción} % The \section*{} command stops section numbering
+\addcontentsline{toc}{section}{Introducción} % Adds this section to the table of contents
+
+El desarrollo de modelos de lenguaje específicos para variantes regionales del español es una necesidad apremiante en el campo del Procesamiento de Lenguaje Natural (PLN). Los modelos generalistas, aunque poderosos, presentan limitaciones notables cuando se aplican a lenguas con pocos recursos o a variantes regionales, ya que suelen estar entrenados principalmente con datos de idiomas dominantes y no logran capturar los matices lingüísticos, culturales y contextuales propios de comunidades específicas \cite{jadhav2024limitations}. En el caso del español cubano, esta carencia es especialmente crítica: no existen modelos de lenguaje que reflejen de manera precisa las particularidades léxicas, sintácticas y pragmáticas de la variante cubana, lo que limita el desarrollo de aplicaciones tecnológicas relevantes para Cuba. La creación de un modelo adaptado a esta realidad no solo contribuiría a cerrar la brecha digital lingüística, sino que también permitiría preservar y potenciar la riqueza cultural del español cubano en el ecosistema digital.
+
+La inexistencia de un modelo de lenguaje entrenado específicamente para el español cubano implica que las expresiones idiomáticas, referencias culturales y fenómenos lingüísticos propios de la isla no son comprendidos ni representados adecuadamente por los modelos actuales. Esta situación afecta negativamente el rendimiento de tareas como el análisis de sentimiento, la generación de texto, la traducción automática y la interacción conversacional en contextos cubanos, donde la identidad lingüística es un componente esencial de la comunicación. Afortunadamente, los avances recientes en técnicas de preentrenamiento continuo permiten aprovechar modelos multilingües robustos —como Salamandra 2B— y especializarlos eficientemente en dominios regionales mediante la exposición a corpus representativos, sin necesidad de modificar la arquitectura ni el tokenizador original. Esto abre la puerta a la creación de modelos pequeños, eficientes y culturalmente adaptados, viables incluso en entornos con recursos computacionales limitados.
+
+En este artículo se presenta \textbf{Cecilia 2B}, el primer modelo de lenguaje entrenado específicamente para el español cubano. Cecilia 2B está basado íntegramente en la arquitectura de Salamandra 2B, un modelo multilingüe de 2 mil millones de parámetros, y ha sido adaptado a través de preentrenamiento continuo sobre un corpus cuidadosamente compilado de textos cubanos. El corpus incluye más de $296000$ documentos y cerca de mil millones de \textit{tokens} provenientes de prensa nacional, literatura, legislación, enciclopedias y letras de canciones, asegurando una cobertura amplia de registros y contextos socioculturales.
+
+El modelo mantiene la compatibilidad total con el diseño y el vocabulario de Salamandra 2B, garantizando que las mejoras observadas se deban exclusivamente a la especialización en datos cubanos. Cecilia 2B es, por tanto, una herramienta pionera que facilita el desarrollo de aplicaciones de PLN adaptadas a la realidad lingüística y cultural de Cuba, sentando las bases para futuros avances en la inclusión digital y la preservación del patrimonio lingüístico regional.
+
+% El artículo se organiza de la siguiente manera: en la Sección 2 se revisa el estado del arte en modelos de lenguaje para variantes regionales y lenguas con pocos recursos, destacando las limitaciones de los modelos generalistas y las ventajas de los modelos pequeños y adaptados. La Sección 3 describe en detalle la arquitectura de Cecilia 2B, el proceso de construcción del corpus cubano y los procedimientos de preentrenamiento continuo empleados. En la Sección 4 se presentan los resultados de la evaluación cuantitativa del modelo en tareas estándar multilingües, discutiendo tanto su robustez general como las limitaciones actuales en la evaluación específica del español cubano. Finalmente, en la Sección 5 se exponen las conclusiones y se plantean las líneas futuras de trabajo, enfatizando la necesidad de recursos de evaluación y aplicaciones prácticas que validen el impacto de Cecilia 2B en la comunidad cubana.
+
+%------------------------------------------------
+
+\section{Estado del arte}
+
+\subsection{Limitaciones de los modelos generalistas}
+
+Los modelos de lenguaje de gran escala (\textit{Large Lenguage Models, LLMs}) han revolucionado el procesamiento del lenguaje natural, pero presentan limitaciones significativas cuando se aplican a lenguajes con pocos recursos o variantes regionales específicas. Estas limitaciones afectan tanto la representación como la funcionalidad de estos modelos en contextos lingüísticos diversos.
+
+\subsubsection{Escasez de datos etiquetados y no etiquetados}
+
+Los lenguajes con pocos recursos enfrentan dos limitaciones cruciales: una escasez de datos lingüísticos etiquetados y no etiquetados, y la baja calidad de los datos disponibles, que frecuentemente no son suficientemente representativos de los idiomas y sus contextos socioculturales. Esta carencia de datos de entrenamiento adecuados resulta en modelos que no capturan correctamente las particularidades lingüísticas de estos idiomas, lo que afecta su rendimiento en tareas básicas de procesamiento de lenguaje natural.
+
+Los modelos generalistas, entrenados principalmente con datos de idiomas dominantes como el inglés, muestran un rendimiento significativamente inferior cuando se aplican a lenguajes con recursos limitados. Por ejemplo, investigaciones recientes han demostrado que incluso modelos avanzados como GPT-4o y Llama 3.1 (405B) tienen un rendimiento inferior en comparación con modelos BERT (\textit{Bidirectional Encoder Representations from Transformers}) ajustados específicamente para idiomas como el marathi, con márgenes de precisión de $10.2\%$ y $14.1\%$ respectivamente \cite{jadhav2024limitations}.
+
+\subsubsection{Limitaciones en la comprensión contextual y cultural}
+
+Los modelos generalistas también presentan limitaciones significativas en la comprensión de contextos culturales específicos. Estos modelos carecen de la capacidad para interpretar adecuadamente expresiones idiomáticas, referencias culturales y matices lingüísticos propios de variantes regionales. Esta deficiencia se manifiesta en una menor precisión en tareas como el análisis de sentimiento, la detección de discurso de odio y la clasificación de textos en idiomas con pocos recursos.
+
+Las evaluaciones existentes para lenguajes con pocos recursos contienen limitaciones que necesitan ser estudiadas más a fondo, ya que los marcos de evaluación actuales no capturan adecuadamente las inconsistencias culturales en los conjuntos de datos \cite{gamboa2024filipino}. Esto resulta en una disminución del rendimiento cuando se aplican modelos multilingües a contextos lingüísticos específicos.
+
+\subsubsection{Barreras tecnológicas y de infraestructura}
+
+Los lenguajes con pocos recursos a menudo carecen de la infraestructura digital y las herramientas necesarias (como tokenizadores, analizadores morfológicos) que están fácilmente disponibles para lenguajes con muchos recursos. Esta carencia complica incluso los pasos iniciales del desarrollo de modelos, creando barreras tecnológicas significativas para la inclusión de estos idiomas en el panorama de la Inteligencia Artificial (IA).
+
+La falta de representación adecuada en los modelos generalistas contribuye a ampliar la brecha digital lingüística, dejando a muchas comunidades lingüísticas sin acceso a tecnologías basadas en IA que podrían beneficiar su desarrollo educativo, cultural y económico.
+
+\subsection{Ventajas de modelos pequeños para lenguajes regionales}
+
+Los modelos de lenguaje pequeños (\textit{Small Lenguage Models, SLMs}) ofrecen ventajas significativas para el desarrollo de soluciones lingüísticas regionales, presentando alternativas viables a los grandes modelos generalistas para contextos específicos.
+
+\subsubsection{Eficiencia computacional y accesibilidad}
+
+Los SLMs requieren significativamente menos memoria, almacenamiento y potencia de procesamiento en comparación con los modelos grandes, lo que los hace adecuados para dispositivos con capacidades de hardware limitadas, como smartphones, tablets y dispositivos IoT(\textit{Internet of Things}) \cite{tonja2024inkubalm}. Esta característica es particularmente relevante en regiones donde el acceso a infraestructura computacional avanzada es limitado.
+
+La eficiencia energética de los SLMs representa otra ventaja crucial, ya que consumen menos energía que sus contrapartes más grandes. Esto no solo resulta rentable sino que también apoya el desarrollo de IA ambientalmente sostenible al reducir la huella de carbono de los modelos de aprendizaje automático. Para comunidades con recursos limitados, esta eficiencia energética puede ser determinante para la adopción de tecnologías de IA.
+
+\subsubsection{Adaptabilidad a contextos lingüísticos específicos}
+
+Los modelos pequeños son más fáciles de ajustar para aplicaciones específicas y dominios lingüísticos particulares \cite{hu2024fox}. Al no requerir grandes cantidades de datos o potencia computacional para su entrenamiento, los desarrolladores pueden adaptarlos para tareas como el procesamiento de variantes dialectales, expresiones regionales y contextos culturales específicos.
+
+Investigaciones recientes han demostrado que los SLMs pueden proporcionar una comprensión del lenguaje de alta calidad con un consumo de recursos significativamente menor, lo que los hace ideales para habilitar el trabajo digital en contextos lingüísticos específicos \cite{dong2411hymba}. Su capacidad para capturar dialectos locales, expresiones idiomáticas y matices culturales con mayor precisión que los modelos grandes contribuye no solo a la preservación del lenguaje sino también a mejorar la inclusión digital en regiones desatendidas.
+
+\subsubsection{Mejoras en privacidad y control local}
+
+Los SLMs pueden desplegarse localmente, lo que permite el procesamiento de datos en el dispositivo y reduce la necesidad de enviar información sensible a sistemas basados en la nube. Esta característica ofrece ventajas significativas de privacidad para comunidades lingüísticas que pueden tener preocupaciones sobre la soberanía de sus datos culturales y lingüísticos.
+
+Para las lenguas indígenas y regionales, los SLMs ofrecen una solución rentable y eficiente en términos de recursos al reducir los requisitos computacionales y de datos, mientras mejoran la precisión de salida a través de conjuntos de datos específicos y contextualizados. Este enfoque permite un desarrollo más participativo, donde las comunidades lingüísticas pueden mantener mayor control sobre sus recursos lingüísticos y culturales.
+
+\subsection{Estrategias para construir modelos de lenguaje pequeños con pocos recursos}
+
+El desarrollo de modelos de lenguaje para idiomas con recursos limitados requiere enfoques innovadores que maximicen la eficiencia y efectividad del entrenamiento. Las siguientes estrategias han demostrado ser particularmente efectivas en este contexto.
+
+\subsubsection{Continual pretraining como estrategia principal}
+
+El preentrenamiento continuo (\textit{continual pretraining}) ofrece un camino prometedor para la adaptación de dominio con recursos computacionales limitados \cite{wu2024continual}. Esta técnica permite que modelos preentrenados existentes sean posteriormente entrenados con datos específicos de dominio, permitiéndoles adquirir conocimiento especializado mientras aprovechan su base de conocimiento existente.
+
+Investigaciones recientes han demostrado mejoras significativas en el rendimiento a través del entrenamiento incremental en 400 millones de tokens, seguido de entrenamiento adicional para alcanzar mil millones de tokens. Los resultados muestran ganancias notables en tareas intensivas en conocimiento (\textit{MMLU} $+8.1\%$) y comprensión contextual (\textit{HellaSwag} $+7.6\%$), mientras revelan compensaciones en la especialización de dominio \cite{ishibashi2025mining}.
+
+El preentrenamiento continuo de modelos de lenguaje pequeños en corpus específicos de dominio ha demostrado ser más efectivo que entrenar modelos desde cero. Por ejemplo, en el dominio biomédico, los modelos inicializados con \textit{MiniLM} y continuamente preentrenados en textos específicos del dominio superaron a los modelos entrenados desde cero con el mismo vocabulario \cite{yan2023af}.
+
+\subsubsection{Estrategias de transferencia y adaptación}
+
+El enfoque \textit{Adapt-and-Distill} representa una estrategia efectiva para desarrollar modelos pequeños, rápidos y efectivos para dominios específicos. Este método combina la adaptación de modelos preentrenados generales y la destilación de conocimiento específico del dominio, logrando un mejor rendimiento mientras se reduce significativamente el tamaño y se aumenta la velocidad del modelo \cite{yao2021adapt}.
+
+La expansión de vocabulario específico del dominio durante la fase de adaptación y el empleo de la probabilidad de ocurrencia a nivel de corpus para elegir automáticamente el tamaño del vocabulario incremental son técnicas clave en este enfoque. Experimentos en los dominios biomédico e informático han demostrado que esta estrategia logra un mejor rendimiento en tareas específicas del dominio mientras el modelo es $3.3$ veces más pequeño y $5.1$ veces más rápido que los modelos originales \cite{yao2021adapt}.
+
+\subsubsection{Técnicas para escenarios de recursos extremadamente limitados}
+
+Para lenguajes con recursos extremadamente limitados, el enfoque de ``datos pequeños'' ha demostrado ser sorprendentemente efectivo. Investigaciones recientes han desafiado la suposición común de que las lenguas con pocos recursos se benefician del entrenamiento conjunto con lenguas de mayores recursos, demostrando que es posible entrenar modelos de lenguaje multilingües competitivos con menos de un \textit{gigabyte} (GB) de texto \cite{ogueji2021small}.
+
+La combinación de datos sintéticos generados tanto por traducción automática estadística como por modelos de traducción automática neuronal multilingües ha demostrado mejorar el rendimiento para lenguas con pocos recursos debido a la mayor diversidad de los datos sintéticos generados. Esta técnica es particularmente valiosa cuando los datos paralelos bilingües son escasos \cite{shu2024transcending}.
+
+El uso de técnicas eficientes en parámetros como LoRA PEFT (\textit{Parameter-Efficient Fine-Tuning}) minimiza el número de parámetros durante el ajuste fino, ofreciendo eficiencia computacional y manteniendo la robustez del modelo original al ajustar solo algunos de los parámetros \cite{chavan2023one}. Estudios más amplios han enfatizado que el uso de LoRA en entornos con pocos recursos conlleva una baja sobrecarga computacional. %TODO
+
+\subsection{Proyectos Regionales de Modelos de Lenguaje}
+
+El proyecto SEALD (\textit{Southeast Asian Languages in One Network Data}) constituye una de las iniciativas más ambiciosas para fortalecer la presencia digital de las lenguas del Sudeste Asiático. Mediante la colaboración entre AI Singapore y Google Research, se recopilaron y curaron grandes volúmenes de datos multilingües, abarcando idiomas como indonesio, malayo, tamil, birmano, filipino, vietnamita, tailandés, lao y jemer \cite{ng2025sea}. Este esfuerzo permitió el desarrollo de SEA-LION, una familia de modelos de lenguaje preentrenados específicamente para la región, con arquitecturas de 3 a 7 mil millones de parámetros y un vocabulario adaptado a las características lingüísticas del área, mejorando sustancialmente la comprensión y generación de texto en estos idiomas.
+
+AfriBERTa \cite{ogueji2021small} representa un enfoque innovador para lenguas africanas con pocos recursos, desafiando la suposición de que el entrenamiento conjunto con idiomas de alto recurso es siempre beneficioso. Este modelo fue entrenado exclusivamente con menos de 1 GB de texto de 11 lenguas africanas, incluyendo el primer modelo de lenguaje para cuatro de ellas. AfriBERTa demostró, en tareas de reconocimiento de entidades nombradas y clasificación de texto, que un modelo multilingüe focalizado puede superar a alternativas generalistas como mBERT y XLM-R, validando la eficacia de estrategias centradas en corpus pequeños y específicos.
+
+Cecilia es el primer modelo de lenguaje cubano, desarrollado a partir de un proceso de preentrenamiento continuo sobre texto escrito cubano. El modelo fue entrenado con aproximadamente 1000 millones de tokens provenientes de fuentes representativas: prensa nacional, la enciclopedia Ecured, legislación, literatura, enciclopedias de cubanismos y letras de canciones. Este enfoque permitió a Cecilia capturar matices lingüísticos y culturales propios del español cubano, facilitando aplicaciones de PLN adaptadas a la realidad local.
+
+Salamandra \cite{gonzalez2025salamandra} es un caso paradigmático de éxito en la construcción de modelos multilingües europeos, sirviendo también como base para adaptaciones regionales como Cecilia. La arquitectura de Salamandra abarca variantes de 2, 7 y 40 mil millones de parámetros, todas entrenadas desde cero sobre un corpus multilingüe cuidadosamente curado de 7.8 billones de tokens en 35 idiomas europeos y código de programación. El modelo utiliza precisión bfloat16, embeddings RoPE, activación SwiGLU, normalización RMS, atención flash y una longitud de contexto de hasta 8192 tokens, con un vocabulario de 256000 tokens. Entrenado en el supercomputador MareNostrum 5. Salamandra ha demostrado un rendimiento competitivo en benchmarks multilingües y sirve como plataforma robusta para la especialización en variantes lingüísticas regionales.
+
+\section{Arquitectura y entrenamiento de Cecilia}
+
+Cecilia 2B está basada íntegramente en la arquitectura de Salamandra 2B (BSC-LT/salamandra-2B), un modelo de lenguaje multilingüe de 2 mil millones de parámetros. Para la adaptación al español cubano, no se realizaron modificaciones ni en la arquitectura original ni en el tokenizador empleado, manteniendo la compatibilidad total con el diseño, el tamaño de vocabulario y las capacidades de representación del modelo base. Esta decisión asegura que las mejoras en desempeño se deban exclusivamente al preentrenamiento continuo sobre datos cubanos, y no a cambios estructurales o de tokenización.
+
+\subsection{Descripción del Corpus}
+
+El corpus utilizado para el preentrenamiento de Cecilia fue cuidadosamente compilado para capturar la diversidad temática y cultural del español cubano. Incluye textos provenientes de múltiples dominios en 296311 archivos, abarcando fuentes como Ecured, la Enciclopedia Digital del Audiovisual Cubano, prensa nacional, literatura cubana, legislación, enciclopedias de cubanismos, y letras de canciones populares. Esta composición asegura la representación de registros formales e informales, así como de distintos géneros discursivos y contextos socioculturales, proporcionando una base sólida para que el modelo aprenda matices lingüísticos y culturales propios de Cuba.
+
+En términos cuantitativos, el corpus contiene un total de 2631691355 caracteres y 384963687 palabras distribuidas en 34505341 líneas. La longitud promedio por documento es de 8881 caracteres, mientras que la longitud promedio de las oraciones es de 17 palabras. La densidad léxica, medida como caracteres por palabra, es de 6.8, reflejando la riqueza y variedad del vocabulario presente en el dataset. Estos valores aseguran una cobertura amplia tanto en extensión como en profundidad temática.
+
+\begin{table}[hbt]
+\caption{Descripción del Corpus [\textit{Corpus description}].}
+\begin{center}
+\begin{tabular}{lr}\hline\hline
+Métrica &  Valor \\\hline\hline
+Archivos totales           & $296,311$		    \\
+Caracteres totales         & $2,631,691,355$    \\
+Palabras totales           & $384,963,687$		\\
+Líneas totales             & $34,505,341$		\\
+Longitud promedio doc      & $8,881$ caracteres \\
+Longitud promedio oración  & $17.0$ palabras    \\
+Densidad léxica            & $6.8$ car./palabra \\\hline\hline
+\end{tabular}
+\end{center}
+\label{tab:corpus}
+\end{table}
+
+Para el proceso de entrenamiento, el corpus fue tokenizado en secuencias de hasta 1024 tokens utilizando el tokenizador original de Salamandra 2B, sin modificaciones \cite{vo2024redwhale}. El dataset tokenizado resultante consta de 1104532 muestras, sumando 982024795 tokens efectivos (sin padding) y 1131040768 tokens totales (con padding). La longitud promedio de secuencia es de 889.3 tokens, y la razón de padding es eficiente, con un $13.2\%$. Este procesamiento garantiza que la mayor parte de la capacidad del modelo se utilice en datos reales y representativos.
+
+\begin{table}[hbt]
+\caption{Corpus tokenizado [\textit{Tokenized corpus}].}
+\begin{center}
+\begin{tabular}{lr}\hline\hline
+Métrica 							   & Valor 			 \\\hline\hline
+Muestras totales                       & $1,104,532$     \\
+Tokens totales (sin padding)           & $982,024,795$   \\
+Tokens totales (con padding)           & $1,131,040,768$ \\
+Longitud promedio de secuencia (tokens)& $889.3$         \\
+Proporción de padding                  & $13.2\%$        \\\hline\hline
+\end{tabular}
+\end{center}
+\label{tab:tok-corpus}
+\end{table}
+
+El corpus fue sometido a un riguroso proceso de limpieza y validación, asegurando la ausencia de problemas de encoding y una alta integridad textual. Esto garantiza que los datos de entrada sean de calidad y representativos, fundamentales para un preentrenamiento efectivo y robusto del modelo.
+
+\subsection{Proceso de entrenamiento}
+
+El entrenamiento de Cecilia 2B se realizó mediante preentrenamiento continuo sobre el corpus cubano, manteniendo la arquitectura y el tokenizador originales de Salamandra 2B. A continuación se detallan los hiperparámetros empleados:
+
+\begin{table}[hbt]
+\caption{Descripción del entrenamiento [\textit{Training description}].}
+\begin{center}
+\begin{tabular}{lr}\hline\hline
+Parámetro 					& Valor                  \\\hline\hline
+Número de épocas            & $2$					 \\
+Batch size                  & $4$					 \\
+Gradient accumulation steps & $16$    				 \\
+Batch efectivo              & $64$    				 \\
+Learning rate               & $2e-5$				 \\
+Scheduler                   & \textit{Warmup linear} \\
+Proporción de warmup        & $6$\%					 \\
+Optimizador                 & \textit{AdamW}		 \\
+Weight decay                & $.01$					 \\
+Betas ($\beta 1$, $\beta 2$)& $.9$, $.999$			 \\
+Gradient clipping norm      & $1.0$					 \\
+Precisión                   & \textit{bfloat16}      \\\hline\hline
+\end{tabular}
+\end{center}
+\label{tab:desc-training}
+\end{table}
+
+\begin{description}
+\item[Número de épocas:] El corpus completo se procesó dos veces, permitiendo al modelo refinar sus representaciones sobre los datos cubanos.
+\item[Learning rate y scheduler:] Se empleó una tasa de aprendizaje inicial baja $(2e-5)$ con un scheduler de tipo \textit{warmup linear}, que incrementa gradualmente la tasa de aprendizaje durante el 6\% inicial de los pasos de entrenamiento antes de decaer linealmente, ayudando a evitar inestabilidades al comienzo.
+\item[Optimizador AdamW:] \textit{AdamW} es una variante de Adam que desacopla el weight decay, permitiendo un mejor control de la regularización y ayudando a prevenir el sobreajuste.
+\item[Weight decay y betas:] \textit{Weight decay} de $.01$ promueve la regularización. Los parámetros $\beta 1$ y $\beta 2$ controlan los promedios móviles de los momentos de primer y segundo orden en \textit{AdamW}.
+\item[Gradient clipping norm:] Limita la norma de los gradientes a 1.0 para evitar explosiones de gradiente.
+\item[Precisión bfloat16:] Permite mayor eficiencia en memoria y cómputo, facilitando el entrenamiento de modelos grandes en hardware moderno.
+\end{description}
+
+Durante el entrenamiento se emplearon técnicas avanzadas como \textit{Fully Sharded Data Parallel} (FSDP) y \textit{gradient checkpointing} para maximizar el uso eficiente de memoria y recursos computacionales, además de validaciones periódicas y monitoreo de métricas para garantizar la robustez y generalización del modelo \cite{lialin2023scaling}.
+
+\section{Evaluación}
+
+Para evaluar el impacto del preentrenamiento continuo de Cecilia 2B sobre datos cubanos, se comparó su desempeño con Salamandra 2B en una batería de tareas clásicas de procesamiento de lenguaje natural en inglés y español. Es importante destacar que estas tareas no están diseñadas para medir la comprensión de la variante cubana del español, sino que sirven para verificar la robustez general del modelo tras la adaptación.
+
+\begin{table*}[hbt]
+\caption{Resultados de la evaluación cuantitativa en comparación con Salamandra 2B. [\textit{Results of the quantitative evaluation compared to Salamandra 2B.}].}
+\begin{center}
+\begin{tabular}{lrrrr}\hline\hline
+Task                & Metric        & Salamandra  & Cecila     & Rel Err     		 \\\hline\hline
+arc\_challenge      & acc           & $0.37031$   & $0.38225$  & $3.13$\%    		 \\
+arc\_easy           & acc           & $0.72264$   & $0.73401$  & $1.55$\%    		 \\
+belebele\_en        & acc           & $0.21556$   & $0.24778$  & $13.00$\%   		 \\
+belebele\_es        & acc           & $0.22778$   & $0.24444$  & $6.82$\%    		 \\
+escola              & acc           & $0.59259$   & $0.55461$  & $-6.41$\%   		 \\
+openbookqa          & acc           & $0.30000$   & $0.28200$  & $-6.00$\%   		 \\
+openbookqa\_es      & acc           & $0.30800$   & $0.29400$  & $-4.55$\%   		 \\
+paws\_en            & acc           & $0.56100$   & $0.57350$  & $2.18$\%    		 \\
+paws\_es            & acc           & $0.56050$   & $0.55550$  & $-0.89$\%   		 \\
+piqa                & acc           & $0.73721$   & $0.73667$  & $-0.07$\%   		 \\
+social\_iqa         & acc           & $0.45394$   & $0.44626$  & $-1.69$\%   		 \\
+teca                & acc           & $0.46481$   & $0.43174$  & $-7.11$\%   		 \\
+wnli                & acc           & $0.46479$   & $0.42254$  & $-9.09$\%   		 \\
+wnli\_es            & acc           & $0.56338$   & $0.59155$  & $4.76$\%    		 \\
+xnli\_en            & acc           & $0.46225$   & $0.47671$  & $3.03$\%    		 \\
+xnli\_va            & acc           & $0.47505$   & $0.48523$  & $2.10$\%    		 \\
+xstorycloze\_en     & acc           & $0.71145$   & $0.70483$  & $-0.93$\%   		 \\
+xstorycloze\_es     & acc           & $0.65255$   & $0.65189$  & $-0.10$\%   		 \\
+arc\_challenge      & acc\_norm     & $0.40700$   & $0.41809$  & $2.65$\%    		 \\
+arc\_easy           & acc\_norm     & $0.72559$   & $0.73990$  & $1.93$\%    		 \\
+belebele\_en        & acc\_norm     & $0.21556$   & $0.24778$  & $13.00$\%   		 \\
+belebele\_es        & acc\_norm     & $0.22778$   & $0.24444$  & $6.82$\%    		 \\
+openbookqa          & acc\_norm     & $0.39600$   & $0.40000$  & $1.00$\%    		 \\
+openbookqa\_es      & acc\_norm     & $0.40800$   & $0.40400$  & $-0.98$\%   		 \\
+piqa                & acc\_norm     & $0.74701$   & $0.74701$  & $0.00$\%    		 \\
+cocoteros\_es       & bleu          & $8.46507$   & $6.72269$  & $-20.58$\%  		 \\
+xlsum\_es           & bleu          & $0.80082$   & $0.59723$  & $-25.42$\%  		 \\
+triviaqa            & exact\_match  & $0.37595$   & $0.35432$  & $-5.75$\%   		 \\
+xquad\_es           & exact\_match  & $0.37731$   & $0.36050$  & $-4.45$\%   		 \\
+xquad\_es           & f1            & $0.58413$   & $0.56911$  & $-2.57$\%   		 \\
+cocoteros\_es       & rouge1        & $0.33887$   & $0.31209$  & $-7.90$\%   		 \\
+xlsum\_es           & rouge1        & $0.13464$   & $0.08705$  & $-35.35$\%  		 \\
+\textbf{Mean Diff}  &               &             &            & $\textbf{-2.43}$\%  \\\hline\hline
+\end{tabular}
+\end{center}
+\label{tab:eval}
+\end{table*}
+
+La evaluación de Cecilia 2B se realizó sobre un conjunto de tareas estándar ampliamente utilizadas en la comunidad de PLN, empleando benchmarks reconocidos como SpanishBench, CatalanBench, BasqueBench, GalicianBench y tareas en inglés del \textit{LM Evaluation Harness}. Estas colecciones agrupan tareas de comprensión lectora (por ejemplo, Belebele, que consiste en responder preguntas de opción múltiple sobre textos breves), inferencia lógica (XNLI, WNLI), razonamiento de sentido común (\textit{XStoryCloze}), identificación de paráfrasis (PAWS), y preguntas de respuesta abierta y razonamiento científico (OpenBookQA, ARC Challenge y ARC Easy). Para las tareas en español, los datasets utilizados son versiones traducidas profesionalmente o generadas y revisadas por humanos, garantizando alta calidad y relevancia para la evaluación de modelos multilingües.
+
+Además, se incluyen benchmarks de traducción automática (como Flores), tareas de resumen (XLSum), y comprensión y respuesta a preguntas de trivia (TriviaQA, XQuAD), cubriendo así un espectro amplio de habilidades lingüísticas y cognitivas. Estos benchmarks permiten comparar el desempeño general de modelos multilingües y monolingües en tareas de comprensión, inferencia, generación y traducción en diferentes idiomas, aunque, como se señaló previamente, no están diseñados para evaluar competencias específicas en variantes regionales como el español cubano.
+
+En promedio, la reducción relativa de desempeño es de apenas $2.4\%$ respecto al modelo base, una diferencia no significativa considerando la magnitud del cambio en los datos de entrenamiento y la especialización lograda \cite{@guo2023continuous}. Esto indica que el modelo mantiene su capacidad general para tareas estándar, a pesar de haber sido adaptado a un dominio lingüístico y cultural específico.
+
+Sin embargo, aún no se dispone de benchmarks ni corpus de instrucciones diseñados para evaluar específicamente la comprensión y generación en español cubano. La creación de estos recursos será esencial para medir el verdadero valor añadido de Cecilia en aplicaciones donde el dominio cultural y lingüístico local es crítico.
+
+\subsection{Discusión}
+
+La principal limitación de Cecilia 2B radica en que su evaluación actual se ha realizado exclusivamente sobre tareas generales y benchmarks estándar de procesamiento de lenguaje natural, como comprensión lectora, inferencia lógica y razonamiento de sentido común, que no están diseñados para medir la comprensión ni la generación en la variante cubana del español. Esto significa que, aunque el modelo mantiene un desempeño robusto en tareas multilingües generales con solo una reducción promedio del $2.4\%$ respecto al modelo base, aún no es posible cuantificar su ventaja específica en aplicaciones donde los matices culturales y lingüísticos cubanos sean críticos.
+
+Además, el corpus utilizado, si bien diverso y representativo, podría inducir sesgos hacia los dominios más representados, como prensa y enciclopedias, en detrimento de registros menos frecuentes o más formales, lo que podría limitar la cobertura de ciertos contextos y estilos lingüísticos \cite{@cahyawijaya2025crowdsource}. Esta situación resalta la necesidad de continuar ampliando y balanceando el corpus, incorporando textos de géneros subrepresentados y registros formales, así como de desarrollar recursos de evaluación específicos para el español cubano.
+
+El desarrollo de Cecilia 2B abre múltiples líneas de trabajo para el futuro. Es fundamental ampliar y diversificar el corpus de entrenamiento, integrando fuentes adicionales que reflejen una mayor variedad de registros, géneros y contextos de uso del español cubano. Asimismo, el entrenamiento con más épocas y el ajuste fino en tareas específicas permitirán mejorar la especialización y robustez del modelo, maximizando su utilidad en aplicaciones concretas.
+
+Un objetivo clave será la creación de benchmarks y corpus de instrucciones diseñados específicamente para evaluar la comprensión y generación en español cubano, lo que permitirá medir de forma precisa el impacto y la ventaja competitiva de Cecilia en tareas relevantes para usuarios y desarrolladores locales. Finalmente, la integración de Cecilia en aplicaciones reales —como asistentes virtuales, sistemas de soporte educativo, o herramientas de procesamiento documental— será esencial para validar su utilidad práctica y fomentar su adopción en la sociedad cubana.
+
+El desarrollo y despliegue de modelos de lenguaje regionales como Cecilia 2B plantea importantes consideraciones éticas. Es crucial asegurar que el uso de datos respete la privacidad, los derechos de autor y la diversidad cultural de las fuentes, evitando la reproducción o amplificación de sesgos presentes en los corpus de entrenamiento. La selección y documentación cuidadosa de los datos, así como la transparencia en los procesos de construcción y evaluación del modelo, son fundamentales para mitigar riesgos de homogeneización cultural y exclusión de voces minoritarias.
+
+Además, el diseño participativo y la consulta con comunidades lingüísticas locales deben ser una prioridad, garantizando que las tecnologías desarrolladas respondan a las necesidades, valores y expectativas de sus usuarios, y contribuyan a una inteligencia artificial más justa, inclusiva y representativa.
+
+\section{Conclusiones}
+
+En este artículo se presenta Cecilia 2B, el primer modelo de lenguaje entrenado específicamente para el español cubano, construido mediante preentrenamiento continuo sobre la arquitectura Salamandra 2B sin modificar su estructura ni tokenizador. Cecilia utiliza un corpus diverso y representativo de la cultura y sociedad cubanas, compuesto por más de 296 mil documentos y cerca de mil millones de tokens, abarcando prensa, literatura, legislación y recursos enciclopédicos. El modelo se evaluó en una batería de tareas estándar multilingües, mostrando una reducción promedio de solo $2.4$\% respecto al modelo base, lo que indica que la especialización en datos cubanos no compromete su robustez general. Si bien la evaluación específica en tareas propias del español cubano es aún una asignatura pendiente, Cecilia 2B constituye un paso inicial fundamental hacia la creación de tecnologías lingüísticas adaptadas a la realidad cubana y sienta las bases para futuros desarrollos y aplicaciones en procesamiento de lenguaje natural regionalizado.
+
+\section*{Relevancia del estudio} % The \section*{} command stops section numbering
+\addcontentsline{toc}{section}{Relevancia del estudio} % Adds this section to the table of contents
+
+Cecilia 2B es un modelo de lenguaje crucial para abordar la brecha digital lingüística del español cubano, una variante desatendida por los modelos generales. Su estratégia de entrenamiento demuestra una forma eficiente de adaptar la inteligencia artificial a contextos específicos. A pesar de esta adaptación, el modelo mantiene su robustez en tareas generales PLN, con una reducción mínima del rendimiento con respecto al modelo base. El verdadero valor radica en su capacidad para capturar los matices culturales y léxicos del español cubano, lo que sienta un precedente para el desarrollo de modelos regionales en entornos con recursos limitados, facilitando la inclusión digital y contribuyendo a la preservación del patrimonio lingüístico regional.
+
+\section*{Suplementos} % The \section*{} command stops section numbering
+	\addcontentsline{toc}{section}{Suplementos} % Adds this section to the table of contents
+
+	Este artículo contiene un suplemento de información en:\\
+	\href{http://cecilia.uhgia.org/}{http://cecilia.uhgia.org/}\\
+	\href{https://github.com/gia-uh/cecilia}{https://github.com/gia-uh/cecilia}
+
+\section*{Agradecimientos} % The \section*{} command stops section numbering
+	\addcontentsline{toc}{section}{Agradecimientos} % Adds this section to the table of contents
+
+	Se agradece a todos los colaboradores y proveedores de datos que hicieron posible este trabajo. El modelo no podría haber sido creado sin el compromiso y el trabajo de los miembros de los grupos \textbf{GIA-UH} y \textbf{GPLSI}.
+
+	Este trabajo fue financiado parcialmente por el proyecto \href{https://vives.gplsi.es/}{ILENIA-VIVES} <<2022/TL22/00215334>> y con financiación privada de \href{https://syalia.com/en/}{Syalia SRL} y \href{https://epistemial.com/}{Epistemial}.
+
+\section*{Conflictos de interés}
+	\addcontentsline{toc}{section}{Conflictos de interés} % Adds this section to the table of contents
+
+	Se declara que no existen conflictos de interés.
+
+\section*{Contribucián de autoría}
+	\addcontentsline{toc}{section}{Contribucián de autoría} % Adds this section to the table of contents
+
+	\begin{description}\setlength{\parskip}{0pt}
+		\item[Conceptualización] A.P.M., S.E.V., Y.A.C., Y.G.V., A.M, R.M.G.
+		
+		\item[Curación de datos] A.P.M., S.E.V., Y.A.C., E.L.E.V., R.G.R., A.B.V., C.S.P.V., D.A.V.P., E.R.H., G.H.R., D.F.R., N.G.F., R.M.C.
+		
+		\item[Análisis formal] A.P.M., Y.A.C., E.L.E.V.
+		
+		\item[Adquisición de Financiamiento] A.P.M., S.E.V., Y.A.C., E.L.E.V., Y.G.V., A.M, R.M.G.
+		
+		\item[Investigación] A.P.M., S.E.V., Y.A.C., E.L.E.V., R.G.R., A.B.V., C.S.P.V., D.A.V.P., E.R.H., G.H.R., D.F.R., N.G.F., R.M.C., J.P.C.A., R.S.T., Y.G.V., A.M., R.M.G., M.J.P.S.
+		
+		\item[Metodología] A.P.M., S.E.V., Y.A.C., E.L.E.V.
+		
+		\item[Administración de proyecto] A.P.M., S.E.V., Y.A.C., E.L.E.V.
+		
+		\item[Recursos] A.P.M., S.E.V., Y.A.C., Y.G.V., A.M, R.M.G.
+		
+		\item[Software] A.P.M., S.E.V., Y.A.C., E.L.E.V., R.G.R., A.B.V., C.S.P.V., D.A.V.P., E.R.H., G.H.R., D.F.R., N.G.F., R.M.C., J.P.C.A., R.S.T., Y.G.V., A.M., R.M.G., M.J.P.S.
+		
+		\item[Supervisión] A.P.M., Y.A.C.
+		
+		\item[Validación] S.E.V., R.S.T., E.L.E.V., A.P.M., Y.A.C.
+		
+		\item[Visualización] A.P.M., S.E.V., Y.A.C., E.L.E.V., R.G.R., A.B.V., C.S.P.V., D.A.V.P., E.R.H., G.H.R., D.F.R., N.G.F., R.M.C.
+		
+		\item[Redacción: preparación del borrador original] R.G.R., D.A.V.P., A.P.M., Y.A.C., E.L.E.V.
+		
+		\item[Redacción: revisión y edición] A.P.M., S.E.V., Y.A.C., E.L.E.V., R.G.R., A.B.V., C.S.P.V., D.A.V.P., E.R.H., G.H.R., D.F.R., N.G.F., R.M.C., J.P.C.A., R.S.T., Y.G.V., A.M., R.M.G., M.J.P.S.
+	\end{description}
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+% \bibliographystyle{amsplain}
+\bibliographystyle{babplain}
+% \bibliographystyle{plain}
+\bibliography{references}
+
+%----------------------------------------------------------------------------------------
+
+\begingroup
+	\let\clearpage\relax 
+	\begin{flushright}
+		\includegraphics[scale=0.12]{qrcode.pdf}
+	\end{flushright}
+	\begin{flushright}
+		\includegraphics[scale=0.93]{Licencia.pdf}
+	\end{flushright}
+\endgroup
+
+\end{document}

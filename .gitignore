@@ -174,3 +174,45 @@ poetry.toml
 pyrightconfig.json
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+
+# Latex Files
+*.aux
+*.lof
+*.log
+*.lot
+*.fls
+*.out
+*.toc
+*.synctex.gz
+*.pdfsync
+*.dvi
+*.xdv
+*.fdb_latexmk
+*.bbl
+*.bcf
+*.blg
+*-blx.aux
+*-blx.bib
+*.run.xml
+*.nav
+*.snm
+*.vrb
+*.idx
+*.ilg
+*.ind
+*.ist
+*.maf
+*.mtc
+*.mtc0
+*.acn
+*.acr
+*.glg
+*.glo
+*.gls
+*.nlo
+*.bak
+*.tex~
+*.tdo
+*.xdy
+*.pyg
+

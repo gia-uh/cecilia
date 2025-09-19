@@ -1,0 +1,1296 @@
+%PDF-1.5
+%ĞÔÅØ
+1 0 obj
+<< /S /GoTo /D [2 0 R /Fit] >>
+endobj
+6 0 obj
+<<
+/Type /Metadata /Subtype /XML 
+/Length 14792     
+>>
+stream
+<?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/">
+  <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <rdf:Description rdf:about=""
+                     xmlns:pdf="http://ns.adobe.com/pdf/1.3/"
+                     xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/"
+                     xmlns:dc="http://purl.org/dc/elements/1.1/"
+                     xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+                     xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+                     xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+                     xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+                     xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/"
+                     xmlns:pdfuaid="http://www.aiim.org/pdfua/ns/id/"
+                     xmlns:pdfx="http://ns.adobe.com/pdfx/1.3/"
+                     xmlns:prism="http://prismstandard.org/namespaces/basic/3.0/"
+                     xmlns:jav="http://www.niso.org/schemas/jav/1.0/"
+                     xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/"
+                     xmlns:stFnt="http://ns.adobe.com/xap/1.0/sType/Font#"
+                     xmlns:Iptc4xmpCore="http://iptc.org/std/Iptc4xmpCore/1.0/xmlns/"
+                     xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/"
+                     xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#"
+                     xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#"
+                     xmlns:pdfaType="http://www.aiim.org/pdfa/ns/type#"
+                     xmlns:pdfaField="http://www.aiim.org/pdfa/ns/field#">
+      <pdfaExtension:schemas>
+        <rdf:Bag>
+          <rdf:li rdf:parseType="Resource">
+            <pdfaSchema:schema>Adobe PDF Schema</pdfaSchema:schema>
+            <pdfaSchema:prefix>pdf</pdfaSchema:prefix>
+            <pdfaSchema:namespaceURI>http://ns.adobe.com/pdf/1.3/</pdfaSchema:namespaceURI>
+            <pdfaSchema:property>
+              <rdf:Seq>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>Trapped</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>Indication if the document has been modified to include trapping information</pdfaProperty:description>
+                </rdf:li>
+              </rdf:Seq>
+            </pdfaSchema:property>
+          </rdf:li>
+          <rdf:li rdf:parseType="Resource">
+            <pdfaSchema:schema>XMP Media Management Schema</pdfaSchema:schema>
+            <pdfaSchema:prefix>xmpMM</pdfaSchema:prefix>
+            <pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>
+            <pdfaSchema:property>
+              <rdf:Seq>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>DocumentID</pdfaProperty:name>
+                  <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>UUID based identifier for all versions and renditions of a document</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>InstanceID</pdfaProperty:name>
+                  <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>UUID based identifier for specific incarnation of a document</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>VersionID</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>Document version identifier</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>RenditionClass</pdfaProperty:name>
+                  <pdfaProperty:valueType>RenditionClass</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>The manner in which a document is rendered</pdfaProperty:description>
+                </rdf:li>
+              </rdf:Seq>
+            </pdfaSchema:property>
+          </rdf:li>
+          <rdf:li rdf:parseType="Resource">
+            <pdfaSchema:schema>PRISM Basic Metadata</pdfaSchema:schema>
+            <pdfaSchema:prefix>prism</pdfaSchema:prefix>
+            <pdfaSchema:namespaceURI>http://prismstandard.org/namespaces/basic/3.0/</pdfaSchema:namespaceURI>
+            <pdfaSchema:property>
+              <rdf:Seq>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>complianceProfile</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>PRISM specification compliance profile to which this document adheres</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>publicationName</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Publication name</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>aggregationType</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Publication type</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>bookEdition</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Edition of the book in which the document was published</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>volume</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Publication volume number</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>number</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Publication issue number within a volume</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>pageRange</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Page range for the document within the print version of its publication</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>issn</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>ISSN for the printed publication in which the document was published</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>eIssn</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>ISSN for the electronic publication in which the document was published</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>isbn</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>ISBN for the publication in which the document was published</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>doi</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Digital Object Identifier for the document</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>url</pdfaProperty:name>
+                  <pdfaProperty:valueType>URL</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>URL at which the document can be found</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>byteCount</pdfaProperty:name>
+                  <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>Approximate file size in octets</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>pageCount</pdfaProperty:name>
+                  <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                  <pdfaProperty:category>internal</pdfaProperty:category>
+                  <pdfaProperty:description>Number of pages in the print version of the document</pdfaProperty:description>
+                </rdf:li>
+                <rdf:li rdf:parseType="Resource">
+                  <pdfaProperty:name>subtitle</pdfaProperty:name>
+                  <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                  <pdfaProperty:category>external</pdfaProperty:category>
+                  <pdfaProperty:description>Document's subtitle</pdfaProperty:description>
+                </rdf:li>
+              </rdf:Seq>
+            </pdfaSchema:property>
+          </rdf:li>
+        </rdf:Bag>
+      </pdfaExtension:schemas>
+      <pdf:Producer>MiKTeX-pdfTeX 4.19.0 (1.40.26)</pdf:Producer>
+      <pdf:Keywords></pdf:Keywords>
+      <pdf:PDFVersion>1.5</pdf:PDFVersion>
+      <xmpRights:Marked>True</xmpRights:Marked>
+      <xmpRights:WebStatement>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es</xmpRights:WebStatement>
+      <dc:format>application/pdf</dc:format>
+      <dc:rights>
+        <rdf:Alt>
+          <rdf:li xml:lang="x-default">Esta obra estÃ¡ bajo una licencia Creative Commons "AtribuciÃ³n-NoComercial-SinDerivadas 4.0 Internacional".</rdf:li>
+        </rdf:Alt>
+      </dc:rights>
+      <dc:date>
+        <rdf:Seq>
+          <rdf:li>2024-03-30T13:29:50-04:00</rdf:li>
+        </rdf:Seq>
+      </dc:date>
+      <dc:type>
+        <rdf:Bag>
+          <rdf:li>Text</rdf:li>
+        </rdf:Bag>
+      </dc:type>
+      <dc:source>temp.tex</dc:source>
+      <xmp:CreateDate>2024-03-30T13:29:50-04:00</xmp:CreateDate>
+      <xmp:ModifyDate>2024-03-30T13:29:50-04:00</xmp:ModifyDate>
+      <xmp:MetadataDate>2024-03-30T13:29:50-04:00</xmp:MetadataDate>
+      <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool>
+      <xmpMM:DocumentID>uuid:62626267-a3ea-4ea3-9b6c-9bb1820a8d75</xmpMM:DocumentID>
+      <xmpMM:InstanceID>uuid:595f7fd1-8d13-4e4c-86c9-005fd18dc413</xmpMM:InstanceID>
+      <xmpMM:VersionID>1</xmpMM:VersionID>
+      <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
+      <prism:complianceProfile>three</prism:complianceProfile>
+      <prism:pageCount>1</prism:pageCount>
+      <xmpTPg:NPages>1</xmpTPg:NPages>
+    </rdf:Description>
+  </rdf:RDF>
+</x:xmpmeta>
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+                                                               
+<?xpacket end="w"?>
+
+endstream
+endobj
+8 0 obj
+<<
+/Length 270       
+/Filter /FlateDecode
+>>
+stream
+xÚe1oƒ0…w~Å©“p|>lğØ4©”•ª²5€¸’+°U ııuT‘*~ºw÷ùù¶U²y–%n´ÔP}‚Ò\‚‰“È¡:ÃÛSfE!Yh†›BfÇé($¥J¶˜M¼•f_)²0W.~±:×Zßºeöi°õä~RY0»TBß?ÎÍG¤ü1•%›×\Z÷÷NğÙkˆ­vˆ¨.KOÕÈ¹QjúîüÎ‘ƒÔç:‰r–sqÄşÆµƒ¯[|İ=ğ+%ÙW	F” „\)®K„¸N
+¡í“ï9
+mÊ¹åNÏæ2¹6‡a’·xV+[©Ùvûoù$ˆ+a€ˆ—FÎ?Â5à/tÙgN
+endstream
+endobj
+2 0 obj
+<<
+/Type /Page
+/Contents 8 0 R
+/Resources 7 0 R
+/MediaBox [0 0 612 792]
+/Parent 14 0 R
+/Group 13 0 R
+/Annots [ 3 0 R 12 0 R 4 0 R ]
+>>
+endobj
+5 0 obj
+<<
+/Type /XObject
+/Subtype /Form
+/FormType 1
+/PTEX.FileName (C:/Users/Damian/AppData/Local/Programs/MiKTeX/tex/latex/doclicense/images/doclicense-CC-by-nc-nd-88x31.pdf)
+/PTEX.PageNumber 1
+/PTEX.InfoDict 15 0 R
+/BBox [0 0 90 31.5]
+/Group 13 0 R
+/Resources <<
+/ExtGState <<
+/a0 <<
+/CA 1
+/ca 1
+>>
+>>>>
+/Length 4019
+/Filter /FlateDecode
+>>
+stream
+xœuZIä:sŞë¹6à´8“ÇğŒú‹ê…íûş† ¤ªn¿^é“8c`¦×‰ÿğ¿’Şíõù}ü÷q¾;ÿ/<¬y–Å‡q¶9_ÿó¯×ü×ùú×ÿùİ?”Ò_¿_s¼Ç×Y__¯9ß£Í€s½gæÀsÅs~Ï†­ˆFZÇ«œx‘1Ò”±Ò~Nïº:[I±ñ“ˆÏñúçU¿SçÕ ©$LÆÛôî8É©UE&ÿÅ¿U&v¤œ8ˆ%ó8iäÃ|ÂcËx¡B_>ã4Z×äu­øá³ö90zí½1-Wğé¦ôƒó­ïÑ3¹ŸÅæ™k@Î/§ÑoàÓ÷Çònyl”óû\có ½~½r{Ÿbèï´Ö+CæëÈó½°PjP”W€Ï+á#%fÜßXÓòY^õ}õŞÂpĞ@”>Ÿ?âıÿû;ˆ2ø“i¿hşA	p˜¹ğ\I÷oÃÆC•’^ßsm­ä³¹·ãÕŞµz"ÄAàE÷¿!Xõ õ	<2Yï3e­?ï‚­xÌF²`9†q€õ<I¥
+~1ŸŸ[ÿ~l2èf’„Ù•BÖQ|ÚônxIÅ€Î'Ğ“Ü(ÖÜp¼ƒy½Rì®Ñ‰@àÓ*–ÌÜöÎx‚c*æÒ„ÃÃúñù];8/ä14³Ô×ƒÈïUÄÎtJ$2Å÷j…ÔLx± ¢ôølg‚?5AO÷r>:lÔ28©_ á¤¯Yå"Ï©ƒ®Óxø	§)Åœ'Éqr|¿ñ÷Ì<
+fõ½Å	¿ xh€—™S GZï†¿X.qÃº9yô"5†´ÊúÎÍ&
+[$‚©MÆP›SódeË:eùá¨ª°g?-®™H_n´¹ºq’ñsf­<â©eë<<) „@A{¯QDN¥•P?Lëè£“@?â#ÌyM¯'7eğÅş$Q¡ñ@½W©Y@b…cşĞ0}Hq/%ğA˜Ò¸æ²U}.ÜMSLíïQêµ°Ğaúte.ï‰ ”¨Ç+¦¬#Ä3à¡u­ôºø<mN]V]tT	OÇªi U¹A|…Hmˆ`Ô‚®‰ŒzHgS´	ê’S&PÃ ¡yÀÎÊOœÌÓÁ•,1úHùö÷tµnƒÂŸ2 +&œÆşX©¾ Ğ½CG/3F.vOu·8«,Gqšºç¢}ˆ\˜qZI¶8]ââŒ©!¯Xø'öeøÏ´œ5·8æH·8¡òÅÂ–8éğÀ¼-Nš@)—ÀÖÛ^0¤9ß9İ²ò¶!Ní=·<auxAÿåösm‘n2İĞBÕÄR=´°LÄL)<Yˆ5È	ÉÖ”n¹ò$TqãY%+&xÿO°Ğ\ ƒA¿Ñ´“š£o›B
+8X&³W’ÏAE~W9º)' ìÁLÊ>Är_PÁœ‰]v’DŞĞ•ãğ`F¼(½)˜RÓ.0}âÕOÅ0ĞÇ-èÕ€jÚÅHfp3"‰G¡ûì7µy*6ò„¤	(b-fpQĞĞ)Èø@àM§¹Ñczeæ…ÔRÂªÏ­‰^R7¥i>ŞÜü’ VP V®wâ561.-©.åÀ¬	…¶4³*h¸IØ]ß „©¦€Z¤5¿.lİø‚^•¦ ÜYƒHwRnò4 á¥+eètN¦¡è›ØĞiÑÎVÎrÃÙµNBc\Ë |­ĞGÔ)‡^0ér$¹mU.ÈIˆ²Ç’W€U[fg7µ.ÃÈ¨ØMñ‰g®Íˆ`:í3s«
+Ã¯’èãbØRêÎÄÇ,;óÆÅY;QŸ‰3RMbkÌOÒb•GíÍ4‚Íaz:àºtv¥ƒS¹l±3£ÂÏ<¦>g3JYÍ|§öDg……G ¹Uê}H³:!³‹ƒBb<ÏOG”Dƒ—ÑÍ8áãÁ:3æo¬ûuµ®ki±K=+Ëà­€€NîÏYå®ñáç)Ûíª?7¾ÔÙİıÄ8şª&ñ;A¿Veƒ×›Öíö†Ê€/ağê¼ilXûA¡áŞŸƒ™_˜¹ß®üó_p;^ë×5?ğmŞ?Éÿuô$e¤5"bÿ~õdoÒäïˆd}0c<W'¯Ì:?Ä
+,L:ŠÓ²õEtÊ6]zõ&&ƒc>ä-èôúé¼Ú™^HË®ÏY„œ81Ó|ÚRIqmÏ	€„êØÇÒØpP+@µ¹¦fZ¼®H¾ØöFTº\Ù¬5 â†*ä{Í¤¹”½êåbK…VR›¹é‰zŸ’ıì³L­·9å‚lPNŸÍ Ñæİ6kg¤J¾>&•‡¼O’t»ückw¢•´ Y«é(fR€E`6™ıâK/ªìˆ‘hŒ}¶÷²Lq5·m;üê©pº@ T
+1rU8˜¥šòqËš‘¤óD«›ü<PXÒ¤Dk)Dö2.¶‰ƒRdc°{u¥@—AªÁÊÑ—%¶a¶%Û”Íç©VÈ‡¸Û¹w>;ôÓú6ßÒ9ªªfj³Uq—¦s£P¸ÀİùïÚ]üÍPäSÑ>6m*¦ƒ…À‹Ô&ş~@Qœ¹\O×)‘÷Y‘]wEÄÍ¸³^¼«ŠÌæì±¡í¾§ësÚdµo©şæzƒuâ*!%*–‚)P’¾­3[T|;ÛìÙºÛÔ£J-‡ì<V½Q¹±*¸ä5VÕTæ‡á	>[Ñ¿›\.ƒzW_âp&£ã<\'³òŸÎô×1aõ~;ÜÁôâ„-ÿ‰·Çİ…Ú0ö‹íâk‘Gá~iİ1‚ø,?ññ˜¥?à1~ Gbåz¿˜ç3ÈLsb*D,V)Cs3)a	Á¤ °¸©µ > [R÷XynS’Äf…·<³[3ÌVe˜x‘,FX€±]ÅÃF#*­3qâ’Ÿ–h§;«´Í=X.g*Ô‚æ¬ÎĞf’Ë¥½ËW»•“ñPéÑRUN°K“/>Äİ	>ÓòğJÛ_Á`dsc¨ßqË(ğCHKvA_s6ËD­3c úğˆ{¯©æ¿(a£ğrˆ®êĞ³4sx¬pË™d×‘1È!W)õ hI5e}.'__ªîu®'rã®Úº5DñÕ&Fº¬s¹3ÄBÒ§¬8«ä%uÙuFG‹“âàAe÷,öÈ…;wĞX%ê*&ÈÎ1¢”KşÓ Â˜jX~nFÿMÈ°lÓ(åÙiE†ÕÜ*q)LoÅ®õ”ókDIÎ¶*ƒf³üT‚Ê©à“Ö­ê‚ß0? Tıj<a~Câ(eåÜ~„—hSD“öƒ÷‰¬¡ß_<üú~z9ÉüxôÌµ?oª˜üVH¤§VZ$ƒFbCÓ„v­…âGï,ê©Ê˜œİûo\¤]6tÀ|.ºÜª‘n¨C§½ŸâÀr %¡>ÌÜÕI‹¯E!RÁı¼;f¨šó¿E“©P]î8yÌ6¹qf‚È‚±ßënpSöÄŸÖw5şW)–Ë§z¨a’ºuË	oGtKÏ—Ş%XÌg“ÛA,5ºša1–¹ƒÚt\§ë’'¹>%9TÇ¹Ù|:ÅLò²§‚œ^ä ¹®"0SPJ¬Q`EÖ@ïÕ´êÌÈõÉpÃ²TÇòätÁØ5±ÇÜÔâj¼i#HNÖQh3Ê´ßĞ££ÿ› Ïv]=Ğn ˆR£G}XQ$û¬Ws£IÎd¥wÛËvun`¢V|¨‚p?–Dm”}5pCz¡æ(ÃNruv§.´.T”Œ.™#+4QDRØ„^ÙE)?P˜v5“|2:uã†œä°jY¸UÍT—Ç8§aS*We–Ô—É;›¤»)@^Ê`qz¡lvµÜ¸„{2”F>åDÃÎË'©1´„ÓS1^Ğfñş4”h©d[MjæQsÉ”Øò‚Ò\öPX”˜xêFi¨r`HÚn•Åé«²Á›=ò{å0Æ »µwAîÎ^=®ß¬E¡Áfñ)!j¸Ÿ[„K|áÅ=™.èbKömŒê1^>-İ“øÖº·ëV rR´Jªqn¾ÕxÑMtæx™A„ÒŠY	†´iâµ„&H6Tä©>Ñ§G›{ö;„Ì¾-¥,r6İŸ,İl–Y
+ßÅş•°¾Æi»LÎ*ÛQŸ8?¯Ì¨î±RZ·áğâË@RÀ@qJIéu›q
+vöiT¦ïgù>äã´ºíŸH}‡êğ9Ô™	Š˜:<ŒÄÌ$ıŒ°òêË÷™8F	v°Š‰È¼hÚ†ŠÕŠ(HbÆ!ƒÒ+~2£“CÉ_³*Ü8(+ÓoÚÆ!{vİ?E4ßhSØ‰ çA‡œ#\6ß	w,›;$†Y®ùöä)yÏıÖÈa’YèÚ0»J¥ŸUOö Z”¢ÈRT·¡sƒ~.ñš…ÅÅ]3;Z*ùì;’¥W nÑî¯ĞÃWòŠŞdòHr9Ü‡úuø<ô~ÒäYs¨sÆÏ%[9®ós¿Ôƒ7£évÆ\ûÆÑ¿°ø×1½›ú7—bløµ!/Q‡~ÌãÑşgÏgŒëë^ ğ½‚“{…ÿ\ááˆªKrÌDƒÜ¸É‚jÑ¤#pñÏŒ©I®eù—åTÒä‰¼ê'`WbÓŠÚƒ±¦ÁÇûƒÏúNççé8ªS£¥pş{Ã©öO=UĞ¨—TO•K3n\÷(¬é7f¼:Ëzû’=P¯À«6dnâ;•±³“'ÖMª½V™ªı÷ğ öÂÿ?NóëÀZMWÙüûp(q*Ë?­óµåTgÓàC˜”'ï+M^jÅ4¡XòsCZHL‹;+/iğÙÛ	¯‹0NûFåÇ·!´•íÎK\RZ‡U²‚ÚvfÅ½ûs $˜ÛŸİÖ»±ıyL«^½È]=.ãä²_AªÁG2Y- 4²„;¯mg÷áÎë}áÎÏ¾t¾ÑUøÉ÷âÄ>íÏÁÉ*‡²YP}óaöTÇï`Ü“©_ñĞ~¶³Ø4¬YªjŸU‹pû³Ú”%¥¬UİÄpè²Û¡së:t.êÒÂ;öt9ôj'`½½Çöç%:¾6u0Â¡ófÇ8®‚¬dwêşIeRØô½èl§Î‰ü¡½:Öeg3›&ùq©š-Ô¬ûÆÖ¿ğù×¿ÿyüyèO“
+endstream
+endobj
+13 0 obj
+<<
+/Type /Group
+/S /Transparency
+/I true
+/CS /DeviceRGB
+>>
+endobj
+15 0 obj
+<<
+/Producer (cairo 1.16.0 \(https://cairographics.org\))
+/Creator <feff0049006e006b0073006300610070006500200031002e00300020002800680074007400700073003a002f002f0069006e006b00730063006100700065002e006f007200670029>
+/CreationDate (D:20200523232323+02'00)
+>>
+endobj
+3 0 obj
+<<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [225.25 710.371 436.751 721.219]
+/Subtype/Link/A<</Type/Action/S/URI/URI(https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es)>>
+>>
+endobj
+12 0 obj
+<<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [55.697 700.353 195.755 709.264]
+/Subtype/Link/A<</Type/Action/S/URI/URI(https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es)>>
+>>
+endobj
+4 0 obj
+<<
+/Type /Annot
+/Border[0 0 0]/H/I/C[0 1 1]
+/Rect [454.684 692.354 556.303 729.217]
+/Subtype/Link/A<</Type/Action/S/URI/URI(https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es)>>
+>>
+endobj
+9 0 obj
+<<
+/D [2 0 R /XYZ 55.693 765.086 null]
+>>
+endobj
+10 0 obj
+<<
+/D [2 0 R /XYZ 56.693 728.22 null]
+>>
+endobj
+7 0 obj
+<<
+/Font << /F28 11 0 R >>
+/XObject << /Im1 5 0 R >>
+/ProcSet [ /PDF /Text ]
+>>
+endobj
+16 0 obj
+[500 500 500 500 750 444.4 500 722.2 777.8 500 902.8 1013.9 777.8 277.8 277.8 500 833.3 500 833.3 777.8 277.8 388.9 388.9 500 777.8 277.8 333.3 277.8 500 500 500 500 500 500 500 500 500 500 500 277.8 277.8 277.8 777.8 472.2 472.2 777.8 750 708.3 722.2 763.9 680.6 652.8 784.7 750 361.1 513.9 777.8 625 916.7 750 777.8 680.6 777.8 736.1 555.6 722.2 750 750 1027.8 750 750 611.1 277.8 500 277.8 500 277.8 277.8 500 555.6 444.4 555.6 444.4 305.6 500 555.6 277.8 305.6 527.8 277.8 833.3 555.6 500 555.6 527.8 391.7 394.4 388.9 555.6 527.8]
+endobj
+17 0 obj
+<<
+/Length1 1841
+/Length2 12986
+/Length3 0
+/Length 14131     
+/Filter /FlateDecode
+>>
+stream
+xÚ·PÚ¶-
+Áİ‚[ã.{pwwo qw÷ 	Áİ%8àÜİİ5	îÎgË={Ÿû_Õ{ÕUİkLŸs¹ªšŠLYIÄÜÁ$é`ïÊdfåˆ)¨Y¬¬ìÌ¬¬lˆTTê`W[ĞßbD*M³ØÁï_bÎ ×7™¸‰ë›‚ƒ=@ÖÍ d ¹ø€Ü|¬¬ 6VVŞÿ1tpæˆ›¸ƒÍ
+Ì Y{"•˜ƒ£—3ØÒÊõ-Íÿ´ft  //7ãŸî ;3ØÌÄ `âj²{ËhfbPs0ƒ\½ş+­€•««#‹‡‡³‰³ƒ³¥#ÀìjP¹€œİAæ€?(šØşêŒ‘
+ nvùK®æ`áêaâ¼	lÁf {—77{s3à-9@MF ä²ÿËXş/FÀß³ ™ÿ	÷·÷Àö:›˜™9Ø9šØ{í-`[@IRÙÕÓ•`boş‡¡‰­‹Ã›¿‰»	ØÖÄôÍàÏÊM ’"* “·ÿnÏÅÌìèêÂì¶ı£E–?Â¼MYÂŞ\ÌÁÎdïê‚øG}â`gÙÛØ½XşºY{{Ÿ¿ØŞÜâ&ÌİY4ìÁNn ñ¿MŞDˆÿÈ,A® NVVVn^v È	 ò4³bù#¼º—#èO%ğñ[~> ‹·&@~`ĞÛ¢‹‰;àêìòóù·â¿"0›¹LA–`{Ä¢¿‰Aá·Ëw{ôXß¸°şñùÏÉà^æö¶^ÿ˜ÿy¿,ºjZªuü¨¨ƒ'À‡‰ƒÀÄÆÉ
+ şA2î·ƒß‡Q6ÿ]Æ¿|eì- ¼Uû6¦ÿ©ØıoĞş½t€ÿ¥èğÆZ€ö’ë³r²š½}ÿŸ©ş§Ëÿ‰áDù¿‘ü$éfkû§šöOıÿOmb¶õúÛà´n®o àğ¶öÿÛTô×Ò*€ÌÁnvÿ[+ãjò¶"ö–¶ÿ#ØEì	2W»šYıÅ–¿äl™-Ø¤ìàşãY0½]ÍÿÒ½­–™ÍÛÓáòFÉ?U ·Íùï”öfæ¬'ÀÄÙÙÄñí’ß'Àø¶‹æ Ï?I`a¶wp}s¼µç°ppFüãF¹8,"ˆşBÜ ±€EüÄ`‘øâf°ÈüƒŞ,ÿƒxŞtjÿA¼o1Mşƒ€oQLÌŞüşÍ×ôô¦7ûÇúm",æÿ‚@ Ë?œl 7çÿ8Şš±òr´z{±şqy“ÿ¹ ,Öÿ‚oÉmÿß²ÛıßÖˆå_¡Şö–ÅáŸdo¶oÏú?ø-²ã¡ş©—÷­@'7W¹©­-ÈÂõ?
+v-È?IŞTÎÿ‚oå»ü¾%ù·ñÛlİşßºqÿ§ 7ärş«âÿ"™›³óÛ»ùçZ¿1êğŸ4ä	2C\šw0ãµ®m»û&BèÁ´7.8Cµ§•JÇä³äÜîö€
+—DW¼á|#’4Ô¾º#A{-¼Lúìó»¹.¢%A¥õÑ÷É(Nuj¯qq§¢ğ·È÷>b"&uá}ßg'_Í ¨fÈYª\'7Tå|¬;^)Ïï}e+£áó{*ûÕ\rHOeÓLŸ4bôƒ¾ÎRå™fÍá‘Ãº2ÃÓcy¢Í^ßÌ`æL¼’ÊÆ1 ú}b/òÑİdû|?ç½V¡ÎæÒ‰O‰¯‹Gu9:Eí#z˜,‹»àSR´Ú¿èÙ,PDšƒÂ˜²Ê„Î|È–QV¶oì©q]úÜÍM„Òöcí&Ô”6¾7r&WÂ®n5ŠÆr­a·ş°]k»Ñì²°N!Zæşş
+˜EÑ±úØÔåóXç´64ÜÏtÒr7Ô8¼Óå§õõCß"K ½„•^Ôê
+_q
+L™ëØ»N-Ì{tÆe÷$'“0ŸàsÑàv!+«.Lä(Ñ	g®ïùg¿Êú3Å›³¶˜!¯!\Š¯¦)gg…øVìÆ™á´y]óÖciTøkAõ³!e,g›•8Ìâ¥^¤òñÛœ‹ç”E2R={UCQúÁ^Ö÷¼Ì'š•­_8TÈv¢™ÆëƒECÂzyoÌ·oÊËE±:hŞŸUzDŠ}ŞRçÍûøC50§ÓE)MJ$ú]ñíÎ\‚)Å±º¨;™]c,š–ºàÃÎXgñ“c™Œ8MÑ’BŸÜOß%ƒEñ¢üoÂ8¯ÙjÛ•îh!3Ñ×>Seî¯@Qµ5j¿ˆª©ßåSxoBô,LíLíPúØVêåèmğsÆ¤AÙÆQ“-ì¦_nÒÆD½XD5­kxˆÔ-ÕdÌöƒ6G¡E)àÚÙYßI
+Ki2×å‹Ş¿Î'd[o{g	?Æ6	V¹è×®¿¿+ÔïÔ¤Üÿ©ñarÿ‰+)gÚS*OÅ~ œ0=
+\M5Ÿ˜M¶0…(Ï[£—qµS@Gc¦ovˆ±#0Gó~°66ù\K™]",”‰¯ƒcóeRU­šf©·VLvBÖµ‚ºÇ‡öW"EædÏdçï¹yé9Â„Ëh–ÒaTÉKrIÎÄXsµHJßê× ñƒñ$¤)cÿ, k©/|Ú«@ëO»ÓºÆûÅÌõ!«³õÜĞÊŸğõõß¾e|Â7şpÉüÉh4F/éÇ%§² pøRĞuâNb…Ÿ+­¹ÉÏYÎø“ı1]CœS'íZY;5ãwã…G2ÿâoFB¥¿át¨ßÒ²Ï¡ÄáN¦—at+Ó’ÿíô{õvÿ¾Y4ëqù…‚ì½BkÅh¬»×^â¼ş]àsÓP:9;¾à-Tb–ú´óªŞ¯!º.F\©a9“H1]Q©ìvDb¯ZÔ(9šğ6%ÖÍ”*.eJJÛÇŸML	¸›zx¿gAcCÑwğør£ÔlT–‰¦ÕŞ·²£øiŒnş
+l½xŞënñi¹³\ôé­ôÅ(}İ(åS¯¼ã%zäqÌèğF&n·ôÏ,s\+©?”î|è½z´‡UÿíÑ°ßF™k®¨/Ö”Q8¾¬t3?!\¤ÅæIzÈãD&o>]µCèğÛ¨É3(*(\sõpLÆß¥“çà}Oy|?y;HÕ[Ù15„í±µ¾ÅfàPÖ³¨2zş c5‚æv˜'jw"	‹ËWD…_L6‡/ôâºî\^K¢”„âÉÛsª]xP—2ıùV-å}WÂûOp&~—vô¹MæÉJñ¡nŞgW	€š
+„’w7›³Ã†×wR’+ı²ënÔš¯Ä+¬´[5¥b]J…¡0Nÿ×›—°‘Àbqİ“eÛN¥,Á–ÇG¢)B§&*Ï²/P†sÂ‰U&–-R°q›eË_å3Ò‰DKÑ²¨c/	O‘
+Êã£ºèÑÕ«K»k¤uöÎTä%@Î×AÉk~&Ecã…(®ÅkWáğ•+°<·Æ°ıÖÄ5›^X	ø;%Bòœ4±İ‹„"mÇMAaaRªO÷yMÊ®âµÅ{"F2 Ó¶ì¾œ¼[V¨
+½¨)«%Jäw I÷zUmpŒÏ˜w´şõT§	§¨½UòÓ TY»róa»<ôT çt1‘Ş¸¶f$îÀå•Jn5Šºòëµ{Hî="h˜1Şñe™ Ä9À*á¡)ÁçüKhŒ1ƒ­ü-Håvş‹‘°.;ô†²‰û”7¾Æ¶Ñ·œ±÷ıºå@ú²İO˜Õ±
+¦áü>ke£A•*ì8‡ššü‹ymc‘3¨(˜UJÌJÙ›`Æ6òy’£ğ0ËA}ÁMarÉÍ9É;õ<ÓÇÔ¸šAŸmim-«º²–M§+?­‘5–Í%Ïèo=ß›p¨ q¿úÊy·4‹š¾â]mó]Ì?gØ£zÇuÁÃUòÍÉg{ã|Æ8+sFŠ*Ê/qWÿ­ ÅÍK)#~¡NY´$Ü²·åò‚ŒEˆ•Tª¿CØû­<V¨ôYDoØ=<!`}Ú6Ÿú şNgo¡fiBkyr/„º3Ÿ5Hğ‚ÎF /M»!˜ft‹!òôz‹HÍå°C"z1_èåz6o¯¹EÜ*Ë²E&˜õ8
+ÔÙL=Ì ®¥…'Š <+"ñÑÚ5¤>ò42ÿİr~nGıBO|Lm)DÃ5N‰ª±ÕÃlL¢£Õæd©úÛ­³Ÿ´$"È¶XS'@ãU7æK7†“%ò‡K!ş3Æ ï¡º)*D‡Öê\O¨AÖT—`ŒùA|L- ¤çÄÉìaÊÀòÅ.îS½§¦×uı2ÆT¹…·?^ÊWG÷‹.”,âğ¸´›Å¾fgQŞ”ØöM:b•bÀ‡^×2saŠÛˆIÅˆÙh¹o¹3ü¿flƒ$ha‘c/£Š!ù7·ŠÌ_*º!ã+ÑŸ6èÛ¢ú‹ó’vú°B±Ê \:‹yê¥bQÄ$ŒÃ4æ[m¶õRa«$ŒK9(·÷nOa„P–}i'Ÿbgo»Uæ]à=ÒıäÂIc¼SI‚rä¼¬uÏ§˜Xt4è2s=ØH*k‚œiH¬µFÍÆáYjë´O9Ë¦uŠUë±Ö¤ÄkúZ°G®Tœƒ5<¦ÕC/‰i°ÆRlìU£Rƒ9”¨¯’ÔM(I_¶
+VÇ9ÿth¨¸17*P0)W£Rÿ®Ø"Ç[Ï š6¤ç\”ñ4¨sİ‡u¬ãòk«Y$B.Š¾]Ô‰P~¸B—„ÔÈ?º|‰9›‘éœC“¡©­‚ÔUG“YÚt¥*Ø}MÎìÔ+¡ãî¥şñ”k5nŸ…\ƒÿS‡fvÅ¤»A½çœFÛ9`v#ÅŞÈ>	JV>	6Y±ö wd2±²^‘ØGN²~cåÌĞ&Ãt½Ûş—?Î±±|uüŠI¡FdsŸÏS$¦ûö©üÆjË~>GÂ0•2 ËÙNäõÄ%é}wÿå…½î}Z«`éí°Ëõ™CÆ{SaŸ8¯y$x211Òh\3xf­ İ†£S’}V\{¤MSÇ0KåTsJ¦)ı›êñÙjyÇhÌ&4[,dßfÿŒ:Ãæ¡Şä‹ño¯÷Ò-£ZQïªáˆœğ+¶î³mğ°ï~]¶]/DôhCšñàÏÚ!&¯DàYz,‘Á!ÂßqïI"è{©øŸ‡å¼K«¼·uÿY‘€@šœåNÆzØ%™Œ¼¶ñpR*±a¢lq§ìÉ(–‹íûNë©EŠdş=º9»èçÒåÓşİ–´>ùL¹ì0y<íØŒSñ·ÌQˆ[¶Uôù²Ş…ê$ªÁ’öªÔ[…ÕUH¯j›g,AÊ¥¯)ˆT•’×€ë=uäƒW¸?Ê}è§u÷VI´|¯ª¨!±ª¨‰mÇoÏïF¹:Y|µœ
+_«¡7öOVŞŸFÁa}n­D«'(yd±.Ûì[Ê#ó[7N<ù-N­E8X¶;¯¢İL	+½ñõ mÔU¦°²!`pyI‡è\xÑ»Ü9İèêÈ~5¨å‡ÒÓ«ˆ"“<Š}rtÊ£uC£°Ë÷ñõşÙ8ı±üŸŒI¾M—È‰F¬ŸqzºVI«ãš…m;TãÂ	Êófè:Ã²îë‹.X>ñÃ©áÓ 6_óíºBËÖXÿzïYş=D‚–Uj˜¼{EÅéİçÒDušæ³ltşl/N„ö‹»nA®¶òbÀí^ çA
+¢SÜB¯ÓtQĞ‡İèIo ˜C'Q2°ÇŸ4ôNm‰½\6Yay84É–ö|¦¤4¤²Çbç¨È)Ç©õŠò¥ëYY\7‰’N®ÜÔm©æpû¤á×Ñ×{ĞsUû^0E6’¬“tôâlR~Vg¯d&_êĞ¬H¢ºéˆä1CPtiTÆ€0Px ¸œiÁ°BÕS	—·*ÓaÚöWs~ñ2á((ëH•ÎMò“ğB"2€.ÂÕÀ‰æŒ_Û˜¢%@¼ËŒBÊê	i—¶ÈGßqÁvÆö\MFÜgîZœ¯®Î›°I©Z¶íå§N®¦8XNÿvúBg1µ+éaÜ8Ğø!GÆBXMš:Yà¦-şänÁƒ”%L¤¿£YSÆŞwiR)BæåÕ¶Ãw>Ãğ>ÛŒ¬Àó&9ØtBáeşã‹…ûFrÆï‘âr©ÒdŒÊ—)¸YRm-g¿§›úÆ&ŞúO†H³TÖcdÒ?N£•¤_á‡Æ>“İ7DóFÔ_ÄmË6¹ç¡Ö¬R R.Á•¡­ĞˆY}âLUÃ{&n=ùÖu.œP‰—…nRQÈô>M$À,*ü§­ƒdíE,¬3DãWŠã…I{ëcv_ÛwîÄUÆ-42¶¹Ï›5d{uOy×3ÊİÃG>‰ù°Õ©§‚ã&‡†HA‹V¿•l Œ³O2vï+yÜ¼V)/’×.“Ü-üÌœz8»¼üÉ×æ²ï:P5+!¸æÒíƒù¤/r(…õ®ĞV”‚~Kjşxqš„Åªp;Üìe’â‹Ü:ïõÉËÖÕ§ŠÕ8v_ì„ A™ôŞ1ÄÛıäE¨¨¾İÔÀ.ˆW¥ı{óC›İ{Ùø;¦öĞ[bğÎ‚´ğê— ‹‰g›&Uæß×Ïî4vÌ˜4cj;İâ­£K¶^O¤xÜ	8ùÈ:×óbß+ûì~Ö6TK¹qIeÀİÕ/‹Ñ\Ybf‘^6?nŸ!nr|¬VÚG=Šù9Â2ì[”YòZQ?”ôAŸ*Ü/N7KÉİğs–Ãzün…Ş•qv:)a·	ŞĞÁ »Uv¯íö\´OMcê8£ÿ$¿¾á‹ı´lN§ZµHqÅ@şÍTö…ñ=İv‹IYáP‹Õö¯ŞìW·Wxµ<^¹xüPŒ^u¹RmÊ]Ë¡„¥½íwÑ„N!^Ğ2´É¯mÖèœò_Ëd:Íêı|­H:)ã¼Å·±4&º¿x´ê|bh®Ğå?=è(ìËv\ÔÛ,:	 İî„ßøBW‘bÏ¯FÖ¥÷.s°d{M=›œåa¢DéUG¡Oÿ•È.èö è‚92!!DÎóŞ_È›„âbúY;~,ˆÚóëğDÛ?Õj€KÛ³pùœÊjOêƒZmûA·Ôû2:i3Z¨é€ç˜Ô‘I~Šz°àêTÎX`\WBÕmœœ²Ö1äRö¡Å}¤µßPÿé#}<öü³ÊğV‰¢©EÃJÛõĞlr„OK_5Ú¼§.-Y™ì~şâV'™;•&Ğƒ¥ıàµÖTV1ùî¾íİ åÍ+Çm6ƒî/%Òécùé†]“Nò ‡ÚÌTãKäÛ¢øøIn¡#ºşÂË4iû/ÙïZJ*E¸Éúˆ‡«
+°°¹>+ô\İ»ì>ÚğÊh_Å[”fNAm¿N<?2`-kK}MFdşµEÖ9ÙCN/»¢ÆÚ¹¬CROtsj½‚BL=½$r(‹ÌP¾ÙÑÜ
+¹Œ)x¬˜·GÉå^«F ®ƒñ‘b¯J>å•cüëÉÁ‡ˆ	š›£Ûû I\sM)ùyF†ì
+©—ÂMC–¦R§ºè¡H«˜>´Šû{]’
+ïPñRWadö[fzFÎ¡Â¢°5€–•ñ®B[¤ĞëBşĞ«ÿhóXS\vÎ7¥¥EÍoê«˜sÔ n¿ú Èà!’Şó»Ô‚øDe?~˜(ò™6¹›Šñ8õÜFTÉÛı‚ç[ÃÙ(b($ş4„Nß_ª qıŞ`i·Y®W•¾çÉTš,öAS~OŠ¦Ï¤ì—¤j£|eÖ¦Ç+TM®²qp,BÃyJ¯'™ÄÎšëAİøßšaÛ„è¶Osºêm³î¡8~ ëäMJò£3*R—Ğ`K£ôkUºd.¤gÇ®&I;?¨ó/Jâ(¾"Á©iw­±ÖTĞµZmjÍÃµsX4KŠ7ZÅ®0/~WGg¨3ÅDfïá÷Ìˆ©«Ø$=)yU}‹¤ƒôITïİ={sÆŞ6­Ø°èzüò¢³Åi‹+éo”áÙõ)J#Û7šF;¾~ "TJMcKIŸ4-ô`õFè‰oHÓèñİĞ\1/½«ÎL½>¹Ï"6ü)»Æ²wÿùÛ®d¦ÔèRaØµòFÉ0Ä—H´à'¢Ìºª3K¬¨l§Y¾MskŠ¢æêUìH+8§¤¢Ì6¦fáxD9()îØòJ_•Éˆwûe{ İoß°`¿‚^ù¹:5¬¨"¾@‹²9»¶¯İ"ì§±ógjHl½‚øqózßÍd3õW¿ãT]à˜-ã>İ£ùÂ¸ş°Nõgˆ8¿DaWuNU½àÊºw3Ê‘úB"\Ô…M$i®ù’‰˜ú”¡Z§·º. Ñ¥ÍG¼¼òÁŒá†j³áX±uUT“7ü.¤ë;ä§²lòùŞÌï–‡ê?ÛÖvMKµúàaWhké)1°w‡tØQ1	;a†ïÉœ+{t¼‹ŠÂ©qSøEÌeÄY"ƒü™¬\Şú#¶h£ÏQ™rôcArLøkZEj{ÊÑcU"eR4!½8½«¸ß'§G%NÙ'¥•¹»p«Iuvµ†˜j%‡0%âÒE?nçPbBœ³Q	¨4ïoûïCYn‘ìü=úP0@±<àc^ìè1J~ ÿ"u€çuNÓğ±÷ñãR3¸T6Ú9Æ	úX¯hSQwT)RTÕûu«äPø¬¥ÄUÆlŞ¿UI Lv°r(bHP…{ ‡Tµ*ÖÈOåº::ÖÊ³¯ÆĞ¤ÕoªGğ]Ô&2–ÂNk…EWù{À†£©`!Ác 8ƒ\]ÍªÚötG2 ·Õæ 5³µúuï<4ìÛÚ1ÌF¢Sn-Œ²ŠfãéÖ‰r×¡_ÖJÑRRöÂ©Ç`;„X™Wiw–›h.,«ä=ø†_„×;›D^Ä+~?;©Ì¶¦@ÏÉŒ$øÏ¬
+	]b-Û?iÌT£7HÁÅÛ7}ş#§Kt«\1æ,·4H¼hêş¹\ÏÁS@†;±S™úIVÑlæJ–ÄÚ5ÙÏÒ¡ÕËOƒ‡±H …FË§°ÿa\N£t 	ÕQlÁÖ21•<äíßr}ÔMÌËğƒ–Ä7¹4t¿ş¶4ÏÂwG#Ö·Ó8X˜Ş2_òL¤´Ó™+×3jŠù„¥~Ö¶§ñgn4á	å“m²Û7¬ÔkŠ96‚Ôœ(½‰»á‘ƒe<úÙ&\ğWCñÔ1üw‚Cı9÷§ÔĞ¥—zÛ¿*Ÿ·íBt²?Fc•°QP|ÏÏ¥GºŒ<ÌPü%B3ìÂ¶•NïÏvÁ¯ñM]óÌŞˆ¯´t¹ûëjJbi©7g¾iC¬İ(ÉıÓ’døS-USÅGc³‘h¹‰.šÒrÖ6€KÑãıÕtc®gÒ£ƒã’ıæë%÷\«ìì¼¡£ü‘‹A£PññiÁ/JŸ\”;=›ê¨e0ñÒÓ^Æ‚iÑFëız¨~l¸|n˜SgMª²&lÕ™PfŠå¡è³˜*’áŒÆ¹–uÄØz6#D1†úµ1§ûïâ >Ïäá¢Ø¨»	S+eN–†Ò'¢ç~4¸Õ6.99çêd6êeepô¨%ÈìTÆÅÆdã!Øn*9?StsÁ#ºèğNz’œ~ì8`Ëa…>÷’Çûi>ªök:æ0ø#ÀG›i*ŞÑ°C®õ,„rîÙ^¤B›j0ÒÇòx÷5‚,<|xçÄLxäìœDœÙ{ÔÁ4ê)7±uùu¥‰ À ¢íël¶íÇÛİp÷rÔ¸ïœBN<ÿ…»0!iõt…SÉ¦QoµõRyºØ>ÃyüTµ®\×Ó=4é*·Şşğ9Œ6­C—…L“³6­;Y˜(ìét$#~ºÖ‚(öµ§?$ª ÄQœãúÙùPüè‡ˆ»NA‰~Ï‘Î£lò{§åÀ?Oæ¾»õ§é"¥ÖËkyş„0‰£Öİœái&Õ½ÍáçÉfÁBúâd³y(êRçÆªğÍÄº¨-Ó×™EÆÕ›Ï`¯ÁCEgù&Ğ;™Û	ÎÒ{sÛAİrÖfwMŸx6 $Zñ;p¿RËnıbñxæ#w*0€·°¬Åš¹)"wq;,Æ.š%^”%±ÁÓö/cÿİ›y÷ì¦ø'Öu zZzZ.Å5v,?Š¶)3¡!AG¯T”›·¥±×n…Õg|­j¦²-ÕÃÚÊC8'ª›·ÊyÔL a«øì7 »‘q³÷Áó‰äÓŠu…%—ª§,k«&Ö«ş9›E§qçïËÙNOÂ®øMÁm@¡ª®“kÔâÙßdç¬ĞÍzy÷CÅ>2]¬ÉÍ­¡ˆÃ
+éÈ²3Ïˆ§pØTcÍ<¨¶h¢ôrbLOĞ…æ!ŠHCã/xˆn€šâjŸƒR•Q“ÙÌy&nÅõ}R\BÓóÎñ¦o6÷ŠYH†6rCßfñ”‰Â/ã­ı7£•³*Ü³¿— gèÙhÕ]7r	(y#…%wï\³ã°…w¢îä<M¦øOÇ$G¥¦ã0EÙš}Å¯êæ+£U2zŸkz:™¢’B{ĞTû€ï§šÍ.¡0|F£38ÇXPC)«°ø~x®¬ï7¼^)Ö'mRJU„#›®Så”%z‚YBBézò,ãpãĞğü“¸Da'š²Ô¼úÊ$Ìs%Äq%4E™‹Ç^U}ÀºMm`÷‰È­Ü˜z0İ`6¹&áG²"Ç›­ê!‰…±ôïÈcœHy—?Lrqx%¡¶a]7fÀ`ow‘©ŸÃÕéÜÒÌ&åäŞ†¿fàÌÔ²Ÿ”šoÇ¯@½N·ö»umkÂÔÇÄ°!©S¦ml<'äqvOæ¦nÌ°$A53¹5²OL0	Ø²©×Iı²= şŞÌà"T[saG™Ü²XU«¡üO¿5õC­’‚Ù	=“Ã%7ÜÛUÅæ]$XßSf8ı†xH8äƒì]ôÜ›•AÃƒ¯Ç9%‘¢¢â³p±-V×:¼µd·5¥¹y–z÷óA»ÿAŸÍõ¥ì K”ÍèibiÙ§‡0²‚oÊ—Vœ¥0jáA±-M¼,TùlY4½¿³C7Ñ»ı=;,³Œ=Â)®‘ˆ¤¾Êßş6œ‹—b~/Ëêì×şÂ/ÔË5åŞÑùwƒo’˜ä—>ê¡ûútXÀ*-´¥¬«.ÛHæ—µÍ€¸}${­Q Œ óYI´u™73«­JÔ„ú1¤x3á£óCBÔÇM¾rø3y•€œ¡—îtJ6î¡_»•´8ÍïÂ'­‹ÀD©©A?è½«×+æ»Q’Ñ5™*Iò|©©1…u>ë¥p6L›}Î êe Æ7C“l%H+|Æ‚¦™uÒ÷á!X“qï4Pâ›GjıÉõQ¦Î;øníqà'$“
+äƒĞq#'Dc9çZ@Âî†qéÕ*mé–"†Ï M¨•£4Œ=“İ|]^Òlµ»Í¸—?’:š,jÓVâæ'j¯$Y€/Ø‹4«á3ÊL¨Dõ¯›ùrLckïHtyá‹zÚ1é1ˆÆ0“`ç«’kôÎN˜PÈ5Ú_‚G}aôsß÷1¿ñ#´Ñî_ y©qC×™'ø1`v»”ìsu€•ÏÖ‰>»Q?Å(SUL948åm´U=×<ŞØ!+@ît¯O¾Ò?X1‚z1ôõy.±MvVB‡[èå§<‰x@¿^rñU…lğ1®·%¶7µ/kõ>rÕZ1£ŞË90J3'ë—R´‚‚ªõh–FB"Èb–ÏiB½¥¤Ÿ‘¬ÀÈ™
+	£öXM¡»qYãt]Ûâ#šòµq(|®•üUà`•Mq%ÕÂµvV½ 2ƒ}/m~á×³0^——Ç8$4%†}–üãd‡+É,ØK>>3œòÎĞ¤Sàìæo-.„›MÁ
+ŒYåï¬!3óIıõ•5RŞeH³‚ò¯S`ü[?Ôv(É ›CMd‹–Î9ñÁj!mYçèMğü<0p>áüzş‚4á~0[5ÚÀwr½b}äcA†ò¶c3©hZ*ğGËdŞC]IÊjyî%ª$úÈY4W}¸!Şé‡2]~I±_x‚àEî ‘Î¹}õßªn1cì×¸¢‘+ƒJô=Y—,DI9fÆÚDÃl&Xn–=kg‰Ïv4´ƒ‘ŠOYU,¬Ÿo4z%‰§ï­!ªàİk÷³¢bŸªÜq%ğzºOg­öÇZ³Úµ3ô³H³|ÃÇë®~°Ôç/E”s/£ãx¥*ÛWànC¨òÓy–,‰à©T%ÊÒ…Ö©vtçi–fÄ´ÕÔ¹ˆrìˆZUuCo	I+t§_¿`f	(¾ı¬uZNƒ½á÷ş‡gb¥KXÍMÒšÌgAö±vxîk¡›‹NÇ…Üğ—¼òítò¸›Æ¾ä£èz„ûÀq¸üÀ¥[f[x l*gUdòÛñ‰EöÑµIä´kw«^5r÷·-$Ç¹÷qÒ?½û:µ§á‡Î[bk(ë÷|×Ã™G“
+ˆ,#R->‹mGÌ½6ß,òb¸è"¢]zõıH•Ôò6«=‡™yô¹÷8Öë—»WÖ@Ÿ%ä‚ñmª>¡Ç:H=Ä×?¼ÀÅ¾ÜŒQcm‰a0ŠØ^ÑKáşÍ¾Ø×Ú€Ñë	_-ŒZÓ±Jê ”4~ŒîV„
+İÒ’,æÄT¶Ï8·}PŸÅ“+t3ŠÃ¦3s…°ÉÖ¢_)İ-ŠN%ø|Ùz‡©ÈıN^v\‡%'yÜ®‹ñÅr¶Pšã1û6_Ó³MƒÑ?s²Í+ÊícÙÙ7ä¶`XJú²3ÓàG×”®Á šÂç,ı±U…Üë9{–NïdœŸ¢õÙh°Ìl_êğ—Î±MÒ^¼º‚í¨Qy¯ÛìÃåâ!Ò®n_j2“@óx	1AË>Ç=#O0ç³Äp*-¦W¾,ŸÌÀVû´—US5™|lN9ÀcQıÖcE‚õÜ¬Æí1 ·ªtóõ•“r´1,"Ä>³/Ëè¶¾ÚX"ji¼fIAİFIø=÷lîK©‹ù>¼¬³ı[°?ih¢ÈgËsš@¹—Û„'ş³úŞñÑ•lÃ‰O9—™µ0è™ÆıkW!Jn!7ú¾5f¾íØìÇV®ã¦Um¼ç#†É>şm¤¥ÛôBÍômµ:¥÷›'²PM<˜¥Ï»?'Qº€•€—]Ñ’/åI^#”¡ßÅ1vN\T#À<-Ù`×‚d@Î„ÈÍ»¾ŠĞ±¯ Œ°@àÚ¥AL°3D‰?ª"ÑrË¿[¡Ãf‡õÙPDP7Ûœªÿ~BÎ#HŞJˆŠÕ*—€ÿIÒ<3Öwä³âF¿œšîÕ¾"Ÿô‡/_¯cRŸ)ÔR“jX`‚íZTÖ’õo^“nÜú¡¨‘§ä›câÙ‡Q£š¶„ÊúAg<Ï*ğº	^KVU}jûµr`!öä¾›lAPÀrjqŞÕ¢'Ä«.º8· ÙóGÒ³9
+Í–…á]ˆf¿Öİ:ó,t['‰;åZ\Ù•ujûo‘¾Ç©UçÉ%^?~¼ç$o~’-kîY–í3;€:ùúµ.¯¶öâ1¥ÜÃK²O!üç£ ,/Ó5œ|‹KŒÛ"j@0¿×{Jí’‚PÕfıı‹³Æû£rø|!ZğÎÓLt™£×©SÆeûR‡uÇÚ0Åã¸ËL…aæDÃõ|¬©´¶ì”eŞxÇúU5éˆ0mÛ1™Û`ÿ¹ã°m]Í×œ¦Âô«ë<)Ì¤DæÚID·7iE7‡\D¿|dú|d½zEsOg7®fê}8ÆU¶ƒûKSÀÖ¶×xŸP¬ÚYÆï*-(°µ‡ÏJ–¡¯¤
+›}%‰-|“H¤nH×E*›óI`#ñ‹8cØR´«ú€n.³jT‹œĞ*Q9Ê,9Nó¼O÷‘DÈîõ²c¹òøjÖLœ"¯>6Vğda6cã¹ª™|Ø3¤˜!¦¶²åäüÎ—EzBDJp%L. ¿ÿõ5˜‘0áˆ¹ÌÜ¤^$Ø¹É‘=LsAØ—)=+BS0ş¨! Âœ&¶EÛ)Äfó\íÜ¹@Ñ3^>ÆO*,——ÕìwÛd]Ø¼Oƒ |Y¹Ş&tÃ÷cÈHÒÿA™¸ƒWb#¯Ë¡>Ñ´Bü²W2ŒY‡wJÉï¥Mœj%ÏÈ×Ü×í¶DË£ˆy3–÷p%-„M&>ÂenŒJGÜ–V|Ù'§(ªòq»vøƒ/ÆÜhäœ¡UÂËïà%‹sİ›0ë–“û=¯
+/:‰óµTdš
+šVØruFˆš^W‚á‰jI(­Gr%¼s_«ˆÄÓ]ú»Œš²«^øôZr8ÊIªŒ.ôU‹ñ:d³‚oœDÊ2 ipu®Î1…ß7ÔıÆ»‘Ôá]Bíw®­_ûj±r	?zÎWkâ×9×¥É¹O;Ñ™}wdiûøˆĞÂ6Q]=Hcqği´&58¬‘ í;p‡ÊƒEÙz§ßoË©Ã2uX·)ŠmÌA«èÒÆ4
+gL½Ğè~Ä€YE¹’¨(oÖŸDúfÒş”e^¼ï_tİ`PXÃĞÕ˜û°myÃÜ…áp'tĞT3YÂü©‚êcTCFv^¯¾¿÷GÄás³\îja¨9…/¾‹y„X7}5<‡¦½…İ?…Ø”®Õz_ºs^^=¼è¤Ëj
+T™<–Æø“Üù‹äz]kÛ–Yµ€STí÷îe3ÂndNÀvVÓ”˜\ŸKöÃÑƒ*U.}ØãNË3ir»ÍXèvÁÍ¾k­êö¸Æ/h(4ûî{IÕ³ı°ÉXú¸©µ0
+)*Å¬Ãæ†¤2,§4G3zCÉJr“åUÚ?Ëœ`Ì†ú¦êxå–îy+±IÌŞ-Ş ¿Sğñ°÷¸e¸½3í*q¿nŠ}á‘šˆ§C‘\¶¦Jôôğº'Ší%\vºñoüZui¬pUqB¦4ç`t9Š)e^@:úVr8Ãk H¢ºmÚÀ¬÷<¹	‡-–ZùØËHËB	ÏO€vÙ =áÔÛ<²®FŞ hIVl:ó´k?^E²[Ñæ"¢ß¢âoğØ“™­bµ <äj	ˆ0éØ'àsËà¥2>ë{ s—İÛĞ¤i:«æ\¶iGùJyÚÑqcòn¿©ÍŸƒ¯Ûˆ§k¨à[ÚDáZAÄXš[¤¤whÒş×ûúì:ñİ†{VB|3T‰Òvf‘Y¹MnÛbÍFCÒn#A4nşZKx”ü¼¿< ]ƒ,sJ„dO\É©Ô¼PSÒz²X j·Èu?éÍØ/ ±¾0aÂÉ¯ª³åÈË³½¨3Ùpîˆ”·.† z™ú}xW£˜¯™0sïÓ³”ètNm_wUºßôÄºÁÔ*ê„V¤ ¹ö"ñp420ö=óÿôŞeÅ0òÉm”VX¨n"Sä>¥¹¼ï#âµ¡Ğ=!˜S"g½3úúSö	ËböŞ¿ƒÌp† –Ë\øøkh!ÅkšûÈI5 ±a†Ìô¼€sJoÁe§¡É®R’ôCgú`§ÄŞ…OÓü"ÉÖ2H3Ï©?’ªß!VqaySÑ±Â£ÖŸŞóY4–,[!3·yŸÀúeJ|oiœóâ9%ØZZ¼«èâ)y‚ï†×Çm+ó	¨çê’öÂ"–$²ó«&f»©	®×P¡o¸Ò•H>FD´NoƒŒ…˜Çò–Ç“(®Qà¤EµS–O}ñ²’¬äš o?h±Ù€Ëå
+ÊWË6rSe|ø)–‚D_çÅ.ÜÛIgIsaH~¾†¥Ñ°ë.½P¼ív%šdcÚM„cÇbÆsëï6V·ºáçu!|sµxÊíİ!ùxNF£Çaú<ÒW¡O‹ç÷ì¦FTo¨à,tÊıwš&óWŸHå-EÌqÄõºÙ º•Ø¯9dµøãï0„ë;6€7&È6˜a˜²zùîûâú-Â8IE%6¡H"s™p~¯ä‹Øÿš~óAå "TßôàöÂ#Q©‚;÷›½ÀÆ3tÉ~ĞŠI£Ë•ÁŠ×ÂL6F÷b·Ášf•
+ŒyÁpİó6Ô`•Ó² ˜ñé“FÍ¢ÿ™¦MÜÒ©¿R'Qì‚áà#Öc®ğo’Iõ¹ÅwnŸÆÌ¥+©ÔíñÊƒıõn½ZôƒËÖ–‘­[,CG4‘_‰ºg*7§?—ÎÔs~BÜ€£éáTAL+ÏAÖÏO3C5E®-§;ƒ˜ü¿}ºÎÇåâ¦)¦šs/|°ÙrØóv@›–Î|£3‘&hòTL…İpt#?w0ò\k~°£õa|DŠÿ8ªDpåË‘ä‹ÑaÖ<¯\9	}SH©Í:$É´¤jt„!ÎÂÀ™jn'`&ÔŠB¼–´2ûá~	q<l‡â)Ñsª'½M÷ñ1^wRäÙø#Õ_¬Á}•¥t€Íæ©¿ÎÈÃæ¨ˆgÀö¬9<l{kîêÊ}iˆrs%€SŠíĞº?\íĞc©¡ÄF† ¾î·ÎÅùyt¹VÂ™vñK¬¯\$5ºC\Ó{¯ÇŸ¦€È=mÜ­Æõ‚6kµ¿—#ŞCÁy¹(·¡²w÷I¬³"4°©ß¼)é(xùxdª ÏË'Ä¢ÓzC`í>u'•ØL>I„ÓLí2e™$Å#Á‰—û™“§v#3Ù!vÿÂ8Sex6Í"CÕôÌÕêUéÍP"º®UĞn¸ïc»F%aÖp¤P6ñÉÌ‘£ÖöË¦0Ò?¼a¶~æ1YÂO.*”o™YmÏ«/Ç;nÇjygµ{ÖˆïšdŞĞuÓqŠS¯»*5Ë—.7Vr'#ÈøÀóî­+‘é–8±9Õc¥Ôµn|³{Øü3Üe„€¹÷mWL‡Àyo{Ù/?TTì­%yRjÓ¾hÛl—¥hÎÈ­?Ğ&ğšrÍÆëh=á+©“`\:©4½~Ëûä°lÁ£cƒs+ú„7¹äÌùŸƒ?©0Óà`i|WÄÃ¶ÊCRs°"4h¥}˜Ş˜‹BCõÿ%L!‹’ìØ+Ü{ÀÛ`E÷^=¸ş¨ &§ßÂÍ¤‘–ÅÄ³#!WsjÉ¶¾Íºµ"ÕgäGÈ®	b'ŞwŒ©ï«BN³*%˜6Ö
+@Ãb^5¬kXy‚“3ZŸ`>Y»¹²‚ÑúkäÉ'ü„G8$'”
+ŠI™&jk-×‡‘÷Â1ÒåÕj°h³ —jRîÆ+Éõé‰
+6ª¥ñİ{âVÃ<e¨Gò·oƒğ³°ª¸íÀ¸(Å'­hşÖğæØp…ÍÓWRi¹Z3	ä%zã|ı¼@ÚË0œ-]¥y	Y{Uå¬|½hÉduÙ -[xÉaZ"’«ËW¾BüR*å…Æ(£Ş´®]Åà{HîH¸VA _ ,ÍŠ˜ƒfQIFï}ïIßók˜Ãà»_+z£²Q¤ÏÈ?âm«0ıÒ2ïØØ+N<ËÃÓó· /²ê>öï|®ÜN×\Pé;@ÌÎÑ=û|Å´Ûï$Àÿ>¤Æ5ŸôõÆ%]z¨t?NúFv5E*`ª,í¦ëŠÓ¶ƒ®ÚpI+©
+YòlOæ;ZqOeY+;hØÂ¾‹T;„H:2IºgĞUNÁ¥dDx¾]J$”·š¡L	± n<î²wÀ:«U”cà—dĞÇ’ğ5Z3ğRtÊ¦ÔF|«\ìsıŒ*æ;Gm2’ue&íÉ[İ%mÙ×q±KŞÑ–/|”àó0í¬¢ëq—½4ü2	‡ïV¿ˆ æ}_Í²«BıĞÓ‹KÍc Ê·ÁñhAşfoá$U"¾+åt)èõA&mD÷TüÊ¿G BY–×Nm¾C†ÅÈğ½xKQŸ²—ùIŞ•$B¾^Q_a‡ÅM[U0û|Yïë(—Ïšø¯½Œ(çØ/ñ¡j,F¶“O*!B;Å„C	£·1åçéÍ—õ,Yr¶Onş°ú«,2£ó0&[¢Ş2wšÔ¢¨áNÙ·%;0MËr‹Saë™HØL‹ˆï[_Í:aä‹»o—ˆåûL.¿ÍëØ m²m–ATBº„ğN'MW}„CteúĞŞÇòÿƒÈš
+endstream
+endobj
+18 0 obj
+<<
+/Type /FontDescriptor
+/FontName /ZSWURE+CMR10
+/Flags 4
+/FontBBox [-40 -250 1009 750]
+/Ascent 694
+/CapHeight 683
+/Descent -194
+/ItalicAngle 0
+/StemV 69
+/XHeight 431
+/CharSet (/A/C/D/E/I/N/S/a/acute/b/c/d/e/four/hyphen/i/j/l/m/n/o/one/period/quotedblleft/quotedblright/r/s/t/u/v/zero)
+/FontFile 17 0 R
+>>
+endobj
+19 0 obj
+<<
+/Length 739       
+/Filter /FlateDecode
+>>
+stream
+xÚmUMoâ0¼çWx•ÚÅvHU„dçCâ°mUªÕ^!1İH ı÷ëñ#xÙö ?ŸgìÁÜıx]OTİmÍ$|äìÍœºs_™Iössîîò®:L;<S›zœ==±×¾«Öf`÷Ù*_µÍğ`É«¶ÚŸk3²¾'ióÑ´‚}Øı»ù=©½à“í¹ÙM;áà¾7ÃŞr¾›f¶ÆnjÌ-ùeúSÓµOL<rÎm¡hë¬;ÀÃ)˜^t°é¨l×´uÃ¶Éê¦.#÷]ìa`ñúó4˜ÃªİuAš²é›<ı§SøL_úÚôMûÁîo”Ù™õùxÜ¨`<X.Ymv¶¡õş¼96ıÎà•òşy4Lº± UUW›ÓqS™~Ó~˜ å|ÉÒ²\¦­ÿ›KhÅv7RKås|…*Z©-–1
+Üb[Àd¨©0·…°´8¢‚ÅA‹å
+i‚É$C#.ĞC¡‡Z\w±ºFÉ|TTıÙôí<\`Gc)y,©<$¬g„àˆvàÀ1a×ç²³[RH×“LÄ1>g~¼À8÷ããâşÈ)okà	çA„8ö$`I\èÎ×3`çAfã<ÈZ]ƒÂ!‹„ê
+xNkÇyã¹ãĞğ"œ7Á¿ _¥ã“§Ìq
+âH`òáö•‚nú¥¤kÌÂğRONH=CpB:#=Ñ%8“ˆ88QA~¡!*ÉzÆœøĞäT?!~>	étw©8éÄy*ás£¤Ï
+}nÔÌçFE>7*ö¹Q‰ÏR>7Š²¢ G]¼;~îó¤ŠÛ<©ò6OšßæI‹¯yÒòktèó¤g>O:òyÒ±Ï“N|ôÜçI/|´òyÒÚçIg>O:÷yÒ…Ï“.}2îó”	Ÿ§Lú<e³ë¹_¾û¥ãmÂ;z}õªsßÛÑ=¶î¡Ã×´æú»#V¹{ÈÇ¿Œ^Êà/ñó¨P
+endstream
+endobj
+11 0 obj
+<<
+/Type /Font
+/Subtype /Type1
+/BaseFont /ZSWURE+CMR10
+/FontDescriptor 18 0 R
+/FirstChar 19
+/LastChar 118
+/Widths 16 0 R
+/ToUnicode 19 0 R
+>>
+endobj
+14 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [2 0 R]
+>>
+endobj
+20 0 obj
+<<
+/Names [(Doc-Start) 10 0 R (page.1) 9 0 R]
+/Limits [(Doc-Start) (page.1)]
+>>
+endobj
+21 0 obj
+<<
+/Dests 20 0 R
+>>
+endobj
+22 0 obj
+<<
+/Type /Catalog
+/Pages 14 0 R
+/Names 21 0 R
+/PageMode/UseOutlines/Metadata 6 0 R
+/OpenAction 1 0 R
+>>
+endobj
+23 0 obj
+<<
+/Title()/Subject()/Creator(LaTeX with hyperref)/Producer(MiKTeX-pdfTeX 4.19.0 (1.40.26))
+/CreationDate (D:20240330132950-04'00')
+/ModDate (D:20240330132950-04'00')
+/Trapped /False
+/PTEX.Fullbanner (This is MiKTeX-pdfTeX 4.19.0 (1.40.26))
+>>
+endobj
+xref
+0 24
+0000000000 65535 f 
+0000000015 00000 n 
+0000015291 00000 n 
+0000020176 00000 n 
+0000020581 00000 n 
+0000015441 00000 n 
+0000000061 00000 n 
+0000020898 00000 n 
+0000014942 00000 n 
+0000020784 00000 n 
+0000020841 00000 n 
+0000036937 00000 n 
+0000020378 00000 n 
+0000019829 00000 n 
+0000037095 00000 n 
+0000019904 00000 n 
+0000020993 00000 n 
+0000021545 00000 n 
+0000035796 00000 n 
+0000036118 00000 n 
+0000037153 00000 n 
+0000037249 00000 n 
+0000037285 00000 n 
+0000037405 00000 n 
+trailer
+<< /Size 24
+/Root 22 0 R
+/Info 23 0 R
+/ID [<F008604366B565C6AD36208077F47FF4> <F008604366B565C6AD36208077F47FF4>] >>
+startxref
+37665
+%%EOF
+2 0 obj<</Annots[3 0 R 12 0 R 4 0 R]/Contents 8 0 R/CropBox[50.5786 687.394 560.962 735.674]/Group 13 0 R/MediaBox[0 0 612 792]/Parent 14 0 R/Resources 7 0 R/Type/Page>>endobj6 0 obj<</Length 15792/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.342996, 2008/05/07-20:48:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>MiKTeX-pdfTeX 4.19.0 (1.40.26)</pdf:Producer>
+         <pdf:Keywords/>
+         <pdf:PDFVersion>1.5</pdf:PDFVersion>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/">
+         <xmpRights:Marked>True</xmpRights:Marked>
+         <xmpRights:WebStatement>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es</xmpRights:WebStatement>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>application/pdf</dc:format>
+         <dc:source>temp.tex</dc:source>
+         <dc:rights>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Esta obra estÃ¡ bajo una licencia Creative Commons "AtribuciÃ³n-NoComercial-SinDerivadas 4.0 Internacional".</rdf:li>
+            </rdf:Alt>
+         </dc:rights>
+         <dc:date>
+            <rdf:Seq>
+               <rdf:li>2024-03-30T13:29:50-04:00</rdf:li>
+            </rdf:Seq>
+         </dc:date>
+         <dc:type>
+            <rdf:Bag>
+               <rdf:li>Text</rdf:li>
+            </rdf:Bag>
+         </dc:type>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreateDate>2024-03-30T13:29:50-04:00</xmp:CreateDate>
+         <xmp:ModifyDate>2024-03-30T13:30:32-04:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2024-03-30T13:30:32-04:00</xmp:MetadataDate>
+         <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <xmpMM:DocumentID>uuid:62626267-a3ea-4ea3-9b6c-9bb1820a8d75</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:b4b7373b-c53e-4d7c-abdc-796a36a27fa1</xmpMM:InstanceID>
+         <xmpMM:VersionID>1</xmpMM:VersionID>
+         <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:prism="http://prismstandard.org/namespaces/basic/3.0/">
+         <prism:complianceProfile>three</prism:complianceProfile>
+         <prism:pageCount>1</prism:pageCount>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/">
+         <xmpTPg:NPages>1</xmpTPg:NPages>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/"
+            xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#"
+            xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#">
+         <pdfaExtension:schemas>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>Adobe PDF Schema</pdfaSchema:schema>
+                  <pdfaSchema:prefix>pdf</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://ns.adobe.com/pdf/1.3/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>Trapped</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Indication if the document has been modified to include trapping information</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>XMP Media Management Schema</pdfaSchema:schema>
+                  <pdfaSchema:prefix>xmpMM</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>DocumentID</pdfaProperty:name>
+                           <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>UUID based identifier for all versions and renditions of a document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>InstanceID</pdfaProperty:name>
+                           <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>UUID based identifier for specific incarnation of a document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>VersionID</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Document version identifier</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>RenditionClass</pdfaProperty:name>
+                           <pdfaProperty:valueType>RenditionClass</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>The manner in which a document is rendered</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>PRISM Basic Metadata</pdfaSchema:schema>
+                  <pdfaSchema:prefix>prism</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://prismstandard.org/namespaces/basic/3.0/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>complianceProfile</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>PRISM specification compliance profile to which this document adheres</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>publicationName</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication name</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>aggregationType</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication type</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>bookEdition</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Edition of the book in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>volume</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication volume number</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>number</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication issue number within a volume</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>pageRange</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Page range for the document within the print version of its publication</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>issn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISSN for the printed publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>eIssn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISSN for the electronic publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>isbn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISBN for the publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>doi</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Digital Object Identifier for the document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>url</pdfaProperty:name>
+                           <pdfaProperty:valueType>URL</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>URL at which the document can be found</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>byteCount</pdfaProperty:name>
+                           <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Approximate file size in octets</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>pageCount</pdfaProperty:name>
+                           <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Number of pages in the print version of the document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>subtitle</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Document's subtitle</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+            </rdf:Bag>
+         </pdfaExtension:schemas>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstreamendobj23 0 obj<</CreationDate(D:20240330132950-04'00')/Creator(LaTeX with hyperref)/Keywords()/ModDate(D:20240330133032-04'00')/PDFVersion(1.5)/PTEX.Fullbanner(This is MiKTeX-pdfTeX 4.19.0 \(1.40.26\))/Producer(MiKTeX-pdfTeX 4.19.0 \(1.40.26\))/Subject()/Title()/Trapped/False>>endobjxref
+0 1
+0000000000 65535 f
+2 1
+0000038302 00000 n
+6 1
+0000038480 00000 n
+23 1
+0000054350 00000 n
+trailer
+<</Size 24/Root 22 0 R/Info 23 0 R/ID[<F008604366B565C6AD36208077F47FF4><1322C0F5C2CB3F47885A6BBE946630FC>]/Prev 37665>>
+startxref
+54631
+%%EOF
+2 0 obj<</Annots[3 0 R 12 0 R 4 0 R]/Contents 8 0 R/CropBox[450.0 687.394 560.962 735.674]/Group 13 0 R/MediaBox[0 0 612 792]/Parent 14 0 R/Resources 7 0 R/Type/Page>>endobj6 0 obj<</Length 15792/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.342996, 2008/05/07-20:48:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>MiKTeX-pdfTeX 4.19.0 (1.40.26)</pdf:Producer>
+         <pdf:Keywords/>
+         <pdf:PDFVersion>1.5</pdf:PDFVersion>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/">
+         <xmpRights:Marked>True</xmpRights:Marked>
+         <xmpRights:WebStatement>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es</xmpRights:WebStatement>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>application/pdf</dc:format>
+         <dc:source>temp.tex</dc:source>
+         <dc:rights>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Esta obra estÃ¡ bajo una licencia Creative Commons "AtribuciÃ³n-NoComercial-SinDerivadas 4.0 Internacional".</rdf:li>
+            </rdf:Alt>
+         </dc:rights>
+         <dc:date>
+            <rdf:Seq>
+               <rdf:li>2024-03-30T13:29:50-04:00</rdf:li>
+            </rdf:Seq>
+         </dc:date>
+         <dc:type>
+            <rdf:Bag>
+               <rdf:li>Text</rdf:li>
+            </rdf:Bag>
+         </dc:type>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreateDate>2024-03-30T13:29:50-04:00</xmp:CreateDate>
+         <xmp:ModifyDate>2024-05-14T17:22:53-04:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2024-05-14T17:22:53-04:00</xmp:MetadataDate>
+         <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <xmpMM:DocumentID>uuid:62626267-a3ea-4ea3-9b6c-9bb1820a8d75</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:a56a956a-7051-4828-bd49-f9b4aaaf62a8</xmpMM:InstanceID>
+         <xmpMM:VersionID>1</xmpMM:VersionID>
+         <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:prism="http://prismstandard.org/namespaces/basic/3.0/">
+         <prism:complianceProfile>three</prism:complianceProfile>
+         <prism:pageCount>1</prism:pageCount>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/">
+         <xmpTPg:NPages>1</xmpTPg:NPages>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/"
+            xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#"
+            xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#">
+         <pdfaExtension:schemas>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>Adobe PDF Schema</pdfaSchema:schema>
+                  <pdfaSchema:prefix>pdf</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://ns.adobe.com/pdf/1.3/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>Trapped</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Indication if the document has been modified to include trapping information</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>XMP Media Management Schema</pdfaSchema:schema>
+                  <pdfaSchema:prefix>xmpMM</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>DocumentID</pdfaProperty:name>
+                           <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>UUID based identifier for all versions and renditions of a document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>InstanceID</pdfaProperty:name>
+                           <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>UUID based identifier for specific incarnation of a document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>VersionID</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Document version identifier</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>RenditionClass</pdfaProperty:name>
+                           <pdfaProperty:valueType>RenditionClass</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>The manner in which a document is rendered</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>PRISM Basic Metadata</pdfaSchema:schema>
+                  <pdfaSchema:prefix>prism</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://prismstandard.org/namespaces/basic/3.0/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>complianceProfile</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>PRISM specification compliance profile to which this document adheres</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>publicationName</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication name</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>aggregationType</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication type</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>bookEdition</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Edition of the book in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>volume</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication volume number</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>number</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication issue number within a volume</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>pageRange</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Page range for the document within the print version of its publication</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>issn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISSN for the printed publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>eIssn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISSN for the electronic publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>isbn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISBN for the publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>doi</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Digital Object Identifier for the document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>url</pdfaProperty:name>
+                           <pdfaProperty:valueType>URL</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>URL at which the document can be found</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>byteCount</pdfaProperty:name>
+                           <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Approximate file size in octets</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>pageCount</pdfaProperty:name>
+                           <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Number of pages in the print version of the document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>subtitle</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Document's subtitle</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+            </rdf:Bag>
+         </pdfaExtension:schemas>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstreamendobj23 0 obj<</CreationDate(D:20240330132950-04'00')/Creator(LaTeX with hyperref)/Keywords()/ModDate(D:20240514172253-04'00')/PDFVersion(1.5)/PTEX.Fullbanner(This is MiKTeX-pdfTeX 4.19.0 \(1.40.26\))/Producer(MiKTeX-pdfTeX 4.19.0 \(1.40.26\))/Subject()/Title()/Trapped/False>>endobjxref
+0 1
+0000000000 65535 f
+2 1
+0000054894 00000 n
+6 1
+0000055070 00000 n
+23 1
+0000070940 00000 n
+trailer
+<</Size 24/Root 22 0 R/Info 23 0 R/ID[<F008604366B565C6AD36208077F47FF4><C1F708271610964B98EEDE248C698C1E>]/Prev 54631>>
+startxref
+71221
+%%EOF
+2 0 obj<</Annots[3 0 R 12 0 R 4 0 R]/Contents 8 0 R/CropBox[453.6 693.0 558.0 729.0]/Group 13 0 R/MediaBox[0 0 612 792]/Parent 14 0 R/Resources 7 0 R/Type/Page>>endobj6 0 obj<</Length 15792/Subtype/XML/Type/Metadata>>stream
+<?xpacket begin="ï»¿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 4.2.1-c041 52.342996, 2008/05/07-20:48:00        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""
+            xmlns:pdf="http://ns.adobe.com/pdf/1.3/">
+         <pdf:Producer>MiKTeX-pdfTeX 4.19.0 (1.40.26)</pdf:Producer>
+         <pdf:Keywords/>
+         <pdf:PDFVersion>1.5</pdf:PDFVersion>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpRights="http://ns.adobe.com/xap/1.0/rights/">
+         <xmpRights:Marked>True</xmpRights:Marked>
+         <xmpRights:WebStatement>https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es</xmpRights:WebStatement>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:dc="http://purl.org/dc/elements/1.1/">
+         <dc:format>application/pdf</dc:format>
+         <dc:source>temp.tex</dc:source>
+         <dc:rights>
+            <rdf:Alt>
+               <rdf:li xml:lang="x-default">Esta obra estÃ¡ bajo una licencia Creative Commons "AtribuciÃ³n-NoComercial-SinDerivadas 4.0 Internacional".</rdf:li>
+            </rdf:Alt>
+         </dc:rights>
+         <dc:date>
+            <rdf:Seq>
+               <rdf:li>2024-03-30T13:29:50-04:00</rdf:li>
+            </rdf:Seq>
+         </dc:date>
+         <dc:type>
+            <rdf:Bag>
+               <rdf:li>Text</rdf:li>
+            </rdf:Bag>
+         </dc:type>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmp="http://ns.adobe.com/xap/1.0/">
+         <xmp:CreateDate>2024-03-30T13:29:50-04:00</xmp:CreateDate>
+         <xmp:ModifyDate>2024-05-14T17:23:15-04:00</xmp:ModifyDate>
+         <xmp:MetadataDate>2024-05-14T17:23:15-04:00</xmp:MetadataDate>
+         <xmp:CreatorTool>LaTeX with hyperref</xmp:CreatorTool>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">
+         <xmpMM:DocumentID>uuid:62626267-a3ea-4ea3-9b6c-9bb1820a8d75</xmpMM:DocumentID>
+         <xmpMM:InstanceID>uuid:0dce9c5f-2714-4c74-bdf5-053af5342fd8</xmpMM:InstanceID>
+         <xmpMM:VersionID>1</xmpMM:VersionID>
+         <xmpMM:RenditionClass>default</xmpMM:RenditionClass>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:prism="http://prismstandard.org/namespaces/basic/3.0/">
+         <prism:complianceProfile>three</prism:complianceProfile>
+         <prism:pageCount>1</prism:pageCount>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:xmpTPg="http://ns.adobe.com/xap/1.0/t/pg/">
+         <xmpTPg:NPages>1</xmpTPg:NPages>
+      </rdf:Description>
+      <rdf:Description rdf:about=""
+            xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/"
+            xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#"
+            xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#">
+         <pdfaExtension:schemas>
+            <rdf:Bag>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>Adobe PDF Schema</pdfaSchema:schema>
+                  <pdfaSchema:prefix>pdf</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://ns.adobe.com/pdf/1.3/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>Trapped</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Indication if the document has been modified to include trapping information</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>XMP Media Management Schema</pdfaSchema:schema>
+                  <pdfaSchema:prefix>xmpMM</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>DocumentID</pdfaProperty:name>
+                           <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>UUID based identifier for all versions and renditions of a document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>InstanceID</pdfaProperty:name>
+                           <pdfaProperty:valueType>URI</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>UUID based identifier for specific incarnation of a document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>VersionID</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Document version identifier</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>RenditionClass</pdfaProperty:name>
+                           <pdfaProperty:valueType>RenditionClass</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>The manner in which a document is rendered</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+               <rdf:li rdf:parseType="Resource">
+                  <pdfaSchema:schema>PRISM Basic Metadata</pdfaSchema:schema>
+                  <pdfaSchema:prefix>prism</pdfaSchema:prefix>
+                  <pdfaSchema:namespaceURI>http://prismstandard.org/namespaces/basic/3.0/</pdfaSchema:namespaceURI>
+                  <pdfaSchema:property>
+                     <rdf:Seq>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>complianceProfile</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>PRISM specification compliance profile to which this document adheres</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>publicationName</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication name</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>aggregationType</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication type</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>bookEdition</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Edition of the book in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>volume</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication volume number</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>number</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Publication issue number within a volume</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>pageRange</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Page range for the document within the print version of its publication</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>issn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISSN for the printed publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>eIssn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISSN for the electronic publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>isbn</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>ISBN for the publication in which the document was published</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>doi</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Digital Object Identifier for the document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>url</pdfaProperty:name>
+                           <pdfaProperty:valueType>URL</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>URL at which the document can be found</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>byteCount</pdfaProperty:name>
+                           <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Approximate file size in octets</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>pageCount</pdfaProperty:name>
+                           <pdfaProperty:valueType>Integer</pdfaProperty:valueType>
+                           <pdfaProperty:category>internal</pdfaProperty:category>
+                           <pdfaProperty:description>Number of pages in the print version of the document</pdfaProperty:description>
+                        </rdf:li>
+                        <rdf:li rdf:parseType="Resource">
+                           <pdfaProperty:name>subtitle</pdfaProperty:name>
+                           <pdfaProperty:valueType>Text</pdfaProperty:valueType>
+                           <pdfaProperty:category>external</pdfaProperty:category>
+                           <pdfaProperty:description>Document's subtitle</pdfaProperty:description>
+                        </rdf:li>
+                     </rdf:Seq>
+                  </pdfaSchema:property>
+               </rdf:li>
+            </rdf:Bag>
+         </pdfaExtension:schemas>
+      </rdf:Description>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?>
+endstreamendobj23 0 obj<</CreationDate(D:20240330132950-04'00')/Creator(LaTeX with hyperref)/Keywords()/ModDate(D:20240514172315-04'00')/PDFVersion(1.5)/PTEX.Fullbanner(This is MiKTeX-pdfTeX 4.19.0 \(1.40.26\))/Producer(MiKTeX-pdfTeX 4.19.0 \(1.40.26\))/Subject()/Title()/Trapped/False>>endobjxref
+0 1
+0000000000 65535 f
+2 1
+0000071484 00000 n
+6 1
+0000071654 00000 n
+23 1
+0000087524 00000 n
+trailer
+<</Size 24/Root 22 0 R/Info 23 0 R/ID[<F008604366B565C6AD36208077F47FF4><8A0F0885ECABF94E861FC0FF33C77865>]/Prev 71221>>
+startxref
+87805
+%%EOF
