@@ -1,65 +1,73 @@
 import json
+import os
+
+from anyio import Path
+from dotenv import load_dotenv
 from extract_contexts import extract_contexts
-from json_formatter import transform_file
+from model import Classifier, ContactInfo, Conversation, Entry, TagEnum, YesNoEnum
 from llm import OpenAIGenerator
 from prompts import INSTRUCTIONS_GENERATOR, CLASSIFICATION
-from pydantic import BaseModel, Field
-from typing import List
-from enum import Enum
+from typing import Annotated, List
+from typer import Option, Typer
 
-class YesNoEnum(str, Enum):
-    YES = "Yes"
-    NO = "No"
+load_dotenv()
 
-
-class Conversation(BaseModel):
-    question_one: str = Field(description="The question asked by the user")
-    answer_one: str = Field(description="The answer given by the assistant")
-    question_two: str = Field(description="The question asked by the user")
-    answer_two: str = Field(description="The answer given by the assistant")
-    question_three: str = Field(description="The question asked by the user")
-    answer_three: str = Field(description="The answer given by the assistant")
-    label: List[str] = Field(description="The labels of the conversation")
+app = Typer()
 
 
-class Classifier(BaseModel):
-    classification: YesNoEnum = Field(
-        description="The classification of the conversation, whether it is about a topic or not"
+@app.command("run")
+def main(
+    topics: Annotated[List[TagEnum], Option("--topic", "-t")],
+    author_name: Annotated[str, Option("--author-name", "-n")],
+    author_institution: Annotated[str, Option("--author-institution", "-i")],
+    author_email: Annotated[str, Option("--author-email", "-e")],
+    context_text: Annotated[str, Option("--context", "-c")] = "",
+):
+    extract_contexts(
+        data_folder="data",
+        num_contexts=100,
+        output_file="results/contexts.json",
+        chunk_size=2000,
     )
-
-
-def main():
-    extract_contexts(data_folder="data/medicina", num_contexts=20, output_file="results/ecured_contexts.json", chunk_size=2000)
-    with open("results/ecured_contexts.json", "r", encoding="utf-8") as f:
+    with open("results/contexts.json", "r", encoding="utf-8") as f:
         contexts = [json.loads(line)["context"] for line in f]
 
     generator = OpenAIGenerator(use_fireworks=True)
-    output_path = "results/ecured_conversations.jsonl"
-    log_path = "results/logs.jsonl"
-    topic = "salud, medicina"
+    output_path = "results/conversations"
+    os.makedirs(output_path, exist_ok=True)
+    topic = ", ".join([tag.value for tag in topics])
 
     for i, ctx in enumerate(contexts, 1):
         try:
             classification_prompt = CLASSIFICATION.format(context=ctx, topic=topic)
-            response = generator.generate_json(prompt=classification_prompt, json_model=Classifier)
+            response = generator.generate_json(
+                prompt=classification_prompt, json_model=Classifier
+            )
             classification = response.choices[0].message.parsed.classification
             print(f"Clasificación del contexto {i}: {classification}")
 
-
             if classification == YesNoEnum.YES:
                 prompt = INSTRUCTIONS_GENERATOR.format(topic=topic, context=ctx)
-                response = generator.generate_json(prompt=prompt, json_model=Conversation)
-                result = response.choices[0].message.parsed.model_dump()
+                response = generator.generate_json(
+                    prompt=prompt, json_model=Conversation
+                )
+                result = response.choices[0].message.parsed
 
-                info ={
-                    "id": i,
-                    "classification": classification,
-                    "context": ctx,
-                    "questions": result
-                }
+                info = Entry(
+                    messages=result.messages,
+                    context=context_text,
+                    tags=topics,
+                    contact_info=ContactInfo(
+                        name=author_name,
+                        institution=author_institution,
+                        email=author_email,
+                    ),
+                )
 
-                with open(output_path, "a", encoding="utf-8") as out_file:
-                    out_file.write(json.dumps(info, ensure_ascii=False) + "\n")
+                with open(
+                    Path(output_path) / f"{info.id}.json", "a", encoding="utf-8"
+                ) as out_file:
+                    out_file.write(info.model_dump_json(ensure_ascii=False) + "\n")
                     out_file.flush()
 
                 print(f"✅ Ejemplo {i} guardado.")
@@ -68,10 +76,8 @@ def main():
 
         except Exception as e:
             print(f"❌ Error al procesar contexto {i}: {e}")
-
-    formatted_path = "results/formatted_conversations.json" 
-    transform_file(input_path=output_path, output_path=formatted_path)
+            raise
 
 
 if __name__ == "__main__":
-    main()
+    app()

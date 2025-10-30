@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "dotenv>=0.9.9",
     "openai>=1.82.1",
-    "pydantic>=2.11.5",
+    "pydantic[email]>=2.11.5",
     "python-dotenv>=1.1.0",
     "pyyaml>=6.0.2",
+    "typer>=0.20.0",
 ]
