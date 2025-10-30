@@ -22,6 +22,7 @@ def main(
     author_institution: Annotated[str, Option("--author-institution", "-i")],
     author_email: Annotated[str, Option("--author-email", "-e")],
     context_text: Annotated[str, Option("--context", "-c")] = "",
+    use_local: Annotated[bool, Option("-l")] = False,
 ):
     extract_contexts(
         data_folder="data",
@@ -32,7 +33,7 @@ def main(
     with open("results/contexts.json", "r", encoding="utf-8") as f:
         contexts = [json.loads(line)["context"] for line in f]
 
-    generator = OpenAIGenerator(use_fireworks=True)
+    generator = OpenAIGenerator(use_fireworks=not use_local)
     output_path = "results/conversations"
     os.makedirs(output_path, exist_ok=True)
     topic = ", ".join([tag.value for tag in topics])
