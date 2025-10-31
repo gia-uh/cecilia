@@ -44,6 +44,8 @@ TagEnum = StrEnum(
         "salud",
         "casual",
         "geografía",
+        "redacción",
+        "composición",
         "otros",
     ],
 )
