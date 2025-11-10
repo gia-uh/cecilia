@@ -30,7 +30,7 @@ def main(
         output_file="results/contexts.json",
         chunk_size=2000,
     )
-    with open("results/contexts.json", "r", encoding="utf-8") as f:
+    with open("results/contexts.jsonl", "r", encoding="utf-8") as f:
         contexts = [json.loads(line)["context"] for line in f]
 
     generator = OpenAIGenerator(use_fireworks=not use_local)

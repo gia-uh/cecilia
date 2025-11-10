@@ -13,7 +13,7 @@ CONTEXT:
 - Each interaction should follow the format:
   - "question": "<user question>"
   - "content": "<assistant's answer>"
-- Use clear, concise language.
+- Use clear language.
 - Avoid repeating the same type of question.
 - Do **not** include any information that is not present in the context.
 - The whole conversation must be in spanish. 
