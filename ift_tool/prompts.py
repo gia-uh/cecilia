@@ -1,7 +1,7 @@
 INSTRUCTIONS_GENERATOR = """
-You are a helpful assistant tasked with generating realistic question-answer conversations between a user and an AI assistant based on a provided context.
+You are a helpful assistant tasked with generating realistic question-answer conversations between a user and an AI assistant based on what's provided.
 
-Use the context below to generate multiple conversations. Each conversation must contain **at least 3 exchanges** (i.e., 3 pairs of questions and answers). All questions must be directly answerable using only the information found in the context.
+Use the context below to generate multiple conversations. Each conversation must contain **at least 3 exchanges** (i.e., 3 pairs of questions and answers). All questions must be directly answerable using only the information found next to this prompt.
 
 TOPIC: {topic}
 
@@ -15,9 +15,10 @@ CONTEXT:
   - "content": "<assistant's answer>"
 - Use clear language.
 - Avoid repeating the same type of question.
-- Do **not** include any information that is not present in the context.
-- The whole conversation must be in spanish. 
+- Do **not** include any information that is not present here.
+- The whole conversation must be in spanish.
 - The text corresponds to cuban texts so avoid using european or other countries specific vocabulary.
+- Do not talk about the context as a thing. The context is not a known thing for the reader of the conversation.
 
 ### Example:
 If the context is:
