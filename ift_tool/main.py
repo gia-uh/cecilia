@@ -73,7 +73,7 @@ def main(
         print(f"✅ Archivos seleccionados para procesamiento: {len(top_documents)}")
 
     extract_contexts(
-        data_folder="data/medicina",
+        data_folder="data/medicina" if Path("data/medicina").exists() else "data",
         num_contexts=10000,
         output_file="results/contexts.jsonl",
         chunk_size=2000,
