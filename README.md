@@ -12,6 +12,7 @@ of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 - [Download Model from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
 - [Read the Technical Report](https://cecilia.uhgia.org/report).
 - [Help us improve Cecilia](https://cecilia.uhgia.org/training).
+- [Chat with Cecilia](https://t.me/cecilia_cuba_bot)
 
 ## Training Data
 
