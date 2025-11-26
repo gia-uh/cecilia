@@ -216,3 +216,8 @@ pyrightconfig.json
 *.xdy
 *.pyg
 
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+telegram-bot/data/
