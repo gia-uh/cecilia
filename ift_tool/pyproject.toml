@@ -1,12 +1,28 @@
 [project]
-name = "it-tool"
-version = "0.1.0"
-description = "Add your description here"
+name = "ift-tool"
+version = "0.2.0"
+description = "Herramienta para generar sintéticamente datasets de instruction fine-tuning"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
     "openai>=1.82.1",
     "pydantic>=2.11.5",
+    "pydantic[email]>=2.11.5",
+    "email-validator>=2.0.0",
     "python-dotenv>=1.1.0",
     "pyyaml>=6.0.2",
+    "streamlit>=1.28.0",
+    "pandas>=2.0.0",
+    "plotly>=5.17.0",
 ]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

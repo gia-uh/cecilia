@@ -1,4 +1,9 @@
-openai
-pydantic
-pyyaml
-python-dotenv
+openai>=1.82.1
+pydantic>=2.11.5
+pydantic[email]>=2.11.5
+email-validator>=2.0.0
+pyyaml>=6.0.2
+python-dotenv>=1.1.0
+streamlit>=1.28.0
+pandas>=2.0.0
+plotly>=5.17.0
