@@ -83,14 +83,18 @@ source .venv/bin/activate
 .venv\Scripts\activate
 ```
 
-4. **Instalar dependencias**
+4. **Instalar dependencias y el paquete**
 ```bash
+# Instalar dependencias
 uv pip install -r requirements.txt
+
+# Instalar el paquete en modo desarrollo (importante!)
+uv pip install -e .
 ```
 
 5. **Verificar instalación**
 ```bash
-python -c "import streamlit; import openai; import pydantic; print('✅ Dependencias instaladas correctamente')"
+python -c "import ift_tool; print('✅ Paquete instalado correctamente')"
 ```
 
 ### Instalación con pip (Alternativa)
@@ -156,9 +160,30 @@ source .venv/bin/activate
 ```
 
 2. **Iniciar la aplicación Streamlit**
+
+Tienes varias opciones:
+
+**Opción 1: Script helper (Recomendado)**
 ```bash
-streamlit run app.py
+./scripts/run.sh
 ```
+
+**Opción 2: Con Python**
+```bash
+python scripts/run_streamlit.py
+```
+
+**Opción 3: Directamente con Streamlit**
+```bash
+streamlit run ift_tool/ui/streamlit_app.py
+```
+
+**Opción 4: Con uv (si prefieres)**
+```bash
+uv run streamlit run ift_tool/ui/streamlit_app.py
+```
+
+Todas las opciones abrirán la aplicación en `http://localhost:8501`
 
 3. **Abrir en el navegador**
 La aplicación se abrirá automáticamente en `http://localhost:8501`
@@ -196,23 +221,26 @@ python main.py
 
 ## 📁 Estructura del Proyecto
 
+El proyecto está organizado modularmente siguiendo las mejores prácticas de ingeniería de software:
+
 ```
 ift_tool/
-├── app.py                  # Aplicación Streamlit principal
-├── config.py               # Gestión de configuración
-├── extract_contexts.py     # Extracción de contextos con solapamiento
-├── llm.py                  # Cliente de LLM mejorado
-├── processor.py             # Procesador principal de datasets
-├── cost_calculator.py      # Cálculo de costos
-├── model.py                # Modelos Pydantic
-├── prompts.py              # Plantillas de prompts
-├── json_formatter.py       # Formateador de salida (legacy)
-├── main.py                 # Script principal (legacy)
-├── data/
-│   └── classify.py         # Clasificación de archivos médicos
-├── results/                # Directorio de salida
-└── requirements.txt        # Dependencias
+├── ift_tool/               # Paquete principal
+│   ├── config/             # Configuración (AppConfig, ModelConfig, etc.)
+│   ├── api/                # Clientes de API (LLM clients)
+│   ├── core/               # Lógica de negocio (models, processor, prompts)
+│   ├── utils/              # Utilidades (extractor, formatter, cost)
+│   └── ui/                 # Interfaz de usuario (Streamlit app)
+├── scripts/               # Scripts de entrada (CLI, Streamlit)
+├── tests/                 # Tests unitarios e integración
+├── docs/                  # Documentación adicional
+├── data/                  # Datos de entrada
+├── results/               # Resultados generados
+├── pyproject.toml         # Configuración del proyecto
+└── README.md              # Este archivo
 ```
+
+Para más detalles sobre la estructura, consulta [docs/STRUCTURE.md](docs/STRUCTURE.md).
 
 ## ⚙️ Configuración
 
