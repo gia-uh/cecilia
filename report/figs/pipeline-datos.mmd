@@ -1,0 +1,22 @@
+flowchart TB
+    subgraph Fuentes["Fuentes (~3000 dominios)"]
+        Prensa["Prensa<br/>(Granma, Juventud Rebelde)"]
+        EcuRed["EcuRed<br/>(enciclopedia colaborativa)"]
+        Leyes["Leyes cubanas"]
+        Lit["Literatura<br/>(~400 obras)"]
+        Otros["Cubanismos + lírica<br/>+ enciclopedias locales"]
+    end
+    subgraph Pipelines["Pipelines por fuente"]
+        Scrapers["Scrapers / conversores<br/>(data/granma, data/jr,<br/>data/ecured, ...)"]
+    end
+    Corpus[("Corpus consolidado<br/>~296k archivos<br/>~2.6B caracteres<br/>~385M palabras")]
+    Tok["Tokenización<br/>(vocab Salamandra, 256K)"]
+    Ventanas[("Ventanas de contexto<br/>959,008 × 1024 tokens<br/>~982M tokens efectivos")]
+    Train[/"Continual pretraining<br/>(2 épocas, FSDP, bf16)"/]
+
+    Prensa --> Scrapers
+    EcuRed --> Scrapers
+    Leyes --> Scrapers
+    Lit --> Scrapers
+    Otros --> Scrapers
+    Scrapers --> Corpus --> Tok --> Ventanas --> Train
