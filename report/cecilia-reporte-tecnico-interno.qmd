@@ -1,0 +1,29 @@
+---
+title: "Cecilia: una familia de modelos de lenguaje continual-pretrained en español cubano"
+author: "Equipo Cecilia — GIA-UH / GPLSI / Syalia"
+date: "2026-04-21"
+lang: es
+format:
+  typst:
+    papersize: a4
+    margin:
+      x: 1.8cm
+      y: 1.8cm
+    fontsize: 9.5pt
+    toc: false
+    section-numbering: ""
+---
+
+## 1. Resumen
+
+## 2. Arquitectura del modelo
+
+## 3. Corpus y pipeline de datos
+
+## 4. Procedimiento de continual pretraining
+
+## 5. Evaluación y trade-offs
+
+## 6. Artefactos publicados y aplicaciones
+
+## 7. Limitaciones y siguientes pasos
