@@ -94,10 +94,18 @@ artifacts:
   - id: cecilia-encyclo-character-sheet
     out: cecilia-encyclo-character-sheet.jpg
     aspect: "3:2"
-    # No grid: + cells: — the model lays out this sheet asymmetrically
-    # (more cells in the turnaround row than the expression row, with
-    # text labels per cell), and dense portrait content defeats the
-    # content-aware cropper anyway. Used as a whole-sheet reference.
+    # The model lays out this sheet asymmetrically: row 1 has FOUR
+    # turnaround poses (extra "thinking-fullbody" beyond the prompted
+    # three), row 2 has the three head-and-shoulders expressions as
+    # prompted. A uniform [2,3] grid only aligns with row 2; the cropper
+    # rejects row 1's mis-aligned slices. We declare cells: only for the
+    # row that aligns, so per-slug extraction is documented and
+    # reproducible for the expression close-ups.
+    grid: [2, 3]
+    cells:
+      expression-neutral:    {row: 1, col: 0}
+      expression-upward:     {row: 1, col: 1}
+      expression-thinking:   {row: 1, col: 2}
     refs:
       - path: ../references/cecilia-logo.jpg
         hint: "face / character anchor — same Cecilia in every cell, identical features across all six cells"
