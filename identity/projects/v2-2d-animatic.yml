@@ -1,0 +1,129 @@
+# Cecilia v2 register: 2D animatic / animated cartoon.
+#
+# Renders Cecilia in the 2D animation animatic register exemplified by
+# repos/cecilia/img/yeyin2.jpg and yeyin3.jpg — bold ink linework,
+# cel-shaded flat fills with 2-3 tones per surface, slight grain or
+# watercolor texture, saturated palette, hand-drawn feel suitable for
+# animation cels.
+#
+# Single character sheet artifact: 2x3 grid (turnaround row +
+# expression row), same layout convention as the enciclopedia v2 sheet
+# so registers are directly comparable.
+
+version: 1
+name: cecilia-v2-2d-animatic
+
+defaults:
+  out_root: ../out/v2-2d-animatic
+  state: ../.state/v2-2d-animatic.json
+  model: google/gemini-3.1-flash-image-preview
+  seed: 42
+
+templates:
+  ANIMATIC_STYLE: |
+    2D ANIMATION animatic / animated cartoon register, hand-drawn
+    feeling. BOLD INK LINEWORK defining every figure (clean firm lines,
+    not wobbly — confident drawn-with-a-marker quality). CEL-SHADED
+    FLAT-COLOR FILLS with 2-3 tones per surface (base color, shadow,
+    highlight) — NOT smooth gradients, NOT photoreal. Slight grain /
+    watercolor wash texture overlay across the whole image.
+
+    SATURATED palette: warm reds, ochres, vibrant blues, yellows; clean
+    crisp whites. Hand-drawn, slightly loose feeling that reads as
+    animation-cel art.
+
+    NOT photoreal, NOT 3D, NOT vector flat, NOT watercolor-only, NOT
+    pencil sketch. The register IS animatic / animated cartoon —
+    suitable for an animation production sheet.
+
+  IDENTITY_PRESERVED: |
+    Identity rules — Cecilia must remain recognizably the SAME PERSON as
+    the attached canonical bust, translated into the 2D-animatic medium:
+
+    Cuban woman, mulata (mixed African and European heritage), young
+    adult. Warm caramel-to-copper skin (NOT pale, NOT very dark). Dark
+    brown to near-black wavy / softly curly mid-length hair, partially
+    up. Full dark eyebrows, deep brown expressive eyes. Full lips,
+    neutral natural color. Prominent cheekbones.
+
+    Gaze: aspirational, looking forward and slightly up, eyes open and
+    confident. NEVER downcast, NEVER coquettish.
+
+    Earrings (DIAGNOSTIC): long teardrop white earrings, hanging
+    straight. The earrings are diagnostic — without them, it is not
+    Cecilia.
+
+    Wardrobe: white female guayabera dress (CANONICAL — do NOT change
+    to yeyin's red top + blue shorts despite the references showing
+    that). Knee-length, contemporary cut, vertical alforzas / pleats
+    running down the front, button placket, pocket details. NO
+    necklaces, NO bracelets, NO rings. NO headwear (NO flower in hair
+    despite yeyin having one). NO glasses. NO holster, NO belt, NO
+    tablet, NO accessories beyond the earrings.
+
+    Style translation: in the canonical bust she is rendered as flat-
+    color vector illustration with negative-space white planes. In THIS
+    register she is rendered as 2D animation cel art with bold ink
+    linework and cel-shaded fills — same person, same features, same
+    earring, same dress; different medium.
+
+artifacts:
+
+  - id: cecilia-2d-character-sheet
+    out: cecilia-2d-character-sheet.jpg
+    aspect: "3:2"
+    grid: [2, 3]
+    cells:
+      front-fullbody:        {row: 0, col: 0}
+      three-quarter-fullbody: {row: 0, col: 1}
+      side-fullbody:         {row: 0, col: 2}
+      expression-neutral:    {row: 1, col: 0}
+      expression-upward:     {row: 1, col: 1}
+      expression-smile:      {row: 1, col: 2}
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — Cecilia's features (warm-brown skin, dark wavy hair, eye shape, brows, jaw, signature white teardrop earring) translated into 2D-animatic linework; the SAME PERSON in every cell"
+      - path: ../../img/yeyin2.jpg
+        hint: "register anchor — match this 2D animation animatic style: bold ink linework, cel-shaded flat fills, slight texture overlay, saturated palette. Do NOT copy yeyin's wardrobe (red top + blue shorts), accessories (wristband, flower in hair, tablet), or hair (long black with white flower) — only the RENDERING REGISTER"
+      - path: ../../img/yeyin3.jpg
+        hint: "register anchor (secondary) — additional style reference for the same 2D-animatic register, confirming the linework + cel-fill + texture approach"
+    prompt_template: |
+      A 2D-animation character sheet of Cecilia, organised as a 2-row by
+      3-column grid on a single page. Background: a soft solid cream
+      page (like an animator's reference sheet) with subtle paper grain.
+      Faint thin gridlines or simple cell borders separate the cells;
+      each figure is centered in its cell with comfortable margin.
+
+      All six cells depict the SAME Cecilia (same face, same hair, same
+      earrings, same dress, same proportions, same person). Drawn in
+      bold ink linework with confident clean lines and cel-shaded
+      flat-color fills.
+
+      Row 1 — full-body turnarounds (head to mid-thigh, in white
+      guayabera dress):
+        (1,1) FRONT — standing facing the viewer directly, A-pose with
+              arms relaxed slightly out from the body, looking forward.
+        (1,2) THREE-QUARTER — body rotated 45 degrees to the viewer's
+              right; head turned slightly, gaze forward and slightly up.
+        (1,3) SIDE — full profile facing viewer's right, body in profile,
+              arms at sides, gaze forward and slightly up.
+
+      Row 2 — head-and-shoulders expression studies (closer crop, dress
+      collar visible):
+        (2,1) NEUTRAL — composed, looking forward at the viewer, eyes
+              soft, mouth at rest. Calm, warm.
+        (2,2) UPWARD GAZE (canonical signature pose) — head straight,
+              eyes up and forward, slight aspirational smile. The
+              diagnostic Cecilia pose.
+        (2,3) SLIGHT SMILE — looking forward, gentle smile at corner of
+              mouth, eyes warm. Friendly, animated-character-feel.
+
+      Bold ink linework with confident clean lines on every figure.
+      Cel-shaded fills (base + shadow + highlight) with the warm-
+      caramel skin, white guayabera (with subtle blue-cool shadows),
+      dark hair (with bold-shadow + slight highlight). Slight grain /
+      watercolor-paper texture across the whole sheet.
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.ANIMATIC_STYLE }}
