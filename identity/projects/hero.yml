@@ -112,11 +112,14 @@ artifacts:
       a HAIRSTYLE VARIANT of cecilia-fullbody-canonical. Same Cecilia,
       same wardrobe, same pose, same illustration technique, same
       palette. The ONLY change: her hair is pulled back into a single
-      thick TRENZA (Cuban-style back braid) starting at the crown and
-      running down her back, secured at the end. The braid is
-      visible from the front view as it begins at the crown and
-      disappears behind her shoulders; the silhouette of the braid is
-      visible falling down her back when the body turns.
+      thick TRENZA (Cuban-style back braid) starting at the crown.
+
+      LENGTH CONSTRAINT — the braid is SHORT, proportional to her
+      canonical mid-length hair (just past the shoulders). The braid
+      ends near her shoulder blades / upper back, NOT at the waist or
+      below. A braid made from mid-length hair is roughly 20-25 cm
+      long; do NOT render a long flowing braid that reaches the waist
+      or hips.
 
       Standing pose, three-quarter view, head slightly turned and
       looking forward and up (the canonical aspirational upward gaze).
