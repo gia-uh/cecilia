@@ -127,6 +127,63 @@ artifacts:
 
       {{ templates.ENCYCLO_STYLE }}
 
+  - id: cecilia-encyclo-holograma-guia
+    out: cecilia-encyclo-holograma-guia.jpg
+    aspect: "3:4"
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — same Cecilia"
+      - path: ../../../../vault/Efforts/Projects/Enciclopedia/refs/style-reference.jpg
+        hint: "medium / palette / linework anchor — watercolor and ink technique"
+      - artifact: cecilia-encyclo-portrait
+        hint: "in-register identity anchor — Cecilia as established in this watercolor register"
+    prompt_template: |
+      Watercolor-and-ink illustration of Cecilia rendered as a HOLOGRAPHIC
+      VIRTUAL GUIDE in the enciclopedia's storybook register. Three-quarter
+      full-body view: she stands with one arm raised in a welcoming or
+      explanatory gesture (an open palm, slight outward motion, as if
+      pointing to a passage in a book or inviting the viewer in), the
+      other arm relaxed at her side. She floats slightly above the ground
+      on a soft watercolor halo, suggesting a holographic projection.
+
+      HOLOGRAM EFFECT — expressed in WATERCOLOR LANGUAGE, not 3D-render
+      language:
+        - Translucent body: cream paper visibly shows through her form,
+          especially in the lower half of the body and at the edges.
+        - Cool cyan-teal undertone integrated into her shadow tones
+          (warm caramel skin shadowed with dusty teal/cyan instead of
+          pure brown). The warm-ochre palette of the register is
+          preserved on highlights; cool teal appears in shadows and at
+          the figure's silhouette edges.
+        - Soft watercolor halo glow around her silhouette: gentle teal-
+          and-cream wash bleeding outward from her contour.
+        - Scan-line / projection-line texture: faint horizontal ink
+          strokes (slightly wobbly, hand-drawn) running across her body
+          at intervals, like a paper-crease pattern, suggesting a
+          projection scanline without rendering it digitally.
+        - Below her feet: a small flat watercolor disc / ellipse in
+          warm-teal-cyan, suggesting a projector base. She floats just
+          above it.
+
+      Despite the hologram effect, her FACE remains fully solid and
+      readable — this is a guide that the viewer must connect with, not
+      a ghost. The holographic transparency intensifies toward her feet
+      and extremities, while face, hair, earrings, and guayabera collar
+      stay clearly defined.
+
+      Wardrobe: white female guayabera dress (canonical), with the
+      teal-cyan hologram tint shading the cloth folds. Long white
+      teardrop earrings clearly visible. Hair partially up.
+
+      Background: cream paper with a soft warm-ochre wash at the top
+      and a hint of dusty teal at the bottom, leaving room around her
+      figure. Visible hand-drawn ink linework throughout, with the
+      slight wobble of a hand-drawn pen.
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.ENCYCLO_STYLE }}
+
   - id: cecilia-encyclo-character-sheet
     out: cecilia-encyclo-character-sheet.jpg
     aspect: "3:2"
