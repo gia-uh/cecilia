@@ -1,0 +1,147 @@
+# Cecilia v2 register: enciclopedia.
+#
+# Renders Cecilia in the watercolor-and-ink children's-storybook register
+# used by Alex's enciclopedia project (Erase una vez el Conocimiento).
+# Cecilia's identity (face, earrings, guayabera, gaze) is preserved per
+# model-sheet.md; only the rendering medium changes.
+#
+# Two reference images:
+#   - the canonical bust  -> face / character anchor (same Cecilia)
+#   - enciclopedia style-reference  -> medium / palette / linework anchor
+#
+# This is the first v2 secondary register. Future v2 registers (retro-
+# futurist, anime, Cuban comics) follow the same pattern.
+
+version: 1
+name: cecilia-v2-enciclopedia
+
+defaults:
+  out_root: ../out/v2-enciclopedia
+  state: ../.state/v2-enciclopedia.json
+  model: google/gemini-3.1-flash-image-preview
+  seed: 42
+
+templates:
+  ENCYCLO_STYLE: |
+    Watercolor and ink illustration for a children's storybook. VISIBLE
+    HAND-DRAWN INK LINEWORK with slight wobble, soft watercolor washes
+    with cream paper showing through in places, warm-dominant palette
+    (ochres, terracottas, soft golds, sienna) with cool accents (sage,
+    dusty blue) for shadows. Soft natural lighting, gentle shadows
+    without harsh contrast. Slightly stylized but expressive face.
+    Quentin Blake / Lisbeth Zwerger / Shaun Tan adjacent register.
+
+    NOT photoreal, NOT 3D, NOT anime, NOT vector-flat. NOT the canonical
+    Cecilia hero-register style (no negative-space white planes, no flat
+    color fills, no vector hard-edges).
+
+  IDENTITY_PRESERVED: |
+    Identity rules — Cecilia must remain recognizably the SAME PERSON as
+    the attached canonical bust:
+
+    Cuban woman, mulata (mixed African and European heritage), Habanera,
+    mid-twenties (24-28), young adult. Contemporary, NOT 19th-century
+    period costume.
+
+    Face: warm caramel-to-copper skin (NOT pale, NOT very dark). Dark
+    brown to near-black wavy / softly curly mid-length hair, partially up.
+    Full dark eyebrows, deep brown almond eyes. Rounded soft nose. Full
+    lips, neutral natural color (NO bright lipstick). Prominent
+    cheekbones.
+
+    Gaze: aspirational upward gaze, looking forward and slightly up, eyes
+    open and confident. NEVER downcast, NEVER coquettish.
+
+    Earrings (DIAGNOSTIC): long teardrop white earrings, ~5cm long,
+    hanging straight. The earrings are diagnostic — without them, it is
+    not Cecilia.
+
+    Wardrobe: white or cream female guayabera (contemporary cut, vertical
+    alforzas, button placket, pocket details). NO necklaces, NO bracelets,
+    NO rings. NO headwear. NO glasses.
+
+    Style translation: in the canonical bust she is rendered as flat-
+    color vector illustration with negative-space white planes carving
+    the face. In THIS register she is rendered as watercolor-and-ink —
+    same person, same features, same gaze, same earring, same dress;
+    different medium.
+
+artifacts:
+
+  - id: cecilia-encyclo-portrait
+    out: cecilia-encyclo-portrait.jpg
+    aspect: "1:1"
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — preserve Cecilia's features (eyes, brows, cheekbones, nose, jaw, hair, earring) so this is the SAME PERSON"
+      - path: ../../../../vault/Efforts/Projects/Enciclopedia/refs/style-reference.jpg
+        hint: "medium / palette / linework anchor — match the watercolor-and-ink technique, the ink line wobble, the cream paper, the warm palette"
+    prompt_template: |
+      Watercolor-and-ink portrait of Cecilia, a young Cuban woman in her
+      mid-twenties, head and shoulders, looking forward and slightly up
+      with a calm aspirational gaze. She wears a white female guayabera
+      with vertical alforzas and a small button placket; long white
+      teardrop earrings hang from her ears. Her dark wavy hair is
+      partially pulled back, mid-length. The background is cream paper
+      with a soft wash of warm ochre and a hint of dusty sage along the
+      edges; visible ink linework defines her features and the contour
+      of her dress, with the slight wobble of a hand-drawn pen.
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.ENCYCLO_STYLE }}
+
+  - id: cecilia-encyclo-character-sheet
+    out: cecilia-encyclo-character-sheet.jpg
+    aspect: "3:2"
+    # No grid: + cells: — the model lays out this sheet asymmetrically
+    # (more cells in the turnaround row than the expression row, with
+    # text labels per cell), and dense portrait content defeats the
+    # content-aware cropper anyway. Used as a whole-sheet reference.
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — same Cecilia in every cell, identical features across all six cells"
+      - path: ../../../../vault/Efforts/Projects/Enciclopedia/refs/style-reference.jpg
+        hint: "medium / palette / linework anchor — watercolor washes + hand-drawn ink wobble, cream paper, warm palette"
+      - artifact: cecilia-encyclo-portrait
+        hint: "in-register face anchor — Cecilia as already established in this register's portrait"
+    prompt_template: |
+      A watercolor-and-ink character sheet for Cecilia, organised as a
+      2-row by 3-column grid. Cream paper background throughout, with
+      light wash variations between cells but a unified palette across
+      the whole sheet. Faint ink gridlines (or no gridlines) separate
+      the cells; each figure is centered in its cell with comfortable
+      margin.
+
+      All six cells depict the SAME Cecilia (same face, same hair, same
+      earrings, same dress, same proportions, same person across every
+      cell).
+
+      Row 1 — full-body turnarounds (head to mid-thigh, white guayabera
+      dress visible):
+        (1,1) FRONT  — standing facing the viewer directly, body and
+              face frontal, arms relaxed at sides.
+        (1,2) THREE-QUARTER — body rotated 45 degrees to the viewer's
+              right, head turned slightly so we still see most of her
+              face, looking forward and slightly up.
+        (1,3) SIDE — full profile facing viewer's right, body in profile,
+              gaze straight ahead and slightly up.
+
+      Row 2 — head-and-shoulders expression studies (closer crop, dress
+      collar visible):
+        (2,1) NEUTRAL — composed, relaxed, looking forward at the viewer,
+              eyes soft, mouth at rest. Calm, warm.
+        (2,2) UPWARD GAZE (canonical signature) — head straight, eyes up
+              and forward, slight aspirational smile. The diagnostic
+              Cecilia pose.
+        (2,3) THINKING — head tilted slightly to her left, eyes drifting
+              up and to the side, mouth neutral. Pensive but confident.
+
+      Watercolor technique with visible ink linework (slight wobble) on
+      every figure. Warm-ochre wash dominates; dusty sage and soft
+      terracotta accents. Cream paper showing through in the negative
+      space.
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.ENCYCLO_STYLE }}
