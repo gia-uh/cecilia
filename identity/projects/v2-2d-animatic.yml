@@ -69,6 +69,47 @@ templates:
 
 artifacts:
 
+  - id: cecilia-2d-portrait-trenza
+    out: cecilia-2d-portrait-trenza.jpg
+    aspect: "1:1"
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — same Cecilia"
+      - path: ../../img/yeyin2.jpg
+        hint: "register anchor — bold ink linework, cel-shaded fills, slight grain texture, saturated palette. Do NOT copy yeyin's wardrobe, accessories, or hair."
+      - artifact: cecilia-2d-character-sheet
+        hint: "in-register identity + wardrobe anchor — Cecilia as established in this 2D animatic register; ONLY the hairstyle changes"
+    prompt_template: |
+      2D animatic portrait of Cecilia, head and shoulders, looking
+      forward and slightly up with the canonical aspirational gaze. A
+      HAIRSTYLE VARIANT of cecilia-2d-character-sheet — same person,
+      same medium, same palette, same wardrobe; only the hair changes.
+
+      Her hair is pulled back into a single thick TRENZA (Cuban-style
+      back braid) starting at the crown.
+
+      LENGTH CONSTRAINT — the braid is SHORT, proportional to her
+      canonical mid-length hair (just past the shoulders). The braid
+      ends near her shoulder blades / upper back, NOT at the waist or
+      below. A braid made from mid-length hair is roughly 20-25 cm
+      long; do NOT render a long flowing braid.
+
+      Long white teardrop earrings clearly visible (hair is pulled
+      back). White female guayabera collar with the top of the
+      vertical alforzas visible. Soft cream / cream-grain background
+      consistent with the 2D animatic register's animator-reference
+      sheet feel.
+
+      Bold ink linework with confident clean lines. Cel-shaded fills
+      (base + shadow + highlight) with warm-caramel skin, white
+      guayabera (with subtle blue-cool shadows), dark hair (with
+      bold-shadow + slight highlight). Slight grain / paper texture.
+      NO watermark, NO labels, NO text in the image.
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.ANIMATIC_STYLE }}
+
   - id: cecilia-2d-character-sheet
     out: cecilia-2d-character-sheet.jpg
     aspect: "3:2"

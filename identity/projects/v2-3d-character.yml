@@ -71,6 +71,48 @@ templates:
 
 artifacts:
 
+  - id: cecilia-3d-trenza
+    out: cecilia-3d-trenza.jpg
+    aspect: "3:4"
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — same Cecilia"
+      - path: ../../img/yeyin1.jpg
+        hint: "register anchor — match this 3D character render style: cartoon proportions, large expressive eyes, soft cel-shaded materials, glossy hair highlights, solid black background. Do NOT copy yeyin's wardrobe, accessories, or features."
+      - artifact: cecilia-3d-turnaround
+        hint: "in-register identity + wardrobe anchor — Cecilia as established in this 3D register; ONLY the hairstyle changes"
+    prompt_template: |
+      Stylized 3D character render of Cecilia, single full-body
+      three-quarter pose on solid BLACK background. A HAIRSTYLE VARIANT
+      of cecilia-3d-turnaround — same person, same 3D register, same
+      wardrobe, same proportions; only the hair changes.
+
+      Standing pose, three-quarter view, body rotated 45 degrees to the
+      viewer's right; head turned slightly so we still see most of her
+      face, looking forward and slightly up.
+
+      Her hair is pulled back into a single thick TRENZA (Cuban-style
+      back braid) starting at the crown, modeled as 3D woven hair with
+      glossy soft highlights.
+
+      LENGTH CONSTRAINT — the braid is SHORT, proportional to her
+      canonical mid-length hair (just past the shoulders). The braid
+      ends near her shoulder blades / upper back, NOT at the waist or
+      below. A braid made from mid-length hair is roughly 20-25 cm
+      long; do NOT render a long flowing braid.
+
+      White female guayabera dress, vertical alforzas, button placket,
+      pocket details. Bare legs, simple flat sandals. Long white
+      teardrop earrings clearly visible (hair is pulled back).
+
+      Cartoon-3D proportions: head slightly enlarged, eyes notably
+      larger than realistic but not anime-huge. Solid pure black
+      background, no shadow on ground.
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.THREED_STYLE }}
+
   - id: cecilia-3d-turnaround
     out: cecilia-3d-turnaround.jpg
     aspect: "16:9"

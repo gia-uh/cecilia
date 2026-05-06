@@ -91,6 +91,42 @@ artifacts:
 
       {{ templates.ENCYCLO_STYLE }}
 
+  - id: cecilia-encyclo-portrait-trenza
+    out: cecilia-encyclo-portrait-trenza.jpg
+    aspect: "1:1"
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — same Cecilia, same features"
+      - path: ../../../../vault/Efforts/Projects/Enciclopedia/refs/style-reference.jpg
+        hint: "medium / palette / linework anchor — watercolor and ink technique"
+      - artifact: cecilia-encyclo-portrait
+        hint: "in-register face anchor — Cecilia as established in this register; ONLY the hairstyle changes"
+    prompt_template: |
+      Watercolor-and-ink portrait of Cecilia, head and shoulders, looking
+      forward and slightly up with a calm aspirational gaze. A HAIRSTYLE
+      VARIANT of cecilia-encyclo-portrait — same person, same medium,
+      same palette, same composition, same wardrobe; only the hair
+      changes.
+
+      Her hair is pulled back into a single thick TRENZA (Cuban-style
+      back braid) starting at the crown.
+
+      LENGTH CONSTRAINT — the braid is SHORT, proportional to her
+      canonical mid-length hair (just past the shoulders). The braid
+      ends near her shoulder blades / upper back, NOT at the waist or
+      below. A braid made from mid-length hair is roughly 20-25 cm
+      long; do NOT render a long flowing braid.
+
+      Long white teardrop earrings clearly visible (hair is pulled
+      back). White female guayabera with vertical alforzas and a small
+      button placket. Cream paper background with soft warm-ochre wash
+      and a hint of dusty sage along the edges; visible ink linework
+      with the slight wobble of a hand-drawn pen.
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.ENCYCLO_STYLE }}
+
   - id: cecilia-encyclo-character-sheet
     out: cecilia-encyclo-character-sheet.jpg
     aspect: "3:2"
