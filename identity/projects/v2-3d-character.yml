@@ -1,0 +1,119 @@
+# Cecilia v2 register: stylized 3D character.
+#
+# Renders Cecilia as a stylized 3D character in the register exemplified
+# by repos/cecilia/img/yeyin1.jpg — Pixar-adjacent / mobile-game-character
+# 3D, cartoon proportions, soft cel-shaded materials, multi-pose turnaround
+# on a black background. Cecilia's identity is preserved per model-sheet.md;
+# only the rendering medium and proportional stylization change.
+#
+# Three reference images:
+#   - the canonical bust       -> face / character anchor (same Cecilia)
+#   - yeyin1                    -> register / layout / 3D style anchor
+#   - canonical hero (full-body) -> wardrobe / pose anchor (the guayabera
+#                                  she wears in this register too)
+
+version: 1
+name: cecilia-v2-3d-character
+
+defaults:
+  out_root: ../out/v2-3d-character
+  state: ../.state/v2-3d-character.json
+  model: google/gemini-3.1-flash-image-preview
+  seed: 42
+
+templates:
+  THREED_STYLE: |
+    Stylized 3D character render, Pixar-adjacent / mobile-game-character
+    register. Cartoon proportions: slightly enlarged head, large
+    expressive eyes, simplified facial features. Soft cel-shaded
+    materials with gentle subsurface scattering on skin. Smooth color
+    gradients (NOT flat, NOT photoreal). Clean rim lighting on figure
+    edges. Glossy plastic-like highlights on hair. Solid BLACK
+    background, no scenery.
+
+    NOT photoreal, NOT 2D illustration, NOT vector flat, NOT watercolor.
+    NOT hyper-realistic 3D; the register is friendly, animated, mobile-
+    game-cute.
+
+  IDENTITY_PRESERVED: |
+    Identity rules — Cecilia must remain recognizably the SAME PERSON as
+    the attached canonical bust, translated into the 3D-character medium:
+
+    Cuban woman, mulata (mixed African and European heritage), young
+    adult. Warm caramel-to-copper skin (NOT pale, NOT very dark). Dark
+    brown to near-black wavy / softly curly mid-length hair, partially
+    up. Full dark eyebrows, deep brown eyes (large and expressive in
+    this register's cartoon proportions). Full lips, neutral natural
+    color. Prominent cheekbones.
+
+    Gaze: aspirational, looking forward and slightly up, eyes open and
+    confident. NEVER downcast, NEVER coquettish.
+
+    Earrings (DIAGNOSTIC): long teardrop white earrings, hanging
+    straight. The earrings are diagnostic — without them, it is not
+    Cecilia.
+
+    Wardrobe: white female guayabera dress (CANONICAL — do NOT change to
+    a different wardrobe). Knee-length, contemporary cut, vertical
+    alforzas / pleats running down the front, button placket, pocket
+    details. Modeled as soft cloth in 3D with realistic-but-stylized
+    cloth folds. Bare legs visible below the dress. Simple flat
+    sandals or short flat shoes. NO necklaces, NO bracelets, NO rings.
+    NO headwear. NO glasses. NO holster, NO belt, NO accessories beyond
+    the earrings (despite the yeyin reference showing accessories,
+    Cecilia is canonically minimal).
+
+    Style translation: in the canonical bust she is rendered as flat-
+    color vector illustration. In THIS register she is rendered as a
+    stylized 3D character with cartoon proportions — same person, same
+    features adapted to cartoon-3D, same earring, same dress; different
+    medium and slightly enlarged eyes.
+
+artifacts:
+
+  - id: cecilia-3d-turnaround
+    out: cecilia-3d-turnaround.jpg
+    aspect: "16:9"
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "face / character anchor — Cecilia's features (warm-brown skin, dark wavy hair, eye shape, brows, jaw, signature white teardrop earring) translated into cartoon-3D proportions; the SAME PERSON"
+      - path: ../../img/yeyin1.jpg
+        hint: "register anchor — match this 3D character render style EXACTLY: cartoon proportions, large expressive eyes, soft cel-shaded materials, glossy hair highlights, multi-pose turnaround layout, solid black background. Do NOT copy the yeyin character's wardrobe, accessories, hair color, or features — only the RENDERING REGISTER and the layout."
+      - path: ../out/hero/cecilia-fullbody-canonical.jpg
+        hint: "wardrobe / silhouette anchor — the white guayabera dress and Cecilia's body proportions; translate this silhouette into the 3D register"
+    prompt_template: |
+      A stylized 3D character turnaround sheet of Cecilia, organised as
+      a single horizontal row of FOUR full-body poses on a solid BLACK
+      background. The four poses, left to right:
+
+        Pose 1 (front, A-pose): standing facing the viewer directly, arms
+              relaxed and slightly out from the body in an A-pose
+              (animator's reference pose), hands relaxed and slightly
+              splayed.
+        Pose 2 (three-quarter): body rotated 45 degrees to the viewer's
+              right, arms relaxed at sides; head turned slightly so we
+              still see most of her face.
+        Pose 3 (side): full profile facing viewer's right, arms at sides,
+              gaze forward.
+        Pose 4 (back): full back view, arms at sides, hair flowing down
+              her back.
+
+      All four poses depict the SAME Cecilia (same face, same hair, same
+      earrings, same dress, same proportions). White female guayabera
+      dress in all four poses, modeled with realistic-but-stylized cloth
+      folds. Bare legs, simple flat sandals.
+
+      Cartoon-3D proportions: head slightly enlarged relative to body,
+      eyes notably larger than realistic but not anime-huge. Face retains
+      Cecilia's warm-caramel skin, dark wavy hair, full eyebrows, full
+      lips. Long white teardrop earrings visible on every pose where the
+      ear is shown.
+
+      Equal spacing between the four poses, each pose centered
+      vertically in its own slot. Solid pure black background, no shadow
+      cast on the ground (figures float on black like the yeyin
+      reference).
+
+      {{ templates.IDENTITY_PRESERVED }}
+
+      {{ templates.THREED_STYLE }}
