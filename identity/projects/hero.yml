@@ -1,0 +1,100 @@
+# Cecilia visual identity — hero project.
+#
+# Produces the new canonical full-body hero. The existing canonical bust at
+# repos/cecilia/img/cecilia-logo.jpg is NOT regenerated (it is already
+# public). Bust derivations (resize/crop/desaturate) live in
+# identity/bin/derive_assets.py because they don't need an API call.
+#
+# IMPORTANT: the MODEL_SHEET template below duplicates content from
+# identity/model-sheet.md. Update both when canon changes.
+
+version: 1
+name: cecilia-hero
+
+defaults:
+  out_root: ../out/hero
+  state: ../.state/hero.json
+  model: google/gemini-3.1-flash-image-preview
+  seed: 42
+
+templates:
+  MODEL_SHEET: |
+    HARD RULES — every render of Cecilia must satisfy every rule below or it
+    is not Cecilia:
+
+    Identity: Cuban woman, mulata (mixed African and European heritage),
+    Habanera, mid-twenties (24–28), young adult. Contemporary, NOT 19th-
+    century period costume.
+
+    Face: warm caramel-to-copper skin (NOT pale, NOT very dark, NOT yellow
+    undertone). Dark brown to near-black hair, wavy / softly curly, mid-
+    length past the shoulders, often partially up. Full dark eyebrows,
+    deep brown almond eyes. Rounded soft nose. Full lips, neutral natural
+    color (NO bright lipstick). Prominent cheekbones.
+
+    Gaze and posture: ASPIRATIONAL UPWARD GAZE — looking forward and
+    slightly up, eyes open and confident. NEVER downcast, NEVER coquettish,
+    NEVER sideways-glancing. Upright posture, shoulders back, neck long.
+    Composed expression, slightly smiling at most. NEVER broad-smiling,
+    NEVER pouting, NEVER sultry.
+
+    Earrings (DIAGNOSTIC): long teardrop white earrings, solid white,
+    narrow at top, rounded at bottom, ~5cm long, hanging straight. The
+    earrings are diagnostic — without them, it is not Cecilia.
+
+    Wardrobe: female guayabera dress, white or cream, contemporary cut
+    (not period). Vertical pleats / alforzas, button placket, four-pocket
+    style or pocket details. Embroidery acceptable but optional. NO
+    necklaces, NO bracelets, NO rings. NO headwear. NO glasses.
+
+    Rendering style: illustrated, vector / hand-drawn aesthetic. NOT
+    photorealistic. Limited palette: warm browns (#bd7948 caramel mid-
+    skin, #692705 warm shadow, #000000 deep shadow), crisp white
+    (#ffffff), cool neutral gray ground (#b0b5b9). NEGATIVE-SPACE WHITE
+    PLANES carve the face where light hits (forehead, cheekbone, jaw,
+    side of neck). White is light, not paint. Hard edges, NO gradients,
+    NO soft brushstrokes, NO painterly textures. Gestural white sweeps
+    may appear in the background suggesting architecture without
+    rendering it. Background: cool neutral gray (#b0b5b9), NO scenery,
+    NO objects, NO other characters.
+
+    Hard prohibitions: pale or very dark skin, period costume, headwear,
+    bright lipstick or heavy makeup, multiple jewelry pieces (only the
+    white teardrop earrings), photographic realism, soft / gradient /
+    painterly rendering, downcast or coquettish gaze, background scenery,
+    objects, or other characters.
+
+  STYLE_ANCHOR: |
+    Match the visual style of the attached canonical bust EXACTLY:
+    same illustration technique, same negative-space white planes carving
+    the face, same warm-brown palette, same limited-palette flat-color
+    fills with hard edges, same crisp white earring shape and size, same
+    cool-gray ground, same gestural white architectural sweeps in the
+    background. Cecilia's face must be recognizably the SAME PERSON as
+    in the reference: same eye shape, same eyebrow, same cheekbone, same
+    nose, same jaw, same hair texture and silhouette.
+
+artifacts:
+  - id: cecilia-fullbody-canonical
+    out: cecilia-fullbody-canonical.jpg
+    aspect: "3:4"
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "canonical face + style anchor — the same Cecilia, same illustration technique, same palette"
+    prompt_template: |
+      Full-body illustration of Cecilia, the canonical Cuban-Spanish-language-
+      model character. Standing pose, three-quarter view, head slightly turned
+      and looking forward and up (the canonical aspirational upward gaze).
+      Hands relaxed, one resting at her side, the other lightly holding the
+      front of her guayabera. Neutral cool gray ground, gestural white
+      architectural sweeps in the negative space behind her suggesting a
+      column or doorway without rendering it.
+
+      Wardrobe: white female guayabera dress, knee-length, contemporary cut.
+      Vertical alforzas (pleats) running down the front panels, button
+      placket, four-pocket detail. Soft natural folds in the fabric. The
+      embroidery is minimal and tone-on-tone (white-on-white).
+
+      {{ templates.STYLE_ANCHOR }}
+
+      {{ templates.MODEL_SHEET }}

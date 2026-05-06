@@ -1,0 +1,106 @@
+# Cecilia visual identity — color tokens.
+# Hexes sampled from the canonical bust at references/cecilia-logo.jpg via
+# adaptive 8-color quantization (Pillow MAXCOVERAGE). Roles assigned to map
+# the dominant cluster colors to identity uses.
+
+version: 1
+
+tokens:
+  # Hair, deepest shadow planes, deepest face shadows. Also used for body
+  # text on light grounds.
+  hair.deep:
+    hex: "#000000"
+    rgb: [0, 0, 0]
+    role: "deep shadow + body text on light grounds"
+    coverage_in_canonical: 0.16
+
+  # Warm shadow tone of skin and warm-side architectural planes.
+  skin.shadow:
+    hex: "#692705"
+    rgb: [105, 39, 5]
+    role: "warm shadow / warm dark accent / readable on light"
+    coverage_in_canonical: 0.08
+
+  # The dominant mid-tone of lit skin. The 'face color' of Cecilia.
+  skin.warm:
+    hex: "#bd7948"
+    rgb: [189, 121, 72]
+    role: "main skin mid-tone; warm brand accent"
+    coverage_in_canonical: 0.054
+
+  # Lightest lit skin tones near the white-plane edges. A peach-cream that
+  # softens the transition from white plane to warm skin.
+  skin.lightest:
+    hex: "#f8d4b4"
+    rgb: [248, 212, 180]
+    role: "skin highlight transition tone"
+    coverage_in_canonical: 0.026
+
+  # Pure white — light, the negative-space planes, the earring, utility
+  # foregrounds on dark grounds.
+  highlight.white:
+    hex: "#ffffff"
+    rgb: [255, 255, 255]
+    role: "light planes / earring / utility fg on dark ground"
+    coverage_in_canonical: 0.041
+
+  # The neutral gray of the canonical background. Cool gray, not warm cream.
+  # Used for canonical-bust backgrounds and as a brand-neutral page ground.
+  ground.neutral:
+    hex: "#b0b5b9"
+    rgb: [176, 181, 185]
+    role: "canonical hero ground / brand-neutral page ground"
+    coverage_in_canonical: 0.631
+
+# Recommended text-on-ground pairs with WCAG ratios. Ratios computed via
+# WCAG 2.1 relative luminance formula. AA = 4.5 (normal text); AA-large =
+# 3.0 (large text); AAA = 7.0.
+pairs:
+  body_on_white:
+    fg: hair.deep
+    bg: highlight.white
+    ratio: 21.00
+    wcag: AAA
+    notes: "body text on white. Use for paper, web, slides body."
+
+  body_on_ground:
+    fg: hair.deep
+    bg: ground.neutral
+    ratio: 10.16
+    wcag: AAA
+    notes: "body text on canonical hero ground. Use for captions over bust."
+
+  accent_on_white:
+    fg: skin.shadow
+    bg: highlight.white
+    ratio: 11.09
+    wcag: AAA
+    notes: "warm-sienna accent text on white. Use for headings, links."
+
+  accent_on_ground:
+    fg: skin.shadow
+    bg: ground.neutral
+    ratio: 5.36
+    wcag: AA
+    notes: "warm-sienna accent on hero ground. Headings only, not body."
+
+  white_on_brown:
+    fg: highlight.white
+    bg: skin.shadow
+    ratio: 11.09
+    wcag: AAA
+    notes: "reverse: white text on warm-brown panels. Strong contrast."
+
+  white_on_black:
+    fg: highlight.white
+    bg: hair.deep
+    ratio: 21.00
+    wcag: AAA
+    notes: "reverse: white text on near-black panels."
+
+# DO NOT use:
+#   - skin.warm (#bd7948) as text on either ground.neutral or highlight.white
+#     (1.69 and 3.50 — fails AA for body text). It is a fill / accent color,
+#     not a typographic color.
+#   - highlight.white on ground.neutral (2.07 — fails). Use white only on
+#     warm-sienna or hair.deep grounds.

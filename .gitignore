@@ -221,3 +221,6 @@ pyrightconfig.json
 *.db-wal
 *.sqlite
 telegram-bot/data/
+# Mosaico state files (cache; per-host)
+identity/.state/
+

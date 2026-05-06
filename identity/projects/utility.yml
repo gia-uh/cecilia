@@ -1,0 +1,97 @@
+# Cecilia visual identity — utility project.
+#
+# Renders the geometric icon set in the utility register. Wordmarks,
+# lockups, and favicon are NOT here — they are typographically defined
+# (Fraunces "Cecilia") and produced by identity/bin/derive_assets.py
+# because typesetting is more reliable than API rendering for those.
+#
+# The icon set is rendered as a single 2x3 sheet and auto-cut by mosaico
+# into per-slug JPGs at <sheet-stem>/cells/<slug>.jpg.
+#
+# IMPORTANT: the MODEL_SHEET-style rules below are simplified for utility
+# (no character is depicted; only style + palette).
+
+version: 1
+name: cecilia-utility
+
+defaults:
+  out_root: ../out/utility
+  state: ../.state/utility.json
+  model: google/gemini-3.1-flash-image-preview
+  seed: 42
+
+templates:
+  UTILITY_STYLE: |
+    Render style: geometric, monochrome-friendly flat illustration. Hard
+    edges only. Use ONLY these palette colors:
+
+      hair.deep      = #000000  (deep black)
+      skin.shadow    = #692705  (warm sienna — primary fill)
+      skin.warm      = #bd7948  (caramel — accent fill)
+      highlight.white = #ffffff (white — light planes / cuts)
+      ground.neutral  = #b0b5b9 (cool gray — background)
+
+    Each icon: warm-sienna primary fill on cool-gray ground, with white
+    negative-space cuts that suggest light or interior structure (echoing
+    the negative-space planes of Cecilia's hero portrait). Caramel
+    (#bd7948) may appear as a small accent stroke or fill on no more than
+    one detail per icon.
+
+    Style language: bold, flat, slightly geometric — NOT line-art, NOT
+    rounded-cute, NOT gradient. Each icon reads at 32x32 (favicon scale)
+    AND at 256x256 (large UI use).
+
+    NO text, NO numbers, NO letters in the icons.
+
+    NO characters or human figures in the icons.
+
+artifacts:
+  - id: icon-sheet
+    out: icon-sheet.jpg
+    aspect: "3:2"
+    grid: [2, 3]
+    cells:
+      speech-bubble: {row: 0, col: 0}
+      open-book:     {row: 0, col: 1}
+      code-brackets: {row: 0, col: 2}
+      spark:         {row: 1, col: 0}
+      network-nodes: {row: 1, col: 1}
+      forward-arrow: {row: 1, col: 2}
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "palette and gesture-language anchor — match warm-brown / white / gray relationship and the negative-space cut sensibility"
+    prompt_template: |
+      A 2-row by 3-column sheet of six geometric icons for the Cecilia
+      visual identity utility register. Each icon occupies one cell of the
+      grid, centered, with consistent visual weight across all six.
+
+      The six icons, left-to-right top-to-bottom:
+
+      Row 1:
+        (1,1) SPEECH-BUBBLE — a stylised speech bubble (chat / dialog).
+              Solid warm-sienna fill, rounded geometric shape, with a small
+              white negative-space cut suggesting light from inside.
+        (1,2) OPEN-BOOK — an open book seen from above, flat geometric
+              wedges representing pages. Warm-sienna spine, white pages
+              with one caramel accent edge.
+        (1,3) CODE-BRACKETS — angular brackets `< >` rendered as bold
+              geometric chevrons. Warm-sienna fill, white negative-space
+              gap between them.
+
+      Row 2:
+        (2,1) SPARK — a four-pointed star/spark with elongated vertical
+              points and short horizontal points. Solid warm-sienna fill,
+              with a small caramel accent at the center.
+        (2,2) NETWORK-NODES — three filled circles connected by two
+              straight lines forming a small triangle/cluster. Warm-sienna
+              circles, white negative-space gaps where lines pass behind
+              circles.
+        (2,3) FORWARD-ARROW — a horizontal arrow pointing right, bold and
+              geometric (echoing Cecilia's forward gaze). Warm-sienna fill,
+              with a white negative-space chevron cut at the tip.
+
+      Cool-gray (#b0b5b9) ground throughout the sheet. Subtle gridlines
+      between cells are acceptable but not required. Cells are equal size.
+      Each icon is centered in its cell with even margin around it.
+
+      {{ templates.UTILITY_STYLE }}

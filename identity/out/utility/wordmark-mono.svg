@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" role="img"
+     aria-label="Cecilia wordmark">
+  <style>
+    .word { font-family: 'Fraunces', 'Fraunces-VariableFont', serif;
+             font-weight: 700; font-size: 144px;
+             font-variation-settings: 'opsz' 144;
+             fill: #000000; }
+  </style>
+  <text x="50%" y="68%" text-anchor="middle" class="word">Cecilia</text>
+</svg>

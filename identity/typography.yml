@@ -1,0 +1,72 @@
+# Cecilia visual identity — typography tokens.
+
+version: 1
+
+display:
+  family: Fraunces
+  weights: [600, 700, 900]
+  italic: true
+  source: https://fonts.google.com/specimen/Fraunces
+  license: SIL Open Font License 1.1
+  rationale: |
+    Fraunces is a humanist serif with strong sculptural character and a warm,
+    slightly idiosyncratic personality. Pairs well with the negative-space
+    planes of the hero register — the variable-axis softness echoes the
+    illustration's hand-drawn quality without competing with it. Optical
+    sizing supports both display and large-caps usage.
+
+body:
+  family: Inter
+  weights: [400, 500, 600, 700]
+  italic: true
+  source: https://fonts.google.com/specimen/Inter
+  license: SIL Open Font License 1.1
+  rationale: |
+    Inter is a neutral, technical sans designed for screen body text. Reads
+    well at small sizes, has comprehensive Latin support including the
+    Spanish accents the model card and report require, and pairs cleanly
+    with Fraunces (humanist sans + humanist serif).
+
+mono:
+  family: JetBrains Mono
+  weights: [400, 500, 700]
+  italic: true
+  source: https://www.jetbrains.com/lp/mono/
+  license: SIL Open Font License 1.1
+  rationale: |
+    For code samples in the README and model cards. Compatible with the
+    body register's humanist warmth.
+
+pairings:
+  hero_register:
+    display: Fraunces 700, optical size 144
+    body: Inter 400
+    notes: "For social cards, model card heroes, slide titles."
+
+  utility_register:
+    display: Fraunces 600, optical size 36
+    body: Inter 400
+    notes: "For document covers, paper figure captions, web headings."
+
+  body_text:
+    family: Inter
+    weight: 400
+    line_height: 1.55
+    notes: "Default body text. Pairs with hair.deep on highlight.white."
+
+  code:
+    family: JetBrains Mono
+    weight: 400
+    line_height: 1.45
+
+# Sizing recommendations are register-relative; convert to per-surface sizes
+# at the consumer (CSS, Quarto/Typst, slide template).
+scale:
+  hero_display: 4.0      # title sizes, social cards, slide titles
+  display_large: 2.5     # paper title, model card header
+  display_medium: 1.75   # section heads
+  display_small: 1.25    # subheads
+  body_large: 1.125      # lead paragraph
+  body: 1.0              # base body
+  body_small: 0.875      # captions, footnotes
+  caption: 0.75          # micro-copy

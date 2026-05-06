@@ -1,0 +1,150 @@
+# Cecilia visual identity — character bible project.
+#
+# Two grid sheets that lock Cecilia on-model for future renders:
+#
+#   turnaround-sheet.jpg  — full-body, 1x3 grid (front / 3-quarter / side)
+#   expression-sheet.jpg  — head-and-shoulders, 2x3 grid of expressions
+#
+# These are the constraint scaffold for v2 secondary registers (retro-
+# futurist, anime, comics, children's-book): a v2 render is "Cecilia
+# rendered in style X," anchored on the bible.
+#
+# IMPORTANT: the MODEL_SHEET template below duplicates content from
+# identity/model-sheet.md. Update both when canon changes.
+
+version: 1
+name: cecilia-character-bible
+
+defaults:
+  out_root: ../out/character-bible
+  state: ../.state/character-bible.json
+  model: google/gemini-3.1-flash-image-preview
+  seed: 42
+
+templates:
+  MODEL_SHEET: |
+    HARD RULES — every render of Cecilia must satisfy every rule below or it
+    is not Cecilia:
+
+    Identity: Cuban woman, mulata, Habanera, mid-twenties, contemporary
+    (NOT 19th-century period costume).
+
+    Face: warm caramel-to-copper skin (NOT pale, NOT very dark). Dark
+    brown to near-black wavy / softly curly mid-length hair. Full dark
+    eyebrows, deep brown almond eyes. Rounded soft nose. Full lips,
+    neutral natural color. Prominent cheekbones.
+
+    Earrings (DIAGNOSTIC): long teardrop white earrings, solid white,
+    ~5cm long, hanging straight. The earrings are diagnostic — without
+    them, it is not Cecilia.
+
+    Wardrobe: white female guayabera dress, contemporary cut. Vertical
+    alforzas, button placket, pocket details. NO necklaces, bracelets,
+    rings. NO headwear. NO glasses.
+
+    Rendering style: illustrated, vector / hand-drawn aesthetic. NOT
+    photorealistic. Limited palette: warm browns (#bd7948, #692705,
+    #000000), crisp white (#ffffff), cool gray ground (#b0b5b9).
+    Negative-space white planes carve the face where light hits. Hard
+    edges, NO gradients, NO painterly textures. Cool gray ground (#b0b5b9),
+    NO scenery.
+
+  STYLE_ANCHOR: |
+    Match the visual style of the attached canonical bust EXACTLY: same
+    illustration technique, same negative-space white planes, same warm-
+    brown palette, same crisp white earring, same cool-gray ground. Same
+    person — same face, same hair, same body proportions across every
+    cell of the sheet.
+
+artifacts:
+  - id: turnaround-sheet
+    out: turnaround-sheet.jpg
+    aspect: "3:2"
+    grid: [1, 3]
+    cells:
+      front:        {row: 0, col: 0}
+      three-quarter: {row: 0, col: 1}
+      side:         {row: 0, col: 2}
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "canonical face + style anchor — same Cecilia, same illustration technique, same palette"
+    prompt_template: |
+      A character turnaround sheet of Cecilia, the canonical Cuban-Spanish-
+      language-model character. Three full-body views in a single horizontal
+      sheet, equal sizes, identical pose and proportions across all three:
+
+        Cell 1 (front): standing facing the viewer directly, head straight,
+                        arms relaxed at sides.
+        Cell 2 (three-quarter): same pose, body rotated ~45 degrees to the
+                        viewer's right; head turned slightly so we still
+                        see most of her face.
+        Cell 3 (side): same pose, full profile facing viewer's right.
+
+      All three cells: identical Cecilia (same face, same hair, same
+      proportions, same wardrobe, same posture). Aspirational upward gaze
+      preserved in all three. White guayabera dress in all three.
+
+      Cool-gray (#b0b5b9) ground in every cell. NO background scenery.
+
+      Equal margins around each figure. The character occupies roughly
+      80% of each cell's height. Subtle vertical gridlines may separate
+      cells but are not required.
+
+      {{ templates.STYLE_ANCHOR }}
+
+      {{ templates.MODEL_SHEET }}
+
+  - id: expression-sheet
+    out: expression-sheet.jpg
+    aspect: "3:2"
+    # The model rendered an 8-portrait 2x4 grid even when prompted for 2x3.
+    # Locking the schema to what the model actually produces avoids cache
+    # invalidation and gives us two extra expressions for free.
+    grid: [2, 4]
+    cells:
+      neutral:        {row: 0, col: 0}
+      slight-smile:   {row: 0, col: 1}
+      thinking:       {row: 0, col: 2}
+      composed:       {row: 0, col: 3}
+      upward-gaze:    {row: 1, col: 0}
+      curious:        {row: 1, col: 1}
+      determined:     {row: 1, col: 2}
+      reserved:       {row: 1, col: 3}
+    refs:
+      - path: ../references/cecilia-logo.jpg
+        hint: "canonical face + style anchor — same Cecilia across every expression"
+    prompt_template: |
+      An expression sheet of Cecilia: six head-and-shoulders portraits in a
+      2-row x 3-column grid. Identical face, identical hair, identical
+      earrings, identical wardrobe (white guayabera, top portion visible)
+      across all six. Only the expression and head angle vary.
+
+      Row 1:
+        (1,1) NEUTRAL — composed, relaxed, looking forward at the viewer,
+                eyes soft, mouth at rest.
+        (1,2) SLIGHT SMILE — the ghost of a smile, slight upturn at corner
+                of mouth, eyes warm. Looking forward.
+        (1,3) THINKING — head tilted slightly to her left, eyes drifting
+                slightly up and to the side, mouth neutral. Pensive but
+                confident.
+
+      Row 2:
+        (2,1) UPWARD GAZE (canonical signature pose) — head straight,
+                eyes up and forward, slight aspirational smile. This is
+                the diagnostic Cecilia pose.
+        (2,2) CURIOUS — eyebrow slightly raised, eyes alert and forward,
+                mouth in a slight ask-shape. Engaged.
+        (2,3) DETERMINED — chin slightly forward, eyes direct and focused
+                on the viewer, mouth firm. NOT angry, NOT defiant — just
+                resolved.
+
+      All six cells: same Cecilia, same warm-brown palette, same negative-
+      space white planes, same crisp white teardrop earrings, same cool-
+      gray (#b0b5b9) ground.
+
+      NEVER coquettish, NEVER downcast, NEVER pouting, NEVER broad-smiling,
+      NEVER sultry across any of the six.
+
+      {{ templates.STYLE_ANCHOR }}
+
+      {{ templates.MODEL_SHEET }}

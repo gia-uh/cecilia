@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     viewBox="0 0 600 720" role="img" aria-label="Cecilia stacked logo">
+  <style>
+    .word { font-family: 'Fraunces', serif; font-weight: 700;
+             font-size: 120px; font-variation-settings: 'opsz' 120;
+             fill: #692705; text-anchor: middle; }
+  </style>
+  <image href="../hero/portrait-canonical-1024.jpg" x="100" y="0" width="400" height="400"
+         preserveAspectRatio="xMidYMid slice" clip-path="url(#round-stacked)" />
+  <clipPath id="round-stacked">
+    <circle cx="300" cy="200" r="200" />
+  </clipPath>
+  <text x="300" y="560" class="word">Cecilia</text>
+</svg>
