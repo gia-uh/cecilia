@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cecilia — El modelo de lenguaje cubano</title>
+<meta name="description" content="Cecilia es una familia de modelos de lenguaje entrenados sobre texto escrito cubano, para capturar los matices lingüísticos, culturales y sociales del español de Cuba.">
+<link rel="icon" href="/static/img/favicon.png">
+<link rel="stylesheet" href="/static/cecilia.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <img src="/static/img/lockup.svg" alt="Cecilia">
+    <nav>
+      <a href="#proyecto">El proyecto</a>
+      <a href="#documentos">Documentos</a>
+      <a href="/training">Colabore</a>
+    </nav>
+  </div>
+</header>
+
+<div class="hero">
+  <div class="wrap">
+    <div>
+      <p class="kicker">Modelo de lenguaje cubano</p>
+      <h1>Cecilia</h1>
+      <p class="lead">
+        Una familia de modelos de lenguaje entrenados sobre texto escrito cubano,
+        para que una máquina entienda y escriba en nuestro español: el que dice
+        guagua, el que sabe quién fue Martí, el que reconoce un asere.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/training">Ayude a entrenar a Cecilia</a>
+        <a class="btn" href="https://huggingface.co/gia-uh/cecilia-2b-v0.1">Descargar el modelo</a>
+        <a class="btn" href="https://t.me/cecilia_cuba_bot">Conversar por Telegram</a>
+      </div>
+    </div>
+    <img src="/static/img/cecilia-portrait.jpg" alt="Retrato de Cecilia">
+  </div>
+</div>
+
+<main>
+
+<section id="proyecto">
+  <div class="wrap narrow">
+    <h2>Qué es Cecilia</h2>
+    <p>
+      Los modelos de lenguaje generales funcionan bien en inglés y razonablemente
+      en español, pero fallan en las variantes regionales: no conocen el léxico, ni
+      las referencias históricas, ni la manera de decir las cosas de una comunidad
+      concreta. En el caso cubano esa carencia es total.
+    </p>
+    <p>
+      <strong>Cecilia 2B</strong> es un modelo de 2 mil millones de parámetros,
+      construido sobre <a href="https://huggingface.co/BSC-LT/salamandra-2b">Salamandra 2B</a>
+      y entrenado durante dos épocas completas sobre cerca de mil millones de
+      palabras de texto cubano. Es el primer modelo de base de gran escala,
+      disponible públicamente, hecho para el español de Cuba.
+    </p>
+    <p>
+      Lo desarrolla el <a href="https://gia-uh.github.io/">Grupo de Inteligencia Artificial</a>
+      de la <a href="https://www.uh.cu/">Universidad de La Habana</a>, junto al grupo
+      <a href="https://gplsi.dlsi.ua.es/">GPLSI</a> de la
+      <a href="https://www.ua.es/">Universidad de Alicante</a>, con el apoyo de
+      <a href="https://syalia.com/">Syalia SRL</a> y <a href="https://epistemial.com/">Epistemial</a>.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Con qué se entrenó</h2>
+    <div class="cards">
+      <div class="panel"><h3>Prensa</h3><p>Diez años de los principales periódicos del país.</p></div>
+      <div class="panel"><h3>Enciclopedia</h3><p>La Enciclopedia Cubana completa (EcuRed).</p></div>
+      <div class="panel"><h3>Leyes</h3><p>La colección completa de la legislación cubana.</p></div>
+      <div class="panel"><h3>Literatura</h3><p>Más de 400 obras de la literatura nacional.</p></div>
+      <div class="panel"><h3>Cubanismos</h3><p>Diccionarios locales de modismos y elementos culturales.</p></div>
+      <div class="panel"><h3>Canciones</h3><p>Cientos de letras de cantantes populares cubanos.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap narrow">
+    <div class="callout">
+      <h2>Cecilia necesita su ayuda</h2>
+      <p>
+        El modelo ya terminó su entrenamiento base: sabe escribir en cubano, pero
+        todavía no sabe responder preguntas ni seguir instrucciones. Para eso hace
+        falta un corpus de ejemplos escritos por hablantes nativos, y ese corpus
+        no lo puede generar una máquina.
+      </p>
+      <p>
+        Escribir un ejemplo toma dos minutos: usted hace una pregunta y escribe la
+        respuesta que Cecilia debería dar.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="/training">Escribir un ejemplo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="documentos">
+  <div class="wrap narrow">
+    <h2>Documentos</h2>
+    <ul>
+      <li><a href="/report.pdf">Reporte técnico</a> — Cecilia 2B v0.1, 11 páginas.</li>
+      <li><a href="/paper.pdf">Artículo de UCiencia 2025</a> — <em>Continual Pretraining of a Small Language Model on Cuban Spanish Corpora</em>, 15 páginas.</li>
+      <li><a href="https://huggingface.co/gia-uh/cecilia-2b-v0.1">Pesos del modelo en HuggingFace</a>.</li>
+    </ul>
+
+    <h2>Cómo usarlo</h2>
+    <p>
+      El modelo se carga con la biblioteca <em>transformers</em> de HuggingFace, y
+      es compatible con <a href="https://vllm.ai/">vLLM</a> y
+      <a href="https://lmstudio.ai/">LM Studio</a> para ejecutarlo localmente.
+    </p>
+    <p class="hint">
+      Cecilia 2B v0.1 se distribuye bajo licencia CC BY-SA 4.0. Todavía no está
+      ajustado a instrucciones: modela lenguaje, no sigue órdenes. Como todo modelo
+      de lenguaje, puede equivocarse o inventar datos, y no sustituye el criterio de
+      un profesional.
+    </p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>
+      Grupo de Inteligencia Artificial, Universidad de La Habana ·
+      GPLSI, Universidad de Alicante ·
+      <a href="https://github.com/gia-uh/cecilia">Repositorio</a>
+    </p>
+    <p class="hint">
+      Financiado parcialmente por el proyecto <a href="https://proyectoilenia.es/">ILENIA</a>-<a href="https://vives.gplsi.es/">VIVES</a>
+      &lt;&lt;2022/TL22/00215334&gt;&gt;, y con fondos privados de Syalia SRL y Epistemial.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

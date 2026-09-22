@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Colabore con Cecilia</title>
+<link rel="icon" href="/static/img/favicon.png">
+<link rel="stylesheet" href="/static/cecilia.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="/"><img src="/static/img/lockup.svg" alt="Cecilia"></a>
+    <nav><a href="/">Volver a la portada</a></nav>
+  </div>
+</header>
+
+<!-- ===================== paso 1: instrucciones y consentimiento ==================== -->
+<main id="step-intro">
+<section>
+  <div class="wrap narrow">
+
+    <h1>Bienvenido</h1>
+    <p>
+      Esta página le permite colaborar con el proyecto <a href="/">Cecilia</a> para
+      mejorar la calidad de las respuestas del modelo.
+    </p>
+    <p>
+      Cecilia es un proyecto para crear modelos de lenguaje especialmente diseñados
+      para capturar las particularidades de la variante cubana del idioma español,
+      así como aprender de nuestra cultura, raíces, idiosincracia, e historia.
+    </p>
+    <p>
+      Actualmente, estamos entrenando la primera versión, <strong>Cecilia 2B</strong>,
+      un modelo basado en Salamandra 2B, y entrenado en más de mil millones de tokens
+      de textos de literatura, historia, noticias, artículos científicos y
+      enciclopédicos, letras de canciones, y más, todos de autores cubanos.
+    </p>
+    <p>
+      En este momento <strong>Cecilia 2B</strong> ha terminado su fase de entrenamiento
+      base, y se encuentra en fase de entrenamiento de instrucciones. Para esto
+      necesitamos construir un corpus de instrucciones escritas por hablantes nativos,
+      que permitan a Cecilia aprender a responder a preguntas, dar sugerencias, seguir
+      instrucciones, o simplemente entablar conversaciones casuales en buen cubano.
+    </p>
+    <p><strong>Su ayuda es crucial para este proyecto.</strong></p>
+
+    <h2>Lea detenidamente antes de comenzar</h2>
+    <p>
+      Cada ejemplo de instrucción que usted proveerá consiste en una secuencia de uno
+      o más intercambios entre un usuario y Cecilia. El objetivo es proporcionar
+      ejemplos que representen interacciones útiles y relevantes.
+    </p>
+    <p>Los tipos de instrucciones pueden incluir:</p>
+    <ul>
+      <li><strong>Preguntas</strong>: el usuario hace una pregunta factual y el asistente proporciona una respuesta. Esto puede ser en dominios como historia, ciencia, cultura general, etc.</li>
+      <li><strong>Instrucciones</strong>: el usuario solicita al asistente que realice una tarea específica, como generar un texto, traducir, resumir contenido, etc.</li>
+      <li><strong>Conversaciones</strong>: un intercambio más largo donde el usuario y el asistente conversan, potencialmente sobre un tema específico o de forma casual.</li>
+    </ul>
+
+    <h3>Cómo funciona el proceso</h3>
+    <p>
+      Tendrá una interfaz de chat donde podrá ingresar el texto tanto del usuario como
+      del asistente, tomando tantos turnos como sea necesario para completar la
+      interacción. Además, deberá indicar qué tipo de instrucción está proporcionando
+      y en qué dominio, así como referencias para verificar la información factual si
+      fuera necesario. Cada ejemplo será revisado para asegurar que cumpla con los
+      criterios establecidos.
+    </p>
+
+    <h3>Consideraciones importantes</h3>
+    <ul>
+      <li>Todas las instrucciones deben ser en español, específicamente en la variante de Cuba. Si usted no es nativo de Cuba, por favor asegúrese de que su español sea claro y comprensible para hablantes cubanos, incluido el uso de modismos y expresiones locales.</li>
+      <li>Todas las instrucciones deben ser relevantes y representativas de potenciales interacciones de un usuario con Cecilia.</li>
+      <li>Evite incluir contenido que sea ofensivo, inapropiado o que no aporte valor a la interacción.</li>
+      <li>Si las instrucciones incluyen múltiples intercambios, asegúrese de que cada intercambio sea coherente y fluya naturalmente desde el anterior.</li>
+      <li>Si las instrucciones incluyen información factual, asegúrese de que sea precisa y verificable. Si no está seguro de la precisión de un dato, es mejor omitirlo.</li>
+      <li>No incluya información personal o sensible en las instrucciones. Esto incluye nombres, direcciones, números de teléfono o cualquier otro dato que pueda identificar a una persona, tanto usted como a terceros.</li>
+    </ul>
+
+    <div class="callout">
+      <p style="margin-top:0">
+        A continuación le solicitamos sus datos personales e información de contacto,
+        exclusivamente con el propósito de evaluar y validar la relevancia y
+        correctitud de los ejemplos de entrenamiento que usted proporcione. En ningún
+        caso sus datos personales serán usados como parte del entrenamiento ni
+        compartidos con terceros.
+      </p>
+
+      <div class="grid-3">
+        <div class="field">
+          <label for="name">Nombre y apellidos</label>
+          <input type="text" id="name" autocomplete="name">
+        </div>
+        <div class="field">
+          <label for="institution">Institución</label>
+          <input type="text" id="institution" autocomplete="organization">
+        </div>
+        <div class="field">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" autocomplete="email">
+        </div>
+      </div>
+
+      <label class="check"><input type="checkbox" id="t1"><span>He leído y entendido las instrucciones anteriores.</span></label>
+      <label class="check"><input type="checkbox" id="t2"><span>Acepto que los ejemplos de entrenamiento proporcionados por mí serán utilizados para entrenar el modelo.</span></label>
+      <label class="check"><input type="checkbox" id="t3"><span>Entiendo que no debo proporcionar datos en ningún ejemplo de entrenamiento que puedan identificar a ninguna persona.</span></label>
+
+      <div class="actions">
+        <button class="btn btn-primary" id="continue" disabled>Continuar</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+</main>
+
+<!-- ===================== paso 2: construir el ejemplo ==================== -->
+<main id="step-build" class="hidden">
+<section>
+  <div class="wrap">
+    <h1>Escriba un ejemplo</h1>
+    <p class="hint" id="whoami"></p>
+
+    <div class="builder">
+
+      <div>
+        <p class="hint">
+          Use la caja de texto para construir un ejemplo de entrenamiento. Comenzará
+          con el rol de usuario, y luego podrá responder como asistente. Cuando haya
+          terminado, pulse <strong>Enviar ejemplo</strong>.
+        </p>
+
+        <div class="turns" id="turns">
+          <p class="empty" id="empty">Todavía no hay mensajes. Empiece escribiendo lo que diría el usuario.</p>
+        </div>
+
+        <div class="actions" id="turn-controls">
+          <button class="btn" id="undo" type="button">Borrar el último</button>
+          <button class="btn" id="clear" type="button">Borrar todo</button>
+        </div>
+
+        <div class="field">
+          <label for="composer" id="composer-label">Escriba el mensaje del usuario</label>
+          <div class="composer">
+            <textarea id="composer" rows="2"></textarea>
+            <button class="btn btn-primary" id="add" type="button">Añadir</button>
+          </div>
+          <p class="hint">Ctrl + Enter también añade el mensaje.</p>
+        </div>
+      </div>
+
+      <aside class="panel">
+        <div class="field">
+          <label for="example_type">Tipo de ejemplo</label>
+          <select id="example_type">
+            <option>Pregunta</option>
+            <option>Instrucción</option>
+            <option>Conversación</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label>Etiquetas</label>
+          <div class="tags" id="tags"></div>
+          <p class="hint">Seleccione una o más, según el tema de la conversación.</p>
+        </div>
+
+        <div class="field">
+          <label for="context">Contexto adicional (opcional)</label>
+          <textarea id="context" rows="4" placeholder="Referencias o enlaces donde verificar los datos del ejemplo."></textarea>
+        </div>
+
+        <button class="btn btn-primary" id="submit" style="width:100%" disabled>Enviar ejemplo</button>
+        <p class="hint" id="why" style="margin-bottom:0"></p>
+      </aside>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="toast" id="toast"></div>
+<script src="/static/training.js"></script>
+</body>
+</html>

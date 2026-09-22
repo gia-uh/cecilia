@@ -24,6 +24,12 @@ apps = [
     "openai>=1.82.1",
     "streamlit>=1.45.1",
 ]
+web = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.32.0",
+    "httpx>=0.28.1",
+    "pytest>=8.3.0",
+]
 training = [
     "deep-translator>=1.11.4",
     "model-quantizer[all]>=0.2.1",
@@ -31,3 +37,7 @@ training = [
     "tensorflow[and-cuda]>=2.19.0",
     "transformers>=4.52.4",
 ]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
