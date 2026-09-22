@@ -7,18 +7,18 @@ These models are designed to support natural language processing tasks with a fo
 
 ## About Cecilia 2B v0.1
 
-This repository contains **Cecilia 2B v0.1**, a 2 billion parameter model continual pretrained on Cuban written text from [Salamandra 2B](BSC-LT/salamandra-2b).
+This repository contains **Cecilia 2B v0.1**, a 2 billion parameter model continual pretrained on Cuban written text from [Salamandra 2B](https://huggingface.co/BSC-LT/salamandra-2b).
 
 The model is developed by the [Artificial Intelligence Research Group (GIA-UH)](https://gia-uh.github.io/) at the [University of Havana](https://www.uh.cu/) with the collaboration
 of [Language Processing and Information Systems Group (GPLSI)](https://gplsi.dlsi.ua.es/) at the [University of Alicante](https://www.ua.es/) and the support
 of [Syalia SRL](https://syalia.com/) and [Epistemial](https://epistemial.com/).
 
-- [Download to model weights from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
-- [Read the Technical Report](report.pdf).
+- [Download the model from HuggingFace](https://huggingface.co/gia-uh/cecilia-2b-v0.1).
+- [Chat with Cecilia on Telegram](https://t.me/cecilia_cuba_bot).
 
 ## Training Data
 
-Cecilia Tiny was continual pretrained for 2 full epochs on a private corpus of approximately 600 million tokens of Cuban written text, including:
+Cecilia Tiny was continual pretrained for 2 full epochs on a private corpus of nearly 1 billion tokens of Cuban written text, including:
 
 - 10 years of the most relevant Cuban newspapers.
 - The Cuban Encyclopedia (ecured.cu).
