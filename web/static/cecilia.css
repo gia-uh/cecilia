@@ -120,7 +120,8 @@ section { padding: 2.5rem 0; }
   border-radius: var(--radius); padding: 1.5rem;
 }
 
-.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+/* seis tarjetas en dos filas de tres, no cuatro y dos */
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
 .cards p { max-width: none; margin: 0; }
 .cards h3 { margin-top: 0; }
 
@@ -198,7 +199,12 @@ textarea { resize: vertical; min-height: 5rem; }
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; gap: 1.75rem; padding-top: 2rem; }
   .hero img { max-width: 320px; }
+  .cards { grid-template-columns: repeat(2, 1fr); }
   .builder { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .topbar nav { gap: .9rem; font-size: .88rem; }
+}
+
+@media (max-width: 560px) {
+  .cards { grid-template-columns: 1fr; }
 }
