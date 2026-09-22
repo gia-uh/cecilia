@@ -131,6 +131,9 @@ section { padding: 2.5rem 0; }
 }
 .callout h2 { margin-top: 0; }
 
+.callout-media { display: grid; grid-template-columns: 1fr 15rem; gap: 1.75rem; align-items: center; }
+.callout-media img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
+
 footer {
   border-top: 1px solid var(--rule); background: var(--white);
   padding: 2rem 0; font-size: .9rem; color: var(--muted);
@@ -200,6 +203,8 @@ textarea { resize: vertical; min-height: 5rem; }
   .hero .wrap { grid-template-columns: 1fr; gap: 1.75rem; padding-top: 2rem; }
   .hero img { max-width: 320px; }
   .cards { grid-template-columns: repeat(2, 1fr); }
+  .callout-media { grid-template-columns: 1fr; }
+  .callout-media img { max-width: 260px; justify-self: center; }
   .builder { grid-template-columns: 1fr; }
   .grid-3 { grid-template-columns: 1fr; }
   .topbar nav { gap: .9rem; font-size: .88rem; }
