@@ -77,7 +77,7 @@ function renderTurns() {
     div.className = `turn ${turn.role}`;
     const who = document.createElement('div');
     who.className = 'who';
-    who.textContent = turn.role === 'user' ? 'Usuario' : 'Cecilia';
+    who.textContent = turn.role === 'user' ? 'Usuario' : 'CecilIA';
     const said = document.createElement('div');
     said.className = 'said';
     said.textContent = turn.content;   // textContent, no innerHTML: nada de lo que escriban se interpreta
@@ -88,7 +88,7 @@ function renderTurns() {
   $('turn-controls').classList.toggle('hidden', turns.length === 0);
   $('composer-label').textContent = nextRole() === 'user'
     ? 'Escriba el mensaje del usuario'
-    : 'Escriba la respuesta de Cecilia';
+    : 'Escriba la respuesta de CecilIA';
 }
 
 function addTurn() {
@@ -112,7 +112,7 @@ $('clear').addEventListener('click', () => { turns = []; renderTurns(); refreshB
 
 function blockingReason() {
   if (turns.length < 2) return 'Hacen falta al menos un mensaje del usuario y una respuesta.';
-  if (turns.length % 2 !== 0) return 'Falta la respuesta de Cecilia al último mensaje.';
+  if (turns.length % 2 !== 0) return 'Falta la respuesta de CecilIA al último mensaje.';
   if (chosenTags.size === 0) return 'Seleccione al menos una etiqueta.';
   return '';
 }

@@ -93,20 +93,20 @@ def derive_favicons() -> None:
 
 WORDMARK_SVG = """<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" role="img"
-     aria-label="Cecilia wordmark">
+     aria-label="CecilIA wordmark">
   <style>
     .word {{ font-family: 'Fraunces', 'Fraunces-VariableFont', serif;
              font-weight: 700; font-size: 144px;
              font-variation-settings: 'opsz' 144;
              fill: {color}; }}
   </style>
-  <text x="50%" y="68%" text-anchor="middle" class="word">Cecilia</text>
+  <text x="50%" y="68%" text-anchor="middle" class="word">CecilIA</text>
 </svg>
 """
 
 LOCKUP_HORIZONTAL_SVG = """<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 1000 280" role="img" aria-label="Cecilia logo with mark">
+     viewBox="0 0 1000 280" role="img" aria-label="CecilIA logo with mark">
   <style>
     .word {{ font-family: 'Fraunces', serif; font-weight: 700;
              font-size: 144px; font-variation-settings: 'opsz' 144;
@@ -117,13 +117,13 @@ LOCKUP_HORIZONTAL_SVG = """<?xml version="1.0" encoding="UTF-8"?>
   <clipPath id="round">
     <circle cx="140" cy="140" r="140" />
   </clipPath>
-  <text x="320" y="180" class="word">Cecilia</text>
+  <text x="320" y="180" class="word">CecilIA</text>
 </svg>
 """
 
 LOCKUP_STACKED_SVG = """<?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-     viewBox="0 0 600 720" role="img" aria-label="Cecilia stacked logo">
+     viewBox="0 0 600 720" role="img" aria-label="CecilIA stacked logo">
   <style>
     .word {{ font-family: 'Fraunces', serif; font-weight: 700;
              font-size: 120px; font-variation-settings: 'opsz' 120;
@@ -134,7 +134,7 @@ LOCKUP_STACKED_SVG = """<?xml version="1.0" encoding="UTF-8"?>
   <clipPath id="round-stacked">
     <circle cx="300" cy="200" r="200" />
   </clipPath>
-  <text x="300" y="560" class="word">Cecilia</text>
+  <text x="300" y="560" class="word">CecilIA</text>
 </svg>
 """
 

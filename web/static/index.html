@@ -3,19 +3,19 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Cecilia — El modelo de lenguaje cubano</title>
-<meta name="description" content="Cecilia es una familia de modelos de lenguaje entrenados sobre texto escrito cubano, para capturar los matices lingüísticos, culturales y sociales del español de Cuba.">
+<title>CecilIA — El modelo de lenguaje cubano</title>
+<meta name="description" content="CecilIA es una familia de modelos de lenguaje entrenados sobre texto escrito cubano, para capturar los matices lingüísticos, culturales y sociales del español de Cuba.">
 <link rel="canonical" href="https://cecilia.uhgia.org/">
 <meta property="og:type" content="website">
-<meta property="og:site_name" content="Cecilia">
+<meta property="og:site_name" content="CecilIA">
 <meta property="og:locale" content="es_ES">
 <meta property="og:url" content="https://cecilia.uhgia.org/">
-<meta property="og:title" content="Cecilia — El modelo de lenguaje cubano">
+<meta property="og:title" content="CecilIA — El modelo de lenguaje cubano">
 <meta property="og:description" content="Una familia de modelos de lenguaje entrenados sobre texto escrito cubano. Ayude a entrenarla.">
 <meta property="og:image" content="https://cecilia.uhgia.org/static/img/cecilia-social.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Retrato ilustrado de Cecilia">
+<meta property="og:image:alt" content="Retrato ilustrado de CecilIA">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/static/img/favicon.png">
 <link rel="stylesheet" href="/static/cecilia.css">
@@ -24,7 +24,7 @@
 
 <header class="topbar">
   <div class="wrap">
-    <img src="/static/img/lockup.svg" alt="Cecilia">
+    <img src="/static/img/lockup.svg" alt="CecilIA">
     <nav>
       <a href="#proyecto">El proyecto</a>
       <a href="#documentos">Documentos</a>
@@ -37,18 +37,18 @@
   <div class="wrap">
     <div>
       <p class="kicker">Modelo de lenguaje cubano</p>
-      <h1>Cecilia</h1>
+      <h1>CecilIA</h1>
       <p class="lead">
         Una familia de modelos de lenguaje entrenados sobre texto escrito cubano,
         para que una máquina entienda y escriba en nuestro español: el que dice
         guagua, el que sabe quién fue Martí, el que reconoce un asere.
       </p>
       <div class="actions">
-        <a class="btn btn-primary" href="/training">Ayude a entrenar a Cecilia</a>
-        <a class="btn" href="https://huggingface.co/gia-uh/cecilia-2b-v0.1">Descargar el modelo</a>
+        <a class="btn btn-primary" href="/training">Ayude a entrenar a CecilIA</a>
+        <a class="btn" href="https://huggingface.co/gia-uh/cecilia-2b-instruct-v1-GGUF">Descargar el modelo</a>
       </div>
     </div>
-    <img src="/static/img/cecilia-portrait.jpg" alt="Retrato de Cecilia">
+    <img src="/static/img/cecilia-portrait.jpg" alt="Retrato de CecilIA">
   </div>
 </div>
 
@@ -56,7 +56,7 @@
 
 <section id="proyecto">
   <div class="wrap narrow">
-    <h2>Qué es Cecilia</h2>
+    <h2>Qué es CecilIA</h2>
     <p>
       Los modelos de lenguaje generales funcionan bien en inglés y razonablemente
       en español, pero fallan en las variantes regionales: no conocen el léxico, ni
@@ -64,14 +64,20 @@
       concreta. En el caso cubano esa carencia es total.
     </p>
     <p>
-      <strong>Cecilia 2B</strong> es un modelo de 2 mil millones de parámetros,
+      <strong>CecilIA 2B</strong> es un modelo de 2 mil millones de parámetros,
       construido sobre <a href="https://huggingface.co/BSC-LT/salamandra-2b">Salamandra 2B</a>
       y entrenado durante dos épocas completas sobre cerca de mil millones de
       palabras de texto cubano. Es el primer modelo de base de gran escala,
       disponible públicamente, hecho para el español de Cuba.
     </p>
     <p>
-      Lo desarrolla el <a href="https://gia-uh.github.io/">Grupo de Inteligencia Artificial</a>
+      <strong>CecilIA 2B Instruct</strong> es la versión que sigue instrucciones y
+      responde preguntas. Está también en formato GGUF, para usarla con
+      <a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a> o
+      <a href="https://lmstudio.ai/">LM Studio</a>.
+    </p>
+    <p>
+      Lo desarrolla el <a href="https://uhgia.org/">Grupo de Inteligencia Artificial</a>
       de la <a href="https://www.uh.cu/">Universidad de La Habana</a>, junto al grupo
       <a href="https://gplsi.dlsi.ua.es/">GPLSI</a> de la
       <a href="https://www.ua.es/">Universidad de Alicante</a>, con el apoyo de
@@ -98,22 +104,21 @@
   <div class="wrap narrow">
     <div class="callout callout-media">
       <div>
-      <h2>Cecilia necesita su ayuda</h2>
+      <h2>Ayude a mejorar CecilIA</h2>
       <p>
-        El modelo ya terminó su entrenamiento base: sabe escribir en cubano, pero
-        todavía no sabe responder preguntas ni seguir instrucciones. Para eso hace
-        falta un corpus de ejemplos escritos por hablantes nativos, y ese corpus
-        no lo puede generar una máquina.
+        CecilIA ya sigue instrucciones. Para que lo haga mejor, y con nuestra
+        manera de decir las cosas, hacen falta más ejemplos escritos por hablantes
+        nativos, y esos ejemplos no los puede generar una máquina.
       </p>
       <p>
         Escribir un ejemplo toma dos minutos: usted hace una pregunta y escribe la
-        respuesta que Cecilia debería dar.
+        respuesta que CecilIA debería dar.
       </p>
       <div class="actions">
         <a class="btn btn-primary" href="/training">Escribir un ejemplo</a>
       </div>
       </div>
-      <img src="/static/img/cecilia-fullbody.jpg" alt="Cecilia de cuerpo entero, con guayabera" loading="lazy">
+      <img src="/static/img/cecilia-fullbody.jpg" alt="CecilIA de cuerpo entero, con guayabera" loading="lazy">
     </div>
   </div>
 </section>
@@ -122,20 +127,24 @@
   <div class="wrap narrow">
     <h2>Documentos</h2>
     <ul>
-      <li><a href="/report.pdf">Reporte técnico</a> — Cecilia 2B v0.1, 11 páginas.</li>
+      <li><a href="/report.pdf">Reporte técnico</a> — CecilIA 2B v0.1, 11 páginas.</li>
       <li><a href="/paper.pdf">Artículo de UCiencia 2025</a> — <em>Continual Pretraining of a Small Language Model on Cuban Spanish Corpora</em>, 15 páginas.</li>
-      <li><a href="https://huggingface.co/gia-uh/cecilia-2b-v0.1">Pesos del modelo en HuggingFace</a>.</li>
+      <li>Pesos en HuggingFace: <a href="https://huggingface.co/gia-uh/cecilia-2b-instruct-v1-GGUF">CecilIA 2B Instruct en GGUF</a>,
+        <a href="https://huggingface.co/gia-uh/cecilia-2b-instruct-v1">CecilIA 2B Instruct</a> y
+        <a href="https://huggingface.co/gia-uh/cecilia-2b-v0.1">CecilIA 2B v0.1</a>, el modelo base.</li>
     </ul>
 
     <h2>Cómo usarlo</h2>
     <p>
-      El modelo se carga con la biblioteca <em>transformers</em> de HuggingFace, y
-      es compatible con <a href="https://vllm.ai/">vLLM</a> y
-      <a href="https://lmstudio.ai/">LM Studio</a> para ejecutarlo localmente.
+      Los modelos se cargan con la biblioteca <em>transformers</em> de HuggingFace y
+      son compatibles con <a href="https://vllm.ai/">vLLM</a>. La versión GGUF corre
+      en local con <a href="https://github.com/ggml-org/llama.cpp">llama.cpp</a> o
+      <a href="https://lmstudio.ai/">LM Studio</a>.
     </p>
     <p class="hint">
-      Cecilia 2B v0.1 se distribuye bajo licencia CC BY-SA 4.0. Todavía no está
-      ajustado a instrucciones: modela lenguaje, no sigue órdenes. Como todo modelo
+      CecilIA 2B v0.1, el modelo base, se distribuye bajo licencia CC BY-SA 4.0 y
+      modela lenguaje: no sigue órdenes. Para conversar con CecilIA, use la versión
+      Instruct. Como todo modelo
       de lenguaje, puede equivocarse o inventar datos, y no sustituye el criterio de
       un profesional.
     </p>
