@@ -20,6 +20,8 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field, field_validator, model_validator
 
+from web import voces
+
 HERE = pathlib.Path(__file__).parent
 STATIC = HERE / "static"
 
@@ -91,11 +93,18 @@ class Submission(BaseModel):
 
 app = FastAPI(title="Cecilia")
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
+app.include_router(voces.router)
+voces.init()
 
 
 @app.get("/", include_in_schema=False)
 def index():
     return FileResponse(STATIC / "index.html")
+
+
+@app.get("/voces", include_in_schema=False)
+def voces_page():
+    return FileResponse(STATIC / "voces.html")
 
 
 @app.get("/training", include_in_schema=False)
