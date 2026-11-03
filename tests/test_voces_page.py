@@ -104,6 +104,10 @@ def test_record_offline_then_validate(server, browser):
 
     stats = httpx.get(server + "/api/voces/stats").json()
     assert stats["clips"] == 2 and stats["speakers"] == 1
+    # Each take keeps half a second after «parar», so no last word is cut.
+    code = page.evaluate("localStorage.getItem('voces.code')")
+    seconds = httpx.get(server + "/api/voces/me", headers={"X-Voz-Code": code}).json()["seconds"]
+    assert seconds >= 2 * (SPOKEN_SECONDS + 0.4)
     assert stats["provinces"]["Holguín"] > 0
 
     validator = browser.new_context().new_page()

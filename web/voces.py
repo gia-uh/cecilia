@@ -15,6 +15,7 @@ import base64
 import hashlib
 import hmac
 import json
+import math
 import os
 import pathlib
 import secrets
@@ -82,6 +83,8 @@ create table if not exists clips (
     path text not null,
     mime text not null,
     duration real not null,
+    speech_db real,
+    noise_db real,
     bytes integer not null,
     created_at real not null
 );
@@ -157,6 +160,22 @@ def init() -> None:
         conn.executemany("insert or ignore into keep values (?)", [(t,) for t in texts])
         conn.execute("update prompts set active = 0 where text not in (select text from keep)")
         conn.execute("drop table keep")
+    # Clips stored before speech_db and noise_db existed get them measured once.
+    cols = {r[1] for r in conn.execute("pragma table_info(clips)")}
+    for col in ("speech_db", "noise_db"):
+        if col not in cols:
+            conn.execute(f"alter table clips add column {col} real")
+    for clip_id, rel in conn.execute(
+        "select id, path from clips where noise_db is null"
+    ).fetchall():
+        try:
+            m = analyse(voz_dir() / rel)
+        except (HTTPException, OSError, subprocess.SubprocessError):
+            continue
+        conn.execute(
+            "update clips set speech_db = ?, noise_db = ? where id = ?",
+            (m["speech_db"], m["noise_db"], clip_id),
+        )
     conn.close()
 
 
@@ -235,7 +254,10 @@ def client_ip(request: Request) -> str:
 def analyse(path: pathlib.Path) -> dict:
     """Decode with ffmpeg to 16 kHz mono and measure what the browser measured.
 
-    Returns duration, the loudest 50 ms RMS and the clipped fraction.
+    Returns duration, the loudest 50 ms RMS and the clipped fraction, plus
+    the levels a speech-synthesis subset is chosen by: speech_db, the 90th
+    percentile of 50 ms RMS, and noise_db, the 10th (the room between words),
+    both in dB relative to full scale.
     """
     out = subprocess.run(
         ["ffmpeg", "-v", "error", "-i", str(path), "-ac", "1", "-ar", "16000",
@@ -248,13 +270,25 @@ def analyse(path: pathlib.Path) -> dict:
     pcm.frombytes(out.stdout[: len(out.stdout) // 2 * 2])
     n = len(pcm)
     win = 800
-    loudest = 0.0
+    levels = []
     for i in range(0, max(n - win, 1), win):
         chunk = pcm[i:i + win]
         if chunk:
-            loudest = max(loudest, (sum(s * s for s in chunk) / len(chunk)) ** 0.5 / 32768)
+            levels.append((sum(s * s for s in chunk) / len(chunk)) ** 0.5 / 32768)
+    levels.sort()
+
+    def dbfs(q: float) -> float:
+        v = levels[min(len(levels) - 1, int(q * len(levels)))] if levels else 0.0
+        return round(20 * math.log10(max(v, 1e-5)), 1)
+
     clipped = sum(1 for s in pcm if s >= 32700 or s <= -32700) / max(n, 1)
-    return {"duration": n / 16000, "rms": loudest, "clipped": clipped}
+    return {
+        "duration": n / 16000,
+        "rms": levels[-1] if levels else 0.0,
+        "clipped": clipped,
+        "speech_db": dbfs(0.9),
+        "noise_db": dbfs(0.1),
+    }
 
 
 # --- API -------------------------------------------------------------------
@@ -422,10 +456,10 @@ async def upload_clip(
     tmp.rename(path)
     with conn:
         conn.execute(
-            "insert into clips (id, participant_id, prompt_id, path, mime, duration, bytes,"
-            " created_at) values (?, ?, ?, ?, ?, ?, ?, ?)",
+            "insert into clips (id, participant_id, prompt_id, path, mime, duration,"
+            " speech_db, noise_db, bytes, created_at) values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
             (clip_id, me["id"], prompt_id, str(rel), mime, round(m["duration"], 2),
-             len(data), time.time()),
+             m["speech_db"], m["noise_db"], len(data), time.time()),
         )
     return {"id": clip_id, "duration": round(m["duration"], 2)}
 
