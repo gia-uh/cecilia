@@ -1,0 +1,21 @@
+name: test
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  web:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - name: ffmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
+      - name: dependencies
+        run: uv sync --only-group web
+      - name: chromium
+        run: uv run --only-group web playwright install --with-deps chromium
+      - name: tests
+        run: uv run --only-group web pytest -q

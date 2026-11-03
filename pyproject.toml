@@ -27,6 +27,8 @@ apps = [
 web = [
     "fastapi>=0.115.0",
     "uvicorn[standard]>=0.32.0",
+    "python-multipart>=0.0.20",
+    "playwright>=1.48.0",
     "httpx>=0.28.1",
     "pytest>=8.3.0",
 ]

@@ -224,3 +224,6 @@ telegram-bot/data/
 # Mosaico state files (cache; per-host)
 identity/.state/
 
+
+# CecilIA voces: database, audio and server key
+data/voces/
