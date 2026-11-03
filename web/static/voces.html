@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preste su voz a CecilIA</title>
+<meta name="description" content="Lea frases en voz alta o valide grabaciones para construir un corpus abierto del español hablado en Cuba.">
+<link rel="canonical" href="https://cecilia.uhgia.org/voces">
+<meta property="og:title" content="Preste su voz a CecilIA">
+<meta property="og:description" content="Un corpus abierto del español hablado en Cuba, grabado por los cubanos.">
+<meta property="og:image" content="https://cecilia.uhgia.org/static/img/cecilia-social.jpg">
+<link rel="icon" href="/static/img/favicon.png">
+<link rel="stylesheet" href="/static/cecilia.css">
+<link rel="stylesheet" href="/static/voces.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a href="/"><img src="/static/img/lockup.svg" alt="CecilIA"></a>
+    <nav><a href="#inicio">Voces</a><a href="#aporte">Mi aporte</a></nav>
+  </div>
+</header>
+
+<!-- portada -->
+<main id="s-inicio" class="screen">
+<section class="hero"><div class="wrap">
+  <div>
+    <p class="kicker">CecilIA · voces</p>
+    <h1>Preste su voz a CecilIA</h1>
+    <p class="lead">Queremos que las máquinas entiendan y hablen el español como se habla en Cuba. Para eso necesitamos escuchar a muchos cubanos: unos minutos de su voz leyendo frases en voz alta.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#leer">Empezar a grabar</a>
+      <a class="btn" href="#validar">Escuchar y validar</a>
+    </div>
+  </div>
+  <div class="panel goal">
+    <p class="kicker">Lo recogido hasta hoy</p>
+    <div class="big"><span id="h-hours">0</span> <small>de <span id="h-goal">25</span> horas</small></div>
+    <div class="meter"><i id="h-meter" style="width:0"></i></div>
+    <p class="hint" id="h-line">Cargando…</p>
+    <div class="provs" id="h-provs" aria-label="Horas grabadas por provincia"></div>
+    <p class="hint" id="h-missing"></p>
+  </div>
+</div></section>
+<section><div class="wrap">
+  <div class="cards">
+    <div class="panel"><h3>Leer frases</h3><p>Le mostramos frases y párrafos cortos y usted los lee en voz alta. Cada uno toma entre 5 y 25 segundos.</p></div>
+    <div class="panel"><h3>Validar</h3><p>Escuche grabaciones de otras personas y diga si coinciden con su texto. No hace falta micrófono.</p></div>
+    <div class="panel"><h3>Para qué sirve</h3><p>Para entrenar modelos abiertos que transcriben el habla cubana y que la generan, y para medir qué tan bien la entienden.</p></div>
+  </div>
+  <p class="hint" style="margin-top:1rem">Las grabaciones se publican como datos abiertos para investigación y para construir herramientas libres. No guardamos su nombre. Puede borrar sus grabaciones cuando quiera.</p>
+</div></section>
+</main>
+
+<!-- consentimiento -->
+<main id="s-antes" class="screen hidden">
+<section><div class="wrap narrow">
+  <h1>Antes de grabar</h1>
+  <div class="panel returning">
+    <b>¿Ya grabó antes desde otro teléfono?</b>
+    <span class="hint">Escriba su código y sus nuevas grabaciones se suman a las anteriores.</span>
+    <form class="code-in" id="code-form">
+      <input type="text" id="code-input" placeholder="caoba-tinajon-4821" aria-label="Código de participante" autocomplete="off" autocapitalize="none" spellcheck="false">
+      <button class="btn" type="submit">Continuar con mi código</button>
+    </form>
+  </div>
+  <p>Su voz es un dato personal. Le pedimos permiso de forma explícita y le explicamos qué hacemos con ella.</p>
+  <form id="consent-form">
+  <div class="panel">
+    <label class="check"><input type="checkbox" name="adult" class="req"><span>Tengo 18 años o más.</span></label>
+    <label class="check"><input type="checkbox" name="license" class="req"><span>Acepto que mis grabaciones y su texto se publiquen como datos abiertos (licencia CC-BY 4.0: cualquiera puede usarlas citando a CecilIA) junto con los datos opcionales de abajo, sin mi nombre, y que se usen para entrenar modelos que transcriben voz y que generan voz sintética.</span></label>
+    <label class="check"><input type="checkbox" name="deletion" class="req"><span>Entiendo que puedo borrar mis grabaciones con el código que me dará esta página. Lo ya publicado en una versión anterior del corpus no se puede retirar.</span></label>
+  </div>
+  <h2>Sobre usted <small class="opt">opcional</small></h2>
+  <p class="hint">Sirve para saber qué variantes del habla cubana tenemos y cuáles faltan.</p>
+  <div class="grid-3">
+    <div class="field"><label for="f-province">Provincia donde se crió</label><select id="f-province" name="province"><option value="">Prefiero no decirlo</option></select></div>
+    <div class="field"><label for="f-municipality">Municipio</label><select id="f-municipality" name="municipality"><option value="">Prefiero no decirlo</option></select></div>
+    <div class="field"><label for="f-age">Edad</label><select id="f-age" name="age_range"><option value="">Prefiero no decirlo</option><option value="18-29">18 a 29</option><option value="30-44">30 a 44</option><option value="45-59">45 a 59</option><option value="60+">60 o más</option></select></div>
+  </div>
+  <div class="grid-3">
+    <div class="field"><label for="f-gender">Género</label><select id="f-gender" name="gender"><option value="">Prefiero no decirlo</option><option value="femenino">Femenino</option><option value="masculino">Masculino</option><option value="otro">Otro</option></select></div>
+    <div class="field"><label for="f-abroad">¿Vive fuera de Cuba?</label><select id="f-abroad" name="abroad"><option value="">Prefiero no decirlo</option><option value="no">No</option><option value="menos-5">Sí, hace menos de 5 años</option><option value="mas-5">Sí, hace más de 5 años</option></select></div>
+    <div class="field"><label for="f-wifi">Subir grabaciones</label><select id="f-wifi" name="wifi"><option value="any">Con cualquier conexión</option><option value="wifi">Solo con wifi</option></select></div>
+  </div>
+  <div class="actions"><button class="btn btn-primary" id="consent-ok" type="submit" disabled>Continuar</button></div>
+  </form>
+</div></section>
+</main>
+
+<!-- leer -->
+<main id="s-leer" class="screen hidden">
+<section><div class="wrap narrow">
+  <div class="modes"><a class="tag" aria-pressed="true" href="#leer">Leer frases</a><a class="tag" href="#validar">Validar</a></div>
+  <div class="step-head"><span id="r-step">Frase 1 de 10</span><div class="dots" id="r-dots"></div></div>
+  <div class="panel sentence"><p id="r-text">Cargando frases…</p></div>
+  <div class="rec">
+    <button class="mic" id="r-mic" aria-label="Grabar" disabled><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg></button>
+    <div class="rec-time" id="r-time"></div>
+    <div class="level" id="r-level" hidden><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="rec-state" id="r-state">Toque el micrófono y lea la frase en voz alta. Mejor en un lugar tranquilo, sin ventilador ni televisor.</div>
+  </div>
+  <div class="actions hidden" id="r-after">
+    <button class="btn" id="r-play">▶ Escuchar</button>
+    <button class="btn" id="r-redo">Grabar de nuevo</button>
+    <button class="btn btn-primary" id="r-next">Guardar y seguir</button>
+  </div>
+  <p class="hint skip"><a href="#" id="r-skip">Saltar esta frase</a> · <a href="#" id="r-report">La frase tiene un error</a></p>
+  <div class="queue ok" id="q"><span class="dot"></span> <span id="q-text">Todo subido</span> <button class="btn hidden" id="q-now" type="button">Subir ahora</button></div>
+</div></section>
+</main>
+
+<!-- validar -->
+<main id="s-validar" class="screen hidden">
+<section><div class="wrap narrow">
+  <div class="modes"><a class="tag" href="#leer">Leer frases</a><a class="tag" aria-pressed="true" href="#validar">Validar</a></div>
+  <div id="c-box">
+    <h1>¿La grabación dice exactamente esto?</h1>
+    <div class="panel sentence"><p id="c-text">Cargando…</p></div>
+    <div class="player"><button class="btn" id="c-play" aria-label="Reproducir">▶</button><div class="bar"><i id="c-pos"></i></div><span class="hint" id="c-time">0:00</span></div>
+    <audio id="c-audio" preload="auto"></audio>
+    <div class="actions vote">
+      <button class="btn btn-primary" data-vote="yes" id="c-yes" disabled>Sí, coincide</button>
+      <button class="btn" data-vote="no">No coincide</button>
+      <button class="btn" data-vote="skip">No sé</button>
+    </div>
+    <p class="hint" id="c-wait">«Sí» se activa al terminar de escuchar la grabación completa. «No» puede marcarlo en cuanto oiga un error.</p>
+    <p class="hint">Diga «no» si falta o sobra una palabra, si se oye otra cosa o si casi no se oye. Un acento distinto al suyo no es un error. Cada grabación necesita dos votos a favor para entrar al corpus.</p>
+  </div>
+  <div id="c-empty" class="empty-review hidden">
+    <h1>No hay grabaciones por validar</h1>
+    <p>Usted ya escuchó todas las que esperan voto. Vuelva más tarde, o lea unas frases mientras tanto.</p>
+    <div class="actions"><a class="btn btn-primary" href="#leer">Leer frases</a></div>
+  </div>
+  <p class="hint">Validadas por usted en esta visita: <b id="c-count">0</b></p>
+</div></section>
+</main>
+
+<!-- mi aporte -->
+<main id="s-aporte" class="screen hidden">
+<section><div class="wrap narrow">
+  <h1>Su aporte</h1>
+  <div class="cards three">
+    <div class="panel"><div class="big"><span id="m-min">0</span> <small>min</small></div><p class="hint">de voz grabada</p></div>
+    <div class="panel"><div class="big" id="m-clips">0</div><p class="hint">frases leídas</p></div>
+    <div class="panel"><div class="big" id="m-votes">0</div><p class="hint">validaciones</p></div>
+  </div>
+  <p class="hint" id="m-pending"></p>
+  <h2>Su código de participante</h2>
+  <p>Este teléfono lo recuerda solo. Lo necesitará únicamente si graba desde otro teléfono, si borra los datos del navegador o si quiere borrar sus grabaciones.</p>
+  <div class="panel code-panel"><code id="m-code"></code><button class="btn" id="m-copy" type="button">Copiar</button></div>
+  <p class="hint">Este código es lo único que une sus grabaciones con usted. Si lo pierde, nadie puede recuperarlo, porque no guardamos su nombre ni su teléfono. Anótelo en un lugar seguro.</p>
+  <div class="actions"><a class="btn btn-primary" href="#leer">Seguir grabando</a><button class="btn danger" id="m-del" type="button">Borrar mis grabaciones</button></div>
+  <div class="callout hidden" id="m-confirm"><p><b>¿Borrar sus <span id="m-n">0</span> grabaciones?</b> Se quitan del sitio y de la próxima versión del corpus. Las versiones ya publicadas no cambian.</p><div class="actions"><button class="btn danger" id="m-del2" type="button">Sí, borrar</button><button class="btn" id="m-cancel" type="button">Cancelar</button></div></div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><p>CecilIA es un proyecto del Grupo de Inteligencia Artificial de la Universidad de La Habana (GIA-UH). Las grabaciones se publican con licencia CC-BY 4.0 y sirven para entrenar modelos abiertos que transcriben y generan voz. No guardamos su nombre, su correo, su teléfono ni su dirección IP.</p></div></footer>
+<div class="toast" id="toast" role="status"></div>
+
+<script src="/static/voces.js"></script>
+</body>
+</html>

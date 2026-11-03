@@ -1,0 +1,59 @@
+/* CecilIA voces: lo que cecilia.css no tiene. Sale de la maqueta del spec. */
+.goal .big,.big{font-family:var(--display);font-size:2.6rem;font-weight:700;color:var(--skin-shadow);line-height:1}
+.big small{font-family:var(--body);font-size:.95rem;font-weight:500;color:var(--muted)}
+.meter{height:10px;border-radius:999px;background:var(--rule);margin:.9rem 0 .5rem;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--skin-warm)}
+.provs{display:grid;grid-template-columns:repeat(16,1fr);gap:3px;align-items:end;height:70px;margin-top:1rem}
+.provs span{position:relative;height:70px;font-size:.55rem;color:var(--muted);display:flex;align-items:flex-end;justify-content:center;padding-bottom:0}
+.provs span::before{content:"";position:absolute;left:0;right:0;bottom:14px;height:calc((100% - 14px) * var(--h));background:var(--skin-warm);border-radius:2px 2px 0 0;opacity:.85}
+.opt{font-family:var(--body);font-size:.8rem;font-weight:500;color:var(--muted);margin-left:.4rem}
+.modes{display:flex;flex-wrap:wrap;gap:.45rem;margin-bottom:1.5rem}
+.step-head{display:flex;justify-content:space-between;align-items:center;gap:1rem;color:var(--muted);font-size:.9rem;margin-bottom:.6rem}
+.dots{display:flex;gap:4px}
+.dots i{width:18px;height:6px;border-radius:3px;background:var(--rule)}
+.dots i.done{background:var(--skin-warm)}
+.dots i.now{background:var(--skin-shadow)}
+.sentence p{font-family:var(--display);font-size:clamp(1.3rem,4.5vw,1.75rem);line-height:1.35;margin:0;max-width:none;color:var(--hair-deep)}
+.rec{display:flex;flex-direction:column;align-items:center;gap:.8rem;padding:2rem 0 1rem}
+.mic{width:88px;height:88px;border-radius:50%;border:0;background:var(--skin-shadow);color:#fff;cursor:pointer;display:grid;place-items:center;box-shadow:var(--shadow);transition:transform .1s}
+.mic svg{width:36px;height:36px}
+.mic.on{background:#8a1c1c;animation:pulse 1.2s ease-in-out infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(138,28,28,.35)}50%{box-shadow:0 0 0 16px rgba(138,28,28,0)}}
+.rec-state{color:var(--muted);text-align:center;max-width:32ch}
+.level{display:flex;gap:4px;height:28px;align-items:center}
+.level i{width:5px;border-radius:3px;background:var(--skin-warm);height:6px;transition:height .1s}
+.timer{font-family:var(--display);font-size:1.6rem;color:var(--skin-shadow)}
+.timer small{font-family:var(--body);font-size:.85rem;color:var(--muted)}
+.skip{margin-top:1rem}
+.queue{margin-top:1.5rem;display:flex;align-items:center;gap:.5rem;font-size:.85rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:.8rem}
+.queue .dot{width:8px;height:8px;border-radius:50%;background:var(--skin-warm)}
+.queue.ok .dot{background:#3d7a3d}
+.player{display:flex;align-items:center;gap:.8rem;margin:1.2rem 0}
+.player .btn{width:48px;height:48px;justify-content:center;padding:0}
+.player .bar{flex:1;height:8px;background:var(--rule);border-radius:999px;overflow:hidden}
+.player .bar i{display:block;height:100%;width:0;background:var(--skin-shadow)}
+.vote .btn{flex:1;justify-content:center;min-width:8rem}
+.cards.three{grid-template-columns:repeat(3,1fr)}
+.code-panel{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.code-panel code{font-size:1.3rem;font-family:ui-monospace,Menlo,monospace;color:var(--skin-shadow)}
+.btn.danger{border-color:#8a1c1c;color:#8a1c1c}
+.btn.danger:hover{background:#f7e3e3}
+.callout{margin-top:1rem}
+.toast:not(.show){visibility:hidden}
+@media (max-width:560px){
+  .cards.three{grid-template-columns:1fr 1fr 1fr;gap:.5rem}
+  .cards.three .panel{padding:.8rem}
+  .big{font-size:1.9rem}
+  .vote{flex-direction:column}
+  .vote .btn{width:100%}
+  .topbar nav a:first-child{display:none}
+}
+@media (pointer:coarse){.btn,.tag{min-height:44px}}
+.returning{margin-bottom:1.25rem}
+.code-in{display:flex;gap:.6rem;margin-top:.7rem;flex-wrap:wrap}
+.code-in input{flex:1;min-width:12rem}
+.topbar img{height:28px}
+.rec-time{font-family:var(--display);font-size:1.3rem;color:var(--skin-shadow);min-height:1.6rem}
+.check-err{color:#8a1c1c;font-weight:600}
+.empty-review{padding:2rem 0}
+
