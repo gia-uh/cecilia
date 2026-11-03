@@ -5,6 +5,9 @@
 const $ = (id) => document.getElementById(id);
 const API = '/api/voces';
 const MIN_S = 1, MAX_S = 30;
+// Lead: the person sees «Grabando» only once the recorder has run this long.
+// Tail: it keeps recording this long after «parar», so the last word survives.
+const LEAD_MS = 300, TAIL_MS = 500;
 const SILENCE_RMS = 0.01, CLIPPED = 0.01;
 
 const PROVINCES = {
@@ -87,7 +90,7 @@ function route() {
   }
   if (name !== 'leer' && recorder.stream) {
     recorder.cancel();
-    reading.recording = false;
+    reading.recording = reading.stopping = reading.starting = false;
     $('r-mic').classList.remove('on');
   }
   document.querySelectorAll('.screen').forEach((s) => s.classList.toggle('hidden', s.id !== 's-' + name));
@@ -311,12 +314,15 @@ const recorder = {
     this.chunks = [];
     this.rec.ondataavailable = (e) => e.data.size && this.chunks.push(e.data);
     this.rec.onstop = () => this.finish();
+    const running = new Promise((ok) => { this.rec.onstart = ok; });
     this.rec.start();
     this.started = performance.now();
+    await running;
+    await new Promise((ok) => setTimeout(ok, LEAD_MS));
     this.timer = setInterval(() => {
       const s = (performance.now() - this.started) / 1000;
       $('r-time').textContent = clock(s) + ' / 0:30';
-      if (s >= MAX_S) this.stop();
+      if (s >= MAX_S - TAIL_MS / 1000) this.stop();
     }, 200);
   },
 
@@ -333,14 +339,15 @@ const recorder = {
     }
   },
 
-  stop() {
+  stop(tail = TAIL_MS) {
     clearInterval(this.timer);
-    if (this.rec && this.rec.state === 'recording') this.rec.stop();
+    const rec = this.rec;
+    if (rec && rec.state === 'recording') setTimeout(() => rec.state === 'recording' && rec.stop(), tail);
   },
 
   cancel() {
     this.onstop = null;
-    this.stop();
+    this.stop(0);
     if (this.stream) { this.stream.getTracks().forEach((t) => t.stop()); this.stream = null; }
     if (this.ctx) { this.ctx.close(); this.ctx = null; }
   },
@@ -407,16 +414,27 @@ function renderPrompt() {
 }
 
 $('r-mic').addEventListener('click', async () => {
-  if (reading.recording) { recorder.stop(); return; }
+  if (reading.stopping || reading.starting) return;
+  if (reading.recording) {
+    reading.stopping = true;
+    $('r-state').textContent = 'Terminando…';
+    recorder.stop();
+    return;
+  }
   stopPlayback();
+  reading.starting = true;
+  $('r-state').textContent = 'Prepárese…';
+  $('r-state').classList.remove('check-err');
   try {
     recorder.onstop = gotTake;
     await recorder.start();
   } catch (e) {
+    reading.starting = false;
     $('r-state').textContent = 'No pudimos usar el micrófono. Revise que el navegador tenga permiso para usarlo.';
     $('r-state').classList.add('check-err');
     return;
   }
+  reading.starting = false;
   reading.recording = true;
   $('r-mic').classList.add('on');
   $('r-mic').setAttribute('aria-label', 'Parar');
@@ -428,6 +446,7 @@ $('r-mic').addEventListener('click', async () => {
 
 function gotTake(take) {
   reading.recording = false;
+  reading.stopping = false;
   $('r-mic').classList.remove('on');
   $('r-mic').setAttribute('aria-label', 'Grabar');
   $('r-level').hidden = true;

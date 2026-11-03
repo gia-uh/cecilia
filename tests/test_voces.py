@@ -255,3 +255,21 @@ def test_stats_count_hours_speakers_and_provinces(client, audio):
 def test_page_is_served(client):
     r = client.get("/voces")
     assert r.status_code == 200 and "CecilIA" in r.text
+
+
+def test_levels_are_stored_and_old_clips_backfilled(client, audio, tmp_path):
+    import sqlite3
+    import web.voces
+
+    who = join(client)
+    pid = client.get("/api/voces/prompts", headers=who).json()[0]["id"]
+    assert upload(client, who, pid, audio["ok"]).status_code == 201
+    conn = sqlite3.connect(tmp_path / "voz" / "voz.sqlite")
+    speech, noise = conn.execute("select speech_db, noise_db from clips").fetchone()
+    # A steady tone: voice and background are the same level, well above silence.
+    assert -40 < speech < 0 and abs(speech - noise) < 3
+
+    conn.execute("update clips set speech_db = null, noise_db = null")
+    conn.commit()
+    web.voces.init()
+    assert conn.execute("select noise_db from clips").fetchone()[0] is not None
